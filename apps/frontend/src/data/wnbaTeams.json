@@ -1,0 +1,166 @@
+{
+    "league": {
+      "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+      "name": "WNBA",
+      "alias": "WNBA"
+    },
+    "teams": [
+      {
+        "id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "name": "Aces",
+        "alias": "LVA",
+        "market": "Las Vegas"
+      },
+      {
+        "id": "2464457a-74c1-4dbe-be13-17125b308414",
+        "name": "Antelopes",
+        "alias": "TOY",
+        "market": "Toyota"
+      },
+      {
+        "id": "a94924c8-9ca9-49aa-94f1-864f49c51a1c",
+        "name": "Clark",
+        "alias": "CLK",
+        "market": "Team"
+      },
+      {
+        "id": "bffa4df2-c1b7-4ef4-b3d5-d5cc26df350f",
+        "name": "Collier",
+        "alias": "COL",
+        "market": "Team"
+      },
+      {
+        "id": "396a7b38-7547-43ff-a0f6-328dc04512e7",
+        "name": "Delle Donne",
+        "alias": "EDD",
+        "market": "Team"
+      },
+      {
+        "id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "name": "Dream",
+        "alias": "ATL",
+        "market": "Atlanta"
+      },
+      {
+        "id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "name": "Fever",
+        "alias": "IND",
+        "market": "Indiana"
+      },
+      {
+        "id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "name": "Liberty",
+        "alias": "NYL",
+        "market": "New York"
+      },
+      {
+        "id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "name": "Lynx",
+        "alias": "MIN",
+        "market": "Minnesota"
+      },
+      {
+        "id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "name": "Mercury",
+        "alias": "PHX",
+        "market": "Phoenix"
+      },
+      {
+        "id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "name": "Mystics",
+        "alias": "WAS",
+        "market": "Washington"
+      },
+      {
+        "id": "0d75b03c-af08-4769-8e7a-c3f349d96dde",
+        "name": "National Team",
+        "alias": "PUR",
+        "market": "Puerto Rico"
+      },
+      {
+        "id": "32685941-23a6-4438-86c4-514c3a99909d",
+        "name": "National Team",
+        "alias": "BRA",
+        "market": "Brazil"
+      },
+      {
+        "id": "532ced5b-4189-40b8-96ab-d07b7b40ee60",
+        "name": "National Team",
+        "alias": "CHN",
+        "market": "China"
+      },
+      {
+        "id": "0ed8b241-f480-4e07-a2e0-b5c17fa71be5",
+        "name": "Parker",
+        "alias": "CNP",
+        "market": "Team"
+      },
+      {
+        "id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "name": "Sky",
+        "alias": "CHI",
+        "market": "Chicago"
+      },
+      {
+        "id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "name": "Sparks",
+        "alias": "LAS",
+        "market": "Los Angeles"
+      },
+      {
+        "id": "87c6af05-3178-42cc-8125-03ea471f8cd1",
+        "name": "Stewart",
+        "alias": "STW",
+        "market": "Team"
+      },
+      {
+        "id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "name": "Storm",
+        "alias": "SEA",
+        "market": "Seattle"
+      },
+      {
+        "id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "name": "Sun",
+        "alias": "CON",
+        "market": "Connecticut"
+      },
+      {
+        "id": "ee893c37-6f87-4045-9494-151871ce7013",
+        "name": "TBD",
+        "alias": "TBD",
+        "market": "Team"
+      },
+      {
+        "id": "4f57ec40-0d35-4b59-bea0-9d040f0d2292",
+        "name": "Valkyries",
+        "alias": "GSV",
+        "market": "Golden State"
+      },
+      {
+        "id": "fab800b7-e923-4b86-8570-214c641335f8",
+        "name": "WNBA",
+        "alias": "TMW",
+        "market": "Team"
+      },
+      {
+        "id": "362ba816-9c1d-468f-9116-c14498bc2ab8",
+        "name": "Wilson",
+        "alias": "WIL",
+        "market": "Team"
+      },
+      {
+        "id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "name": "Wings",
+        "alias": "DAL",
+        "market": "Dallas"
+      },
+      {
+        "id": "1db46f42-cfb8-4f85-b439-a5851243a550",
+        "name": "Women's Nat. Team",
+        "alias": "WNT",
+        "market": "USAB"
+      }
+    ],
+    "_comment": "Generation started @ 2025-08-18 17:08:11 UTC ended @ 2025-08-18 17:08:11 UTC"
+  }
