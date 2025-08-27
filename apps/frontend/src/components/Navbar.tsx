@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
-    console.log("render Navbar()")
+  console.log("render Navbar()")
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -28,22 +28,22 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="/nba" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 NBA
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="/wnba" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 WNBA
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="/news" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 News
               </a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <a href="/standings" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Standings
               </a>
             </li>
