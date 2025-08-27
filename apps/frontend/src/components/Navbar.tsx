@@ -6,10 +6,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white border-gray-200 dark:bg-stone-900">
+    <nav className="bg-white border-gray-200 dark:bg-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-2xl font-semibold font-druk whitespace-nowrap dark:text-white">NBA/WNBA</span>
+          <span className="self-center text-3xl font-semibold font-druk whitespace-nowrap dark:text-white">NBA/WNBA</span>
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}

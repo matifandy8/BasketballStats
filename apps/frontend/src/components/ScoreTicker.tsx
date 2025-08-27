@@ -113,7 +113,7 @@ const ScoreTicker: React.FC = () => {
 
   if (loading) {
     return (
-      <div className="bg-stone-900 text-white py-2 text-center">
+      <div className="bg-black text-white py-2 text-center py-4">
         Loading {activeTab.toUpperCase()} games...
       </div>
     );
@@ -122,7 +122,7 @@ const ScoreTicker: React.FC = () => {
 
 
   return (
-    <div className="bg-stone-900 text-white">
+    <div className="bg-black text-white py-4">
       <div className="container mx-auto">
         <div className="flex border-b border-stone-700">
           <button

@@ -103,9 +103,7 @@ const wnbaHighlights: HighlightItem[] = [
 const HomePage: React.FC = () => {
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold mb-8">Basketball Highlights</h1>
-
+    <div className="">
       <HighlightsCarousel
         items={nbaHighlights}
         league="NBA"
@@ -113,8 +111,7 @@ const HomePage: React.FC = () => {
       />
 
       <section className="mt-12">
-        <div className="rounded-lg shadow-md overflow-hidden">
-          <h2 className="text-xl font-semibold bg-stone-800 text-white p-4">WNBA News</h2>
+        <div className="rounded-lg shadow-md overflow-hidden py-8">
           <NewsSection />
         </div>
       </section>

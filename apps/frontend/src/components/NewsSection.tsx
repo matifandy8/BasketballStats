@@ -1,7 +1,7 @@
 function NewsSection() {
     console.log("render NewsSection()");
     return (
-        <section className="text-white font-druk">
+        <section className="text-white font-druk bg-gradient-to-t from-black to-transparent py-18">
             <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                 <div className="md:col-span-1 lg:col-span-1 w-full relative mx-auto h-auto overflow-hidden rounded-lg">
                     <img

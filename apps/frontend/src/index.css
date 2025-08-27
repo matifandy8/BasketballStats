@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: Druk text;
-  src: url('../public/fonts/DrukText_500_normal.b76bc589.woff2') format('woff2');
+  src: url('../fonts/DrukText_500_normal.b76bc589.woff2') format('woff2');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
@@ -21,7 +21,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #131313;
+  background-color: #1a1a1a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
