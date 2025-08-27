@@ -1,29 +1,71 @@
-# NBA/WNBA Stats Dashboard
+# 🏀 NBA/WNBA Stats Dashboard
 
-A comprehensive web application for tracking NBA and WNBA games, statistics, and player information in real-time.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-43853D?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
 
-## 🚀 Features
+A comprehensive web application for tracking NBA and WNBA games, statistics, and player information in real-time. Built with modern web technologies for optimal performance and user experience.
 
-- Game schedules and results
-- Play-by-play game details
-- Team and player statistics
-- Responsive design for all devices
-- Real-time updates
-- Advanced search and filters
+## ✨ Features
 
-## Prerequisites
+- **Live Game Tracking**: Real-time scores and game updates
+- **Comprehensive Stats**: Detailed team and player statistics
+- **Game Schedules**: Complete season schedules and results
+- **Play-by-Play**: Detailed game breakdowns
+- **Responsive Design**: Works on desktop, tablet, and mobile
+- **Dark/Light Mode**: Built-in theme support
+- **Advanced Search**: Find players, teams, and games quickly
 
-- Node.js 18+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Node.js 18+ (LTS recommended)
 - npm 9+ or yarn
 - Docker (optional, for containerized deployment)
-- SportRadar API key (for NBA/WNBA data)
+- [SportRadar API](https://developer.sportradar.com/) key
 
-## Project Structure
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/nba-wnba-stats.git
+   cd nba-wnba-stats
+   ```
+
+2. **Install dependencies**
+   ```bash
+   # Install root dependencies
+   npm install
+   
+   # Install frontend dependencies
+   cd apps/frontend
+   npm install
+   
+   # Install backend dependencies
+   cd ../backend
+   npm install
+   ```
+
+3. **Environment Setup**
+   - Copy `.env.example` to `.env` in both frontend and backend directories
+   - Add your SportRadar API key to the backend `.env` file
+
+4. **Development**
+   ```bash
+   # Start both frontend and backend in development mode
+   npm run dev
+   ```
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:3001
+
+## 🏗️ Project Structure
 
 ```
-nba-stats/
+nba-wnba-stats/
 ├── apps/
-│   ├── backend/           # Backend API server
+│   ├── backend/           # Backend API server (Node.js + Express)
 │   │   ├── src/
 │   │   │   ├── controllers/  # Request handlers
 │   │   │   ├── middleware/   # Express middleware
@@ -33,7 +75,7 @@ nba-stats/
 │   │   ├── .env             # Environment variables
 │   │   └── package.json
 │   │
-│   └── frontend/          # Frontend React application
+│   └── frontend/          # Frontend React application (Vite + TypeScript)
 │       ├── public/        # Static files
 │       └── src/
 │           ├── components/  # Reusable UI components
@@ -45,136 +87,38 @@ nba-stats/
 └── package.json           # Root package.json (monorepo setup)
 ```
 
-## Quick Start
+## 🐳 Docker Deployment
 
-### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/nba-stats.git
-cd nba-stats
-```
-
-### 2. Set up the backend
-```bash
-cd apps/backend
-cp .env.example .env
-# Edit .env with your SportRadar API key and other settings
-npm install
-```
-
-### 3. Set up the frontend
-```bash
-cd ../frontend
-npm install
-```
-
-### 4. Start the development environment
-From the project root:
-```bash
-# Start both frontend and backend in development mode
-npm run dev
-```
-
-Or start them separately:
-```bash
-# In one terminal (backend)
-cd apps/backend
-npm run dev
-
-# In another terminal (frontend)
-cd apps/frontend
-npm start
-```
-
-### 5. Access the application
-- Frontend: http://localhost:
-- Backend API: http://localhost:3000/api
-
-## Docker Setup
-
-### Build and run with Docker Compose
-```bash
+# Build and start containers
 docker-compose up --build
+
+# In production mode
+docker-compose -f docker-compose.prod.yml up --build
 ```
 
-### Run tests
-```bash
-# Backend tests
-cd apps/backend
-npm test
+## 📚 API Documentation
 
-# Frontend tests
-cd ../frontend
-npm test
-```
+The API documentation is available at `/api-docs` when running the backend in development mode.
 
-## API Documentation
-
-### Base URL
-```
-http://localhost:3000/api
-```
-
-### Authentication
-No authentication is required for the public API endpoints.
-
-### Rate Limiting
-- 60 requests per minute per IP address
-- Responses are cached for 5 minutes
-
-### Endpoints
-
-#### 1. Get Schedule by Season and Type
-```
-GET /api/sports/schedule/:year/:type
-```
-
-**Parameters**
-| Type     | Name     | Required | Description                           |
-|----------|----------|----------|---------------------------------------|
-| Query    | league   | Yes      | 'nba' or 'wnba'                       |
-| Path     | year     | Yes      | Season year (e.g., 2023)              |
-| Path     | type     | Yes      | 'PRE', 'REG', or 'PST'                |
-
-**Example**
-```
-GET /api/sports/schedule/2023/REG?league=nba
-```
-
-#### 2. Get Play-by-Play
-```
-GET /api/sports/game/:gameId/pbp
-```
-
-**Parameters**
-| Type     | Name     | Required | Description         |
-|----------|----------|----------|---------------------|
-| Query    | league   | Yes      | 'nba' or 'wnba'     |
-| Path     | gameId   | Yes      | Game ID             |
-
-#### 3. Get Schedule by Date
-```
-GET /api/sports/schedule/:date
-```
-
-**Parameters**
-| Type     | Name     | Required | Format              |
-|----------|----------|----------|---------------------|
-| Query    | league   | Yes      | 'nba' or 'wnba'     |
-| Path     | date     | Yes      | YYYY-MM-DD          |
-
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- [SportRadar](https://developer.sportradar.com/) for the NBA/WNBA data
+- [SportRadar](https://developer.sportradar.com/) for the sports data API
+- [NBA](https://www.nba.com/) and [WNBA](https://www.wnba.com/) for the amazing basketball action
 - All contributors who have helped improve this project
+
+---
+
+Made with ❤️ by [Your Name] | [![Twitter](https://img.shields.io/twitter/url?style=social&url=https%3A%2F%2Ftwitter.com%2Fyourhandle)](https://twitter.com/yourhandle)
