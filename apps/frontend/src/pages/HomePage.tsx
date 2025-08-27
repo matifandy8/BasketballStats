@@ -1,0 +1,131 @@
+import React from 'react';
+import NewsSection from '../components/NewsSection';
+import HighlightsCarousel from '../components/HighlightsCarousel';
+import type { HighlightItem } from '../components/HighlightsCarousel';
+
+// Mock data - replace with actual API data
+const nbaHighlights: HighlightItem[] = [
+  {
+    id: '1',
+    title: 'NBA Highlights 1',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'NBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '2',
+    title: 'NBA Highlights 2',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'NBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '3',
+    title: 'NBA Highlights 3',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'NBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '4',
+    title: 'NBA Highlights 4',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'NBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '5',
+    title: 'NBA Highlights 5',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'NBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  }
+];
+
+const wnbaHighlights: HighlightItem[] = [
+  {
+    id: '13',
+    title: 'WNBA Highlights 1',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'WNBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '14',
+    title: 'WNBA Highlights 2',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'WNBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '15',
+    title: 'WNBA Highlights 3',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'WNBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '16',
+    title: 'WNBA Highlights 4',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'WNBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  },
+  {
+    id: '17',
+    title: 'WNBA Highlights 5',
+    thumbnail: 'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
+    league: 'WNBA',
+    description: 'Check out the best plays from last night',
+    date: '2 hours ago',
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc' // Replace with actual video embed URL
+  }
+];
+
+const HomePage: React.FC = () => {
+
+  return (
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold mb-8">Basketball Highlights</h1>
+
+      <HighlightsCarousel
+        items={nbaHighlights}
+        league="NBA"
+        title="NBA Highlights"
+      />
+
+      <section className="mt-12">
+        <div className="rounded-lg shadow-md overflow-hidden">
+          <h2 className="text-xl font-semibold bg-stone-800 text-white p-4">WNBA News</h2>
+          <NewsSection />
+        </div>
+      </section>
+
+      <HighlightsCarousel
+        items={wnbaHighlights}
+        league="WNBA"
+        title="WNBA Highlights"
+      />
+    </div>
+  );
+};
+
+export default HomePage;

@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Layout from './components/Layout';
-import NewsSection from './components/NewsSection';
+import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
+import NbaPage from './pages/NbaPage';
 
 function App() {
   console.log("render app()")
@@ -10,11 +11,8 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/" element={
-            <div className="mx-autorounded-lg shadow-md">
-              <NewsSection />
-            </div>
-          } />
+          <Route path="/" element={<HomePage />} />
+          <Route path="/nba" element={<NbaPage />} />
           <Route path="/about" element={<AboutPage />} />
         </Routes>
       </Layout>
