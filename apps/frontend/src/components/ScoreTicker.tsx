@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { fetchTodaysGames } from '../services/gameService';
 
 interface Team {
   name: string;
@@ -57,38 +58,17 @@ const ScoreTicker: React.FC = () => {
 
   useEffect(() => {
     const fetchGames = async () => {
-      try {
-        setLoading(true);
-        
-      //   const [nbaResponse, wnbaResponse] = await Promise.all([
-       //    fetch('http://localhost:3000/api/sports/nba/schedule/today'),
-       //    fetch('http://localhost:3000/api/sports/wnba/schedule/today')
-      //   ]);
-      
-        
-       //  if (!nbaResponse.ok || !wnbaResponse.ok) {
-      //     throw new Error('Failed to fetch games');
-      //   }
-        
-        const nbaData = await nbaResponse.json();
-        const wnbaData = await wnbaResponse.json();
-
-        // The API returns the games array directly, not wrapped in a 'games' property
-        setNbaGames(Array.isArray(nbaData) ? nbaData : []);
-        setWnbaGames(Array.isArray(wnbaData) ? wnbaData : []);
-      } catch (error) {
-        console.error('Error fetching games:', error);
-      } finally {
-        setLoading(false);
-      }
+      setLoading(true);
+      const { nbaGames, wnbaGames } = await fetchTodaysGames();
+      setNbaGames(nbaGames);
+      setWnbaGames(wnbaGames);
+      setLoading(false);
     };
-
+  
     fetchGames();
-    
-    const intervalId = setInterval(fetchGames, 60000); 
+    const intervalId = setInterval(fetchGames, 60000);
     return () => clearInterval(intervalId);
   }, []);
-  console.log(wnbaGames)
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;

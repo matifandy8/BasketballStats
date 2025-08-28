@@ -9,187 +9,211 @@
         "id": "583ec87d-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "76ers",
         "alias": "PHI",
-        "market": "Philadelphia"
+        "market": "Philadelphia",
+        "logo": "/images/logos-nba/logo-sizers.svg"
       },
       {
         "id": "583ecefd-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Bucks",
         "alias": "MIL",
-        "market": "Milwaukee"
+        "market": "Milwaukee",
+        "logo": "/images/logos-nba/logo-bucks.svg"
       },
       {
         "id": "583ec5fd-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Bulls",
         "alias": "CHI",
-        "market": "Chicago"
+        "market": "Chicago",
+        "logo": "/images/logos-nba/logo-bulls.svg"
       },
       {
         "id": "583ec773-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Cavaliers",
         "alias": "CLE",
-        "market": "Cleveland"
+        "market": "Cleveland",
+        "logo": "/images/logos-nba/logo-cavaliers.svg"
       },
       {
         "id": "583eccfa-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Celtics",
         "alias": "BOS",
-        "market": "Boston"
+        "market": "Boston",
+        "logo": "/images/logos-nba/logo-celtics.svg"
       },
       {
         "id": "583ecdfb-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Clippers",
         "alias": "LAC",
-        "market": "LA"
+        "market": "LA",
+        "logo": "/images/logos-nba/logo-clippers.svg"
       },
       {
         "id": "583eca88-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Grizzlies",
         "alias": "MEM",
-        "market": "Memphis"
+        "market": "Memphis",
+        "logo": "/images/logos-nba/logo-grizzlies.svg"
       },
       {
         "id": "583ecb8f-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Hawks",
         "alias": "ATL",
-        "market": "Atlanta"
+        "market": "Atlanta",
+        "logo": "/images/logos-nba/logo-hawks.svg"
       },
       {
         "id": "583ecea6-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Heat",
         "alias": "MIA",
-        "market": "Miami"
+        "market": "Miami",
+        "logo": "/images/logos-nba/logo-heat.svg"
       },
       {
         "id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Hornets",
         "alias": "CHA",
-        "market": "Charlotte"
+        "market": "Charlotte",
+        "logo": "/images/logos-nba/logo-hornets.svg"
       },
       {
         "id": "583ece50-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Jazz",
         "alias": "UTA",
-        "market": "Utah"
+        "market": "Utah",
+        "logo": "/images/logos-nba/logo-jazz.svg"
       },
       {
         "id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Kings",
         "alias": "SAC",
-        "market": "Sacramento"
+        "market": "Sacramento",
+        "logo": "/images/logos-nba/logo-kings.svg"
       },
       {
         "id": "583ec70e-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Knicks",
         "alias": "NYK",
-        "market": "New York"
+        "market": "New York",
+        "logo": "/images/logos-nba/logo-knicks.svg"
       },
       {
         "id": "583ecae2-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Lakers",
         "alias": "LAL",
-        "market": "Los Angeles"
+        "market": "Los Angeles",
+        "logo": "/images/logos-nba/logo-lakers.svg"
       },
       {
         "id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Magic",
         "alias": "ORL",
-        "market": "Orlando"
+        "market": "Orlando",
+        "logo": "/images/logos-nba/logo-magic.svg"
       },
       {
         "id": "583ecf50-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Mavericks",
         "alias": "DAL",
-        "market": "Dallas"
+        "market": "Dallas",
+        "logo": "/images/logos-nba/logo-mavericks.svg"
       },
       {
         "id": "583ec9d6-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Nets",
         "alias": "BKN",
-        "market": "Brooklyn"
+        "market": "Brooklyn",
+        "logo": "/images/logos-nba/logo-nets.svg"
       },
       {
         "id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Nuggets",
         "alias": "DEN",
-        "market": "Denver"
+        "market": "Denver",
+        "logo": "/images/logos-nba/logo-nuggets.svg"
       },
       {
         "id": "583ec7cd-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Pacers",
         "alias": "IND",
-        "market": "Indiana"
+        "market": "Indiana",
+        "logo": "/images/logos-nba/logo-pacers.svg"
       },
       {
         "id": "583ecc9a-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Pelicans",
         "alias": "NOP",
-        "market": "New Orleans"
-      },
-      {
-        "id": "928c5a99-4bcc-4679-97cc-0f960d67dbfe",
-        "name": "Phoenix",
-        "alias": "SEM",
-        "market": "South East Melbourne"
+        "market": "New Orleans",
+        "logo": "/images/logos-nba/logo-pelicans.svg"
       },
       {
         "id": "583ec928-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Pistons",
         "alias": "DET",
-        "market": "Detroit"
+        "market": "Detroit",
+        "logo": "/images/logos-nba/logo-pistons.svg"
       },
       {
         "id": "583ecda6-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Raptors",
         "alias": "TOR",
-        "market": "Toronto"
+        "market": "Toronto",
+        "logo": "/images/logos-nba/logo-raptors.svg"
       },
       {
         "id": "583ecb3a-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Rockets",
         "alias": "HOU",
-        "market": "Houston"
+        "market": "Houston",
+        "logo": "/images/logos-nba/logo-rockets.svg"
       },
       {
         "id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Spurs",
         "alias": "SAS",
-        "market": "San Antonio"
+        "market": "San Antonio",
+        "logo": "/images/logos-nba/logo-spurs.svg"
       },
       {
         "id": "583ecfa8-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Suns",
         "alias": "PHX",
-        "market": "Phoenix"
+        "market": "Phoenix",
+        "logo": "/images/logos-nba/logo-suns.svg"
       },
       {
         "id": "583ecfff-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Thunder",
         "alias": "OKC",
-        "market": "Oklahoma City"
+        "market": "Oklahoma City",
+        "logo": "/images/logos-nba/logo-thunder.svg"
       },
       {
         "id": "583eca2f-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Timberwolves",
         "alias": "MIN",
-        "market": "Minnesota"
+        "market": "Minnesota",
+        "logo": "/images/logos-nba/logo-wolves.svg"
       },
       {
         "id": "583ed056-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Trail Blazers",
         "alias": "POR",
-        "market": "Portland"
+        "market": "Portland",
+        "logo": "/images/logos-nba/logo-brazers.svg"
       },
       {
         "id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Warriors",
         "alias": "GSW",
-        "market": "Golden State"
+        "market": "Golden State",
+        "logo": "/images/logos-nba/logo-warriors.svg"
       },
       {
         "id": "583ec8d4-fb46-11e1-82cb-f4ce4684ea4c",
         "name": "Wizards",
         "alias": "WAS",
-        "market": "Washington"
+        "market": "Washington",
+        "logo": "/images/logos-nba/logo-wizards.svg"
       }
     ],
     "_comment": "Generation started @ 2025-08-18 17:00:33 UTC ended @ 2025-08-18 17:00:33 UTC"
