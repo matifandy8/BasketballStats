@@ -1,4 +1,5 @@
 import React from 'react';
+import { SEO } from '../components/SEO';
 import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';
 import type { HighlightItem } from '../components/HighlightsCarousel';
@@ -101,27 +102,33 @@ const wnbaHighlights: HighlightItem[] = [
 ];
 
 const HomePage: React.FC = () => {
-
   return (
-    <div className="px-2 sm:px-4 md:px-6 lg:px-8 max-w-screen-2xl mx-auto">
-      <HighlightsCarousel
-        items={nbaHighlights}
-        league="NBA"
-        title="NBA Highlights"
+    <>
+      <SEO 
+        title="Latest NBA & WNBA Highlights and News"
+        description="Watch the latest NBA and WNBA game highlights, get updated with breaking news, and check out player stats and scores."
+        keywords="NBA highlights, WNBA highlights, basketball news, NBA scores, WNBA scores, basketball stats"
       />
+      <div className="px-2 sm:px-4 md:px-6 lg:px-8 max-w-screen-2xl mx-auto">
+        <HighlightsCarousel
+          items={nbaHighlights}
+          league="NBA"
+          title="NBA Highlights"
+        />
 
-      <section className="mt-8 sm:mt-12">
-        <div className="rounded-lg overflow-hidden">
-          <NewsSection />
-        </div>
-      </section>
+        <section className="mt-8 sm:mt-12">
+          <div className="rounded-lg overflow-hidden">
+            <NewsSection />
+          </div>
+        </section>
 
-      <HighlightsCarousel
-        items={wnbaHighlights}
-        league="WNBA"
-        title="WNBA Highlights"
-      />
-    </div>
+        <HighlightsCarousel
+          items={wnbaHighlights}
+          league="WNBA"
+          title="WNBA Highlights"
+        />
+      </div>
+    </>
   );
 };
 

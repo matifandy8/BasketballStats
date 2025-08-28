@@ -24,6 +24,7 @@
     "@splidejs/react-splide": "^0.7.12",
     "@splidejs/splide": "^4.1.4",
     "lucide-react": "^0.541.0",
+    "react-helmet-async": "^2.0.5",
     "react-slick": "^0.31.0",
     "slick-carousel": "^1.8.1"
   }
