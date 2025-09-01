@@ -1,7 +1,10 @@
 import { Request, Response, NextFunction } from 'express';
-import { getSchedule, getPbp, getTeams, getDailySchedule } from '../services/sportradar.service';
+import { getSchedule, getPbp, getTeams, getDailySchedule, getTeamById } from '../services/sportradar.service';
 import { SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
+import path from 'path';
+import fs from 'fs';
+import crypto from 'crypto';
 
 export async function scheduleCtrl(req: Request, res: Response, next: NextFunction) {
   try {
@@ -25,7 +28,7 @@ export async function pbpCtrl(req: Request, res: Response, next: NextFunction) {
 export async function scheduleByDateCtrl(req: Request, res: Response, next: NextFunction) {
   try {
     const league = req.params.league as League;
-    const { date } = req.params; 
+    const { date } = req.params;
     const games = await getDailySchedule(league, date);
     res.json(games);
   } catch (err) { next(err); }
@@ -34,8 +37,18 @@ export async function scheduleByDateCtrl(req: Request, res: Response, next: Next
 export async function scheduleTodayCtrl(req: Request, res: Response, next: NextFunction) {
   try {
     const league = req.params.league as League;
-    const today = new Date().toISOString().slice(0,10);
+    const today = new Date().toISOString().slice(0, 10);
     const games = await getDailySchedule(league, today);
+
+    // ETag generation
+    const etag = crypto.createHash('md5').update(JSON.stringify(games)).digest('hex');
+
+    // Check If-None-Match header
+    if (req.headers['if-none-match'] === etag) {
+      return res.status(304).send();
+    }
+
+    res.setHeader('ETag', etag);
     res.json(games);
   } catch (err) { next(err); }
 }
@@ -46,6 +59,44 @@ export async function teamsCtrl(req: Request, res: Response, next: NextFunction)
     const data = await getTeams(league);
     res.json(data);
   } catch (err) { next(err); }
+}
+
+export async function teamIdCtrl(req: Request, res: Response, next: NextFunction) {
+  try {
+    const league = req.params.league as League;
+    const { teamId } = req.params;
+
+    const data = await getTeamById(league, teamId);
+
+    if (!data.players || !Array.isArray(data.players)) {
+      return res.json(data);
+    }
+
+    const jugadoresConImagenes = data.players.map((player: any) => {
+      const filename = player.full_name.replace(/ /g, '_') + '.png';
+
+      const imagePath = path.join(process.cwd(), 'images/players-headshot', filename);
+      const baseUrl = `${req.protocol}://${req.get('host')}`;
+
+      if (fs.existsSync(imagePath)) {
+        return {
+          ...player,
+          image_url: `${baseUrl}/images/players-headshot/${filename}`
+        };
+      } else {
+        return {
+          ...player,
+          image_url: `${baseUrl}/images/players-headshot/default.png`
+        };
+      }
+    });
+
+    data.players = jugadoresConImagenes;
+
+    res.json(data);
+  } catch (e) {
+    next(e);
+  }
 }
 
 export const apiInfoCtrl = (req: Request, res: Response) => {

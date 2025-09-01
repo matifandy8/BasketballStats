@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { scheduleCtrl, pbpCtrl, scheduleByDateCtrl, scheduleTodayCtrl, teamsCtrl } from '../controllers/nbawnba.controller';
+import { scheduleCtrl, pbpCtrl, scheduleByDateCtrl, scheduleTodayCtrl, teamsCtrl, teamIdCtrl } from '../controllers/nbawnba.controller';
 import { object, string, union, literal } from 'valibot';
 import { apiLimiter, cache } from '../middlewares/cacheRateLimiter.middleware';
 import { validate } from '../middlewares/validate.middleware';
@@ -13,7 +13,6 @@ const ScheduleSchema = object({
 
 const PbpSchema = object({ gameId: string() });
 
-// Schedule routes
 router.get(
   '/schedule/:year/:type',
   apiLimiter(60),
@@ -26,7 +25,6 @@ router.get(
   scheduleCtrl
 );
 
-// Teams route
 router.get(
   '/teams',
   apiLimiter(60),
@@ -38,7 +36,17 @@ router.get(
   teamsCtrl
 );
 
-// Schedule by date
+router.get(
+  '/teams/:teamId',
+  apiLimiter(60),
+  cache(req => `pbp:team:${req.params.teamId}`, 5),
+  (req, res, next) => {
+    req.params.league = 'nba';
+    next();
+  },
+  teamIdCtrl
+);
+
 router.get(
   '/schedule/date/:date',
   apiLimiter(60),
@@ -50,7 +58,6 @@ router.get(
   scheduleByDateCtrl
 );
 
-// Today's schedule
 router.get(
   '/schedule/today',
   apiLimiter(60),
@@ -62,7 +69,6 @@ router.get(
   scheduleTodayCtrl
 );
 
-// Game play-by-play
 router.get(
   '/game/:gameId/pbp',
   apiLimiter(60),

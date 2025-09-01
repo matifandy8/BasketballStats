@@ -80,10 +80,10 @@ const LeaguePage: React.FC<LeaguePageProps> = ({ leagueName, leagueSlug, descrip
                                     {section.icon}
                                 </div>
                                 <div className="flex-1">
-                                    <h2 className="text-xl font-bold text-stone-900 dark:text-white group-hover:text-stone-600 dark:group-hover:text-stone-300 transition-colors">
+                                    <h2 className="text-xl font-bold text-stone-900 dark:text-white group-hover:text-stone-600 dark:group-hover:text-stone-300 transition-colors font-proxima-nova">
                                         {section.title}
                                     </h2>
-                                    <p className="mt-2 text-stone-600 dark:text-stone-300">
+                                    <p className="mt-2 text-stone-600 dark:text-stone-300 font-proxima-nova">
                                         {section.description}
                                     </p>
                                     <div className="mt-4 inline-flex items-center text-sm font-medium text-white hover:text-gray-500 transition-colors cursor-pointer">
@@ -120,13 +120,13 @@ const LeaguePage: React.FC<LeaguePageProps> = ({ leagueName, leagueSlug, descrip
                                                 }
                                             </h3>
                                             <p className="text-stone-600 dark:text-stone-300 mt-2">
-                                                {item === 1 
+                                                {item === 1     
                                                     ? `Latest updates and news from around the ${leagueName} as the season progresses.`
                                                     : `With the season in full swing, the race for the top individual honors is getting more competitive.`
                                                 }
                                             </p>
                                             <div className="mt-3 text-sm text-stone-500 dark:text-stone-400">
-                                                <span className="font-medium">{item === 1 ? '2 hours ago' : '5 hours ago'}</span>
+                                                <span className="font-medium font-proxima-nova">{item === 1 ? '2 hours ago' : '5 hours ago'}</span>
                                                 <span className="mx-2">•</span>
                                                 <span>{`By ${leagueName} Insider`}</span>
                                             </div>
@@ -137,7 +137,7 @@ const LeaguePage: React.FC<LeaguePageProps> = ({ leagueName, leagueSlug, descrip
                             ))}
                         </div>
                         <div className="mt-6 text-center">
-                            <button className="px-6 py-2.5 px-6 py-2 bg-white text-black rounded-md hover:bg-gray-500 transition-colors cursor-pointer">
+                            <button className="px-6 py-2.5 px-6 py-2 bg-white text-black rounded-md hover:bg-gray-500 transition-colors cursor-pointer font-druk">
                                 View All News
                             </button>
                         </div>

@@ -1,6 +1,6 @@
 function NewsSection() {
     return (
-        <section className="text-white font-druk bg-gradient-to-t from-black to-transparent py-8 sm:py-12">
+        <section className="text-white font-druk bg-gradient-to-t from-black to-transparent py-8 sm:py-19">
             <div className="container mx-auto px-2 sm:px-4">
                 <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 px-2">Latest News</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6">

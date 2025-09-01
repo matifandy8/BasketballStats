@@ -2,11 +2,10 @@ import { Router, Request, Response } from 'express';
 import nbaRoutes from './nba.routes';
 import wnbaRoutes from './wnba.routes';
 import { apiLimiter } from '../middlewares/cacheRateLimiter.middleware';
-import { scheduleCtrl, pbpCtrl, scheduleByDateCtrl, scheduleTodayCtrl, teamsCtrl } from '../controllers/nbawnba.controller';
+import { pbpCtrl, scheduleByDateCtrl, scheduleTodayCtrl, teamsCtrl } from '../controllers/nbawnba.controller';
 
 const router = Router();
 
-// API documentation
 router.get('/', (req: Request, res: Response) => {
   res.json({
     message: 'NBA & WNBA Sports API',
@@ -17,14 +16,16 @@ router.get('/', (req: Request, res: Response) => {
         gamePBP: '/nba/game/:gameId/pbp',
         scheduleByDate: '/nba/schedule/date/:date',
         today: '/nba/schedule/today',
-        teams: '/nba/teams'
+        teams: '/nba/teams',
+        team: '/nba/teams/teamId'
       },
       wnba: {
         schedule: '/wnba/schedule/:year/:type',
         gamePBP: '/wnba/game/:gameId/pbp',
         scheduleByDate: '/wnba/schedule/date/:date',
         today: '/wnba/schedule/today',
-        teams: '/wnba/teams'
+        teams: '/wnba/teams',
+        team: '/wnba/teams/teamId'
       },
       docs: 'https://github.com/yourusername/nba-wnba-api'
     },
@@ -33,13 +34,10 @@ router.get('/', (req: Request, res: Response) => {
   });
 });
 
-// Mount NBA routes
 router.use('/nba', nbaRoutes);
 
-// Mount WNBA routes
 router.use('/wnba', wnbaRoutes);
 
-// Backward compatible routes (deprecated)
 router.get('/teams', apiLimiter(60), (req, res, next) => {
   req.params.league = req.query.league === 'wnba' ? 'wnba' : 'nba';
   next();

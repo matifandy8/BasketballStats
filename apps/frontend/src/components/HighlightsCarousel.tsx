@@ -68,7 +68,7 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
   };
 
   return (
-    <section className="px-2 sm:px-4 py-8 sm:py-12 bg-gradient-to-t from-black to-transparent">
+    <section className="px-8 sm:px-4 py-8 sm:py-19 bg-gradient-to-t from-black to-transparent">
       <div className='container mx-auto'>
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-druk mb-4 sm:mb-6 px-2">{title}</h2>
         

@@ -2,16 +2,26 @@
 
 @font-face {
   font-family: Druk text;
-  src: url('../fonts/DrukText_500_normal.b76bc589.woff2') format('woff2');
+  src: url('/fonts/DrukText_500.woff2') format('woff2');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: Proxima Nova;
+  src: url('/fonts/ProximaNova_400.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
 
 @theme {
   --font-druk: Druk text, sans-serif; 
+}
+
+@theme {
+  --font-proxima-nova: Proxima Nova, sans-serif;
 }
 
 :root {
@@ -37,10 +47,6 @@ body {
   min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
 
 @media (prefers-color-scheme: light) {
   :root {

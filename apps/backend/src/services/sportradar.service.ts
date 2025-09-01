@@ -1,6 +1,7 @@
 import { httpFetch, League } from '../utils/http';
 import { 
-  WNBAScheduleResponse, WNBAPbpResponse, SeasonType, WNBAScheduleGame, WNBATeamResponse 
+  WNBAScheduleResponse, WNBAPbpResponse, SeasonType, WNBAScheduleGame, WNBATeamResponse, 
+  Team
 } from '../types/sportradar.types';
 
 export async function getSchedule(league: League, year: number, type: SeasonType): Promise<WNBAScheduleResponse> {
@@ -34,5 +35,10 @@ export async function getDailySchedule(league: League, date: string): Promise<WN
 }
 
 export async function getTeams(league: League): Promise<WNBATeamResponse> {
-  return httpFetch<WNBATeamResponse>(league, '/league/teams.json');
+  return httpFetch<WNBATeamResponse>(league, '/teams.json');
+}
+
+
+export async function getTeamById(league: League, teamId: string): Promise<Team> {
+  return httpFetch<Team>(league, `/teams/${teamId}/profile.json`);
 }

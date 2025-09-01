@@ -57,16 +57,22 @@ const ScoreTicker: React.FC = () => {
   const [scrollLeft, setScrollLeft] = useState(0);
 
   useEffect(() => {
-    const fetchGames = async () => {
+    const initialFetch = async () => {
       setLoading(true);
       const { nbaGames, wnbaGames } = await fetchTodaysGames();
       setNbaGames(nbaGames);
       setWnbaGames(wnbaGames);
       setLoading(false);
     };
-  
-    fetchGames();
-    const intervalId = setInterval(fetchGames, 60000);
+
+    const updateGames = async () => {
+      const { nbaGames, wnbaGames } = await fetchTodaysGames();
+      setNbaGames(nbaGames);
+      setWnbaGames(wnbaGames);
+    };
+
+    initialFetch();
+    const intervalId = setInterval(updateGames, 60000);
     return () => clearInterval(intervalId);
   }, []);
 
@@ -150,12 +156,12 @@ const ScoreTicker: React.FC = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <div className="text-center flex-1">
-                    <div className="font-medium">{game.away.alias}</div>
+                    <div className="font-druk font-medium">{game.away.alias}</div>
                     <div className="text-lg font-bold">{game.away_points ?? '-'}</div>
                   </div>
                   <div className="text-stone-400 mx-1">@</div>
                   <div className="text-center flex-1">
-                    <div className="font-medium">{game.home.alias}</div>
+                    <div className="font-druk font-medium">{game.home.alias}</div>
                     <div className="text-lg font-bold">{game.home_points ?? '-'}</div>
                   </div>
                 </div>

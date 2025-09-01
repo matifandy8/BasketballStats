@@ -4,7 +4,6 @@ import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';
 import type { HighlightItem } from '../components/HighlightsCarousel';
 
-// Mock data - replace with actual API data
 const nbaHighlights: HighlightItem[] = [
   {
     id: '1',
@@ -109,14 +108,14 @@ const HomePage: React.FC = () => {
         description="Watch the latest NBA and WNBA game highlights, get updated with breaking news, and check out player stats and scores."
         keywords="NBA highlights, WNBA highlights, basketball news, NBA scores, WNBA scores, basketball stats"
       />
-      <div className="px-2 sm:px-4 md:px-6 lg:px-8 max-w-screen-2xl mx-auto">
+      <div className="">
         <HighlightsCarousel
           items={nbaHighlights}
           league="NBA"
           title="NBA Highlights"
         />
 
-        <section className="mt-8 sm:mt-12">
+        <section className="">
           <div className="rounded-lg overflow-hidden">
             <NewsSection />
           </div>
