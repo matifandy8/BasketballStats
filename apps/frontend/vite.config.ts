@@ -8,6 +8,6 @@ export default defineConfig({
   tailwindcss(),
   ],
   build: {
-    outDir: 'public', // Cambia 'dist' por 'public' si tu host lo requiere
-  },
+    outDir: 'dist', 
+  }
 })
