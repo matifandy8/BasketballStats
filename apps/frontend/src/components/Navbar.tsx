@@ -9,7 +9,7 @@ function Navbar() {
     <nav className="bg-white border-gray-200 dark:bg-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <span className="self-center text-3xl font-semibold font-druk whitespace-nowrap dark:text-white">NBA/WNBA</span>
+          <img src="../../public/images/logo.png" className="h-16" alt="NBA/WNBA Logo" />
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}
@@ -17,7 +17,7 @@ function Navbar() {
         >
           <span className="sr-only">Open main menu</span>
           <svg className="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15"/>
+            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
           </svg>
         </button>
         <div className={`${isOpen ? 'block' : 'hidden'} w-full md:block md:w-auto`}>
@@ -28,24 +28,24 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a href="/nba" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <Link to="/nba" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 NBA
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/wnba" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <Link to="/wnba" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 WNBA
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/news" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <Link to="/news" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 News
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/standings" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <Link to="/standings" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Standings
-              </a>
+              </Link>
             </li>
             <li>
               <Link to="/about" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-stone-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">

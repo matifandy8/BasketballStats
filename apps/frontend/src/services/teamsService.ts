@@ -23,7 +23,8 @@ const fetchTeamById = async (league: string, teamId: string) => {
   if (!res.ok) {
     throw new Error(`Failed to fetch team ${teamId}`);
   }
-  return res.json();
+  const teamData = await res.json();
+  return { team: teamData };
 };
 
 export const useTeam = (league: string, teamId: string) => {

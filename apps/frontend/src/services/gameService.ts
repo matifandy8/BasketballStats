@@ -16,11 +16,15 @@ export const useTodaysGames = () => {
     const { data: nbaGames, isLoading: isLoadingNba, error: errorNba } = useQuery({
         queryKey: ['games', 'nba'],
         queryFn: () => fetchGamesByLeague('nba'),
+        staleTime: 5 * 60 * 1000, 
+        refetchOnWindowFocus: false
     });
 
     const { data: wnbaGames, isLoading: isLoadingWnba, error: errorWnba } = useQuery({
         queryKey: ['games', 'wnba'],
         queryFn: () => fetchGamesByLeague('wnba'),
+        staleTime: 5 * 60 * 1000,
+        refetchOnWindowFocus: false
     });
 
     return {

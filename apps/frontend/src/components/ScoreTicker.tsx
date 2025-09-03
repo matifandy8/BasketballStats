@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { fetchTodaysGames } from '../services/gameService';
+import React, { useState, useRef } from 'react';
+import { useTodaysGames } from '../services/gameService';
 
 interface Team {
   name: string;
@@ -48,33 +48,13 @@ const getGameStatus = (game: Game) => {
 
 const ScoreTicker: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'nba' | 'wnba'>('wnba');
-  const [nbaGames, setNbaGames] = useState<Game[]>([]);
-  const [wnbaGames, setWnbaGames] = useState<Game[]>([]);
-  const [loading, setLoading] = useState(true);
+  const { nbaGames, wnbaGames, isLoading } = useTodaysGames();
   const sliderRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
 
-  useEffect(() => {
-    const initialFetch = async () => {
-      setLoading(true);
-      const { nbaGames, wnbaGames } = await fetchTodaysGames();
-      setNbaGames(nbaGames);
-      setWnbaGames(wnbaGames);
-      setLoading(false);
-    };
 
-    const updateGames = async () => {
-      const { nbaGames, wnbaGames } = await fetchTodaysGames();
-      setNbaGames(nbaGames);
-      setWnbaGames(wnbaGames);
-    };
-
-    initialFetch();
-    const intervalId = setInterval(updateGames, 60000);
-    return () => clearInterval(intervalId);
-  }, []);
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -97,7 +77,7 @@ const ScoreTicker: React.FC = () => {
   const currentGames = activeTab === 'nba' ? nbaGames : wnbaGames;
   const tabColor = activeTab === 'nba' ? 'blue-400' : 'pink-400';
 
-  if (loading) {
+  if (isLoading) {
     return (
       <div className="bg-black text-white py-2 text-center py-4">
         Loading {activeTab.toUpperCase()} games...
@@ -143,7 +123,7 @@ const ScoreTicker: React.FC = () => {
         >
           <div className="flex space-x-2 px-2">
             {currentGames.length > 0 ? (
-                currentGames.map((game) => (
+                currentGames.map((game: Game) => (
               <div 
                 key={game.id} 
                 className="flex-shrink-0 bg-stone-800 p-3 rounded-lg min-w-[180px] hover:bg-stone-700 transition-colors"

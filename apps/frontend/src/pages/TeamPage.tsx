@@ -1,27 +1,18 @@
 import { useParams } from "react-router-dom";
-import { fetchTeam } from "../services/teamsService";
-import { useEffect, useState } from "react";
+import { useTeam } from "../services/teamsService";
 import type { Team, TeamColor } from "../types/Team";
-import LoadingSpinner from "../components/LoadingSpinner";
+import TeamSkeleton from "../components/TeamSkeleton";
 
 export default function TeamPage({ league }: { league: string }) {
-  const { teamId } = useParams();
-  const [team, setTeam] = useState<Team | null>(null);
-  const [primaryColor, setPrimaryColor] = useState<string | null>(null);
+  const { teamId } = useParams<{ teamId: string }>();
+  const { data, isLoading } = useTeam(league, teamId!);
 
-  useEffect(() => {
-    if (!teamId) return;
+  const team: Team | null = data?.team ?? null;
+  const primaryColor = team?.team_colors.find((c: TeamColor) => c.type === 'primary')?.hex_color ?? null;
 
-    fetchTeam({ league, teamId })
-      .then(({ team }) => {
-        setTeam(team);
-
-        const primary = team.team_colors.find((c: TeamColor) => c.type === 'primary')?.hex_color ?? null;
-        setPrimaryColor(primary);
-      })
-      .catch((err) => console.error(err));
-  }, [league, teamId]);
-
+  if (isLoading) {
+    return <TeamSkeleton />;
+  }
 
   return (
     <div className="bg-gradient-to-t from-black to-transparent py-8 px-2 container mx-auto">
@@ -44,7 +35,7 @@ export default function TeamPage({ league }: { league: string }) {
           </div>
         </div>
       ) : (
-        <LoadingSpinner />
+        <div className="text-white text-center">Team not found.</div>
       )}
     </div>
   );
