@@ -35,7 +35,10 @@ export default function TeamPage({ league }: { league: string }) {
           </div>
         </div>
       ) : (
-        <div className="text-white text-center">Team not found.</div>
+        <div className="bg-gradient-to-t from-black to-transparent py-8 px-2 container mx-auto">
+            <h2 className="text-white text-center font-druk font-bold text-2xl py-8 h-screen">Team not found. Please try again later. </h2>
+        </div>
+
       )}
     </div>
   );
