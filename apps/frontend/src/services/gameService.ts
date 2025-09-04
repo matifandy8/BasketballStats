@@ -1,9 +1,9 @@
 import { useQuery } from '@tanstack/react-query';
-
-const API_BASE_URL = 'http://localhost:3000/api/sports';
+import API_CONFIG from '../config/api';
 
 const fetchGamesByLeague = async (league: 'nba' | 'wnba') => {
-    const response = await fetch(`${API_BASE_URL}/${league}/schedule/today`);
+    const endpoint = `${API_CONFIG.baseURL}${API_CONFIG.endpoints[league].games.today}`;
+    const response = await fetch(endpoint);
 
     if (!response.ok) {
         throw new Error(`Failed to fetch ${league} games`);
@@ -28,8 +28,8 @@ export const useTodaysGames = () => {
     });
 
     return {
-        nbaGames: nbaGames || [],
-        wnbaGames: wnbaGames || [],
+        nbaGames,
+        wnbaGames,
         isLoading: isLoadingNba || isLoadingWnba,
         error: errorNba || errorWnba,
     };
