@@ -7,7 +7,8 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "security:check": "npm audit && npx snyk test"
   },
   "keywords": [],
   "author": "",
@@ -18,10 +19,18 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@eslint/js": "^9.34.0",
+    "@secretlint/secretlint-rule-npm": "^11.2.0",
+    "@secretlint/secretlint-rule-preset-recommend": "^8.5.0",
+    "@secretlint/secretlint-rule-privatekey": "^11.2.0",
     "@types/react-slick": "^0.23.13",
+    "eslint": "^9.34.0",
+    "eslint-config-prettier": "^9.1.0",
     "husky": "^9.1.0",
     "lint-staged": "^15.2.0",
     "prettier": "^3.0.0",
+    "secretlint": "^11.2.0",
+    "snyk": "^1.1299.0",
     "turbo": "^2.5.6"
   },
   "packageManager": "npm@8.5.0",
@@ -34,9 +43,17 @@
     "slick-carousel": "^1.8.1"
   },
   "lint-staged": {
-    "*.{js,jsx,ts,tsx,json,md}": [
+    "*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "eslint --fix"
+      "eslint --fix --no-ignore",
+      "secretlint --maskSecrets"
+    ],
+    "*.{json,md}": [
+      "prettier --write",
+      "secretlint --maskSecrets"
+    ],
+    "*.{env,sh}": [
+      "secretlint --maskSecrets"
     ]
   }
 }
