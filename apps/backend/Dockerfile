@@ -7,32 +7,35 @@ FROM base AS builder
 # Install system dependencies
 RUN apk update && apk add --no-cache libc6-compat python3 make g++
 
-# Set working directory to the backend
-WORKDIR /app/apps/backend
+# Set working directory
+WORKDIR /app
 
 # Copy package files first for better caching
 COPY package*.json ./
-COPY ../../turbo.json ../../
+COPY turbo.json ./
 
 # Install root dependencies
-WORKDIR /app
-COPY package*.json ./
 RUN npm install --force
+
+# Copy backend specific files
+COPY apps/backend/package.json ./apps/backend/package.json
 
 # Install backend dependencies
 WORKDIR /app/apps/backend
 RUN npm install --force
 
 # Copy the rest of the files
+WORKDIR /app
 COPY . .
 
 # Build the application
+WORKDIR /app/apps/backend
 RUN npm run build
 
 # Stage 3: Production image
 FROM base AS runner
 
-WORKDIR /app/apps/backend
+WORKDIR /app
 
 # Copy built application from builder
 COPY --from=builder /app/apps/backend/dist ./dist
