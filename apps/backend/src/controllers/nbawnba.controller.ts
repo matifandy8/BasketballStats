@@ -2,8 +2,6 @@ import { Request, Response, NextFunction } from 'express';
 import { getSchedule, getPbp, getTeams, getDailySchedule, getTeamById } from '../services/sportradar.service';
 import { SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
-import path from 'path';
-import fs from 'fs';
 import crypto from 'crypto';
 
 export async function scheduleCtrl(req: Request, res: Response, next: NextFunction) {
@@ -40,10 +38,8 @@ export async function scheduleTodayCtrl(req: Request, res: Response, next: NextF
     const today = new Date().toISOString().slice(0, 10);
     const games = await getDailySchedule(league, today);
 
-    // ETag generation
     const etag = crypto.createHash('md5').update(JSON.stringify(games)).digest('hex');
 
-    // Check If-None-Match header
     if (req.headers['if-none-match'] === etag) {
       return res.status(304).send();
     }
@@ -65,37 +61,39 @@ export async function teamIdCtrl(req: Request, res: Response, next: NextFunction
   try {
     const league = req.params.league as League;
     const { teamId } = req.params;
+    
+    if (!teamId) {
+      return res.status(400).json({ error: 'Team ID is required' });
+    }
 
     const data = await getTeamById(league, teamId);
 
     if (!data.players || !Array.isArray(data.players)) {
       return res.json(data);
     }
+    
+    const BASE_URL = 'https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot';
 
-    const jugadoresConImagenes = data.players.map((player: any) => {
-      const filename = player.full_name.replace(/ /g, '_') + '.png';
-
-      const imagePath = path.join(process.cwd(), 'images/players-headshot', filename);
-      const baseUrl = `${req.protocol}://${req.get('host')}`;
-
-      if (fs.existsSync(imagePath)) {
-        return {
-          ...player,
-          image_url: `${baseUrl}/images/players-headshot/${filename}`
-        };
-      } else {
-        return {
-          ...player,
-          image_url: `${baseUrl}/images/players-headshot/default.png`
-        };
-      }
+    const playersWithImages = data.players.map((player: any) => {
+      if (!player?.full_name) return player;
+      
+      const nameParts = player.full_name.split(' ');
+      const formattedName = nameParts.map((part: string) => 
+        part.charAt(0).toUpperCase() + part.slice(1).toLowerCase()
+      ).join('_');
+      
+      const filename = `${formattedName}.png`;
+      return {
+        ...player,
+        image_url: `${BASE_URL}/${filename}`
+      };
     });
 
-    data.players = jugadoresConImagenes;
-
+    data.players = playersWithImages;
     res.json(data);
-  } catch (e) {
-    next(e);
+  } catch (error) {
+    console.error(`Error fetching team ${req.params.teamId}:`, error);
+    next(error);
   }
 }
 
