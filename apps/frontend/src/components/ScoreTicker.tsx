@@ -29,14 +29,13 @@ interface Game {
   }>;
 }
 
-
 const formatGameTime = (dateString: string) => {
   const date = new Date(dateString);
   return date.toLocaleTimeString('en-US', {
     hour: 'numeric',
     minute: '2-digit',
     hour12: true,
-    timeZoneName: 'short'
+    timeZoneName: 'short',
   });
 };
 
@@ -53,8 +52,6 @@ const ScoreTicker: React.FC = () => {
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
-
-
 
   const handleMouseDown = (e: React.MouseEvent) => {
     if (!sliderRef.current) return;
@@ -85,16 +82,14 @@ const ScoreTicker: React.FC = () => {
     );
   }
 
-
-
   return (
     <div className="bg-black text-white py-4">
       <div className="container mx-auto">
         <div className="flex border-b border-stone-700">
           <button
             className={`px-4 py-2 font-medium ${
-              activeTab === 'nba' 
-                ? `text-${tabColor} border-b-2 border-${tabColor}` 
+              activeTab === 'nba'
+                ? `text-${tabColor} border-b-2 border-${tabColor}`
                 : 'text-stone-400 hover:text-white'
             } transition-colors`}
             onClick={() => setActiveTab('nba')}
@@ -103,8 +98,8 @@ const ScoreTicker: React.FC = () => {
           </button>
           <button
             className={`px-4 py-2 font-medium ${
-              activeTab === 'wnba' 
-                ? `text-${tabColor} border-b-2 border-${tabColor}` 
+              activeTab === 'wnba'
+                ? `text-${tabColor} border-b-2 border-${tabColor}`
                 : 'text-stone-400 hover:text-white'
             } transition-colors`}
             onClick={() => setActiveTab('wnba')}
@@ -112,8 +107,8 @@ const ScoreTicker: React.FC = () => {
             WNBA
           </button>
         </div>
-        
-        <div 
+
+        <div
           ref={sliderRef}
           className="flex overflow-x-auto scrollbar-hide py-2 cursor-grab active:cursor-grabbing"
           onMouseDown={handleMouseDown}
@@ -123,41 +118,42 @@ const ScoreTicker: React.FC = () => {
         >
           <div className="flex space-x-2 px-2">
             {currentGames.length > 0 ? (
-                currentGames.map((game: Game) => (
-              <div 
-                key={game.id} 
-                className="flex-shrink-0 bg-stone-800 p-3 rounded-lg min-w-[180px] hover:bg-stone-700 transition-colors"
-              >
-                <div className="text-xs bg-stone-700 px-2 py-1 rounded-full text-center mb-2">
-                  {getGameStatus(game)}
-                </div>
-                <div className="text-xs text-stone-400 text-center mb-1">
-                  {game.venue.city}
-                </div>
-                <div className="flex justify-between items-center">
-                  <div className="text-center flex-1">
-                    <div className="font-druk font-medium">{game.away.alias}</div>
-                    <div className="text-lg font-bold">{game.away_points ?? '-'}</div>
+              currentGames.map((game: Game) => (
+                <div
+                  key={game.id}
+                  className="flex-shrink-0 bg-stone-800 p-3 rounded-lg min-w-[180px] hover:bg-stone-700 transition-colors"
+                >
+                  <div className="text-xs bg-stone-700 px-2 py-1 rounded-full text-center mb-2">
+                    {getGameStatus(game)}
                   </div>
-                  <div className="text-stone-400 mx-1">@</div>
-                  <div className="text-center flex-1">
-                    <div className="font-druk font-medium">{game.home.alias}</div>
-                    <div className="text-lg font-bold">{game.home_points ?? '-'}</div>
+                  <div className="text-xs text-stone-200 text-center mb-1">{game.venue.city}</div>
+                  <div className="flex justify-between items-center">
+                    <div className="text-center flex-1">
+                      <div className="font-druk font-medium">{game.away.alias}</div>
+                      <div className="text-lg font-bold">{game.away_points ?? '-'}</div>
+                    </div>
+                    <div className="text-stone-400 mx-1">@</div>
+                    <div className="text-center flex-1">
+                      <div className="font-druk font-medium">{game.home.alias}</div>
+                      <div className="text-lg font-bold">{game.home_points ?? '-'}</div>
+                    </div>
                   </div>
+                  {game.broadcasts && game.broadcasts.length > 0 && (
+                    <div
+                      className="text-xs text-stone-300 text-center mt-1 truncate"
+                      title={game.broadcasts.map(b => b.network).join(', ')}
+                    >
+                      {game.broadcasts[0].network}
+                      {game.broadcasts.length > 1 ? ' +' + (game.broadcasts.length - 1) : ''}
+                    </div>
+                  )}
                 </div>
-                {game.broadcasts && game.broadcasts.length > 0 && (
-                  <div className="text-xs text-stone-500 text-center mt-1 truncate" title={game.broadcasts.map(b => b.network).join(', ')}>
-                    {game.broadcasts[0].network}
-                    {game.broadcasts.length > 1 ? ' +' + (game.broadcasts.length - 1) : ''}
-                  </div>
-                )}
+              ))
+            ) : (
+              <div className="text-stone-400 py-4 px-6 w-full text-center">
+                No games today for {activeTab.toUpperCase()}
               </div>
-            )))  : (
-                <div className="text-stone-400 py-4 px-6 w-full text-center">
-                  No games today for {activeTab.toUpperCase()}
-                </div>
-              )}
-            
+            )}
           </div>
         </div>
       </div>
