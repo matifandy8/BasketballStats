@@ -8,14 +8,12 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps) {
-  console.log("render Layout()")
+  console.log('render Layout()');
   return (
     <div className="">
       <Navbar />
       <ScoreTicker />
-      <main className="">
-        {children}
-      </main>
+      <main className="">{children}</main>
       <Footer />
     </div>
   );

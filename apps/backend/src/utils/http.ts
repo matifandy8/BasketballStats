@@ -30,7 +30,7 @@ export async function httpFetch<T>(
     headers: {
       ...options.headers,
       'x-api-key': process.env.SR_API_KEY as string,
-      'Accept': 'application/json',
+      Accept: 'application/json',
     },
   });
 

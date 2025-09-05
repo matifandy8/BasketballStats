@@ -9,7 +9,7 @@ import routes from './routes/nbawnba.routes';
 const app = express();
 
 app.use(cors());
-app.use(helmet({ crossOriginResourcePolicy: { policy: "cross-origin" } }));
+app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(express.json());
 app.use(pinoHttp());
 
@@ -25,7 +25,7 @@ app.get('/api', (req, res) => {
     version: '1.0.0',
     documentation: 'Available at /api/sports',
     status: 'running',
-    timestamp: new Date().toISOString()
+    timestamp: new Date().toISOString(),
   });
 });
 
@@ -34,7 +34,7 @@ app.use('/api/sports', routes);
 app.use((req, res) => {
   res.status(404).json({
     error: 'Not Found',
-    message: `Cannot ${req.method} ${req.path}`
+    message: `Cannot ${req.method} ${req.path}`,
   });
 });
 

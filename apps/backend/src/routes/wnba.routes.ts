@@ -1,5 +1,12 @@
 import { Router } from 'express';
-import { scheduleCtrl, pbpCtrl, scheduleByDateCtrl, scheduleTodayCtrl, teamsCtrl, teamIdCtrl } from '../controllers/nbawnba.controller';
+import {
+  scheduleCtrl,
+  pbpCtrl,
+  scheduleByDateCtrl,
+  scheduleTodayCtrl,
+  teamsCtrl,
+  teamIdCtrl,
+} from '../controllers/nbawnba.controller';
 import { object, string, union, literal } from 'valibot';
 import { apiLimiter, cache } from '../middlewares/cacheRateLimiter.middleware';
 import { validate } from '../middlewares/validate.middleware';
@@ -8,7 +15,7 @@ const router = Router();
 
 const ScheduleSchema = object({
   year: string(),
-  type: union([literal('PRE'), literal('REG'), literal('CC'), literal('PST')])
+  type: union([literal('PRE'), literal('REG'), literal('CC'), literal('PST')]),
 });
 
 const PbpSchema = object({ gameId: string() });

@@ -2,11 +2,11 @@ import { object, string, number, union, literal, uuid, pipe } from 'valibot';
 
 export const ScheduleParamsSchema = object({
   year: number(), // vendrá como string, lo parseamos abajo
-  type: union([literal('PRE'), literal('REG'), literal('CC'), literal('PST')])
+  type: union([literal('PRE'), literal('REG'), literal('CC'), literal('PST')]),
 });
 
 export const PbpParamsSchema = object({
-  gameId: pipe(string(), uuid())
+  gameId: pipe(string(), uuid()),
 });
 
 export const parseYear = (raw: string) => {

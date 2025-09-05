@@ -6,13 +6,13 @@ export interface WNBAScheduleGame {
   scheduled: string;
   home_points?: number;
   away_points?: number;
-  home: { id: string; name: string; alias: string; };
-  away: { id: string; name: string; alias: string; };
+  home: { id: string; name: string; alias: string };
+  away: { id: string; name: string; alias: string };
 }
 
 export interface WNBAScheduleResponse {
-  league: { id: string; name: string; alias: string; };
-  season: { year: number; type: SeasonType; id: string; };
+  league: { id: string; name: string; alias: string };
+  season: { year: number; type: SeasonType; id: string };
   games: WNBAScheduleGame[];
 }
 
@@ -23,10 +23,9 @@ export interface WNBAPbpEvent {
   description?: string;
 }
 export interface WNBAPbpResponse {
-  game: { id: string; status: string; quarter?: number; };
+  game: { id: string; status: string; quarter?: number };
   periods?: Array<{ number: number; events: WNBAPbpEvent[] }>;
 }
-
 
 export interface WNBATeam {
   id: string;
@@ -44,8 +43,6 @@ export interface WNBATeamResponse {
   teams: WNBATeam[];
   _comment?: string;
 }
-
-
 
 export interface Team {
   id: string;

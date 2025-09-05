@@ -1,5 +1,5 @@
 import { useTeams } from '../services/teamsService';
-import LoadingSpinner from "../components/LoadingSpinner";
+import LoadingSpinner from '../components/LoadingSpinner';
 import { Link } from 'react-router-dom';
 
 interface TeamsPageProps {
@@ -52,14 +52,10 @@ const TeamsPage: React.FC<TeamsPageProps> = ({ leagueName }) => {
           {teams.map((team: Team) => (
             <Link
               key={team.id}
-              to={`/${leagueName}/teams/${team.id}`} 
+              to={`/${leagueName}/teams/${team.id}`}
               className="flex flex-col items-center bg-black rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-4"
             >
-              <img
-                src={team.logo}
-                alt={team.name}
-                className="w-16 h-16 mb-4 object-contain"
-              />
+              <img src={team.logo} alt={team.name} className="w-16 h-16 mb-4 object-contain" />
               <h2 className="text-lg font-bold text-center font-druk">{team.market}</h2>
               <p className="text-sm text-gray-400 font-druk">{team.name}</p>
               <span className="mt-2 text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded-full font-druk">

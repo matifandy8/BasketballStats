@@ -17,16 +17,17 @@ export const SEO: FC<SEOProps> = ({
   url = 'https://yourwebsite.com',
   type = 'website',
 }) => {
-  const fullTitle = title === 'NBA & WNBA Highlights and News' 
-    ? title 
-    : `${title} | NBA & WNBA Highlights and News`;
+  const fullTitle =
+    title === 'NBA & WNBA Highlights and News'
+      ? title
+      : `${title} | NBA & WNBA Highlights and News`;
 
   return (
     <>
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords} />
-      
+
       <meta property="og:type" content={type} />
       <meta property="og:url" content={url} />
       <meta property="og:title" content={fullTitle} />

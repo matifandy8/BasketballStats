@@ -29,20 +29,22 @@ A comprehensive web application for tracking NBA and WNBA games, statistics, and
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/yourusername/nba-wnba-stats.git
    cd nba-wnba-stats
    ```
 
 2. **Install dependencies**
+
    ```bash
    # Install root dependencies
    npm install
-   
+
    # Install frontend dependencies
    cd apps/frontend
    npm install
-   
+
    # Install backend dependencies
    cd ../backend
    npm install
@@ -53,10 +55,12 @@ A comprehensive web application for tracking NBA and WNBA games, statistics, and
    - Add your SportRadar API key to the backend `.env` file
 
 4. **Development**
+
    ```bash
    # Start both frontend and backend in development mode
    npm run dev
    ```
+
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:3001
 

@@ -56,9 +56,9 @@
 - [ ] Tests de integración (DB + API).
 - [ ] Mock de servicios externos para pruebas.
 
- Cobertura de endpoints críticos.
+Cobertura de endpoints críticos.
 
- Pruebas de carga (stress test) para endpoints con mucho tráfico.
+Pruebas de carga (stress test) para endpoints con mucho tráfico.
 
 7️⃣ Despliegue y DevOps
 

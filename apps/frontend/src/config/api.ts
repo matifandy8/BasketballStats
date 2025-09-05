@@ -4,15 +4,13 @@ const API_CONFIG = {
     : import.meta.env.VITE_API_BASE_URL_PROD || 'https://basketballstats-1.onrender.com/api/sports',
   endpoints: {
     nba: {
-      teams: (teamId?: string) => 
-        teamId ? `/nba/teams/${teamId}` : '/nba/teams',
+      teams: (teamId?: string) => (teamId ? `/nba/teams/${teamId}` : '/nba/teams'),
       games: {
         today: '/nba/schedule/today',
       },
     },
     wnba: {
-      teams: (teamId?: string) => 
-        teamId ? `/wnba/teams/${teamId}` : '/wnba/teams',
+      teams: (teamId?: string) => (teamId ? `/wnba/teams/${teamId}` : '/wnba/teams'),
       games: {
         today: '/wnba/schedule/today',
       },
