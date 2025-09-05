@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from 'express';
 import rateLimit, { MemoryStore, RateLimitRequestHandler } from 'express-rate-limit';
-import RedisStore from 'rate-limit-redis';
-import Redis from 'ioredis';
+import RedisStore, { RedisReply } from 'rate-limit-redis';
+import Redis, { Redis as RedisClient } from 'ioredis';
 
 const redisClient = new Redis(process.env.REDIS_URL as string);
 
@@ -14,7 +14,8 @@ const redisClient = new Redis(process.env.REDIS_URL as string);
 export const apiLimiter = (maxRequests = 60, useRedis = true): RateLimitRequestHandler => {
   const store = useRedis
     ? new RedisStore({
-        sendCommand: (...args: Parameters<typeof redisClient.call>) => redisClient.call(...args),
+        sendCommand: (...args: Parameters<RedisClient['call']>): Promise<RedisReply> =>
+          redisClient.call(...args) as Promise<RedisReply>,
       })
     : new MemoryStore();
 
