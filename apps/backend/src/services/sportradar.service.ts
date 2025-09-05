@@ -1,10 +1,18 @@
 import { httpFetch, League } from '../utils/http';
-import { 
-  WNBAScheduleResponse, WNBAPbpResponse, SeasonType, WNBAScheduleGame, WNBATeamResponse, 
-  Team
+import {
+  WNBAScheduleResponse,
+  WNBAPbpResponse,
+  SeasonType,
+  WNBAScheduleGame,
+  WNBATeamResponse,
+  Team,
 } from '../types/sportradar.types';
 
-export async function getSchedule(league: League, year: number, type: SeasonType): Promise<WNBAScheduleResponse> {
+export async function getSchedule(
+  league: League,
+  year: number,
+  type: SeasonType
+): Promise<WNBAScheduleResponse> {
   return httpFetch<WNBAScheduleResponse>(league, `/games/${year}/${type}/schedule.json`);
 }
 
@@ -12,7 +20,11 @@ export async function getPbp(league: League, gameId: string): Promise<WNBAPbpRes
   return httpFetch<WNBAPbpResponse>(league, `/games/${gameId}/pbp.json`);
 }
 
-export async function getScheduleByDate(league: League, date: string, type: SeasonType = 'REG'): Promise<WNBAScheduleGame[]> {
+export async function getScheduleByDate(
+  league: League,
+  date: string,
+  type: SeasonType = 'REG'
+): Promise<WNBAScheduleGame[]> {
   const year = new Date(date).getFullYear();
   const schedule = await getSchedule(league, year, type);
   return schedule.games.filter(game => game.scheduled.startsWith(date));
@@ -26,8 +38,9 @@ export async function getDailySchedule(league: League, date: string): Promise<WN
       `/games/${year}/${month}/${day}/schedule.json`
     );
     return data.games || [];
-  } catch (err: any) {
-    if (err.message.includes('HTTP 404')) {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
+    if (message.includes('HTTP 404')) {
       return [];
     }
     throw err;
@@ -37,7 +50,6 @@ export async function getDailySchedule(league: League, date: string): Promise<WN
 export async function getTeams(league: League): Promise<WNBATeamResponse> {
   return httpFetch<WNBATeamResponse>(league, '/teams.json');
 }
-
 
 export async function getTeamById(league: League, teamId: string): Promise<Team> {
   return httpFetch<Team>(league, `/teams/${teamId}/profile.json`);

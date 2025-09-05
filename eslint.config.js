@@ -1,15 +1,34 @@
 import js from '@eslint/js';
-import prettierConfig from 'eslint-config-prettier';
+import globals from 'globals';
+import tseslint from 'typescript-eslint';
+
+const ignores = [
+  '**/node_modules/**',
+  '**/dist/**',
+  '**/build/**',
+  '**/.next/**',
+  '**/.out/**',
+  '**/*.config.js',
+  '**/*.config.cjs',
+  '**/*.config.mjs',
+  '**/*.d.ts',
+];
 
 export default [
   {
-    ignores: ['node_modules/', 'dist/', 'build/'],
+    ignores,
   },
   js.configs.recommended,
-  prettierConfig,
+  ...tseslint.configs.recommended,
   {
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.node,
+      },
+    },
     rules: {
-      // Add your custom rules here
+      // Add any custom rules here
     },
   },
 ];

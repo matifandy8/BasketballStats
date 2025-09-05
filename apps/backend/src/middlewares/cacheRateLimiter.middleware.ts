@@ -14,8 +14,8 @@ const redisClient = new Redis(process.env.REDIS_URL as string);
 export const apiLimiter = (maxRequests = 60, useRedis = true): RateLimitRequestHandler => {
   const store = useRedis
     ? new RedisStore({
-      sendCommand: (...args: string[]): any => redisClient.call(...args as [string, ...any[]]),
-    })
+        sendCommand: (...args: Parameters<typeof redisClient.call>) => redisClient.call(...args),
+      })
     : new MemoryStore();
 
   return rateLimit({
@@ -46,7 +46,8 @@ type KeyOrFn = string | ((req: Request) => string);
  * @param {number} ttlSeconds - The time-to-live for the cache entry in seconds.
  * @returns {(req: Request, res: Response, next: NextFunction) => Promise<void>} The caching middleware.
  */
-export const cache = (keyOrFn: KeyOrFn, ttlSeconds: number) =>
+export const cache =
+  (keyOrFn: KeyOrFn, ttlSeconds: number) =>
   async (req: Request, res: Response, next: NextFunction): Promise<void> => {
     const dynamicKey = typeof keyOrFn === 'function' ? keyOrFn(req) : keyOrFn;
     const key = `${REDIS_KEY_PREFIX}${dynamicKey}`;

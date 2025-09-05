@@ -1,9 +1,9 @@
-import { Request, Response, NextFunction } from 'express';
+import { Request, Response } from 'express';
 
-export function errorMiddleware(err: any, _req: Request, res: Response, _next: NextFunction) {
+export function errorMiddleware(err: Error, _req: Request, res: Response) {
   console.error(err);
   res.status(500).json({
     error: 'InternalServerError',
-    message: err?.message ?? 'Unexpected error'
+    message: err?.message ?? 'Unexpected error',
   });
 }
