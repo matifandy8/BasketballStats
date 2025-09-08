@@ -9,7 +9,8 @@
     "lint": "eslint . --max-warnings=0 --debug",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install",
-    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "security:check": "npm audit --audit-level=moderate"
   },
   "workspaces": [
     "apps/*"
