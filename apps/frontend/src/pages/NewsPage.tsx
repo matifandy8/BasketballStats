@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNews } from '../services/newsService';
 import type { NewsArticle } from '../types/news';
 import { PageLoading } from '../components/LoadingSpinner';

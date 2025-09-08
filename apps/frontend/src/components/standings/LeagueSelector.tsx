@@ -1,4 +1,3 @@
-import React from 'react';
 
 type LeagueSelectorProps = {
   onSelectLeague: (league: 'nba' | 'wnba') => void;

@@ -1,4 +1,3 @@
-import React from 'react';
 import { SEO } from '../components/layout/SEO';
 import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';

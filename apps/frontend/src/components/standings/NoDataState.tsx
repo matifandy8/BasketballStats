@@ -1,4 +1,3 @@
-import React from 'react';
 
 type NoDataStateProps = {
   league?: string;
