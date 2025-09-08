@@ -14,6 +14,7 @@ export interface NewsArticle {
   content: string | null;
 }
 
+
 export interface NewsResponse {
   status: 'ok' | 'error';
   totalResults: number;
