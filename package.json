@@ -2,10 +2,11 @@
   "name": "nba-2",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "lint": "eslint . --max-warnings=0",
+    "lint": "eslint . --max-warnings=0 --debug",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""

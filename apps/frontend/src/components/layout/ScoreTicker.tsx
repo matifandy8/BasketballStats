@@ -73,7 +73,6 @@ const ScoreTicker: React.FC = () => {
 
   const currentGames = activeTab === 'nba' ? nbaGames : wnbaGames;
   const tabColor = activeTab === 'nba' ? 'blue-400' : 'pink-400';
-  
 
   if (error) {
     return (
@@ -82,7 +81,6 @@ const ScoreTicker: React.FC = () => {
       </div>
     );
   }
-  
 
   if (isLoading) {
     return (
