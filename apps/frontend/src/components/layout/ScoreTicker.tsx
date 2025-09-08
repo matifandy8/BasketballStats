@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { useTodaysGames } from '../services/gameService';
+import { useTodaysGames } from '../../services/gameService';
 
 interface Team {
   name: string;
@@ -110,7 +110,7 @@ const ScoreTicker: React.FC = () => {
 
         <div
           ref={sliderRef}
-          className="flex overflow-x-auto scrollbar-hide py-2 cursor-grab active:cursor-grabbing"
+          className="flex overflow-x-auto scrollbar-hide py-2 cursor-pointer"
           onMouseDown={handleMouseDown}
           onMouseLeave={handleMouseLeave}
           onMouseUp={handleMouseUp}

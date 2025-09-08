@@ -7,6 +7,7 @@ import {
   WNBATeamResponse,
   Team,
 } from '../types/sportradar.types';
+import { Standing } from '../types/standing';
 
 export async function getSchedule(
   league: League,
@@ -53,4 +54,23 @@ export async function getTeams(league: League): Promise<WNBATeamResponse> {
 
 export async function getTeamById(league: League, teamId: string): Promise<Team> {
   return httpFetch<Team>(league, `/teams/${teamId}/profile.json`);
+}
+
+export async function getStandings(
+  league: League,
+  year: number,
+  type: SeasonType
+): Promise<Standing> {
+  try {
+    const endpoint =
+      league === 'nba'
+        ? `/seasons/${year}/${type}/standings.json`
+        : `/seasons/${year}/${type}/standings.json`;
+
+    const data = await httpFetch<Standing>(league, endpoint);
+    return data;
+  } catch (error) {
+    console.error('Error in getStandings:', error);
+    throw error;
+  }
 }

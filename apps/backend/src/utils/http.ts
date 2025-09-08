@@ -18,7 +18,6 @@ export async function httpFetch<T>(
 ): Promise<T> {
   const BASE_URL = `https://api.sportradar.com/${league}/${ACCESS}/${VERSION}/${LOCALE}`;
   const url = new URL(BASE_URL + path);
-
   if (options.queryParams) {
     Object.entries(options.queryParams).forEach(([key, value]) =>
       url.searchParams.append(key, String(value))

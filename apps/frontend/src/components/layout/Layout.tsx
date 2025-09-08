@@ -10,10 +10,10 @@ interface LayoutProps {
 function Layout({ children }: LayoutProps) {
   console.log('render Layout()');
   return (
-    <div className="">
+    <div className="min-h-screen flex flex-col">
       <Navbar />
       <ScoreTicker />
-      <main className="">{children}</main>
+      <main className="flex-1">{children}</main>
       <Footer />
     </div>
   );

@@ -1,13 +1,6 @@
 import { Router, Request, Response } from 'express';
 import nbaRoutes from './nba.routes';
 import wnbaRoutes from './wnba.routes';
-import { apiLimiter } from '../middlewares/cacheRateLimiter.middleware';
-import {
-  pbpCtrl,
-  scheduleByDateCtrl,
-  scheduleTodayCtrl,
-  teamsCtrl,
-} from '../controllers/nbawnba.controller';
 
 const router = Router();
 
@@ -22,7 +15,8 @@ router.get('/', (req: Request, res: Response) => {
         scheduleByDate: '/nba/schedule/date/:date',
         today: '/nba/schedule/today',
         teams: '/nba/teams',
-        team: '/nba/teams/teamId',
+        team: '/nba/teams/:teamId',
+        standings: '/nba/standings/:year/:type',
       },
       wnba: {
         schedule: '/wnba/schedule/:year/:type',
@@ -30,7 +24,8 @@ router.get('/', (req: Request, res: Response) => {
         scheduleByDate: '/wnba/schedule/date/:date',
         today: '/wnba/schedule/today',
         teams: '/wnba/teams',
-        team: '/wnba/teams/teamId',
+        team: '/wnba/teams/:teamId',
+        standings: '/wnba/standings/:year/:type',
       },
       docs: 'https://github.com/yourusername/nba-wnba-api',
     },
@@ -40,47 +35,6 @@ router.get('/', (req: Request, res: Response) => {
 });
 
 router.use('/nba', nbaRoutes);
-
 router.use('/wnba', wnbaRoutes);
-
-router.get(
-  '/teams',
-  apiLimiter(60),
-  (req, res, next) => {
-    req.params.league = req.query.league === 'wnba' ? 'wnba' : 'nba';
-    next();
-  },
-  teamsCtrl
-);
-
-router.get(
-  '/schedule/date/:date',
-  apiLimiter(60),
-  (req, res, next) => {
-    req.params.league = req.query.league === 'wnba' ? 'wnba' : 'nba';
-    next();
-  },
-  scheduleByDateCtrl
-);
-
-router.get(
-  '/schedule/today',
-  apiLimiter(60),
-  (req, res, next) => {
-    req.params.league = req.query.league === 'wnba' ? 'wnba' : 'nba';
-    next();
-  },
-  scheduleTodayCtrl
-);
-
-router.get(
-  '/game/:gameId/pbp',
-  apiLimiter(60),
-  (req, res, next) => {
-    req.params.league = req.query.league === 'wnba' ? 'wnba' : 'nba';
-    next();
-  },
-  pbpCtrl
-);
 
 export default router;

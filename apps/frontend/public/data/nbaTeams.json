@@ -10,7 +10,7 @@
       "name": "76ers",
       "alias": "PHI",
       "market": "Philadelphia",
-      "logo": "/images/logos-nba/logo-sizers.svg"
+      "logo": "/images/logos-nba/logo-76ers.svg"
     },
     {
       "id": "583ecefd-fb46-11e1-82cb-f4ce4684ea4c",
@@ -192,14 +192,14 @@
       "name": "Timberwolves",
       "alias": "MIN",
       "market": "Minnesota",
-      "logo": "/images/logos-nba/logo-wolves.svg"
+      "logo": "/images/logos-nba/logo-timberwolves.svg"
     },
     {
       "id": "583ed056-fb46-11e1-82cb-f4ce4684ea4c",
       "name": "Trail Blazers",
       "alias": "POR",
       "market": "Portland",
-      "logo": "/images/logos-nba/logo-brazers.svg"
+      "logo": "/images/logos-nba/logo-trail-blazers.svg"
     },
     {
       "id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",

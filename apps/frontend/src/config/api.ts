@@ -8,12 +8,16 @@ const API_CONFIG = {
       games: {
         today: '/nba/schedule/today',
       },
+      standings: (year: number = new Date().getFullYear(), type: 'REG' | 'PRE' | 'POST' = 'REG') =>
+        `/nba/standings/${year}/${type}`,
     },
     wnba: {
       teams: (teamId?: string) => (teamId ? `/wnba/teams/${teamId}` : '/wnba/teams'),
       games: {
         today: '/wnba/schedule/today',
       },
+      standings: (year: number = new Date().getFullYear(), type: 'REG' | 'PRE' | 'POST' = 'REG') =>
+        `/wnba/standings/${year}/${type}`,
     },
   },
 } as const;

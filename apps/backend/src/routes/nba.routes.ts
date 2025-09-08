@@ -6,6 +6,7 @@ import {
   scheduleTodayCtrl,
   teamsCtrl,
   teamIdCtrl,
+  standingsCtrl,
 } from '../controllers/nbawnba.controller';
 import { object, string, union, literal } from 'valibot';
 import { apiLimiter, cache } from '../middlewares/cacheRateLimiter.middleware';
@@ -13,18 +14,30 @@ import { validate } from '../middlewares/validate.middleware';
 
 const router = Router();
 
+// Schemas
 const ScheduleSchema = object({
   year: string(),
   type: union([literal('PRE'), literal('REG'), literal('CC'), literal('PST')]),
 });
 
-const PbpSchema = object({ gameId: string() });
+const DateSchema = object({
+  date: string(),
+});
 
+const GameIdSchema = object({
+  gameId: string(),
+});
+
+const TeamIdSchema = object({
+  teamId: string(),
+});
+
+// Routes
 router.get(
   '/schedule/:year/:type',
   apiLimiter(60),
   validate(ScheduleSchema, 'params'),
-  cache(req => `schedule:nba:${req.params.year}:${req.params.type}`, 60),
+  cache(req => `schedule:nba:${req.params.year}:${req.params.type}`, 3600), // 1 hour cache
   (req, res, next) => {
     req.params.league = 'nba';
     next();
@@ -33,31 +46,10 @@ router.get(
 );
 
 router.get(
-  '/teams',
-  apiLimiter(60),
-  cache('teams:nba', 3600),
-  (req, res, next) => {
-    req.params.league = 'nba';
-    next();
-  },
-  teamsCtrl
-);
-
-router.get(
-  '/teams/:teamId',
-  apiLimiter(60),
-  cache(req => `pbp:team:${req.params.teamId}`, 5),
-  (req, res, next) => {
-    req.params.league = 'nba';
-    next();
-  },
-  teamIdCtrl
-);
-
-router.get(
   '/schedule/date/:date',
   apiLimiter(60),
-  cache(req => `schedule:nba:date:${req.params.date}`, 30),
+  validate(DateSchema, 'params'),
+  cache(req => `schedule:date:nba:${req.params.date}`, 300), // 5 minute cache
   (req, res, next) => {
     req.params.league = 'nba';
     next();
@@ -68,7 +60,7 @@ router.get(
 router.get(
   '/schedule/today',
   apiLimiter(60),
-  cache(`schedule:nba:today:${new Date().toISOString().split('T')[0]}`, 30),
+  cache('schedule:today:nba', 300), // 5 minute cache
   (req, res, next) => {
     req.params.league = 'nba';
     next();
@@ -77,15 +69,50 @@ router.get(
 );
 
 router.get(
+  '/teams',
+  apiLimiter(60),
+  cache('teams:nba', 86400), // 24 hour cache
+  (req, res, next) => {
+    req.params.league = 'nba';
+    next();
+  },
+  teamsCtrl
+);
+
+router.get(
+  '/teams/:teamId',
+  apiLimiter(60),
+  validate(TeamIdSchema, 'params'),
+  cache(req => `team:nba:${req.params.teamId}`, 3600), // 1 hour cache
+  (req, res, next) => {
+    req.params.league = 'nba';
+    next();
+  },
+  teamIdCtrl
+);
+
+router.get(
   '/game/:gameId/pbp',
   apiLimiter(60),
-  validate(PbpSchema, 'params'),
-  cache(req => `pbp:nba:${req.params.gameId}`, 5),
+  validate(GameIdSchema, 'params'),
+  cache(req => `pbp:nba:${req.params.gameId}`, 300), // 5 minute cache
   (req, res, next) => {
     req.params.league = 'nba';
     next();
   },
   pbpCtrl
+);
+
+router.get(
+  '/standings/:year/:type',
+  apiLimiter(60),
+  validate(ScheduleSchema, 'params'),
+  cache(req => `standings:nba:${req.params.year}:${req.params.type}`, 3600), // 1 hour cache
+  (req, res, next) => {
+    req.params.league = 'nba';
+    next();
+  },
+  standingsCtrl
 );
 
 export default router;

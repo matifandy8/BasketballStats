@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
-import Layout from './components/Layout';
-import { SEO } from './components/SEO';
+import Layout from './components/layout/Layout';
+import { SEO } from './components/layout/SEO';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import NbaPage from './pages/NbaPage';
@@ -9,6 +9,7 @@ import WnbaPage from './pages/WnbaPage';
 import NotFoundPage from './pages/NotFoundPage';
 import TeamsPage from './pages/TeamsPage';
 import TeamPage from './pages/TeamPage';
+import StandingPage from './pages/StandingPage';
 
 function App() {
   console.log('render app()');
@@ -24,6 +25,9 @@ function App() {
           <Route path="/wnba/teams" element={<TeamsPage leagueName="wnba" />} />
           <Route path="/nba/teams/:teamId" element={<TeamPage league="nba" />} />
           <Route path="/wnba/teams/:teamId" element={<TeamPage league="wnba" />} />
+          <Route path="/standings" element={<StandingPage />} />
+          <Route path="/nba/standings" element={<StandingPage defaultLeague="nba" />} />
+          <Route path="/wnba/standings" element={<StandingPage defaultLeague="wnba" />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

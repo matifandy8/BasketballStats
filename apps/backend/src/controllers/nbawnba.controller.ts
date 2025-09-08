@@ -5,6 +5,7 @@ import {
   getTeams,
   getDailySchedule,
   getTeamById,
+  getStandings,
 } from '../services/sportradar.service';
 import { Player, SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
@@ -125,6 +126,7 @@ export const apiInfoCtrl = (req: Request, res: Response) => {
         scheduleByDate: '/api/sports/nba/schedule/date/:date',
         today: '/api/sports/nba/schedule/today',
         teams: '/api/sports/nba/teams',
+        standings: '/api/sports/nba/standings/:year/:type',
       },
       wnba: {
         schedule: '/api/sports/wnba/schedule/:year/:type',
@@ -132,10 +134,23 @@ export const apiInfoCtrl = (req: Request, res: Response) => {
         scheduleByDate: '/api/sports/wnba/schedule/date/:date',
         today: '/api/sports/wnba/schedule/today',
         teams: '/api/sports/wnba/teams',
+        standings: '/api/sports/wnba/standings/:year/:type',
       },
       docs: 'https://github.com/yourusername/nba-wnba-api',
     },
     status: 'running',
     timestamp: new Date().toISOString(),
   });
+};
+
+export const standingsCtrl = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const league = req.params.league as League;
+    const year = Number(req.params.year);
+    const type = req.params.type as SeasonType;
+    const data = await getStandings(league, year, type);
+    res.json(data);
+  } catch (e) {
+    next(e);
+  }
 };

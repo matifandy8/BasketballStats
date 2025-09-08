@@ -1,5 +1,5 @@
 import React from 'react';
-import { SEO } from '../components/SEO';
+import { SEO } from '../components/layout/SEO';
 import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';
 import type { HighlightItem } from '../components/HighlightsCarousel';

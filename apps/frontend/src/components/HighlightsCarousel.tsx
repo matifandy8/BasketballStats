@@ -87,7 +87,7 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
                     />
                     <button
                       onClick={() => handlePlayClick(item.url)}
-                      className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all duration-300"
+                      className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all duration-300 cursor-pointer"
                       aria-label="Play video"
                     >
                       <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-600 rounded-full flex items-center justify-center transform transition-transform group-hover:scale-110">
