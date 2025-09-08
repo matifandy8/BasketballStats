@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useStandings } from '../services/standingsService';
 import { useParams } from 'react-router-dom';
-import type { Conference } from '../types/standing';
+import type { Conference } from '../types/Standing';
 import { LeagueSelector } from '../components/standings/LeagueSelector';
 import { LoadingState } from '../components/standings/LoadingState';
 import { ErrorState } from '../components/standings/ErrorState';

@@ -7,6 +7,7 @@ import {
   teamsCtrl,
   teamIdCtrl,
   standingsCtrl,
+  newsCtrl,
 } from '../controllers/nbawnba.controller';
 import { object, string, union, literal } from 'valibot';
 import { apiLimiter, cache } from '../middlewares/cacheRateLimiter.middleware';
@@ -14,7 +15,6 @@ import { validate } from '../middlewares/validate.middleware';
 
 const router = Router();
 
-// Schemas
 const ScheduleSchema = object({
   year: string(),
   type: union([literal('PRE'), literal('REG'), literal('POST')]),
@@ -32,12 +32,11 @@ const TeamIdSchema = object({
   teamId: string(),
 });
 
-// Routes
 router.get(
   '/schedule/:year/:type',
   apiLimiter(60),
   validate(ScheduleSchema, 'params'),
-  cache(req => `schedule:wnba:${req.params.year}:${req.params.type}`, 3600), // 1 hour cache
+  cache(req => `schedule:wnba:${req.params.year}:${req.params.type}`, 3600),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
@@ -49,7 +48,7 @@ router.get(
   '/schedule/date/:date',
   apiLimiter(60),
   validate(DateSchema, 'params'),
-  cache(req => `schedule:date:wnba:${req.params.date}`, 300), // 5 minute cache
+  cache(req => `schedule:date:wnba:${req.params.date}`, 300),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
@@ -60,7 +59,7 @@ router.get(
 router.get(
   '/schedule/today',
   apiLimiter(60),
-  cache('schedule:today:wnba', 300), // 5 minute cache
+  cache('schedule:today:wnba', 300),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
@@ -71,7 +70,7 @@ router.get(
 router.get(
   '/teams',
   apiLimiter(60),
-  cache('teams:wnba', 86400), // 24 hour cache
+  cache('teams:wnba', 86400),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
@@ -83,7 +82,7 @@ router.get(
   '/teams/:teamId',
   apiLimiter(60),
   validate(TeamIdSchema, 'params'),
-  cache(req => `team:wnba:${req.params.teamId}`, 3600), // 1 hour cache
+  cache(req => `team:wnba:${req.params.teamId}`, 3600),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
@@ -95,7 +94,7 @@ router.get(
   '/game/:gameId/pbp',
   apiLimiter(60),
   validate(GameIdSchema, 'params'),
-  cache(req => `pbp:wnba:${req.params.gameId}`, 300), // 5 minute cache
+  cache(req => `pbp:wnba:${req.params.gameId}`, 300),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
@@ -107,12 +106,23 @@ router.get(
   '/standings/:year/:type',
   apiLimiter(60),
   validate(ScheduleSchema, 'params'),
-  cache(req => `standings:wnba:${req.params.year}:${req.params.type}`, 3600), // 1 hour cache
+  cache(req => `standings:wnba:${req.params.year}:${req.params.type}`, 3600),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
   },
   standingsCtrl
+);
+
+router.get(
+  '/news',
+  apiLimiter(60),
+  cache('news:wnba', 300),
+  (req, res, next) => {
+    req.params.league = 'wnba';
+    next();
+  },
+  newsCtrl
 );
 
 export default router;

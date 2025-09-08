@@ -1,4 +1,4 @@
-import { httpFetch, League } from '../utils/http';
+import { FetchOptions, httpFetch, httpFetchNews, League } from '../utils/http';
 import {
   WNBAScheduleResponse,
   WNBAPbpResponse,
@@ -73,4 +73,8 @@ export async function getStandings(
     console.error('Error in getStandings:', error);
     throw error;
   }
+}
+
+export async function getNews<T>(query: 'nba' | 'wnba', options: FetchOptions = {}): Promise<T> {
+  return httpFetchNews<T>(query, options);
 }

@@ -6,6 +6,7 @@ import {
   getDailySchedule,
   getTeamById,
   getStandings,
+  getNews,
 } from '../services/sportradar.service';
 import { Player, SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
@@ -149,6 +150,15 @@ export const standingsCtrl = async (req: Request, res: Response, next: NextFunct
     const year = Number(req.params.year);
     const type = req.params.type as SeasonType;
     const data = await getStandings(league, year, type);
+    res.json(data);
+  } catch (e) {
+    next(e);
+  }
+};
+
+export const newsCtrl = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const data = await getNews(req.params.league as League);
     res.json(data);
   } catch (e) {
     next(e);

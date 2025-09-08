@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Team } from '../../types/standing';
+import type { Team } from '../../types/Standing';
 
 type TeamRowProps = {
   team: Team;

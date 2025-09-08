@@ -17,6 +17,7 @@ router.get('/', (req: Request, res: Response) => {
         teams: '/nba/teams',
         team: '/nba/teams/:teamId',
         standings: '/nba/standings/:year/:type',
+        news: '/nba/news',
       },
       wnba: {
         schedule: '/wnba/schedule/:year/:type',
@@ -26,6 +27,7 @@ router.get('/', (req: Request, res: Response) => {
         teams: '/wnba/teams',
         team: '/wnba/teams/:teamId',
         standings: '/wnba/standings/:year/:type',
+        news: '/wnba/news',
       },
       docs: 'https://github.com/yourusername/nba-wnba-api',
     },

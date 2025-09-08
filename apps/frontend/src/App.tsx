@@ -10,6 +10,7 @@ import NotFoundPage from './pages/NotFoundPage';
 import TeamsPage from './pages/TeamsPage';
 import TeamPage from './pages/TeamPage';
 import StandingPage from './pages/StandingPage';
+import NewsPage from './pages/NewsPage';
 
 function App() {
   console.log('render app()');
@@ -30,6 +31,7 @@ function App() {
           <Route path="/wnba/standings" element={<StandingPage defaultLeague="wnba" />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/news" element={<NewsPage />} />
         </Routes>
       </Layout>
     </>

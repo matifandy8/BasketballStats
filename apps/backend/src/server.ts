@@ -15,15 +15,12 @@ app.use(pinoHttp());
 
 app.use('/images', express.static(path.join(__dirname, '../images')));
 
-// API Routes
 app.use('/api/sports', routes);
 
-// Root redirects to API docs
 app.get('/', (req, res) => {
   res.redirect('/api/sports');
 });
 
-// API info endpoint
 app.get('/api', (req, res) => {
   res.json({
     message: 'NBA & WNBA API',
@@ -34,7 +31,6 @@ app.get('/api', (req, res) => {
   });
 });
 
-// Error handling middleware
 app.use(errorMiddleware);
 
 if (require.main === module) {

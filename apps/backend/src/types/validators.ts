@@ -1,7 +1,7 @@
 import { object, string, number, union, literal, uuid, pipe } from 'valibot';
 
 export const ScheduleParamsSchema = object({
-  year: number(), // vendrá como string, lo parseamos abajo
+  year: number(),
   type: union([literal('PRE'), literal('REG'), literal('CC'), literal('PST')]),
 });
 

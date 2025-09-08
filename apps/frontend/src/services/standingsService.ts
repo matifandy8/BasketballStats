@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import API_CONFIG from '../config/api';
-import type { StandingResponse } from '../types/standing';
+import type { StandingResponse } from '../types/Standing';
 
 const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse> => {
   try {
@@ -20,10 +20,8 @@ const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse>
 
     const data = await response.json();
 
-    // Log the response for debugging
     console.log(`${league} standings response:`, data);
 
-    // Ensure the response has the expected structure
     if (!data || !Array.isArray(data.conferences)) {
       console.error(`Unexpected response format for ${league} standings:`, data);
       throw new Error(`Invalid data format received from ${league} standings API`);
@@ -32,7 +30,7 @@ const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse>
     return data;
   } catch (error) {
     console.error(`Error in fetchStandings for ${league}:`, error);
-    throw error; // Re-throw to let React Query handle it
+    throw error;
   }
 };
 
@@ -46,8 +44,8 @@ export const useStandings = (league: 'nba' | 'wnba' | null) => {
       return fetchStandings(league);
     },
     enabled: !!league,
-    staleTime: 5 * 60 * 1000, // 5 minutes
+    staleTime: 5 * 60 * 1000,
     refetchOnWindowFocus: false,
-    retry: 1, // Only retry once on failure
+    retry: 1,
   });
 };
