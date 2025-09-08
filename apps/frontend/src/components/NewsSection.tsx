@@ -1,4 +1,4 @@
-import type { NewsArticle } from '../types/News';
+import type { NewsArticle } from '../types/news';
 import { useNews } from '../services/newsService';
 
 function NewsSection() {

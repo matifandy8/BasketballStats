@@ -1,6 +1,6 @@
 import React from 'react';
 import { TeamRow } from './TeamRow';
-import type { Conference, Team } from '../../types/Standing';
+import type { Conference, Team } from '../../types/standing';
 
 type StandingsTableProps = {
   conference: Conference;

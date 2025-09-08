@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import API_CONFIG from '../config/api';
-import type { NewsResponse } from '../types/News';
+import type { NewsResponse } from '../types/news';
 
 const fetchNews = async (league: 'nba' | 'wnba'): Promise<NewsResponse> => {
   try {

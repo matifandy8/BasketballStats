@@ -1,6 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import API_CONFIG from '../config/api';
-import type { StandingResponse } from '../types/Standing';
+import type { StandingResponse } from '../types/standing';
 
 const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse> => {
   try {

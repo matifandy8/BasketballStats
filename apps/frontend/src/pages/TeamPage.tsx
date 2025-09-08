@@ -1,8 +1,8 @@
 import { useParams } from 'react-router-dom';
 import { useTeam } from '../services/teamsService';
-import type { Team, TeamColor } from '../types/Team';
 import TeamSkeleton from '../components/TeamSkeleton';
 import { PageError } from '../components/ErrorComponent';
+import type { TeamColor, Team } from '../types/team';
 
 export default function TeamPage({ league }: { league: string }) {
   const { teamId } = useParams<{ teamId: string }>();
