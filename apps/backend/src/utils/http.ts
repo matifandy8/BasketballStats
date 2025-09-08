@@ -56,7 +56,6 @@ export async function httpFetchNews<T>(
   url.searchParams.set('language', 'en');
   url.searchParams.set('pageSize', '5');
 
-  console.log('fetching news for ' + query + ' from ' + url.toString());
   const res = await fetch(url.toString(), {
     ...options,
     headers: {

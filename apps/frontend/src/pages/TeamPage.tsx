@@ -2,14 +2,19 @@ import { useParams } from 'react-router-dom';
 import { useTeam } from '../services/teamsService';
 import type { Team, TeamColor } from '../types/Team';
 import TeamSkeleton from '../components/TeamSkeleton';
+import { PageError } from '../components/ErrorComponent';
 
 export default function TeamPage({ league }: { league: string }) {
   const { teamId } = useParams<{ teamId: string }>();
-  const { data, isLoading } = useTeam(league, teamId!);
+  const { data, isLoading, error } = useTeam(league as 'nba' | 'wnba', teamId!);
 
   const team: Team | null = data?.team ?? null;
   const primaryColor =
     team?.team_colors.find((c: TeamColor) => c.type === 'primary')?.hex_color ?? null;
+
+  if (error) {
+    return <PageError error={error} />;
+  }
 
   if (isLoading) {
     return <TeamSkeleton />;

@@ -6,7 +6,6 @@ const fetchNews = async (league: 'nba' | 'wnba'): Promise<NewsResponse> => {
   try {
     const endpoint = API_CONFIG.endpoints[league].news;
     const url = `${API_CONFIG.baseURL}${endpoint}`;
-    console.log(`Fetching ${league} news from:`, url);
 
     const response = await fetch(url);
 

@@ -1,18 +1,20 @@
 import React from 'react';
 import { useNews } from '../services/newsService';
 import type { NewsArticle } from '../types/News';
+import { PageLoading } from '../components/LoadingSpinner';
+import { PageError } from '../components/ErrorComponent';
 
-const AboutPage: React.FC = () => {
+const NewsPage: React.FC = () => {
   console.log('render news page');
 
   const { data, isLoading, error } = useNews('nba');
 
   if (isLoading) {
-    return <div>Loading...</div>;
+    return <PageLoading />;
   }
 
   if (error) {
-    return <div>Error: {error.message}</div>;
+    return <PageError error={error} />;
   }
 
   return (
@@ -44,4 +46,4 @@ const AboutPage: React.FC = () => {
   );
 };
 
-export default AboutPage;
+export default NewsPage;

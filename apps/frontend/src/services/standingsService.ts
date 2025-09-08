@@ -6,7 +6,6 @@ const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse>
   try {
     const endpoint = API_CONFIG.endpoints[league].standings();
     const url = `${API_CONFIG.baseURL}${endpoint}`;
-    console.log(`Fetching ${league} standings from:`, url);
 
     const response = await fetch(url);
 
@@ -19,8 +18,6 @@ const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse>
     }
 
     const data = await response.json();
-
-    console.log(`${league} standings response:`, data);
 
     if (!data || !Array.isArray(data.conferences)) {
       console.error(`Unexpected response format for ${league} standings:`, data);

@@ -1,5 +1,5 @@
+import { PageLoading } from '../components/LoadingSpinner';
 import { useTeams } from '../services/teamsService';
-import LoadingSpinner from '../components/LoadingSpinner';
 import { Link } from 'react-router-dom';
 
 interface TeamsPageProps {
@@ -15,7 +15,7 @@ interface Team {
 }
 
 const TeamsPage: React.FC<TeamsPageProps> = ({ leagueName }) => {
-  const { data: teams = [], isLoading, isError } = useTeams(leagueName);
+  const { data: teams = [], isLoading, isError } = useTeams(leagueName as 'nba' | 'wnba');
 
   if (isLoading) {
     return (
@@ -23,7 +23,7 @@ const TeamsPage: React.FC<TeamsPageProps> = ({ leagueName }) => {
         <h1 className="text-4xl font-extrabold mb-8 text-center font-druk">
           {leagueName.toUpperCase()} Teams
         </h1>
-        <LoadingSpinner />
+        <PageLoading />
       </div>
     );
   }

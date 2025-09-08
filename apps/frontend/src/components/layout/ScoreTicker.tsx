@@ -47,7 +47,7 @@ const getGameStatus = (game: Game) => {
 
 const ScoreTicker: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'nba' | 'wnba'>('wnba');
-  const { nbaGames, wnbaGames, isLoading } = useTodaysGames();
+  const { nbaGames, wnbaGames, isLoading, error } = useTodaysGames();
   const sliderRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -73,6 +73,16 @@ const ScoreTicker: React.FC = () => {
 
   const currentGames = activeTab === 'nba' ? nbaGames : wnbaGames;
   const tabColor = activeTab === 'nba' ? 'blue-400' : 'pink-400';
+  
+
+  if (error) {
+    return (
+      <div className="bg-black text-white py-2 text-center py-4">
+        Error loading {activeTab.toUpperCase()} games: {error.message}
+      </div>
+    );
+  }
+  
 
   if (isLoading) {
     return (
