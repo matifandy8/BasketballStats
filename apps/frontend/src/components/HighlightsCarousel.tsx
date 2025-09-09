@@ -86,7 +86,8 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
                       width={320}
                       height={180}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-                      loading="lazy"
+                      loading="eager"
+                      fetchPriority="high"
                     />
                     <button
                       onClick={() => handlePlayClick(item.url)}

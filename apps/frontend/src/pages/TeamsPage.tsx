@@ -49,20 +49,31 @@ const TeamsPage: React.FC<TeamsPageProps> = ({ leagueName }) => {
       )}
       {teams.length > 0 && (
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-          {teams.map((team: Team) => (
-            <Link
-              key={team.id}
-              to={`/${leagueName}/teams/${team.id}`}
-              className="flex flex-col items-center bg-black rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-4"
-            >
-              <img src={team.logo} alt={team.name} className="w-16 h-16 mb-4 object-contain" />
-              <h2 className="text-lg font-bold text-center font-druk">{team.market}</h2>
-              <p className="text-sm text-gray-400 font-druk">{team.name}</p>
-              <span className="mt-2 text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded-full font-druk">
-                {team.alias}
-              </span>
-            </Link>
-          ))}
+          {teams.map((team: Team, index: number) => {
+            const isLcpCandidate = index === 0;
+            return (
+              <Link
+                key={team.id}
+                to={`/${leagueName}/teams/${team.id}`}
+                className="flex flex-col items-center bg-black rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-4"
+              >
+                <img 
+                  src={team.logo} 
+                  alt={team.name} 
+                  className="w-16 h-16 mb-4 object-contain" 
+                  loading={isLcpCandidate ? 'eager' : 'lazy'}
+                  fetchPriority={isLcpCandidate ? 'high' : 'auto'}
+                  width="64"
+                  height="64"
+                />
+                <h2 className="text-lg font-bold text-center font-druk">{team.market}</h2>
+                <p className="text-sm text-gray-400 font-druk">{team.name}</p>
+                <span className="mt-2 text-xs text-gray-500 bg-gray-700 px-2 py-1 rounded-full font-druk">
+                  {team.alias}
+                </span>
+              </Link>
+            );
+          })}
         </div>
       )}
     </div>

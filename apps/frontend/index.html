@@ -17,11 +17,45 @@
     <meta name="twitter:description" content="Latest NBA and WNBA highlights, news, and stats in one place.">
     <meta name="twitter:image" content="/preview-image.jpg">
     <link rel="canonical" href="https://yourwebsite.com" />
+    
+    <!-- Preconnect to critical domains -->
+    <link rel="preconnect" href="https://basketballstats-1.onrender.com" crossorigin>
+    <link rel="preconnect" href="https://basketball-stats-frontend.vercel.app" crossorigin>
+    
+    <!-- Preload critical assets -->
+    <link rel="preload" href="/fonts/DrukText_500.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/ProximaNova_400.woff2" as="font" type="font/woff2" crossorigin>
+    
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <title>NBA & WNBA Highlights and News</title>
+    
+    <!-- Inline critical CSS -->
+    <style>
+      @font-face {
+        font-family: 'Druk Text';
+        src: url('/fonts/DrukText_500.woff2') format('woff2');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+      @font-face {
+        font-family: 'Proxima Nova';
+        src: url('/fonts/ProximaNova_400.woff2') format('woff2');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+      /* Add minimal critical CSS here */
+      body { margin: 0; font-family: 'Proxima Nova', system-ui, -apple-system, sans-serif; }
+      #root { min-height: 100vh; background: #000; color: white; }
+    </style>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Load non-critical CSS asynchronously -->
+    <link rel="stylesheet" href="/assets/index-B7tS7cfu.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/assets/index-B7tS7cfu.css"></noscript>
   </body>
 </html>
