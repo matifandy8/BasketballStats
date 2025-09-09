@@ -1,4 +1,4 @@
-import { FetchOptions, httpFetch, httpFetchHighlights, httpFetchNews, httpFetchYouTubeVideos, League } from '../utils/http';
+import { FetchOptions, httpFetch, httpFetchNews, httpFetchYouTubeVideos, League } from '../utils/http';
 import {
   WNBAScheduleResponse,
   WNBAPbpResponse,
@@ -8,6 +8,7 @@ import {
   Team,
 } from '../types/sportradar.types';
 import { Standing } from '../types/standing';
+import { YouTubeVideo } from '../types/highlights';
 
 export async function getSchedule(
   league: League,
