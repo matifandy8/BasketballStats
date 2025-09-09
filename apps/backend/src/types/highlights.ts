@@ -23,3 +23,7 @@ export interface YouTubeResponse {
     };
   }>;
 }
+
+export interface HighlightsResponse {
+  highlights: YouTubeVideo[];
+}

@@ -210,8 +210,45 @@ export const newsCtrl = async (req: Request, res: Response, next: NextFunction) 
 export const highlightsCtrl = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const league = req.params.league as League;
-    const data = await getHighlights(league);
-    res.json(data);
+    const videos = await getHighlights(league);
+
+    if (!videos || !Array.isArray(videos)) {
+      return res.json([]);
+    }
+
+    const optimizedVideos = await Promise.all(
+      videos.map(async video => {
+        if (!video.thumbnail) return video;
+
+        try {
+          const response = await fetch(video.thumbnail);
+
+          if (!response.ok) {
+            console.warn(`Error fetching image: ${video.thumbnail}`);
+            return video;
+          }
+
+          const buffer = Buffer.from(await response.arrayBuffer());
+
+          const optimizedBuffer = await sharp(buffer)
+            .resize({ width: 800 })
+            .webp({ quality: 80 })
+            .toBuffer();
+
+          const optimizedThumbnail = `data:image/webp;base64,${optimizedBuffer.toString('base64')}`;
+
+          return {
+            ...video,
+            thumbnail: optimizedThumbnail,
+          };
+        } catch (error) {
+          console.error('Error optimizing image:', error);
+          return video;
+        }
+      })
+    );
+
+    res.json(optimizedVideos);
   } catch (e) {
     next(e);
   }
