@@ -10,7 +10,6 @@ export interface League {
   alias: string;
 }
 
-
 export interface Season {
   id: string;
   year: number;

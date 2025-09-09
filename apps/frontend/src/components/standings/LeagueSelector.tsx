@@ -1,4 +1,3 @@
-
 type LeagueSelectorProps = {
   onSelectLeague: (league: 'nba' | 'wnba') => void;
 };
@@ -12,8 +11,13 @@ export const LeagueSelector: React.FC<LeagueSelectorProps> = ({ onSelectLeague }
         className="flex flex-col items-center justify-center p-6 bg-[#0054a4] hover:bg-[#0078a5] rounded-lg transition-colors group"
       >
         <div className="w-24 h-24 mb-3 flex items-center justify-center">
-          <img src="/images/nba-logo.png" alt="NBA" className="h-full w-auto object-contain" loading="eager"
-            fetchPriority="high" />
+          <img
+            src="/images/nba-logo.png"
+            alt="NBA"
+            className="h-full w-auto object-contain"
+            loading="eager"
+            fetchPriority="high"
+          />
         </div>
         <span className="text-white font-medium">NBA Standings</span>
       </button>

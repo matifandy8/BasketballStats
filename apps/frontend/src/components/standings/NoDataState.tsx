@@ -1,4 +1,3 @@
-
 type NoDataStateProps = {
   league?: string;
   seasonYear?: number | string;

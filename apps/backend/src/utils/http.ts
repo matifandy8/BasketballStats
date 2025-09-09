@@ -75,7 +75,6 @@ export async function httpFetchNews<T>(
 
 const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
 
-
 export async function httpFetchYouTubeVideos(
   query: string,
   maxResults: number = 5
@@ -95,7 +94,7 @@ export async function httpFetchYouTubeVideos(
 
   const res = await fetch(url.toString(), {
     headers: {
-      'Accept': 'application/json',
+      Accept: 'application/json',
     },
   });
 
@@ -106,7 +105,7 @@ export async function httpFetchYouTubeVideos(
 
   const data = (await res.json()) as YouTubeResponse;
 
-  return data.items.map((item) => ({
+  return data.items.map(item => ({
     id: item.id.videoId,
     videoId: item.id.videoId,
     title: item.snippet.title,
@@ -117,10 +116,13 @@ export async function httpFetchYouTubeVideos(
   }));
 }
 
-export async function httpFetchHighlights(query: 'nba' | 'wnba', options: FetchOptions = {}): Promise<YouTubeVideo[]> {
-  const maxResults = options.queryParams?.maxResults && typeof options.queryParams.maxResults === 'number' 
-    ? options.queryParams.maxResults 
-    : 5;
+export async function httpFetchHighlights(
+  query: 'nba' | 'wnba',
+  options: FetchOptions = {}
+): Promise<YouTubeVideo[]> {
+  const maxResults =
+    options.queryParams?.maxResults && typeof options.queryParams.maxResults === 'number'
+      ? options.queryParams.maxResults
+      : 5;
   return httpFetchYouTubeVideos(query, maxResults);
 }
-

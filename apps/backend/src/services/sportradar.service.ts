@@ -1,4 +1,10 @@
-import { FetchOptions, httpFetch, httpFetchNews, httpFetchYouTubeVideos, League } from '../utils/http';
+import {
+  FetchOptions,
+  httpFetch,
+  httpFetchNews,
+  httpFetchYouTubeVideos,
+  League,
+} from '../utils/http';
 import {
   WNBAScheduleResponse,
   WNBAPbpResponse,
@@ -80,10 +86,13 @@ export async function getNews<T>(query: 'nba' | 'wnba', options: FetchOptions = 
   return httpFetchNews<T>(query, options);
 }
 
-export async function getHighlights(query: 'nba' | 'wnba', options: FetchOptions = {}): Promise<YouTubeVideo[]> {
-  const maxResults = options.queryParams?.maxResults && typeof options.queryParams.maxResults === 'number' 
-    ? options.queryParams.maxResults 
-    : 5;
+export async function getHighlights(
+  query: 'nba' | 'wnba',
+  options: FetchOptions = {}
+): Promise<YouTubeVideo[]> {
+  const maxResults =
+    options.queryParams?.maxResults && typeof options.queryParams.maxResults === 'number'
+      ? options.queryParams.maxResults
+      : 5;
   return httpFetchYouTubeVideos(query, maxResults);
 }
-

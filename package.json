@@ -10,7 +10,8 @@
     "lint:fix": "eslint . --fix",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "security:check": "npm audit --audit-level=moderate"
+    "security:check": "npm audit --audit-level=moderate",
+    "lint-staged": "lint-staged"
   },
   "workspaces": [
     "apps/*"
@@ -24,9 +25,17 @@
   "dependencies": {
     "@tanstack/react-query": "^5.87.1",
     "@types/react-slick": "^0.23.13",
+    "lint-staged": "^16.1.6",
     "lucide-react": "^0.542.0",
+    "prettier": "^3.6.2",
     "react-slick": "^0.31.0",
     "sharp": "^0.34.3",
     "slick-carousel": "^1.8.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx,json,md}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   }
 }

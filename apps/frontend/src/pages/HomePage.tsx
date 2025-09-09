@@ -3,7 +3,6 @@ import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';
 import { useHighlights } from '../services/highlightsService';
 
-
 const HomePage: React.FC = () => {
   const { data: nbaHighlights } = useHighlights('nba');
   const { data: wnbaHighlights } = useHighlights('wnba');

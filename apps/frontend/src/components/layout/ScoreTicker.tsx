@@ -88,7 +88,10 @@ const ScoreTicker: React.FC = () => {
   const renderSkeleton = () => (
     <div className="flex space-x-2 px-2">
       {[...Array(3)].map((_, i) => (
-        <div key={i} className="flex-shrink-0 bg-stone-800 p-3 rounded-lg w-[180px] h-[120px] animate-pulse" />
+        <div
+          key={i}
+          className="flex-shrink-0 bg-stone-800 p-3 rounded-lg w-[180px] h-[120px] animate-pulse"
+        />
       ))}
     </div>
   );

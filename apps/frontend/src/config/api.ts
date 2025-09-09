@@ -11,7 +11,7 @@ const API_CONFIG = {
       standings: (year: number = new Date().getFullYear(), type: 'REG' | 'PRE' | 'POST' = 'REG') =>
         `/nba/standings/${year}/${type}`,
       news: '/nba/news',
-      highlights: '/nba/highlights'
+      highlights: '/nba/highlights',
     },
     wnba: {
       teams: (teamId?: string) => (teamId ? `/wnba/teams/${teamId}` : '/wnba/teams'),
@@ -21,7 +21,7 @@ const API_CONFIG = {
       standings: (year: number = new Date().getFullYear(), type: 'REG' | 'PRE' | 'POST' = 'REG') =>
         `/wnba/standings/${year}/${type}`,
       news: '/wnba/news',
-      highlights: '/wnba/highlights'
+      highlights: '/wnba/highlights',
     },
   },
 } as const;

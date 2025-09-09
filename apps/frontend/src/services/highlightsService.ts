@@ -12,7 +12,9 @@ const fetchHighlights = async (league: 'nba' | 'wnba'): Promise<HighlightItem[]>
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       console.error(`Error fetching ${league} highlights:`, response.status, errorData);
-      throw new Error(`Failed to fetch ${league} highlights: ${response.status} ${response.statusText}`);
+      throw new Error(
+        `Failed to fetch ${league} highlights: ${response.status} ${response.statusText}`
+      );
     }
 
     const data = await response.json();

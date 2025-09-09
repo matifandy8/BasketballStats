@@ -9,8 +9,14 @@ function Navbar() {
     <nav className="bg-white border-gray-200 dark:bg-black">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-          <img src="../images/logo.avif" width={60} height={60} alt="NBA/WNBA Logo" loading="eager"
-            fetchPriority="high" />
+          <img
+            src="../images/logo.avif"
+            width={60}
+            height={60}
+            alt="NBA/WNBA Logo"
+            loading="eager"
+            fetchPriority="high"
+          />
         </Link>
         <button
           onClick={() => setIsOpen(!isOpen)}

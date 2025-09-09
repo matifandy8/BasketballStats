@@ -57,10 +57,10 @@ const TeamsPage: React.FC<TeamsPageProps> = ({ leagueName }) => {
                 to={`/${leagueName}/teams/${team.id}`}
                 className="flex flex-col items-center bg-black rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-4"
               >
-                <img 
-                  src={team.logo} 
-                  alt={team.name} 
-                  className="w-16 h-16 mb-4 object-contain" 
+                <img
+                  src={team.logo}
+                  alt={team.name}
+                  className="w-16 h-16 mb-4 object-contain"
                   loading={isLcpCandidate ? 'eager' : 'lazy'}
                   fetchPriority={isLcpCandidate ? 'high' : 'auto'}
                   width="64"

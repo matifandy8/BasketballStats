@@ -1,4 +1,3 @@
-
 interface ErrorComponentProps {
   error: Error | string;
   onRetry?: () => void;

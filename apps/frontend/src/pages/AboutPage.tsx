@@ -1,4 +1,3 @@
-
 const AboutPage: React.FC = () => {
   console.log('render about page');
   return (

@@ -10,7 +10,7 @@ const NewsSkeleton = () => (
         <div className="mt-2 h-6 bg-stone-800 rounded"></div>
         <div className="mt-2 h-4 w-3/4 bg-stone-800 rounded"></div>
       </div>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 lg:col-span-1">
         {[...Array(4)].map((_, i) => (
           <div key={i} className="w-full">
@@ -68,7 +68,12 @@ function NewsSection() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 m-6">
           <div className="md:col-span-1 lg:col-span-1 w-full relative mx-auto h-auto overflow-hidden rounded-lg transform transition-transform hover:scale-[1.02]">
-            <a href={data?.articles[0].url} target="_blank" rel="noopener noreferrer" className="block">
+            <a
+              href={data?.articles[0].url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block"
+            >
               <img
                 src={data?.articles[0].urlToImage || ''}
                 alt={data?.articles[0].title}
@@ -89,7 +94,12 @@ function NewsSection() {
                 key={article.url}
                 className="w-full relative mx-auto h-full min-h-[100px] sm:min-h-[120px] overflow-hidden rounded-lg transform transition-transform hover:scale-[1.03]"
               >
-                <a href={article.url} target="_blank" rel="noopener noreferrer" className="block h-full">
+                <a
+                  href={article.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block h-full"
+                >
                   <img
                     src={article.urlToImage || ''}
                     alt={article.title}
