@@ -4,9 +4,12 @@ import wnbaRoutes from './wnba.routes';
 
 const router = Router();
 
+router.use('/nba', nbaRoutes);
+router.use('/wnba', wnbaRoutes);
+
 router.get('/', (req: Request, res: Response) => {
   res.json({
-    message: 'NBA & WNBA Sports API',
+    message: 'NBA & WNBA API',
     version: '1.0.0',
     endpoints: {
       nba: {
@@ -18,6 +21,7 @@ router.get('/', (req: Request, res: Response) => {
         team: '/nba/teams/:teamId',
         standings: '/nba/standings/:year/:type',
         news: '/nba/news',
+        highlights: '/nba/highlights',
       },
       wnba: {
         schedule: '/wnba/schedule/:year/:type',
@@ -28,15 +32,13 @@ router.get('/', (req: Request, res: Response) => {
         team: '/wnba/teams/:teamId',
         standings: '/wnba/standings/:year/:type',
         news: '/wnba/news',
+        highlights: '/wnba/highlights',
       },
-      docs: 'https://github.com/yourusername/nba-wnba-api',
+      docs: 'https://github.com/matifandy8/BasketballStats',
     },
     status: 'running',
     timestamp: new Date().toISOString(),
   });
 });
-
-router.use('/nba', nbaRoutes);
-router.use('/wnba', wnbaRoutes);
 
 export default router;

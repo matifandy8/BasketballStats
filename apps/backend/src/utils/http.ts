@@ -1,4 +1,5 @@
 import dotenv from 'dotenv';
+import { YouTubeResponse, YouTubeVideo } from '../types/highlights';
 dotenv.config();
 
 const ACCESS = process.env.SR_ACCESS_LEVEL || 'trial';
@@ -71,3 +72,55 @@ export async function httpFetchNews<T>(
 
   return (await res.json()) as T;
 }
+
+const YOUTUBE_API_KEY = process.env.YOUTUBE_API_KEY;
+
+
+export async function httpFetchYouTubeVideos(
+  query: string,
+  maxResults: number = 5
+): Promise<YouTubeVideo[]> {
+  if (!YOUTUBE_API_KEY) {
+    throw new Error('Missing YOUTUBE_API_KEY in environment variables');
+  }
+
+  const url = new URL('https://www.googleapis.com/youtube/v3/search');
+  url.searchParams.set('part', 'snippet');
+  url.searchParams.set('q', query);
+  url.searchParams.set('type', 'video');
+  url.searchParams.set('maxResults', maxResults.toString());
+  url.searchParams.set('key', YOUTUBE_API_KEY);
+  url.searchParams.set('order', 'date');
+  url.searchParams.set('videoEmbeddable', 'true');
+
+  const res = await fetch(url.toString(), {
+    headers: {
+      'Accept': 'application/json',
+    },
+  });
+
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(`YouTube API error: ${res.status} - ${text}`);
+  }
+
+  const data = (await res.json()) as YouTubeResponse;
+
+  return data.items.map((item) => ({
+    id: item.id.videoId,
+    videoId: item.id.videoId,
+    title: item.snippet.title,
+    description: item.snippet.description,
+    thumbnail: item.snippet.thumbnails.high?.url || item.snippet.thumbnails.default.url,
+    publishedAt: item.snippet.publishedAt,
+    channelTitle: item.snippet.channelTitle,
+  }));
+}
+
+export async function httpFetchHighlights(query: 'nba' | 'wnba', options: FetchOptions = {}): Promise<YouTubeVideo[]> {
+  const maxResults = options.queryParams?.maxResults && typeof options.queryParams.maxResults === 'number' 
+    ? options.queryParams.maxResults 
+    : 5;
+  return httpFetchYouTubeVideos(query, maxResults);
+}
+

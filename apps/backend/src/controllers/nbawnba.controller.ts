@@ -7,6 +7,7 @@ import {
   getTeamById,
   getStandings,
   getNews,
+  getHighlights,
 } from '../services/sportradar.service';
 import { Player, SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
@@ -124,22 +125,22 @@ export const apiInfoCtrl = (req: Request, res: Response) => {
     version: '1.0.0',
     endpoints: {
       nba: {
-        schedule: '/api/sports/nba/schedule/:year/:type',
-        gamePBP: '/api/sports/nba/game/:gameId/pbp',
-        scheduleByDate: '/api/sports/nba/schedule/date/:date',
-        today: '/api/sports/nba/schedule/today',
-        teams: '/api/sports/nba/teams',
-        standings: '/api/sports/nba/standings/:year/:type',
+        schedule: '/api/nba/schedule/:year/:type',
+        gamePBP: '/api/nba/game/:gameId/pbp',
+        scheduleByDate: '/api/nba/schedule/date/:date',
+        today: '/api/nba/schedule/today',
+        teams: '/api/nba/teams',
+        standings: '/api/nba/standings/:year/:type',
       },
       wnba: {
-        schedule: '/api/sports/wnba/schedule/:year/:type',
-        gamePBP: '/api/sports/wnba/game/:gameId/pbp',
-        scheduleByDate: '/api/sports/wnba/schedule/date/:date',
-        today: '/api/sports/wnba/schedule/today',
-        teams: '/api/sports/wnba/teams',
-        standings: '/api/sports/wnba/standings/:year/:type',
+        schedule: '/api/wnba/schedule/:year/:type',
+        gamePBP: '/api/wnba/game/:gameId/pbp',
+        scheduleByDate: '/api/wnba/schedule/date/:date',
+        today: '/api/wnba/schedule/today',
+        teams: '/api/wnba/teams',
+        standings: '/api/wnba/standings/:year/:type',
       },
-      docs: 'https://github.com/yourusername/nba-wnba-api',
+      docs: 'https://github.com/matifandy8/BasketballStats',
     },
     status: 'running',
     timestamp: new Date().toISOString(),
@@ -207,6 +208,20 @@ export const newsCtrl = async (
     };
 
     res.json(responsePayload);
+  } catch (e) {
+    next(e);
+  }
+};
+
+export const highlightsCtrl = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  try {
+    const league = req.params.league as League;
+    const data = await getHighlights(league);
+    res.json(data);
   } catch (e) {
     next(e);
   }

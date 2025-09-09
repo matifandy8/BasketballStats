@@ -2,22 +2,7 @@ import { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
-export interface HighlightItem {
-  id: string;
-  title: string;
-  thumbnail: string;
-  league: 'NBA' | 'WNBA';
-  description: string;
-  date: string;
-  url: string;
-}
-
-interface HighlightsCarouselProps {
-  items: HighlightItem[];
-  league: 'NBA' | 'WNBA';
-  title: string;
-}
+import type { HighlightsCarouselProps } from '../types/highlights';
 
 const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title }) => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
@@ -31,6 +16,10 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
   const closeVideo = () => {
     setShowVideo(false);
     setCurrentVideo('');
+  };
+
+  const CreateVideoUrl = (videoId: string) => {
+    return `https://www.youtube.com/embed/${videoId}`;
   };
 
   const settings = {
@@ -90,7 +79,7 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
                       fetchPriority="high"
                     />
                     <button
-                      onClick={() => handlePlayClick(item.url)}
+                      onClick={() => handlePlayClick(CreateVideoUrl(item.videoId))}
                       className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all duration-300 cursor-pointer"
                       aria-label="Play video"
                     >
@@ -113,7 +102,6 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
                     {item.title}
                   </h3>
                   <p className="mt-1 text-xs text-gray-300 line-clamp-2 px-1">{item.description}</p>
-                  <p className="mt-1 text-xs text-gray-400 px-1">{item.date}</p>
                 </div>
               </div>
             ))}

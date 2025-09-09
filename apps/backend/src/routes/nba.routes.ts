@@ -8,6 +8,7 @@ import {
   teamIdCtrl,
   standingsCtrl,
   newsCtrl,
+  highlightsCtrl,
 } from '../controllers/nbawnba.controller';
 import { object, string, union, literal } from 'valibot';
 import { apiLimiter, cache } from '../middlewares/cacheRateLimiter.middleware';
@@ -123,6 +124,17 @@ router.get(
     next();
   },
   newsCtrl
+);
+
+router.get(
+  '/highlights',
+  apiLimiter(60),
+  cache('highlights:nba', 300),
+  (req, res, next) => {
+    req.params.league = 'nba';
+    next();
+  },
+  highlightsCtrl
 );
 
 export default router;

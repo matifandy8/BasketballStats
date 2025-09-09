@@ -1,115 +1,13 @@
 import { SEO } from '../components/layout/SEO';
 import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';
-import type { HighlightItem } from '../components/HighlightsCarousel';
+import { useHighlights } from '../services/highlightsService';
 
-const nbaHighlights: HighlightItem[] = [
-  {
-    id: '1',
-    title: 'NBA Highlights 1',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'NBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '2',
-    title: 'NBA Highlights 2',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'NBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '3',
-    title: 'NBA Highlights 3',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'NBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '4',
-    title: 'NBA Highlights 4',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'NBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '5',
-    title: 'NBA Highlights 5',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'NBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-];
-
-const wnbaHighlights: HighlightItem[] = [
-  {
-    id: '13',
-    title: 'WNBA Highlights 1',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'WNBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '14',
-    title: 'WNBA Highlights 2',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'WNBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '15',
-    title: 'WNBA Highlights 3',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'WNBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '16',
-    title: 'WNBA Highlights 4',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'WNBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-  {
-    id: '17',
-    title: 'WNBA Highlights 5',
-    thumbnail:
-      'https://media.sportsplatform.io/bleacher-report/pt/images/2025-08/20250826170229719-null.png',
-    league: 'WNBA',
-    description: 'Check out the best plays from last night',
-    date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
-  },
-];
 
 const HomePage: React.FC = () => {
+  const { data: nbaHighlights } = useHighlights('nba');
+  const { data: wnbaHighlights } = useHighlights('wnba');
+
   return (
     <>
       <SEO
@@ -119,7 +17,7 @@ const HomePage: React.FC = () => {
       />
       <div className="min-h-screen">
         <div className="min-h-[400px]">
-          <HighlightsCarousel items={nbaHighlights} league="NBA" title="NBA Highlights" />
+          <HighlightsCarousel items={nbaHighlights || []} league="NBA" title="NBA Highlights" />
         </div>
 
         <section className="py-8">
@@ -129,7 +27,7 @@ const HomePage: React.FC = () => {
         </section>
 
         <div className="min-h-[400px]">
-          <HighlightsCarousel items={wnbaHighlights} league="WNBA" title="WNBA Highlights" />
+          <HighlightsCarousel items={wnbaHighlights || []} league="WNBA" title="WNBA Highlights" />
         </div>
       </div>
     </>

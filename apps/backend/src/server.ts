@@ -15,17 +15,17 @@ app.use(pinoHttp());
 
 app.use('/images', express.static(path.join(__dirname, '../images')));
 
-app.use('/api/sports', routes);
+app.use('/api', routes);
 
 app.get('/', (req, res) => {
-  res.redirect('/api/sports');
+  res.redirect('/api');
 });
 
 app.get('/api', (req, res) => {
   res.json({
     message: 'NBA & WNBA API',
     version: '1.0.0',
-    documentation: 'Available at /api/sports',
+    documentation: 'Available at /api',
     status: 'running',
     timestamp: new Date().toISOString(),
   });
