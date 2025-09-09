@@ -12,7 +12,7 @@ const nbaHighlights: HighlightItem[] = [
     league: 'NBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '2',
@@ -22,7 +22,7 @@ const nbaHighlights: HighlightItem[] = [
     league: 'NBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '3',
@@ -32,7 +32,7 @@ const nbaHighlights: HighlightItem[] = [
     league: 'NBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '4',
@@ -42,7 +42,7 @@ const nbaHighlights: HighlightItem[] = [
     league: 'NBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '5',
@@ -52,7 +52,7 @@ const nbaHighlights: HighlightItem[] = [
     league: 'NBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
 ];
 
@@ -65,7 +65,7 @@ const wnbaHighlights: HighlightItem[] = [
     league: 'WNBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '14',
@@ -75,7 +75,7 @@ const wnbaHighlights: HighlightItem[] = [
     league: 'WNBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '15',
@@ -85,7 +85,7 @@ const wnbaHighlights: HighlightItem[] = [
     league: 'WNBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '16',
@@ -95,7 +95,7 @@ const wnbaHighlights: HighlightItem[] = [
     league: 'WNBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
   {
     id: '17',
@@ -105,7 +105,7 @@ const wnbaHighlights: HighlightItem[] = [
     league: 'WNBA',
     description: 'Check out the best plays from last night',
     date: '2 hours ago',
-    url: 'https://www.youtube.com/embed/RMNjT2CSibc', // Replace with actual video embed URL
+    url: 'https://www.youtube.com/embed/RMNjT2CSibc', 
   },
 ];
 
@@ -117,16 +117,20 @@ const HomePage: React.FC = () => {
         description="Watch the latest NBA and WNBA game highlights, get updated with breaking news, and check out player stats and scores."
         keywords="NBA highlights, WNBA highlights, basketball news, NBA scores, WNBA scores, basketball stats"
       />
-      <div className="">
-        <HighlightsCarousel items={nbaHighlights} league="NBA" title="NBA Highlights" />
+      <div className="min-h-screen">
+        <div className="min-h-[400px]">
+          <HighlightsCarousel items={nbaHighlights} league="NBA" title="NBA Highlights" />
+        </div>
 
-        <section className="">
-          <div className="rounded-lg overflow-hidden">
+        <section className="py-8">
+          <div className="rounded-lg overflow-hidden min-h-[300px]">
             <NewsSection />
           </div>
         </section>
 
-        <HighlightsCarousel items={wnbaHighlights} league="WNBA" title="WNBA Highlights" />
+        <div className="min-h-[400px]">
+          <HighlightsCarousel items={wnbaHighlights} league="WNBA" title="WNBA Highlights" />
+        </div>
       </div>
     </>
   );

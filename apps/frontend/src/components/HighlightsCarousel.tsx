@@ -79,11 +79,14 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
             {items.map(item => (
               <div key={item.id} className="px-1 sm:px-2">
                 <div className="relative group">
-                  <div className="relative overflow-hidden rounded-lg aspect-video">
+                  <div className="relative aspect-video w-full overflow-hidden rounded-lg">
                     <img
                       src={item.thumbnail}
                       alt={item.title}
+                      width={320}
+                      height={180}
                       className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      loading="lazy"
                     />
                     <button
                       onClick={() => handlePlayClick(item.url)}
@@ -143,13 +146,14 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
               </svg>
             </button>
             <div className="w-full">
-              <div className="aspect-w-16 aspect-h-9">
+              <div className="aspect-video w-full">
                 <iframe
                   src={currentVideo}
-                  className="w-full h-[50vh] sm:h-[60vh] md:h-[70vh] rounded-lg"
+                  className="w-full h-full rounded-lg"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
+                  loading="lazy"
                 />
               </div>
             </div>

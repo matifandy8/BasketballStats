@@ -25,6 +25,7 @@
     "pino": "latest",
     "pino-http": "latest",
     "rate-limit-redis": "latest",
+    "sharp": "^0.34.3",
     "typescript-eslint": "latest",
     "valibot": "latest"
   },

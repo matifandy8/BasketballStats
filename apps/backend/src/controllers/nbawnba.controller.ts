@@ -11,6 +11,8 @@ import {
 import { Player, SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
 import crypto from 'crypto';
+import sharp from "sharp";
+import { NewsArticle, NewsResponse } from '../types/news';
 
 export async function scheduleCtrl(req: Request, res: Response, next: NextFunction) {
   try {
@@ -156,10 +158,55 @@ export const standingsCtrl = async (req: Request, res: Response, next: NextFunct
   }
 };
 
-export const newsCtrl = async (req: Request, res: Response, next: NextFunction) => {
+export const newsCtrl = async (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
   try {
-    const data = await getNews(req.params.league as League);
-    res.json(data);
+    const league = req.params.league as League;
+    const data: NewsResponse = await getNews(league);
+
+    const optimizedArticles: NewsArticle[] = await Promise.all(
+      data.articles.map(async (article) => {
+        if (!article.urlToImage) return article;
+
+        try {
+          const response = await fetch(article.urlToImage);
+
+          if (!response.ok) {
+            console.warn(`Error fetching image: ${article.urlToImage}`);
+            return article;
+          }
+
+          const buffer = Buffer.from(await response.arrayBuffer());
+
+          const optimizedBuffer = await sharp(buffer)
+            .resize({ width: 800 })
+            .webp({ quality: 80 })
+            .toBuffer();
+
+          const optimizedBase64 = `data:image/webp;base64,${optimizedBuffer.toString(
+            "base64"
+          )}`;
+
+          return {
+            ...article,
+            urlToImage: optimizedBase64,
+          };
+        } catch (error) {
+          console.error("Error optimizing image:", error);
+          return article;
+        }
+      })
+    );
+
+    const responsePayload: NewsResponse = {
+      ...data,
+      articles: optimizedArticles,
+    };
+
+    res.json(responsePayload);
   } catch (e) {
     next(e);
   }
