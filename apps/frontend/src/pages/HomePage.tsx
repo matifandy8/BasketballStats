@@ -1,11 +1,12 @@
 import { SEO } from '../components/layout/SEO';
 import NewsSection from '../components/NewsSection';
 import HighlightsCarousel from '../components/HighlightsCarousel';
-import { useHighlights } from '../services/highlightsService';
+import { useAllHighlights } from '../services/highlightsService';
 
 const HomePage: React.FC = () => {
-  const { data: nbaHighlights } = useHighlights('nba');
-  const { data: wnbaHighlights } = useHighlights('wnba');
+  const { data } = useAllHighlights();
+  const nba = data?.nba || [];
+  const wnba = data?.wnba || [];
 
   return (
     <>
@@ -16,7 +17,7 @@ const HomePage: React.FC = () => {
       />
       <div className="min-h-screen">
         <div className="min-h-[400px]">
-          <HighlightsCarousel items={nbaHighlights || []} league="NBA" title="NBA Highlights" />
+          <HighlightsCarousel items={nba} league="NBA" title="NBA Highlights" />
         </div>
 
         <section className="py-8">
@@ -26,7 +27,7 @@ const HomePage: React.FC = () => {
         </section>
 
         <div className="min-h-[400px]">
-          <HighlightsCarousel items={wnbaHighlights || []} league="WNBA" title="WNBA Highlights" />
+          <HighlightsCarousel items={wnba} league="WNBA" title="WNBA Highlights" />
         </div>
       </div>
     </>
