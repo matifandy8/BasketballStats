@@ -53,7 +53,7 @@ const DEFAULT_TTL = 300; // 5 minutes in seconds
  * @param ttlSeconds - Optional time-to-live in seconds (default: 300s / 5 minutes)
  */
 export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAULT_TTL) => {
-  return async (req: Request, res: Response, next: NextFunction): Promise<void> => {
+  return async (req: Request, res: Response, next: NextFunction): Promise<void | Response> => {
     if (req.method !== 'GET') {
       return next();
     }
@@ -71,17 +71,21 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
 
           if (!parsed.timestamp || now - parsed.timestamp < (parsed.ttl || ttlSeconds)) {
             logger.debug(`[CACHE HIT] ${key}`);
-            return res.json(parsed.payload);
+            return res.json(parsed.payload as T);
           }
           logger.debug(`[CACHE EXPIRED] ${key}`);
         } catch (parseError) {
-          logger.error(`[CACHE PARSE ERROR] ${key}:`, parseError);
+          logger.error(
+            `[CACHE PARSE ERROR] ${key}: ${parseError instanceof Error ? parseError.message : String(parseError)}`
+          );
         }
       } else {
         logger.debug(`[CACHE MISS] ${key}`);
       }
     } catch (error) {
-      logger.error(`[CACHE ERROR] Failed to get cache for key ${key}:`, error);
+      logger.error(
+        `[CACHE ERROR] Failed to get cache for key ${key}: ${error instanceof Error ? error.message : String(error)}`
+      );
     }
 
     const originalJson = res.json.bind(res);
@@ -97,7 +101,11 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
         redisClient
           .set(key, JSON.stringify(payload), 'EX', ttlSeconds)
           .then(() => logger.debug(`[CACHE SET] ${key} (TTL: ${ttlSeconds}s)`))
-          .catch(err => logger.error(`[CACHE SET ERROR] Failed to cache key ${key}:`, err));
+          .catch(err =>
+            logger.error(
+              `[CACHE SET ERROR] Failed to cache key ${key}: ${err instanceof Error ? err.message : String(err)}`
+            )
+          );
       }
 
       return originalJson(body);
@@ -124,7 +132,7 @@ export const clearCache = async (keyOrPrefix: string): Promise<number> => {
       return 1;
     }
   } catch (error) {
-    logger.error('[CACHE CLEAR ERROR]', error);
+    logger.error(`[CACHE CLEAR ERROR]: ${error instanceof Error ? error.message : String(error)}`);
     throw error;
   }
 };
