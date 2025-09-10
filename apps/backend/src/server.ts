@@ -5,6 +5,7 @@ import pinoHttp from 'pino-http';
 import path from 'path';
 import { errorMiddleware } from './middlewares/error.middleware';
 import routes from './routes/nbawnba.routes';
+import { logger } from './utils/logger';
 
 const app = express();
 
@@ -34,10 +35,13 @@ app.get('/api', (req, res) => {
 app.use(errorMiddleware);
 
 if (require.main === module) {
-  const PORT = process.env.PORT || 3000;
+  const PORT = process.env.PORT || 3001;
   app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-    console.log(`API Documentation: http://localhost:${PORT}/api`);
+    logger.info(`Server is running on port ${PORT}`);
+    logger.info(`Environment: ${process.env.NODE_ENV || 'development'}`);
+    logger.info(
+      `Redis: ${process.env.REDIS_URL ? 'Connected' : 'Not configured (using in-memory cache)'}`
+    );
   });
 }
 

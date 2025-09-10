@@ -1,12 +1,17 @@
-import { useState } from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import { useState, useRef, useEffect } from 'react';
 import type { HighlightsCarouselProps } from '../types/highlights';
+import './HighlightsCarousel.css';
 
 const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title }) => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   const [currentVideo, setCurrentVideo] = useState<string>('');
+  const trackRef = useRef<HTMLDivElement>(null);
+  const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    itemRefs.current = itemRefs.current.slice(0, items.length);
+  }, [items]);
 
   const handlePlayClick = (videoUrl: string) => {
     setCurrentVideo(videoUrl);
@@ -18,76 +23,105 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
     setCurrentVideo('');
   };
 
-  const CreateVideoUrl = (videoId: string) => {
-    return `https://www.youtube.com/embed/${videoId}`;
+  const createVideoUrl = (videoId: string) => {
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1&mute=1`;
   };
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    pauseOnHover: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        },
-      },
-    ],
+  const scrollToItem = (index: number) => {
+    if (trackRef.current && itemRefs.current[index]) {
+      const item = itemRefs.current[index];
+      item?.scrollIntoView({
+        behavior: 'smooth',
+        block: 'nearest',
+        inline: 'start',
+      });
+      setCurrentIndex(index);
+    }
+  };
+
+  const handleNext = () => {
+    const nextIndex = (currentIndex + 1) % items.length;
+    scrollToItem(nextIndex);
+  };
+
+  const handlePrev = () => {
+    const prevIndex = (currentIndex - 1 + items.length) % items.length;
+    scrollToItem(prevIndex);
+  };
+
+  const handleKeyDown = (e: React.KeyboardEvent) => {
+    if (e.key === 'ArrowLeft') {
+      handlePrev();
+    } else if (e.key === 'ArrowRight') {
+      handleNext();
+    }
+  };
+
+  const handleScroll = () => {
+    if (!trackRef.current) return;
+
+    const container = trackRef.current;
+    const containerScroll = container.scrollLeft + container.offsetWidth / 2;
+
+    for (let i = 0; i < itemRefs.current.length; i++) {
+      const item = itemRefs.current[i];
+      if (item) {
+        const rect = item.getBoundingClientRect();
+        const itemCenter = rect.left + rect.width / 2 - container.getBoundingClientRect().left;
+
+        if (Math.abs(containerScroll - itemCenter) < rect.width / 2) {
+          setCurrentIndex(i);
+          break;
+        }
+      }
+    }
   };
 
   return (
-    <section className="px-8 sm:px-4 py-8 sm:py-19 bg-gradient-to-t from-black to-transparent">
-      <div className="container mx-auto">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold font-druk mb-4 sm:mb-6 px-2">
-          {title}
-        </h2>
+    <section className="highlights-section">
+      <div className="highlights-container">
+        <h2 className="highlights-title">{title}</h2>
 
-        <div className="px-1">
-          <Slider {...settings}>
-            {items.map(item => (
-              <div key={item.id} className="px-1 sm:px-2">
+        <div className="carousel-container">
+          <div
+            ref={trackRef}
+            className="carousel-track"
+            onScroll={handleScroll}
+            onKeyDown={handleKeyDown}
+            role="region"
+            aria-label="Highlights carousel"
+            tabIndex={0}
+          >
+            {items.map((item, index) => (
+              <div
+                key={item.id}
+                ref={el => {
+                  itemRefs.current[index] = el;
+                }}
+                className="carousel-item"
+                role="group"
+                aria-label={`Item ${index + 1} of ${items.length}`}
+              >
                 <div className="relative group">
-                  <div className="relative aspect-video w-full overflow-hidden rounded-lg">
+                  <div className="thumbnail-container">
                     <img
                       src={item.thumbnail}
                       alt={item.title}
-                      width={320}
-                      height={180}
-                      className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      className="thumbnail"
                       loading="eager"
                       fetchPriority="high"
                     />
                     <button
-                      onClick={() => handlePlayClick(CreateVideoUrl(item.videoId))}
-                      className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/60 transition-all duration-300 cursor-pointer"
-                      aria-label="Play video"
+                      onClick={() => handlePlayClick(createVideoUrl(item.videoId))}
+                      className="play-button"
+                      aria-label={`Play ${item.title}`}
                     >
-                      <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 bg-red-600 rounded-full flex items-center justify-center transform transition-transform group-hover:scale-110">
+                      <div className="play-icon">
                         <svg
-                          className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 text-white"
+                          className="play-svg"
                           fill="currentColor"
                           viewBox="0 0 20 20"
+                          aria-hidden="true"
                         >
                           <path
                             fillRule="evenodd"
@@ -98,54 +132,44 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
                       </div>
                     </button>
                   </div>
-                  <h3 className="mt-2 text-xs sm:text-sm font-medium text-white line-clamp-1 px-1">
-                    {item.title}
-                  </h3>
-                  <p className="mt-1 text-xs text-gray-300 line-clamp-2 px-1">{item.description}</p>
+                  <h3 className="video-title">{item.title}</h3>
+                  <p className="video-description">{item.description}</p>
                 </div>
               </div>
             ))}
-          </Slider>
+          </div>
+
+          {items.length > 1 && (
+            <div className="carousel-controls">
+              <button className="carousel-prev" onClick={handlePrev} aria-label="Previous item">
+                <svg className="carousel-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12l4.58-4.59z" />
+                </svg>
+              </button>
+              <button className="carousel-next" onClick={handleNext} aria-label="Next item">
+                <svg className="carousel-arrow" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6-6-6z" />
+                </svg>
+              </button>
+            </div>
+          )}
         </div>
       </div>
 
       {showVideo && (
-        <div
-          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-2 sm:p-4"
-          onClick={closeVideo}
-        >
-          <div className="relative w-full max-w-4xl" onClick={e => e.stopPropagation()}>
-            <button
-              onClick={closeVideo}
-              className="absolute -top-10 right-0 text-white hover:text-gray-300 p-2"
-              aria-label="Close video"
-            >
-              <svg
-                className="w-6 h-6 sm:w-8 sm:h-8"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
+        <div className="video-modal" onClick={closeVideo}>
+          <div className="video-container" onClick={e => e.stopPropagation()}>
+            <iframe
+              src={currentVideo}
+              title="Video Player"
+              className="video-iframe"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              aria-label="Video player"
+            />
+            <button className="close-button" onClick={closeVideo} aria-label="Close video">
+              &times;
             </button>
-            <div className="w-full">
-              <div className="aspect-video w-full">
-                <iframe
-                  src={currentVideo}
-                  className="w-full h-full rounded-lg"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  loading="lazy"
-                />
-              </div>
-            </div>
           </div>
         </div>
       )}

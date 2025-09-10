@@ -8,32 +8,30 @@ export const LeagueSelector: React.FC<LeagueSelectorProps> = ({ onSelectLeague }
     <div className="flex flex-col sm:flex-row justify-center gap-6 w-full max-w-md">
       <button
         onClick={() => onSelectLeague('nba')}
-        className="flex flex-col items-center justify-center p-6 bg-[#0054a4] hover:bg-[#0078a5] rounded-lg transition-colors group"
+        className="flex flex-col items-center justify-center p-6 hover:bg-[#0257a27d] rounded-lg transition-colors group cursor-pointer"
       >
-        <div className="w-24 h-24 mb-3 flex items-center justify-center">
+        <div className="w-24 h-full mb-3 flex items-center justify-center">
           <img
             src="/images/nba-logo.png"
             alt="NBA"
-            className="h-full w-auto object-contain"
+            className="w-full h-full object-contain rounded-full"
             loading="eager"
             fetchPriority="high"
           />
         </div>
-        <span className="text-white font-medium">NBA Standings</span>
       </button>
 
       <button
         onClick={() => onSelectLeague('wnba')}
-        className="flex flex-col items-center justify-center p-6 bg-[#ff4613] hover:bg-[#ff7713] rounded-lg transition-colors group"
+        className="flex flex-col items-center justify-center p-6 hover:bg-[#ff47134a] rounded-lg transition-colors group cursor-pointer"
       >
-        <div className="w-24 h-24 mb-3 flex items-center justify-center">
+        <div className="w-24 h-full mb-3 flex items-center justify-center">
           <img
-            src="/images/wnba-logo.jpg"
+            src="/images/wnba-logo.png"
             alt="WNBA"
             className="h-full w-auto object-contain rounded-full"
           />
         </div>
-        <span className="text-white font-medium">WNBA Standings</span>
       </button>
     </div>
   </div>

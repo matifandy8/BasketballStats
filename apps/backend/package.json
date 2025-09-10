@@ -22,8 +22,9 @@
     "helmet": "latest",
     "ioredis": "latest",
     "lint-staged": "latest",
-    "pino": "latest",
+    "pino": "^9.9.5",
     "pino-http": "latest",
+    "pino-pretty": "^13.1.1",
     "rate-limit-redis": "latest",
     "sharp": "^0.34.3",
     "typescript-eslint": "latest",
@@ -34,7 +35,7 @@
     "@types/express": "latest",
     "@types/ioredis": "latest",
     "@types/node": "latest",
-    "@types/pino": "latest",
+    "@types/pino": "^7.0.5",
     "ts-node-dev": "latest",
     "typescript": "latest"
   }

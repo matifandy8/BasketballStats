@@ -118,7 +118,7 @@ router.get(
 router.get(
   '/news',
   apiLimiter(60),
-  cache('news:nba', 300),
+  cache('news:nba', 43200),
   (req, res, next) => {
     req.params.league = 'nba';
     next();
@@ -129,7 +129,7 @@ router.get(
 router.get(
   '/highlights',
   apiLimiter(60),
-  cache('highlights:nba', 300),
+  cache('highlights:nba', 43200),
   (req, res, next) => {
     req.params.league = 'nba';
     next();
