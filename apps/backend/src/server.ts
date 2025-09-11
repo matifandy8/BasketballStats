@@ -7,6 +7,7 @@ import { errorMiddleware } from './middlewares/error.middleware';
 import routes from './routes/nbawnba.routes';
 import { logger } from './utils/logger';
 import compression from 'compression';
+import { PrecacheManager, defaultPrecacheConfigs } from './utils/precache';
 
 const app = express();
 
@@ -15,6 +16,24 @@ app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(express.json());
 app.use(pinoHttp());
 app.use(compression());
+app.set('trust proxy', 1);
+
+if (process.env.REDIS_URL) {
+  const precacheManager = new PrecacheManager(process.env.REDIS_URL, defaultPrecacheConfigs);
+
+  precacheManager.initialize().catch(err => {
+    logger.error('Failed to initialize pre-caching:', err);
+  });
+
+  const shutdown = async () => {
+    logger.info('Shutting down pre-cache manager...');
+    precacheManager.clearIntervals();
+    process.exit(0);
+  };
+
+  process.on('SIGTERM', shutdown);
+  process.on('SIGINT', shutdown);
+}
 
 app.use('/images', express.static(path.join(__dirname, '../images')));
 
