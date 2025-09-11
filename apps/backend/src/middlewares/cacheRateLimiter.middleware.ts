@@ -76,6 +76,18 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
           res.setHeader('X-Cache-Source', 'precache');
           return res.json(precachedData);
         }
+
+        const pathParts = dynamicKey.split(':');
+        if (pathParts.length > 1) {
+          const baseKey = pathParts[0];
+          const precachedData = await precacheManager.getCachedData<T>(baseKey);
+          if (precachedData) {
+            logger.debug(`[PRECACHE HIT] ${baseKey} (partial match for ${dynamicKey})`);
+            res.setHeader('X-Cache-Status', 'HIT');
+            res.setHeader('X-Cache-Source', 'precache');
+            return res.json(precachedData);
+          }
+        }
       }
 
       const cachedData = await redisClient.get(key);

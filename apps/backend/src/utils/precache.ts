@@ -65,8 +65,8 @@ export class PrecacheManager {
       const data = await this.redis.get(`precache:${key}`);
       if (!data) return null;
 
-      const parsedData = JSON.parse(data);
-      return parsedData as T;
+      const parsed = JSON.parse(data);
+      return parsed.data || parsed;
     } catch (error: unknown) {
       if (error instanceof Error) {
         logger.error({ error }, `[PRECACHE] Error getting cached data for ${key}`);
@@ -85,31 +85,31 @@ export class PrecacheManager {
 
 export const defaultPrecacheConfigs: CacheConfig[] = [
   {
-    key: 'wnba/highlights',
-    url: 'https://basketballstats-1.onrender.com/api/wnba/highlights',
+    key: 'schedule:nba:2024:REG',
+    url: 'https://basketballstats-1.onrender.com/api/nba/schedule/2024/REG',
     ttl: 86400, // 24 hours
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
   },
   {
-    key: 'nba/news',
+    key: 'news:nba',
     url: 'https://basketballstats-1.onrender.com/api/nba/news',
     ttl: 86400, // 24 hours
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
   },
   {
-    key: 'nba/highlights',
+    key: 'highlights:nba',
     url: 'https://basketballstats-1.onrender.com/api/nba/highlights',
     ttl: 86400, // 24 hours
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
   },
   {
-    key: 'nba/schedule/today',
+    key: 'schedule:today:nba',
     url: 'https://basketballstats-1.onrender.com/api/nba/schedule/today',
     ttl: 86400, // 24 hours
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
   },
   {
-    key: 'wnba/schedule/today',
+    key: 'schedule:today:wnba',
     url: 'https://basketballstats-1.onrender.com/api/wnba/schedule/today',
     ttl: 86400, // 24 hours
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
