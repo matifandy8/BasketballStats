@@ -32,6 +32,7 @@
     "valibot": "latest"
   },
   "devDependencies": {
+    "@types/compression": "^1.8.1",
     "@types/cors": "latest",
     "@types/express": "latest",
     "@types/ioredis": "latest",
