@@ -1,33 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useTodaysGames } from '../../services/gameService';
-
-interface Team {
-  name: string;
-  alias: string;
-  id: string;
-  sr_id: string;
-}
-
-interface Game {
-  id: string;
-  status: 'scheduled' | 'inprogress' | 'closed' | 'complete';
-  scheduled: string;
-  home_points?: number;
-  away_points?: number;
-  home: Team;
-  away: Team;
-  venue: {
-    name: string;
-    city: string;
-    state: string;
-  };
-  broadcasts?: Array<{
-    network: string;
-    type: string;
-    locale: string;
-    channel?: string;
-  }>;
-}
+import type { Game } from '../../types/games';
 
 const formatGameTime = (dateString: string) => {
   const date = new Date(dateString);
@@ -46,8 +19,16 @@ const getGameStatus = (game: Game) => {
 };
 
 const ScoreTicker: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<'nba' | 'wnba'>('wnba');
-  const { nbaGames, wnbaGames, isLoading, error } = useTodaysGames();
+  const {
+    nbaGames,
+    wnbaGames,
+    isLoading,
+    error,
+    activeLeague,
+    setActiveLeague,
+    prefetchWnbaGames,
+  } = useTodaysGames();
+
   const sliderRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -55,35 +36,21 @@ const ScoreTicker: React.FC = () => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const handleTabChange = (tab: 'nba' | 'wnba') => {
-    if (tab === activeTab) return;
+    if (tab === activeLeague) return;
     setIsTransitioning(true);
-    setActiveTab(tab);
+    setActiveLeague(tab);
     if (sliderRef.current) {
       sliderRef.current.scrollTo({ left: 0, behavior: 'smooth' });
     }
     setTimeout(() => setIsTransitioning(false), 300);
   };
 
-  const handleMouseDown = (e: React.MouseEvent) => {
-    if (!sliderRef.current) return;
-    setIsDragging(true);
-    setStartX(e.pageX - sliderRef.current.offsetLeft);
-    setScrollLeft(sliderRef.current.scrollLeft);
+  const handleWnbaTabHover = () => {
+    prefetchWnbaGames();
   };
 
-  const handleMouseLeave = () => setIsDragging(false);
-  const handleMouseUp = () => setIsDragging(false);
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isDragging || !sliderRef.current) return;
-    e.preventDefault();
-    const x = e.pageX - sliderRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    sliderRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const currentGames = activeTab === 'nba' ? nbaGames : wnbaGames;
-  const tabColor = activeTab === 'nba' ? 'blue-400' : 'pink-400';
+  const currentGames = activeLeague === 'nba' ? nbaGames : wnbaGames;
+  const tabColor = activeLeague === 'nba' ? 'blue-400' : 'pink-400';
 
   const renderSkeleton = () => (
     <div className="flex space-x-2 px-2">
@@ -100,7 +67,7 @@ const ScoreTicker: React.FC = () => {
     return (
       <div className="bg-black text-white py-4 text-center min-h-[120px] flex items-center justify-center">
         <div>
-          Error loading {activeTab.toUpperCase()} games: {error.message}
+          Error loading {activeLeague.toUpperCase()} games: {error.message}
         </div>
       </div>
     );
@@ -112,7 +79,7 @@ const ScoreTicker: React.FC = () => {
         <div className="flex border-b border-stone-700 mb-2">
           <button
             className={`px-4 py-2 font-medium transition-all ${
-              activeTab === 'nba'
+              activeLeague === 'nba'
                 ? `text-${tabColor} border-b-2 border-${tabColor} font-bold`
                 : 'text-stone-400 hover:text-white'
             }`}
@@ -123,11 +90,12 @@ const ScoreTicker: React.FC = () => {
           </button>
           <button
             className={`px-4 py-2 font-medium transition-all ${
-              activeTab === 'wnba'
+              activeLeague === 'wnba'
                 ? `text-${tabColor} border-b-2 border-${tabColor} font-bold`
                 : 'text-stone-400 hover:text-white'
             }`}
             onClick={() => handleTabChange('wnba')}
+            onMouseEnter={handleWnbaTabHover}
             aria-label="Show WNBA games"
           >
             WNBA
@@ -137,11 +105,22 @@ const ScoreTicker: React.FC = () => {
         <div
           ref={sliderRef}
           className="relative overflow-x-auto scrollbar-hide py-2 cursor-grab active:cursor-grabbing"
-          onMouseDown={handleMouseDown}
-          onMouseLeave={handleMouseLeave}
-          onMouseUp={handleMouseUp}
-          onMouseMove={handleMouseMove}
-          aria-label={`${activeTab} games ticker`}
+          onMouseDown={e => {
+            if (!sliderRef.current) return;
+            setIsDragging(true);
+            setStartX(e.pageX - sliderRef.current.offsetLeft);
+            setScrollLeft(sliderRef.current.scrollLeft);
+          }}
+          onMouseLeave={() => setIsDragging(false)}
+          onMouseUp={() => setIsDragging(false)}
+          onMouseMove={e => {
+            if (!isDragging || !sliderRef.current) return;
+            e.preventDefault();
+            const x = e.pageX - sliderRef.current.offsetLeft;
+            const walk = (x - startX) * 2;
+            sliderRef.current.scrollLeft = scrollLeft - walk;
+          }}
+          aria-label={`${activeLeague} games ticker`}
         >
           {isLoading || isTransitioning ? (
             renderSkeleton()
@@ -183,7 +162,7 @@ const ScoreTicker: React.FC = () => {
             </div>
           ) : (
             <div className="text-stone-400 py-4 px-6 w-full text-center">
-              No games today for {activeTab.toUpperCase()}
+              No games today for {activeLeague.toUpperCase()}
             </div>
           )}
         </div>

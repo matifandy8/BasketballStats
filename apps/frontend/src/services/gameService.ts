@@ -1,4 +1,5 @@
-import { useQuery } from '@tanstack/react-query';
+import { useQuery, useQueryClient } from '@tanstack/react-query';
+import { useState } from 'react';
 import API_CONFIG from '../config/api';
 
 const fetchGamesByLeague = async (league: 'nba' | 'wnba') => {
@@ -13,8 +14,11 @@ const fetchGamesByLeague = async (league: 'nba' | 'wnba') => {
 };
 
 export const useTodaysGames = () => {
+  const [activeLeague, setActiveLeague] = useState<'nba' | 'wnba'>('nba');
+  const queryClient = useQueryClient();
+
   const {
-    data: nbaGames,
+    data: nbaGames = [],
     isLoading: isLoadingNba,
     error: errorNba,
   } = useQuery({
@@ -25,20 +29,38 @@ export const useTodaysGames = () => {
   });
 
   const {
-    data: wnbaGames,
+    data: wnbaGames = [],
     isLoading: isLoadingWnba,
     error: errorWnba,
+    isFetching: isFetchingWnba,
   } = useQuery({
     queryKey: ['games', 'wnba'],
     queryFn: () => fetchGamesByLeague('wnba'),
     staleTime: 5 * 60 * 1000,
     refetchOnWindowFocus: false,
+    enabled: activeLeague === 'wnba' || !!queryClient.getQueryData(['games', 'wnba']),
   });
+
+  const prefetchWnbaGames = () => {
+    if (!queryClient.getQueryData(['games', 'wnba'])) {
+      queryClient.prefetchQuery({
+        queryKey: ['games', 'wnba'],
+        queryFn: () => fetchGamesByLeague('wnba'),
+        staleTime: 5 * 60 * 1000,
+      });
+    }
+  };
+
+  const isLoading = activeLeague === 'nba' ? isLoadingNba : isLoadingWnba || isFetchingWnba;
+  const error = errorNba || errorWnba;
 
   return {
     nbaGames,
     wnbaGames,
-    isLoading: isLoadingNba || isLoadingWnba,
-    error: errorNba || errorWnba,
+    isLoading,
+    error,
+    activeLeague,
+    setActiveLeague,
+    prefetchWnbaGames,
   };
 };
