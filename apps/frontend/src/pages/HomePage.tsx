@@ -4,7 +4,7 @@ import HighlightsCarousel from '../components/HighlightsCarousel';
 import { useAllHighlights } from '../services/highlightsService';
 
 const HomePage: React.FC = () => {
-  const { data } = useAllHighlights();
+  const { data, isLoading } = useAllHighlights();
   const nba = data?.nba || [];
   const wnba = data?.wnba || [];
 
@@ -17,7 +17,12 @@ const HomePage: React.FC = () => {
       />
       <div className="min-h-screen">
         <div className="min-h-[400px]">
-          <HighlightsCarousel items={nba} league="NBA" title="NBA Highlights" />
+          <HighlightsCarousel
+            items={nba}
+            league="NBA"
+            title="NBA Highlights"
+            isLoading={isLoading}
+          />
         </div>
 
         <section className="py-8">
@@ -27,7 +32,12 @@ const HomePage: React.FC = () => {
         </section>
 
         <div className="min-h-[400px]">
-          <HighlightsCarousel items={wnba} league="WNBA" title="WNBA Highlights" />
+          <HighlightsCarousel
+            items={wnba}
+            league="WNBA"
+            title="WNBA Highlights"
+            isLoading={isLoading}
+          />
         </div>
       </div>
     </>

@@ -34,7 +34,6 @@ export const apiLimiter = (maxRequests = 60, useRedis = true): RateLimitRequestH
   });
 };
 
-// Types
 type KeyOrFn = string | ((req: Request) => string);
 
 interface CachePayload<T = unknown> {
@@ -71,6 +70,7 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
 
           if (!parsed.timestamp || now - parsed.timestamp < (parsed.ttl || ttlSeconds)) {
             logger.debug(`[CACHE HIT] ${key}`);
+            res.setHeader('X-Cache-Status', 'HIT');
             return res.json(parsed.payload as T);
           }
           logger.debug(`[CACHE EXPIRED] ${key}`);
@@ -89,6 +89,8 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
     }
 
     const originalJson = res.json.bind(res);
+
+    res.setHeader('X-Cache-Status', 'MISS');
 
     res.json = (body: T) => {
       if (res.statusCode >= 200 && res.statusCode < 300) {

@@ -6,6 +6,7 @@ import path from 'path';
 import { errorMiddleware } from './middlewares/error.middleware';
 import routes from './routes/nbawnba.routes';
 import { logger } from './utils/logger';
+import compression from 'compression';
 
 const app = express();
 
@@ -13,6 +14,7 @@ app.use(cors());
 app.use(helmet({ crossOriginResourcePolicy: { policy: 'cross-origin' } }));
 app.use(express.json());
 app.use(pinoHttp());
+app.use(compression());
 
 app.use('/images', express.static(path.join(__dirname, '../images')));
 

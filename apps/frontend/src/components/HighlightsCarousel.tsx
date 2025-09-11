@@ -1,8 +1,9 @@
 import { useState, useRef, useEffect } from 'react';
 import type { HighlightsCarouselProps } from '../types/highlights';
 import './HighlightsCarousel.css';
+import HighlightsSkeleton from './HighlightsSkeleton';
 
-const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title }) => {
+const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title, isLoading }) => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   const [currentVideo, setCurrentVideo] = useState<string>('');
   const trackRef = useRef<HTMLDivElement>(null);
@@ -10,7 +11,7 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
-    itemRefs.current = itemRefs.current.slice(0, items.length);
+    itemRefs.current = itemRefs.current.slice(0, items?.length || 0);
   }, [items]);
 
   const handlePlayClick = (videoUrl: string) => {
@@ -28,6 +29,8 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
   };
 
   const scrollToItem = (index: number) => {
+    if (!items?.length) return;
+
     if (trackRef.current && itemRefs.current[index]) {
       const item = itemRefs.current[index];
       item?.scrollIntoView({
@@ -40,11 +43,13 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
   };
 
   const handleNext = () => {
+    if (!items?.length) return;
     const nextIndex = (currentIndex + 1) % items.length;
     scrollToItem(nextIndex);
   };
 
   const handlePrev = () => {
+    if (!items?.length) return;
     const prevIndex = (currentIndex - 1 + items.length) % items.length;
     scrollToItem(prevIndex);
   };
@@ -58,7 +63,7 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
   };
 
   const handleScroll = () => {
-    if (!trackRef.current) return;
+    if (!trackRef.current || !items?.length) return;
 
     const container = trackRef.current;
     const containerScroll = container.scrollLeft + container.offsetWidth / 2;
@@ -76,6 +81,21 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title })
       }
     }
   };
+
+  if (isLoading) {
+    return (
+      <section className="highlights-section">
+        <div className="highlights-container">
+          <h2 className="highlights-title">{title}</h2>
+          <HighlightsSkeleton />
+        </div>
+      </section>
+    );
+  }
+
+  if (!items?.length) {
+    return null; // Or return a message/placeholder
+  }
 
   return (
     <section className="highlights-section">
