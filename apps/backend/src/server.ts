@@ -8,6 +8,7 @@ import routes from './routes/nbawnba.routes';
 import { logger } from './utils/logger';
 import compression from 'compression';
 import { PrecacheManager, defaultPrecacheConfigs } from './utils/precache';
+import { setPrecacheManager } from './middlewares/cacheRateLimiter.middleware';
 
 const app = express();
 
@@ -20,6 +21,7 @@ app.set('trust proxy', 1);
 
 if (process.env.REDIS_URL) {
   const precacheManager = new PrecacheManager(process.env.REDIS_URL, defaultPrecacheConfigs);
+  setPrecacheManager(precacheManager);
 
   precacheManager.initialize().catch(err => {
     logger.error('Failed to initialize pre-caching:', err);

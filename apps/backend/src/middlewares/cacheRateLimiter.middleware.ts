@@ -3,6 +3,7 @@ import rateLimit, { MemoryStore, RateLimitRequestHandler } from 'express-rate-li
 import RedisStore, { RedisReply } from 'rate-limit-redis';
 import Redis, { Redis as RedisClient } from 'ioredis';
 import { logger } from '../utils/logger';
+import { PrecacheManager } from '../utils/precache';
 
 const redisClient = new Redis(process.env.REDIS_URL as string);
 
@@ -46,6 +47,12 @@ interface CachePayload<T = unknown> {
 const REDIS_KEY_PREFIX = 'cache:';
 const DEFAULT_TTL = 300; // 5 minutes in seconds
 
+let precacheManager: PrecacheManager | null = null;
+
+export const setPrecacheManager = (manager: PrecacheManager) => {
+  precacheManager = manager;
+};
+
 /**
  * Enhanced cache middleware with better TypeScript support and error handling
  * @param keyOrFn - Either a static key prefix or a function that generates one from the request
@@ -61,6 +68,16 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
     const key = `${REDIS_KEY_PREFIX}${dynamicKey}`;
 
     try {
+      if (precacheManager) {
+        const precachedData = await precacheManager.getCachedData<T>(dynamicKey);
+        if (precachedData) {
+          logger.debug(`[PRECACHE HIT] ${dynamicKey}`);
+          res.setHeader('X-Cache-Status', 'HIT');
+          res.setHeader('X-Cache-Source', 'precache');
+          return res.json(precachedData);
+        }
+      }
+
       const cachedData = await redisClient.get(key);
 
       if (cachedData) {

@@ -97,7 +97,7 @@ export const defaultPrecacheConfigs: CacheConfig[] = [
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
   },
   {
-    key: 'nba/standings',
+    key: 'nba/highlights',
     url: 'https://basketballstats-1.onrender.com/api/nba/highlights',
     ttl: 86400, // 24 hours
     refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
