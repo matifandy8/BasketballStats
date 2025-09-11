@@ -100,6 +100,7 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
           if (!parsed.timestamp || now - parsed.timestamp < (parsed.ttl || ttlSeconds)) {
             logger.debug(`[CACHE HIT] ${key}`);
             res.setHeader('X-Cache-Status', 'HIT');
+            res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
             return res.json(parsed.payload as T);
           }
           logger.debug(`[CACHE EXPIRED] ${key}`);
@@ -117,8 +118,7 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
       );
     }
 
-    const originalJson = res.json.bind(res);
-
+    res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
     res.setHeader('X-Cache-Status', 'MISS');
 
     res.json = (body: T) => {
@@ -139,7 +139,7 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
           );
       }
 
-      return originalJson(body);
+      return res.json(body);
     };
 
     next();
