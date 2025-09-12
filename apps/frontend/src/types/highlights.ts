@@ -39,4 +39,5 @@ export interface HighlightsCarouselProps {
   league: 'NBA' | 'WNBA';
   title: string;
   isLoading?: boolean;
+  error?: Error | null;
 }

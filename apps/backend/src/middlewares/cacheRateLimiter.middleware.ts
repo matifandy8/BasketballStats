@@ -121,6 +121,8 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
     res.setHeader('Cache-Control', 'public, s-maxage=60, stale-while-revalidate=300');
     res.setHeader('X-Cache-Status', 'MISS');
 
+    const originalJson = res.json.bind(res);
+
     res.json = (body: T) => {
       if (res.statusCode >= 200 && res.statusCode < 300) {
         const payload: CachePayload<T> = {
@@ -139,7 +141,7 @@ export const cache = <T = unknown>(keyOrFn: KeyOrFn, ttlSeconds: number = DEFAUL
           );
       }
 
-      return res.json(body);
+      return originalJson(body);
     };
 
     next();

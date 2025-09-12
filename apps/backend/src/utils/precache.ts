@@ -85,12 +85,6 @@ export class PrecacheManager {
 
 export const defaultPrecacheConfigs: CacheConfig[] = [
   {
-    key: 'schedule:nba:2024:REG',
-    url: 'https://basketballstats-1.onrender.com/api/nba/schedule/2024/REG',
-    ttl: 86400, // 24 hours
-    refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
-  },
-  {
     key: 'news:nba',
     url: 'https://basketballstats-1.onrender.com/api/nba/news',
     ttl: 86400, // 24 hours

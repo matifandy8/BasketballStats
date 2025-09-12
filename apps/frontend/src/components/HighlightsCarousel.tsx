@@ -3,7 +3,12 @@ import type { HighlightsCarouselProps } from '../types/highlights';
 import './HighlightsCarousel.css';
 import HighlightsSkeleton from './HighlightsSkeleton';
 
-const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title, isLoading }) => {
+const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({
+  items,
+  title,
+  isLoading,
+  error,
+}) => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   const [currentVideo, setCurrentVideo] = useState<string>('');
   const trackRef = useRef<HTMLDivElement>(null);
@@ -93,8 +98,19 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({ items, title, i
     );
   }
 
+  if (error) {
+    return (
+      <section className="highlights-section">
+        <div className="highlights-container">
+          <h2 className="highlights-title">{title}</h2>
+          <p className="error-message">Error fetching highlights</p>
+        </div>
+      </section>
+    );
+  }
+
   if (!items?.length) {
-    return null; // Or return a message/placeholder
+    return null;
   }
 
   return (

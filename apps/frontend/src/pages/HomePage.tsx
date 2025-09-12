@@ -4,7 +4,7 @@ import HighlightsCarousel from '../components/HighlightsCarousel';
 import { useAllHighlights } from '../services/highlightsService';
 
 const HomePage: React.FC = () => {
-  const { data, isLoading } = useAllHighlights();
+  const { data, isLoading, error } = useAllHighlights();
   const nba = data?.nba || [];
   const wnba = data?.wnba || [];
 
@@ -22,6 +22,7 @@ const HomePage: React.FC = () => {
             league="NBA"
             title="NBA Highlights"
             isLoading={isLoading}
+            error={error}
           />
         </div>
 
@@ -37,6 +38,7 @@ const HomePage: React.FC = () => {
             league="WNBA"
             title="WNBA Highlights"
             isLoading={isLoading}
+            error={error}
           />
         </div>
       </div>
