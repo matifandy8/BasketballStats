@@ -7,13 +7,16 @@ import {
   getTeamById,
   getStandings,
   getNews,
-  getHighlights,
 } from '../services/sportradar.service';
 import { Player, SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
 import crypto from 'crypto';
 import sharp from 'sharp';
 import { NewsArticle, NewsResponse } from '../types/news';
+import {
+  getOptimizedHighlights,
+  scheduleHighlightRefresh,
+} from '../services/imageOptimizer.service';
 
 export async function scheduleCtrl(req: Request, res: Response, next: NextFunction) {
   try {
@@ -210,46 +213,21 @@ export const newsCtrl = async (req: Request, res: Response, next: NextFunction) 
 export const highlightsCtrl = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const league = req.params.league as League;
-    const videos = await getHighlights(league);
 
-    if (!videos || !Array.isArray(videos)) {
-      return res.json([]);
+    const optimizedVideos = await getOptimizedHighlights(league);
+
+    if (!optimizedVideos || optimizedVideos.length === 0) {
+      res.set('Retry-After', '60');
+      return res.status(503).json({
+        error: 'Highlights are currently being loaded. Please try again in a moment.',
+      });
     }
-
-    const optimizedVideos = await Promise.all(
-      videos.map(async video => {
-        if (!video.thumbnail) return video;
-
-        try {
-          const response = await fetch(video.thumbnail);
-
-          if (!response.ok) {
-            console.warn(`Error fetching image: ${video.thumbnail}`);
-            return video;
-          }
-
-          const buffer = Buffer.from(await response.arrayBuffer());
-
-          const optimizedBuffer = await sharp(buffer)
-            .resize({ width: 800 })
-            .webp({ quality: 80 })
-            .toBuffer();
-
-          const optimizedThumbnail = `data:image/webp;base64,${optimizedBuffer.toString('base64')}`;
-
-          return {
-            ...video,
-            thumbnail: optimizedThumbnail,
-          };
-        } catch (error) {
-          console.error('Error optimizing image:', error);
-          return video;
-        }
-      })
-    );
 
     res.json(optimizedVideos);
   } catch (e) {
     next(e);
   }
 };
+
+// Initialize the scheduled job when the server starts
+scheduleHighlightRefresh();
