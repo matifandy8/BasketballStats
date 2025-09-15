@@ -141,7 +141,6 @@ async function refreshAllHighlights() {
           if (error instanceof Error) {
             logger.error(`An error occurred: ${error.message}`);
           } else {
-            // Handle cases where the thrown value is not an Error object
             logger.error('An unknown error occurred.');
           }
         }

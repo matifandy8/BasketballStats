@@ -61,10 +61,17 @@ export async function scheduleTodayCtrl(req: Request, res: Response, next: NextF
     const etag = crypto.createHash('md5').update(JSON.stringify(games)).digest('hex');
 
     if (req.headers['if-none-match'] === etag) {
-      return res.status(304).send();
+      return res.status(304).end();
     }
 
-    res.setHeader('ETag', etag);
+    res.set({
+      'Cache-Control': 'public, max-age=300, s-maxage=600, stale-while-revalidate=300',
+      ETag: etag,
+      Vary: 'Accept-Encoding',
+      'CDN-Cache-Control': 'public, max-age=600, s-maxage=900, stale-while-revalidate=300',
+      'Last-Modified': new Date().toUTCString(),
+    });
+
     res.json(games);
   } catch (err) {
     next(err);
@@ -223,11 +230,23 @@ export const highlightsCtrl = async (req: Request, res: Response, next: NextFunc
       });
     }
 
+    const etag = crypto.createHash('md5').update(JSON.stringify(optimizedVideos)).digest('hex');
+
+    if (req.headers['if-none-match'] === etag) {
+      return res.status(304).end();
+    }
+
+    res.set({
+      'Cache-Control': 'public, max-age=300, s-maxage=600, stale-while-revalidate=300',
+      ETag: etag,
+      Vary: 'Accept-Encoding',
+      'CDN-Cache-Control': 'public, max-age=600, s-maxage=900, stale-while-revalidate=300',
+    });
+
     res.json(optimizedVideos);
   } catch (e) {
     next(e);
   }
 };
 
-// Initialize the scheduled job when the server starts
 scheduleHighlightRefresh();
