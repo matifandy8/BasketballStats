@@ -142,9 +142,12 @@ const LeaguePage: React.FC<LeaguePageProps> = ({ leagueName, leagueSlug, descrip
               ))}
             </div>
             <div className="mt-6 text-center">
-              <button className="px-6 py-2.5 px-6 py-2 bg-white text-black rounded-md hover:bg-gray-500 transition-colors cursor-pointer font-druk">
+              <Link
+                to="/news"
+                className="px-6 py-2.5 px-6 py-2 bg-white text-black rounded-md hover:bg-gray-500 transition-colors cursor-pointer font-druk"
+              >
                 View All News
-              </button>
+              </Link>
             </div>
           </div>
         </div>

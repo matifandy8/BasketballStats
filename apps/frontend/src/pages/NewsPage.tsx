@@ -4,8 +4,6 @@ import { PageLoading } from '../components/LoadingSpinner';
 import { PageError } from '../components/ErrorComponent';
 
 const NewsPage: React.FC = () => {
-  console.log('render news page');
-
   const { data, isLoading, error } = useNews('nba');
 
   if (isLoading) {

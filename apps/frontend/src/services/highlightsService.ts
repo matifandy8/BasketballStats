@@ -11,16 +11,10 @@ const fetchHighlights = async (league: 'nba' | 'wnba'): Promise<HighlightItem[]>
   if (!response.ok) {
     const errorData = await response.json().catch(() => ({}));
     console.error(`Error fetching ${league} highlights:`, response.status, errorData);
-    throw new Error(
-      `Failed to fetch ${league} highlights: ${response.status} ${response.statusText}`
-    );
+    throw new Error(`Something went wrong while loading team data. Please try again later.`);
   }
 
   const data = await response.json();
-
-  if (process.env.NODE_ENV === 'development') {
-    console.log(`${league} highlights response:`, data);
-  }
 
   return data;
 };

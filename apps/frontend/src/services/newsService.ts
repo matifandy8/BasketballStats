@@ -12,12 +12,10 @@ const fetchNews = async (league: 'nba' | 'wnba'): Promise<NewsResponse> => {
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       console.error(`Error fetching ${league} news:`, response.status, errorData);
-      throw new Error(`Failed to fetch ${league} news: ${response.status} ${response.statusText}`);
+      throw new Error(`Something went wrong while loading team data. Please try again later.`);
     }
 
     const data = await response.json();
-
-    console.log(`${league} news response:`, data);
 
     return data;
   } catch (error) {

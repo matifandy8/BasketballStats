@@ -13,7 +13,6 @@ import StandingPage from './pages/StandingPage';
 import NewsPage from './pages/NewsPage';
 
 function App() {
-  console.log('render app()');
   return (
     <>
       <SEO />

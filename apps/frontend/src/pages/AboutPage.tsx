@@ -1,5 +1,4 @@
 const AboutPage: React.FC = () => {
-  console.log('render about page');
   return (
     <div className="max-w-4xl mx-auto p-6 rounded-lg shadow-md text-left ">
       <h1 className="text-3xl font-bold mb-6">About NBA and WNBA Stats</h1>

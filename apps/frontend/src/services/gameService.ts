@@ -7,7 +7,7 @@ const fetchGamesByLeague = async (league: 'nba' | 'wnba') => {
   const response = await fetch(endpoint);
 
   if (!response.ok) {
-    throw new Error(`Failed to fetch ${league} games`);
+    throw new Error(`Something went wrong while loading team data. Please try again later.`);
   }
 
   return response.json();

@@ -12,9 +12,7 @@ const fetchStandings = async (league: 'nba' | 'wnba'): Promise<StandingResponse>
     if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       console.error(`Error fetching ${league} standings:`, response.status, errorData);
-      throw new Error(
-        `Failed to fetch ${league} standings: ${response.status} ${response.statusText}`
-      );
+      throw new Error(`Something went wrong while loading team data. Please try again later.`);
     }
 
     const data = await response.json();

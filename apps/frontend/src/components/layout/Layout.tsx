@@ -8,7 +8,6 @@ interface LayoutProps {
 }
 
 function Layout({ children }: LayoutProps) {
-  console.log('render Layout()');
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
