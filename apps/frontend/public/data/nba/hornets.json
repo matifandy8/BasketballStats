@@ -1,0 +1,1089 @@
+{
+  "id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+  "name": "Hornets",
+  "market": "Charlotte",
+  "alias": "CHA",
+  "founded": 1988,
+  "sr_id": "sr:team:3430",
+  "owner": "Gabe Plotkin and Rick Schnall",
+  "general_manager": "Jeff Peterson",
+  "president": "Shelly Cayette-Weston",
+  "mascot": "Hugo the Hornet",
+  "championships_won": 0,
+  "conference_titles": 0,
+  "division_titles": 0,
+  "retired_numbers": "6, 13",
+  "playoff_appearances": 10,
+  "gleague_affiliate": "Greensboro Swarm",
+  "reference": "1610612766",
+  "venue": {
+    "id": "a380f011-6e5d-5430-9f37-209e1e8a9b6f",
+    "name": "Spectrum Center",
+    "capacity": 19077,
+    "address": "330 E. Trade Street",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "28202",
+    "country": "USA",
+    "sr_id": "sr:venue:6146",
+    "location": {
+      "lat": "35.225148",
+      "lng": "-80.839249"
+    }
+  },
+  "league": {
+    "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+    "name": "NBA",
+    "alias": "NBA"
+  },
+  "conference": {
+    "id": "3960cfac-7361-4b30-bc25-8d393de6f62f",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN"
+  },
+  "division": {
+    "id": "54dc7348-c1d2-40d8-88b3-c4c0138e085d",
+    "name": "Southeast",
+    "alias": "SOUTHEAST"
+  },
+  "coaches": [
+    {
+      "id": "de39f1dd-1055-4961-ba8f-38584e56c4a0",
+      "full_name": "Charles Lee",
+      "first_name": "Charles",
+      "last_name": "Lee",
+      "position": "Head Coach",
+      "experience": "1",
+      "reference": "204225"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#1d1160",
+      "rgb_color": {
+        "red": 29,
+        "green": 17,
+        "blue": 96
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#00788c",
+      "rgb_color": {
+        "red": 0,
+        "green": 120,
+        "blue": 140
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0b9a642d-d6f6-4c65-a7bd-d82e016e1b5d",
+      "status": "ACT",
+      "full_name": "Kon Knueppel",
+      "first_name": "Kon",
+      "last_name": "Knueppel",
+      "abbr_name": "K.Knueppel",
+      "height": 79,
+      "weight": 217,
+      "position": "G-F",
+      "primary_position": "SF",
+      "jersey_number": "7",
+      "experience": "0",
+      "college": "Duke",
+      "high_school": "Wisconsin Lutheran (WI)",
+      "birth_place": "Milwaukee, WI, USA",
+      "birthdate": "2005-08-03",
+      "updated": "2025-08-12T15:51:56Z",
+      "sr_id": "sr:player:2838879",
+      "reference": "1642851",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1642851",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fa248fcd-2be5-410c-940c-a1cbaf2c61e8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "99d4d024-f1dc-4aee-96e1-4eeeb47d687f",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kon_Knueppel.png"
+    },
+    {
+      "id": "298852ca-299d-4cb9-a9e5-6ac909582f78",
+      "status": "ACT",
+      "full_name": "Pat Connaughton",
+      "first_name": "Pat",
+      "last_name": "Connaughton",
+      "abbr_name": "P.Connaughton",
+      "height": 77,
+      "weight": 209,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "21",
+      "experience": "10",
+      "college": "Notre Dame",
+      "high_school": "St. John's Prep (MA)",
+      "birth_place": "Arlington, MA, USA",
+      "birthdate": "1993-01-06",
+      "updated": "2025-08-15T14:25:33Z",
+      "sr_id": "sr:player:852114",
+      "rookie_year": 2015,
+      "reference": "1626192",
+      "draft": {
+        "team_id": "583ec9d6-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2015,
+        "round": "2",
+        "pick": "41"
+      },
+      "references": [
+        {
+          "source_id": "1626192",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7f484550-be01-49df-8419-c262535dbb19",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "4079630d-95d6-4960-9d89-191777b4273b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Pat_Connaughton.png"
+    },
+    {
+      "id": "388ec80d-171a-48f7-9cc8-5a8bebde54e0",
+      "status": "ACT",
+      "full_name": "Ryan Kalkbrenner",
+      "first_name": "Ryan",
+      "last_name": "Kalkbrenner",
+      "abbr_name": "R.Kalkbrenner",
+      "height": 85,
+      "weight": 257,
+      "position": "C",
+      "primary_position": "C",
+      "jersey_number": "11",
+      "experience": "0",
+      "college": "Creighton",
+      "high_school": "Trinity Catholic (MO)",
+      "birth_place": "Florissant, MO, USA",
+      "birthdate": "2002-01-17",
+      "updated": "2025-08-12T15:51:46Z",
+      "sr_id": "sr:player:2075373",
+      "reference": "1641750",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "2",
+        "pick": "34"
+      },
+      "references": [
+        {
+          "source_id": "1641750",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f6c37399-a310-4871-929f-11197bd1861c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "c9bab93f-70ab-4a54-b31b-2e1f76b0f325",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Ryan_Kalkbrenner.png"
+    },
+    {
+      "id": "3a2b38a1-23da-4af8-8c1a-e52694c2416a",
+      "status": "ACT",
+      "full_name": "DaQuan Jeffries",
+      "first_name": "DaQuan",
+      "last_name": "Jeffries",
+      "abbr_name": "D.Jeffries",
+      "height": 77,
+      "weight": 222,
+      "position": "G-F",
+      "primary_position": "SG",
+      "experience": "6",
+      "college": "Tulsa",
+      "high_school": "Santa Fe (OK)",
+      "birth_place": "Edmond, OK, USA",
+      "birthdate": "1997-08-30",
+      "updated": "2025-08-15T14:33:25Z",
+      "sr_id": "sr:player:1328796",
+      "rookie_year": 2019,
+      "reference": "1629610",
+      "draft": {
+        "year": 2019
+      },
+      "references": [
+        {
+          "source_id": "1629610",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ec26a228-104b-4e0b-b5c6-afb49c2a6d2e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "ba0b1b30-4970-4097-99d2-91ea77ff2646",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "80bf06f8-b2d8-483b-849c-2a168198cfbc",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Daquan_Jeffries.png"
+    },
+    {
+      "id": "50e0c4e6-dfe4-42ca-bf18-aa2630be21c9",
+      "status": "ACT",
+      "full_name": "Tidjane Salaün",
+      "first_name": "Tidjane",
+      "last_name": "Salaün",
+      "abbr_name": "T.Salaün",
+      "height": 80,
+      "weight": 207,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "31",
+      "experience": "1",
+      "birth_place": "Paris,, FRA",
+      "birthdate": "2005-08-10",
+      "updated": "2025-07-10T21:37:08Z",
+      "sr_id": "sr:player:2575195",
+      "rookie_year": 2024,
+      "reference": "1642275",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1642275",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e97ddcf0-32a1-44b7-9ef6-5fd30f5233c2",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9d779e81-acf6-4006-86d2-7a9787044e8b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tidjane_Salaün.png"
+    },
+    {
+      "id": "59209028-6712-47ef-b87c-bdb19f91523b",
+      "status": "ACT",
+      "full_name": "Grant Williams",
+      "first_name": "Grant",
+      "last_name": "Williams",
+      "abbr_name": "G.Williams",
+      "height": 78,
+      "weight": 236,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "2",
+      "experience": "6",
+      "college": "Tennessee",
+      "high_school": "Providence Day School (NC)",
+      "birth_place": "Houston, TX, USA",
+      "birthdate": "1998-11-30",
+      "updated": "2025-07-10T21:25:16Z",
+      "sr_id": "sr:player:1179162",
+      "rookie_year": 2019,
+      "reference": "1629684",
+      "draft": {
+        "team_id": "583eccfa-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2019,
+        "round": "1",
+        "pick": "22"
+      },
+      "references": [
+        {
+          "source_id": "1629684",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d0eb3a8c-e903-4caa-8a72-3df0a64ec83d",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "2d29d6f8-2707-4785-9d1e-fb8f2b709845",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "1a4e377f-9157-4d27-b104-2636a360c67c",
+          "comment": "The Hornets announced on Wednesday (Dec. 11) that Williams underwent successful surgery to repair multiple tears in his knee, including the ACL, per ESPN's Shams Charania. He is expected to return in 9 to 12 months.",
+          "desc": "ACL",
+          "status": "Out",
+          "start_date": "2024-11-24",
+          "update_date": "2024-12-11"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Grant_Williams.png"
+    },
+    {
+      "id": "5b681679-4d8c-4964-bbba-5ed058257745",
+      "status": "ACT",
+      "full_name": "Tre Mann",
+      "first_name": "Tre",
+      "last_name": "Mann",
+      "abbr_name": "T.Mann",
+      "height": 75,
+      "weight": 178,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "23",
+      "experience": "4",
+      "college": "Florida",
+      "high_school": "The Villages (FL)",
+      "birth_place": "Gainesville, FL, USA",
+      "birthdate": "2001-02-03",
+      "updated": "2025-07-10T21:33:35Z",
+      "sr_id": "sr:player:1795018",
+      "rookie_year": 2021,
+      "reference": "1630544",
+      "draft": {
+        "team_id": "583ecfff-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2021,
+        "round": "1",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1630544",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "44f1c2a7-1cfb-4b64-88da-0e674d8ea235",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "0722bebf-e7e6-4f9a-b384-c440c9253e98",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "c725dfce-6569-4049-9981-c88e9b9a441c",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tre_Mann.png"
+    },
+    {
+      "id": "775e4450-cdcd-43a1-b4cd-dc29fba48503",
+      "status": "ACT",
+      "full_name": "Brandon Miller",
+      "first_name": "Brandon",
+      "last_name": "Miller",
+      "abbr_name": "B.Miller",
+      "height": 79,
+      "weight": 200,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "24",
+      "experience": "2",
+      "college": "Alabama",
+      "high_school": "Cane Ridge (TN)",
+      "birth_place": "Antioch, TN, USA",
+      "birthdate": "2002-11-22",
+      "updated": "2025-07-10T21:21:06Z",
+      "sr_id": "sr:player:2438503",
+      "rookie_year": 2023,
+      "reference": "1641706",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1641706",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4da60208-807f-409e-8881-998ad5627857",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "6d651895-ca89-43e0-861c-7caef41fe6f3",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Brandon_Miller.png"
+    },
+    {
+      "id": "78dc76b4-a810-4e4a-9418-5cf3fa03582f",
+      "status": "ACT",
+      "full_name": "Moussa Diabaté",
+      "first_name": "Moussa",
+      "last_name": "Diabaté",
+      "abbr_name": "M.Diabaté",
+      "height": 81,
+      "weight": 210,
+      "position": "F",
+      "primary_position": "C",
+      "jersey_number": "14",
+      "experience": "3",
+      "college": "Michigan",
+      "high_school": "IMG Academy (FL)",
+      "birth_place": "Paris,, FRA",
+      "birthdate": "2002-01-21",
+      "updated": "2025-07-10T21:33:20Z",
+      "sr_id": "sr:player:2216782",
+      "rookie_year": 2022,
+      "reference": "1631217",
+      "draft": {
+        "team_id": "583ecdfb-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "2",
+        "pick": "43"
+      },
+      "references": [
+        {
+          "source_id": "1631217",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "930d3db6-1777-4773-af1f-3dc34e8d25c5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "47ee0d4b-b16c-401d-8528-d5af2233d75f",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "f3143798-2efa-4c37-8f71-91ccd298a2f0",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Moussa_Diabaté.png"
+    },
+    {
+      "id": "80b5cccf-203b-4482-92aa-76d1598216be",
+      "status": "ACT",
+      "full_name": "Collin Sexton",
+      "first_name": "Collin",
+      "last_name": "Sexton",
+      "abbr_name": "C.Sexton",
+      "height": 75,
+      "weight": 190,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "8",
+      "experience": "7",
+      "college": "Alabama",
+      "high_school": "Pebblebrook (GA)",
+      "birth_place": "Marietta, GA, USA",
+      "birthdate": "1999-01-04",
+      "updated": "2025-08-15T14:26:10Z",
+      "sr_id": "sr:player:1296148",
+      "rookie_year": 2018,
+      "reference": "1629012",
+      "draft": {
+        "team_id": "583ec773-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2018,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1629012",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "64e44f73-7cd1-42bc-a1c4-93ed243bfa01",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "6274055c-34d2-4b12-9143-d15a8b276827",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Collin_Sexton.png"
+    },
+    {
+      "id": "82c98130-ca75-4fad-be40-59133af1027e",
+      "status": "TWO-WAY",
+      "full_name": "Drew Peterson",
+      "first_name": "Drew",
+      "last_name": "Peterson",
+      "abbr_name": "D.Peterson",
+      "height": 81,
+      "weight": 205,
+      "position": "F",
+      "primary_position": "PF",
+      "experience": "1",
+      "college": "USC",
+      "high_school": "Libertyville (IL)",
+      "birth_place": "Libertyville, IL, USA",
+      "birthdate": "1999-11-09",
+      "updated": "2025-07-15T16:14:08Z",
+      "sr_id": "sr:player:1595314",
+      "rookie_year": 2023,
+      "reference": "1641809",
+      "draft": {
+        "year": 2023
+      },
+      "references": [
+        {
+          "source_id": "1641809",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c4b58108-69a7-45ce-9258-fe1045a88fa7",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "1bc681bf-4645-46f2-af42-bcc87b4ca091",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "e28222c1-2a96-45ce-9b59-74c1d48cdf82",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Drew_Peterson.png"
+    },
+    {
+      "id": "8426ab40-888d-4f89-976c-cd9e23717653",
+      "status": "ACT",
+      "full_name": "Spencer Dinwiddie",
+      "first_name": "Spencer",
+      "last_name": "Dinwiddie",
+      "abbr_name": "S.Dinwiddie",
+      "height": 77,
+      "weight": 215,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "26",
+      "experience": "11",
+      "college": "Colorado",
+      "high_school": "William Howard Taft (CA)",
+      "birth_place": "Los Angeles, CA, USA",
+      "birthdate": "1993-04-06",
+      "updated": "2025-07-31T15:02:42Z",
+      "sr_id": "sr:player:607360",
+      "rookie_year": 2014,
+      "reference": "203915",
+      "draft": {
+        "team_id": "583ec928-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2014,
+        "round": "2",
+        "pick": "38"
+      },
+      "references": [
+        {
+          "source_id": "203915",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "46065a25-7357-48e3-b77b-0328c6b78e8b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9347b8bf-3ed4-4697-8e7e-7af7b209f22b",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Spencer_Dinwiddie.png"
+    },
+    {
+      "id": "8f6ef350-1d9a-4eda-bee9-294d0e9e64db",
+      "status": "TWO-WAY",
+      "full_name": "KJ Simpson",
+      "first_name": "KJ",
+      "last_name": "Simpson",
+      "abbr_name": "K.Simpson",
+      "height": 72,
+      "weight": 189,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "25",
+      "experience": "1",
+      "college": "Colorado",
+      "high_school": "Chaminade College Prep (CA)",
+      "birth_place": "West Hills, CA, USA",
+      "birthdate": "2002-08-08",
+      "updated": "2025-07-10T21:36:58Z",
+      "sr_id": "sr:player:1163986",
+      "rookie_year": 2024,
+      "reference": "1642354",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "2",
+        "pick": "42"
+      },
+      "references": [
+        {
+          "source_id": "1642354",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "722b0ca4-f96b-46af-8be1-b7e87da7feb4",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f5af535f-e7f4-478a-8fbd-66d266740a48",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "5a999dba-1b4e-45a4-ba6c-2bda7a0e580a",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kj_Simpson.png"
+    },
+    {
+      "id": "9570a938-324f-40e8-92dd-8a4fcf4a953b",
+      "status": "ACT",
+      "full_name": "Mason Plumlee",
+      "first_name": "Mason",
+      "last_name": "Plumlee",
+      "abbr_name": "M.Plumlee",
+      "height": 82,
+      "weight": 254,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "22",
+      "experience": "12",
+      "college": "Duke",
+      "high_school": "Christ School (NC)",
+      "birth_place": "Fort Wayne, IN, USA",
+      "birthdate": "1990-03-05",
+      "updated": "2025-07-31T15:03:08Z",
+      "sr_id": "sr:player:607982",
+      "rookie_year": 2013,
+      "reference": "203486",
+      "draft": {
+        "team_id": "583ec9d6-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2013,
+        "round": "1",
+        "pick": "22"
+      },
+      "references": [
+        {
+          "source_id": "203486",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "b6df298a-82c2-4f1c-8e30-0928887e50f4",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "584582cf-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Mason_Plumlee.png"
+    },
+    {
+      "id": "af8f331b-96a6-416e-8837-b14d5b11c52d",
+      "status": "ACT",
+      "full_name": "Miles Bridges",
+      "first_name": "Miles",
+      "last_name": "Bridges",
+      "abbr_name": "M.Bridges",
+      "height": 79,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "0",
+      "experience": "6",
+      "college": "Michigan State",
+      "high_school": "Huntington Prep (WV)",
+      "birth_place": "Flint, MI, USA",
+      "birthdate": "1998-03-21",
+      "updated": "2025-07-10T21:24:41Z",
+      "sr_id": "sr:player:1158306",
+      "rookie_year": 2018,
+      "reference": "1628970",
+      "draft": {
+        "team_id": "583ecdfb-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2018,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "1628970",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c7a9d35a-916e-45ed-a3aa-be70bf32f10b",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "ec480483-c82a-4180-9194-fa216db54bff",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Miles_Bridges.png"
+    },
+    {
+      "id": "bcb84104-a049-4263-8574-67b1d786481c",
+      "status": "ACT",
+      "full_name": "Nick Smith Jr.",
+      "first_name": "Nick",
+      "last_name": "Smith",
+      "abbr_name": "N.Smith",
+      "height": 74,
+      "weight": 185,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "3",
+      "experience": "2",
+      "college": "Arkansas",
+      "high_school": "North Little Rock (AR)",
+      "birth_place": "Jacksonville, AR, USA",
+      "birthdate": "2004-04-18",
+      "updated": "2025-08-06T15:05:54Z",
+      "name_suffix": "Jr.",
+      "sr_id": "sr:player:2439289",
+      "rookie_year": 2023,
+      "reference": "1641733",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "27"
+      },
+      "references": [
+        {
+          "source_id": "1641733",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "720250f0-8105-4031-b8a3-96c376ae4c50",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "889df024-3070-424e-a9b5-ec5a088cb174",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "32910f1d-edfc-4ecc-b711-6aeb07bd2586",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nick_Smith_Jr..png"
+    },
+    {
+      "id": "bda65c13-f2d4-43ec-b058-b7807bec4867",
+      "status": "ACT",
+      "full_name": "Josh Green",
+      "first_name": "Josh",
+      "last_name": "Green",
+      "abbr_name": "J.Green",
+      "height": 77,
+      "weight": 200,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "10",
+      "experience": "5",
+      "college": "Arizona",
+      "high_school": "IMG Academy (FL)",
+      "birth_place": "Sydney,, AUS",
+      "birthdate": "2000-11-16",
+      "updated": "2025-07-10T21:32:49Z",
+      "sr_id": "sr:player:1943544",
+      "rookie_year": 2020,
+      "reference": "1630182",
+      "draft": {
+        "team_id": "583ecf50-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2020,
+        "round": "1",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1630182",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "08770559-20e4-4d77-a0aa-4b4c892c70d9",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "79ed8ec3-1fce-4fd2-a939-fdf3eacc9897",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "70819e36-3530-497f-82b8-c5304e2f6b47",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Josh_Green.png"
+    },
+    {
+      "id": "be53f27f-c666-4bd2-8fcd-0713f963aa2b",
+      "status": "ACT",
+      "full_name": "LaMelo Ball",
+      "first_name": "LaMelo",
+      "last_name": "Ball",
+      "abbr_name": "L.Ball",
+      "height": 79,
+      "weight": 180,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "1",
+      "experience": "5",
+      "high_school": "SPIRE Academy (OH)",
+      "birth_place": "Anaheim, CA, USA",
+      "birthdate": "2001-08-22",
+      "updated": "2025-07-10T21:24:49Z",
+      "sr_id": "sr:player:1875466",
+      "rookie_year": 2020,
+      "reference": "1630163",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2020,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "1630163",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "387b2f20-b4ed-4224-aef2-3b659db50a7d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "e0aee56d-2f26-426d-9f2f-006cc851554d",
+          "comment": "The Hornets announced on Wednesday (Apr. 2) that Ball has undergone successful surgeries on his right wrist and right ankle, according to Roderick Boone of The Charlotte Observer.",
+          "desc": "Ankle",
+          "status": "Out",
+          "start_date": "2025-03-27",
+          "update_date": "2025-04-02"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Lamelo_Ball.png"
+    },
+    {
+      "id": "dcea56e2-1ba1-49ab-b0d0-764fa98bc6b5",
+      "status": "TWO-WAY",
+      "full_name": "Antonio Reeves",
+      "first_name": "Antonio",
+      "last_name": "Reeves",
+      "abbr_name": "A.Reeves",
+      "height": 77,
+      "weight": 205,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "12",
+      "experience": "0",
+      "college": "Kentucky",
+      "high_school": "Shadow Mountain (AZ)",
+      "birth_place": "Chicago, IL, USA",
+      "birthdate": "2002-11-20",
+      "updated": "2025-08-29T15:25:15Z",
+      "sr_id": "sr:player:1794424",
+      "rookie_year": 2024,
+      "reference": "1641810",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "2",
+        "pick": "47"
+      },
+      "references": [
+        {
+          "source_id": "1641810",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a19d639c-e5bc-445b-9973-0b0595a9131b",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "d8450778-d9b4-425e-b33b-1e5040bcf89e",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "af408d7a-a39a-4beb-bb7f-6ab66f9cc16a",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Antonio_Reeves.png"
+    },
+    {
+      "id": "fa142a43-00a4-4e79-be7b-d469c09dfdd0",
+      "status": "ACT",
+      "full_name": "Liam McNeeley",
+      "first_name": "Liam",
+      "last_name": "McNeeley",
+      "abbr_name": "L.McNeeley",
+      "height": 79,
+      "weight": 215,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "33",
+      "experience": "0",
+      "college": "UConn",
+      "high_school": "Montverde Academy (FL)",
+      "birth_place": "Richardson, TX, USA",
+      "birthdate": "2005-10-10",
+      "updated": "2025-08-22T22:31:12Z",
+      "sr_id": "sr:player:2865129",
+      "reference": "1642862",
+      "draft": {
+        "team_id": "583ecfa8-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "1",
+        "pick": "29"
+      },
+      "references": [
+        {
+          "source_id": "1642862",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fe238a5f-0e83-4c1d-ba6d-2a5af41617cf",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b25d9882-86b5-4964-8222-bda1694ec44d",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Liam_Mcneeley.png"
+    },
+    {
+      "id": "fba3e1cf-82e4-412a-b8db-148f9b93ebf3",
+      "status": "ACT",
+      "full_name": "Sion James",
+      "first_name": "Sion",
+      "last_name": "James",
+      "abbr_name": "S.James",
+      "height": 77,
+      "weight": 218,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "4",
+      "experience": "0",
+      "college": "Duke",
+      "high_school": "Lanier (GA)",
+      "birth_place": "Sugar Hill, GA, USA",
+      "birthdate": "2002-12-04",
+      "updated": "2025-08-22T22:31:12Z",
+      "sr_id": "sr:player:2079995",
+      "reference": "1642883",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "2",
+        "pick": "33"
+      },
+      "references": [
+        {
+          "source_id": "1642883",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "6d43cd92-db02-4020-bde5-cb7ba9ef355b",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "187b5076-f85f-4fc2-81dc-e55bdcda0442",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sion_James.png"
+    }
+  ]
+}

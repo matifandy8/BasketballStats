@@ -1,0 +1,918 @@
+{
+  "id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+  "name": "Spurs",
+  "market": "San Antonio",
+  "alias": "SAS",
+  "founded": 1967,
+  "sr_id": "sr:team:3429",
+  "owner": "Peter John Holt",
+  "general_manager": "Brian Wright",
+  "president": "Gregg Popovich",
+  "mascot": "The Coyote",
+  "sponsor": "Ledger",
+  "championships_won": 5,
+  "championship_seasons": "1999, 2003, 2005, 2007, 2014",
+  "conference_titles": 6,
+  "division_titles": 22,
+  "retired_numbers": "00, 6, 9, 12, 13, 20, 21, 32, 44, 50",
+  "playoff_appearances": 39,
+  "gleague_affiliate": "Austin Spurs",
+  "reference": "1610612759",
+  "venue": {
+    "id": "8a7580c0-4052-54d5-85cd-85aab6200acf",
+    "name": "Frost Bank Center",
+    "capacity": 18581,
+    "address": "1 AT&T Center Parkway",
+    "city": "San Antonio",
+    "state": "TX",
+    "zip": "78219",
+    "country": "USA",
+    "sr_id": "sr:venue:6112",
+    "location": {
+      "lat": "29.426944",
+      "lng": "-98.4375"
+    }
+  },
+  "league": {
+    "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+    "name": "NBA",
+    "alias": "NBA"
+  },
+  "conference": {
+    "id": "7fe7e212-de01-4f8f-a31d-b9f0a95731e3",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN"
+  },
+  "division": {
+    "id": "1d29f94c-9587-494b-a232-feb20a40eb4c",
+    "name": "Southwest",
+    "alias": "SOUTHWEST"
+  },
+  "coaches": [
+    {
+      "id": "32982036-344f-4722-9169-e0349c718d54",
+      "full_name": "Mitch Johnson",
+      "first_name": "Mitch",
+      "last_name": "Johnson",
+      "position": "Head Coach",
+      "reference": "1628188"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#c4ced3",
+      "rgb_color": {
+        "red": 196,
+        "green": 206,
+        "blue": 211
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#000000",
+      "rgb_color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0a485720-7ec1-4e1b-a9e9-dcf912dde8db",
+      "status": "TWO-WAY",
+      "full_name": "David Jones-Garcia",
+      "first_name": "David",
+      "last_name": "Jones-Garcia",
+      "abbr_name": "D.Jones-Garcia",
+      "height": 75,
+      "weight": 211,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "25",
+      "experience": "0",
+      "college": "Memphis",
+      "birth_place": "Santo Domingo,, DOM",
+      "birthdate": "2001-11-24",
+      "updated": "2025-07-24T14:16:19Z",
+      "sr_id": "sr:player:2121260",
+      "reference": "1642357",
+      "draft": {
+        "year": 2024
+      },
+      "references": [
+        {
+          "source_id": "1642357",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c7e1f696-20fa-4a8a-84d5-d469f30406f9",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "d7b0713c-6c22-4ddf-a1b9-21f65111b755",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "5016eea0-7dab-4590-9bcf-4ab08faf5432",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/David_Jones-garcia.png"
+    },
+    {
+      "id": "190797ba-a6f4-4286-9d5e-d157ff834829",
+      "status": "ACT",
+      "full_name": "Keldon Johnson",
+      "first_name": "Keldon",
+      "last_name": "Johnson",
+      "abbr_name": "K.Johnson",
+      "height": 77,
+      "weight": 220,
+      "position": "F-G",
+      "primary_position": "SF",
+      "jersey_number": "3",
+      "experience": "6",
+      "college": "Kentucky",
+      "high_school": "Park View (VA)",
+      "birth_place": "Chesterfield, VA, USA",
+      "birthdate": "1999-10-11",
+      "updated": "2025-07-31T21:31:54Z",
+      "sr_id": "sr:player:1491400",
+      "rookie_year": 2019,
+      "salary": 17500000,
+      "reference": "1629640",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2019,
+        "round": "1",
+        "pick": "29"
+      },
+      "references": [
+        {
+          "source_id": "1629640",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2f0bcab9-fa28-45db-bbc8-f10bcedfb32b",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "f81474ad-3f6d-41a0-bff2-c822ddc40da5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9bfac14b-244f-42ae-9f76-c0efd7ca6858",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Keldon_Johnson.png"
+    },
+    {
+      "id": "4d9e0abc-05aa-45de-be32-b0770697416a",
+      "status": "ACT",
+      "full_name": "Jeremy Sochan",
+      "first_name": "Jeremy",
+      "last_name": "Sochan",
+      "abbr_name": "J.Sochan",
+      "height": 80,
+      "weight": 230,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "10",
+      "experience": "3",
+      "college": "Baylor",
+      "high_school": "La Lumiere School (IN)",
+      "birth_place": "Guymon, OK, USA",
+      "birthdate": "2003-05-20",
+      "updated": "2025-07-16T22:48:43Z",
+      "sr_id": "sr:player:2230988",
+      "rookie_year": 2022,
+      "salary": 7096231,
+      "reference": "1631110",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "1",
+        "pick": "9"
+      },
+      "references": [
+        {
+          "source_id": "1631110",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "06b0a4d3-3c69-42f8-8bc4-8a68bd1dc64c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "27f09012-f6d9-448d-9fe9-38bde8d96986",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jeremy_Sochan.png"
+    },
+    {
+      "id": "5efce548-15a0-4a8c-9f63-5f5db4851696",
+      "status": "TWO-WAY",
+      "full_name": "Riley Minix",
+      "first_name": "Riley",
+      "last_name": "Minix",
+      "abbr_name": "R.Minix",
+      "height": 79,
+      "weight": 230,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "27",
+      "experience": "1",
+      "college": "Morehead State",
+      "high_school": "Vero Beach (FL)",
+      "birth_place": "Vero Beach, FL, USA",
+      "birthdate": "2000-09-22",
+      "updated": "2025-07-08T20:23:14Z",
+      "sr_id": "sr:player:2701088",
+      "rookie_year": 2024,
+      "reference": "1642434",
+      "draft": {
+        "year": 2024
+      },
+      "references": [
+        {
+          "source_id": "1642434",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7c188ceb-0700-4671-b442-5a1aaf9132fc",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "c9390a34-0234-4ce8-9e19-b6e0e7fdb83a",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "44854b18-55ab-464a-bf18-ca601b8bca8d",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Riley_Minix.png"
+    },
+    {
+      "id": "80328aab-9ce6-49c8-b3f2-f5bf73cdf319",
+      "status": "ACT",
+      "full_name": "Lindy Waters III",
+      "first_name": "Lindy",
+      "last_name": "Waters",
+      "abbr_name": "L.Waters",
+      "height": 78,
+      "weight": 210,
+      "position": "F",
+      "primary_position": "SG",
+      "jersey_number": "43",
+      "experience": "3",
+      "college": "Oklahoma State",
+      "high_school": "Norman North (OK)",
+      "birth_place": "Norman, OK, USA",
+      "birthdate": "1997-07-28",
+      "updated": "2025-07-25T14:53:14Z",
+      "name_suffix": "III",
+      "sr_id": "sr:player:1175208",
+      "rookie_year": 2021,
+      "reference": "1630322",
+      "draft": {
+        "year": 2020
+      },
+      "references": [
+        {
+          "source_id": "1630322",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2fa270e5-91ac-45a9-980c-c68c5a739ec9",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3235e25a-e8fd-4525-8809-b22ae6494097",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9cc376f8-32df-41c7-8def-c691371b7652",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Lindy_Waters_Iii.png"
+    },
+    {
+      "id": "85cd25fd-f437-48dd-b736-af5422c0feb7",
+      "status": "ACT",
+      "full_name": "Carter Bryant",
+      "first_name": "Carter",
+      "last_name": "Bryant",
+      "abbr_name": "C.Bryant",
+      "height": 80,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "11",
+      "experience": "0",
+      "college": "Arizona",
+      "high_school": "Fountain Valley (CA)",
+      "birth_place": "Riverside, CA, USA",
+      "birthdate": "2005-11-26",
+      "updated": "2025-08-22T23:11:12Z",
+      "sr_id": "sr:player:2867925",
+      "salary": 4900320,
+      "reference": "1642868",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "1",
+        "pick": "14"
+      },
+      "references": [
+        {
+          "source_id": "1642868",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5f73bfbd-a1d2-4f91-aeb4-2b061596a9d5",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "ba1d9fc1-295f-46c5-bc81-43ae32d6c906",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Carter_Bryant.png"
+    },
+    {
+      "id": "8e288d6e-50b8-404b-812b-823ae5bab61f",
+      "status": "ACT",
+      "full_name": "Kelly Olynyk",
+      "first_name": "Kelly",
+      "last_name": "Olynyk",
+      "abbr_name": "K.Olynyk",
+      "height": 83,
+      "weight": 240,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "8",
+      "experience": "12",
+      "college": "Gonzaga",
+      "high_school": "South Kamloops (CAN)",
+      "birth_place": "Toronto, ON, CAN",
+      "birthdate": "1991-04-19",
+      "updated": "2025-08-15T14:26:55Z",
+      "sr_id": "sr:player:607622",
+      "rookie_year": 2013,
+      "salary": 13445122,
+      "reference": "203482",
+      "draft": {
+        "team_id": "583ecf50-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2013,
+        "round": "1",
+        "pick": "13"
+      },
+      "references": [
+        {
+          "source_id": "203482",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "58476f44-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kelly_Olynyk.png"
+    },
+    {
+      "id": "8e3cbaa3-e30a-4cf8-aa7a-1b57f15f0f98",
+      "status": "ACT",
+      "full_name": "Bismack Biyombo",
+      "first_name": "Bismack",
+      "last_name": "Biyombo",
+      "abbr_name": "B.Biyombo",
+      "height": 80,
+      "weight": 255,
+      "position": "C",
+      "primary_position": "C",
+      "experience": "13",
+      "birth_place": "Lubumbashi,, COD",
+      "birthdate": "1992-08-28",
+      "updated": "2025-09-15T20:09:03Z",
+      "sr_id": "sr:player:607704",
+      "rookie_year": 2011,
+      "reference": "202687",
+      "draft": {
+        "team_id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2011,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "202687",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "58443fce-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Bismack_Biyombo.png"
+    },
+    {
+      "id": "98e2cdeb-69dc-499c-a853-84c32c714924",
+      "status": "ACT",
+      "full_name": "Victor Wembanyama",
+      "first_name": "Victor",
+      "last_name": "Wembanyama",
+      "abbr_name": "V.Wembanyama",
+      "height": 87,
+      "weight": 235,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "1",
+      "experience": "2",
+      "birth_place": "Le Chesnay,, FRA",
+      "birthdate": "2004-01-04",
+      "updated": "2025-07-16T22:47:01Z",
+      "sr_id": "sr:player:1941074",
+      "rookie_year": 2023,
+      "salary": 13376880,
+      "reference": "1641705",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1641705",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "36307045-98bf-466e-b9d0-d0083a4fbe47",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Victor_Wembanyama.png"
+    },
+    {
+      "id": "b16123e8-c885-4276-9994-8d5e390c0f0d",
+      "status": "ACT",
+      "full_name": "Dylan Harper",
+      "first_name": "Dylan",
+      "last_name": "Harper",
+      "abbr_name": "D.Harper",
+      "height": 77,
+      "weight": 213,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "2",
+      "experience": "0",
+      "college": "Rutgers",
+      "high_school": "Don Bosco Prep (NJ)",
+      "birth_place": "Franklin Lakes, NJ, USA",
+      "birthdate": "2006-03-02",
+      "updated": "2025-08-12T15:51:56Z",
+      "sr_id": "sr:player:2829623",
+      "salary": 12370320,
+      "reference": "1642844",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1642844",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c78a9336-fe9b-4932-ba66-754dcee43a3b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "693c9be0-e90a-4d62-bd8d-e539a569d7e4",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dylan_Harper.png"
+    },
+    {
+      "id": "bde7f42e-7296-453d-bcba-cac6fad2d03f",
+      "status": "ACT",
+      "full_name": "Jordan McLaughlin",
+      "first_name": "Jordan",
+      "last_name": "McLaughlin",
+      "abbr_name": "J.McLaughlin",
+      "height": 72,
+      "weight": 185,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "11",
+      "experience": "6",
+      "college": "USC",
+      "high_school": "Etiwanda (CA)",
+      "birth_place": "Pasadena, CA, USA",
+      "birthdate": "1996-04-09",
+      "updated": "2025-07-16T22:49:33Z",
+      "sr_id": "sr:player:1161592",
+      "rookie_year": 2019,
+      "salary": 2296274,
+      "reference": "1629162",
+      "draft": {
+        "year": 2018
+      },
+      "references": [
+        {
+          "source_id": "1629162",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7be5787e-d566-48a0-bbf1-8ce7f8beddde",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "8dd7e836-0797-499e-bff4-9c2f5a8bef87",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "2c3b5ae4-ccd5-442f-982e-7c01150295aa",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jordan_Mclaughlin.png"
+    },
+    {
+      "id": "ce8d0944-b277-499e-9701-02a5f1828615",
+      "status": "ACT",
+      "full_name": "Harrison Barnes",
+      "first_name": "Harrison",
+      "last_name": "Barnes",
+      "abbr_name": "H.Barnes",
+      "height": 80,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "40",
+      "experience": "13",
+      "college": "North Carolina",
+      "high_school": "Ames (IA)",
+      "birth_place": "Ames, IA, USA",
+      "birthdate": "1992-05-30",
+      "updated": "2025-07-16T22:50:51Z",
+      "sr_id": "sr:player:607350",
+      "rookie_year": 2012,
+      "salary": 19000000,
+      "reference": "203084",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2012,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "203084",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "58467d6f-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Harrison_Barnes.png"
+    },
+    {
+      "id": "cfc1e41b-74ab-45ee-8132-aaf9ca7f8163",
+      "status": "ACT",
+      "full_name": "De'Aaron Fox",
+      "first_name": "De'Aaron",
+      "last_name": "Fox",
+      "abbr_name": "D.Fox",
+      "height": 75,
+      "weight": 185,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "4",
+      "experience": "8",
+      "college": "Kentucky",
+      "high_school": "Cypress Lakes (TX)",
+      "birth_place": "New Orleans, LA, USA",
+      "birthdate": "1997-12-20",
+      "updated": "2025-07-16T22:47:43Z",
+      "sr_id": "sr:player:1121881",
+      "rookie_year": 2017,
+      "salary": 37096620,
+      "reference": "1628368",
+      "draft": {
+        "team_id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2017,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1628368",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2ac4490d-db3b-4181-80d7-34b8c0cde3ff",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "f5ea8933-d808-49c2-a0bf-fc320cd16c2e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/De'aaron_Fox.png"
+    },
+    {
+      "id": "d7276f4c-b9ee-43bf-860d-07b01a0fe7b6",
+      "status": "TWO-WAY",
+      "full_name": "Harrison Ingram",
+      "first_name": "Harrison",
+      "last_name": "Ingram",
+      "abbr_name": "H.Ingram",
+      "height": 77,
+      "weight": 230,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "55",
+      "experience": "1",
+      "college": "North Carolina",
+      "high_school": "St. Mark's (TX)",
+      "birth_place": "Dallas, TX, USA",
+      "birthdate": "2002-11-27",
+      "updated": "2025-07-08T20:24:02Z",
+      "sr_id": "sr:player:2217732",
+      "rookie_year": 2024,
+      "reference": "1631127",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "2",
+        "pick": "48"
+      },
+      "references": [
+        {
+          "source_id": "1631127",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "58cca236-0dfb-44ef-bb51-e0cb17729288",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "d10637ad-a0d5-4211-9909-f9bc2e8a103b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "c9351cca-c4a6-4f8d-8dd7-52809348cb53",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Harrison_Ingram.png"
+    },
+    {
+      "id": "ddee4a31-2791-4339-bfc3-a058ce2d1397",
+      "status": "ACT",
+      "full_name": "Stephon Castle",
+      "first_name": "Stephon",
+      "last_name": "Castle",
+      "abbr_name": "S.Castle",
+      "height": 78,
+      "weight": 215,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "5",
+      "experience": "1",
+      "college": "UConn",
+      "high_school": "Newton (GA)",
+      "birth_place": "Covington, GA, USA",
+      "birthdate": "2004-11-01",
+      "updated": "2025-07-16T22:47:58Z",
+      "sr_id": "sr:player:2690764",
+      "rookie_year": 2024,
+      "salary": 9560520,
+      "reference": "1642264",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1642264",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5505d485-8566-4cd6-b57a-ed2f850a8e64",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "c2c42723-cc6c-420e-8202-070a4023c6ff",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Stephon_Castle.png"
+    },
+    {
+      "id": "fa0e2b60-8ee9-4db6-b9bc-d0e23d6b29d2",
+      "status": "ACT",
+      "full_name": "Julian Champagnie",
+      "first_name": "Julian",
+      "last_name": "Champagnie",
+      "abbr_name": "J.Champagnie",
+      "height": 79,
+      "weight": 217,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "30",
+      "experience": "3",
+      "college": "St. John's",
+      "high_school": "Bishop Loughlin (NY)",
+      "birth_place": "Staten Island, NY, USA",
+      "birthdate": "2001-06-29",
+      "updated": "2025-07-16T22:50:40Z",
+      "sr_id": "sr:player:1795506",
+      "rookie_year": 2022,
+      "salary": 3000000,
+      "reference": "1630577",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1630577",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f428e27d-2e62-46a5-bde2-1b6f7f378cee",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "39916357-8194-4b88-9e81-3f92bb0d6f68",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "8a053670-36d8-4ee4-afb5-80e94df4a5e3",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Julian_Champagnie.png"
+    },
+    {
+      "id": "fe215630-2dc5-4573-95cc-c1b14abbbbcd",
+      "status": "ACT",
+      "full_name": "Devin Vassell",
+      "first_name": "Devin",
+      "last_name": "Vassell",
+      "abbr_name": "D.Vassell",
+      "height": 77,
+      "weight": 200,
+      "position": "G-F",
+      "primary_position": "SG",
+      "jersey_number": "24",
+      "experience": "5",
+      "college": "Florida State",
+      "high_school": "Peachtree Ridge (GA)",
+      "birth_place": "Lawrenceville, GA, USA",
+      "birthdate": "2000-08-23",
+      "updated": "2025-07-16T22:50:26Z",
+      "sr_id": "sr:player:1620146",
+      "rookie_year": 2020,
+      "salary": 27000000,
+      "reference": "1630170",
+      "draft": {
+        "team_id": "583ecd4f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2020,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1630170",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "b0eabc31-9bd5-4b62-9b0f-1fcef2143c1d",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "1e692e83-9a09-4d96-8811-3d1e4a25406a",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Devin_Vassell.png"
+    },
+    {
+      "id": "fed6929f-8d92-456c-8a89-9e0c17cf4f7b",
+      "status": "ACT",
+      "full_name": "Luke Kornet",
+      "first_name": "Luke",
+      "last_name": "Kornet",
+      "abbr_name": "L.Kornet",
+      "height": 85,
+      "weight": 250,
+      "position": "C-F",
+      "primary_position": "C",
+      "jersey_number": "7",
+      "experience": "8",
+      "college": "Vanderbilt",
+      "high_school": "Liberty Christian (TX)",
+      "birth_place": "Lantana, TX, USA",
+      "birthdate": "1995-07-15",
+      "updated": "2025-07-17T21:02:27Z",
+      "sr_id": "sr:player:1142554",
+      "rookie_year": 2017,
+      "salary": 11000000,
+      "reference": "1628436",
+      "draft": {
+        "year": 2017
+      },
+      "references": [
+        {
+          "source_id": "1628436",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ed59f9df-0c88-4bae-8b2e-21ac281940e6",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "11c1b908-8709-41a6-8be6-a96232f58f7d",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "e76d9cc3-c7df-41ee-a494-8bb6fa5dea74",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Luke_Kornet.png"
+    }
+  ]
+}

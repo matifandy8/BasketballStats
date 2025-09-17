@@ -1,0 +1,863 @@
+{
+  "id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
+  "name": "Kings",
+  "market": "Sacramento",
+  "alias": "SAC",
+  "founded": 1923,
+  "sr_id": "sr:team:3413",
+  "owner": "Vivek Ranadivé",
+  "general_manager": "Scott Perry",
+  "president": "John Rinehart",
+  "mascot": "Slamson the Lion",
+  "sponsor": "Reviver",
+  "championships_won": 1,
+  "championship_seasons": "1951",
+  "conference_titles": 0,
+  "division_titles": 6,
+  "retired_numbers": "1, 2, 4, 6, 11, 12, 14, 16, 21, 27, 44",
+  "playoff_appearances": 30,
+  "gleague_affiliate": "Stockton Kings",
+  "reference": "1610612758",
+  "venue": {
+    "id": "2e687b9a-c7a7-487c-85b4-43479abc8458",
+    "name": "Golden 1 Center",
+    "capacity": 17608,
+    "address": "500 David J. Stern Walkway",
+    "city": "Sacramento",
+    "state": "CA",
+    "zip": "95814",
+    "country": "USA",
+    "sr_id": "sr:venue:6942",
+    "location": {
+      "lat": "38.580361",
+      "lng": "-121.499611"
+    }
+  },
+  "league": {
+    "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+    "name": "NBA",
+    "alias": "NBA"
+  },
+  "conference": {
+    "id": "7fe7e212-de01-4f8f-a31d-b9f0a95731e3",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN"
+  },
+  "division": {
+    "id": "f074cb3e-90cf-42e1-8067-cdbcd99ec230",
+    "name": "Pacific",
+    "alias": "PACIFIC"
+  },
+  "coaches": [
+    {
+      "id": "87cfe457-b417-4ff2-ab71-6306b169bfe5",
+      "full_name": "Doug Christie",
+      "first_name": "Doug",
+      "last_name": "Christie",
+      "position": "Head Coach",
+      "reference": "57"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#000000",
+      "rgb_color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#5b2b82",
+      "rgb_color": {
+        "red": 91,
+        "green": 43,
+        "blue": 130
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "00080fe6-49ad-4685-a308-eb96b1f11ddf",
+      "status": "ACT",
+      "full_name": "Devin Carter",
+      "first_name": "Devin",
+      "last_name": "Carter",
+      "abbr_name": "D.Carter",
+      "height": 74,
+      "weight": 195,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "22",
+      "experience": "1",
+      "college": "Providence",
+      "high_school": "Brewster Academy (NH)",
+      "birth_place": "Miami, FL, USA",
+      "birthdate": "2002-03-18",
+      "updated": "2025-07-16T20:46:29Z",
+      "sr_id": "sr:player:2218246",
+      "rookie_year": 2024,
+      "salary": 4923720,
+      "reference": "1642269",
+      "draft": {
+        "team_id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "1",
+        "pick": "13"
+      },
+      "references": [
+        {
+          "source_id": "1642269",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ecc676e4-33a8-4e9d-9db9-22ddf7065abc",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "6b682112-0fc2-4ed3-a3c1-a82bb700dd35",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9a6d4d03-65a6-4026-9547-35a3e174658c",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Devin_Carter.png"
+    },
+    {
+      "id": "06255060-3d3d-44f6-a776-2aab8e57584a",
+      "status": "ACT",
+      "full_name": "Dario Šarić",
+      "first_name": "Dario",
+      "last_name": "Šarić",
+      "abbr_name": "D.Šarić",
+      "height": 82,
+      "weight": 225,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "9",
+      "experience": "8",
+      "birth_place": "Sibenik,, HRV",
+      "birthdate": "1994-04-08",
+      "updated": "2025-09-11T15:49:36Z",
+      "sr_id": "sr:player:607702",
+      "rookie_year": 2016,
+      "salary": 5426400,
+      "reference": "203967",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2014,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "203967",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d7bc3987-e908-4772-80aa-6ce0e72835c9",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dario_Šarić.png"
+    },
+    {
+      "id": "0fbb8fd5-9b9c-48a2-a355-18aba7b5d9d5",
+      "status": "ACT",
+      "full_name": "Drew Eubanks",
+      "first_name": "Drew",
+      "last_name": "Eubanks",
+      "abbr_name": "D.Eubanks",
+      "height": 82,
+      "weight": 245,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "19",
+      "experience": "7",
+      "college": "Oregon State",
+      "high_school": "Reynolds (OR)",
+      "birth_place": "Starkville, MS, USA",
+      "birthdate": "1997-02-01",
+      "updated": "2025-07-25T16:41:26Z",
+      "sr_id": "sr:player:1175448",
+      "rookie_year": 2018,
+      "salary": 2296274,
+      "reference": "1629234",
+      "draft": {
+        "year": 2018
+      },
+      "references": [
+        {
+          "source_id": "1629234",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7db34780-caf1-4134-b339-78f1d742cf49",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "07515a91-ce2e-4141-a296-35daa4737d30",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "09e1f6b3-adb7-49d3-960f-64956a41806d",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Drew_Eubanks.png"
+    },
+    {
+      "id": "22038780-8c50-4211-a99e-656d983e5207",
+      "status": "ACT",
+      "full_name": "Domantas Sabonis",
+      "first_name": "Domantas",
+      "last_name": "Sabonis",
+      "abbr_name": "D.Sabonis",
+      "height": 82,
+      "weight": 240,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "11",
+      "experience": "9",
+      "college": "Gonzaga",
+      "birth_place": "Portland, OR, USA",
+      "birthdate": "1996-05-03",
+      "updated": "2025-07-16T20:41:53Z",
+      "sr_id": "sr:player:996309",
+      "rookie_year": 2016,
+      "salary": 42336000,
+      "reference": "1627734",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2016,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1627734",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fe774be4-868b-4346-84ce-6449c9fce140",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "b099c951-5c75-4459-8b57-aa1fcc57689d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Domantas_Sabonis.png"
+    },
+    {
+      "id": "3214b8de-d3ea-4188-9329-15a92f894f23",
+      "status": "ACT",
+      "full_name": "Malik Monk",
+      "first_name": "Malik",
+      "last_name": "Monk",
+      "abbr_name": "M.Monk",
+      "height": 75,
+      "weight": 200,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "0",
+      "experience": "8",
+      "college": "Kentucky",
+      "high_school": "Bentonville (AR)",
+      "birth_place": "Jonesboro, AR, USA",
+      "birthdate": "1998-02-04",
+      "updated": "2025-07-16T20:35:54Z",
+      "sr_id": "sr:player:1121879",
+      "rookie_year": 2017,
+      "salary": 18797619,
+      "reference": "1628370",
+      "draft": {
+        "team_id": "583ec97e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2017,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1628370",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "da862322-5833-4adf-8852-ab67dc749387",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "09d8977b-405f-45cf-8582-86a1992813a7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Malik_Monk.png"
+    },
+    {
+      "id": "37cbf881-ab20-44e7-bfb9-af3f7c7fe5d1",
+      "status": "TWO-WAY",
+      "full_name": "Dylan Cardwell",
+      "first_name": "Dylan",
+      "last_name": "Cardwell",
+      "abbr_name": "D.Cardwell",
+      "height": 83,
+      "weight": 255,
+      "position": "C",
+      "primary_position": "C",
+      "experience": "0",
+      "college": "Auburn",
+      "high_school": "McEachern (GA)",
+      "birth_place": "Augusta, GA, USA",
+      "birthdate": "2001-12-16",
+      "updated": "2025-08-22T23:11:11Z",
+      "sr_id": "sr:player:2088267",
+      "reference": "1642928",
+      "references": [
+        {
+          "source_id": "1642928",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0e8df01b-c9b6-4839-b794-2a1fa2b7455f",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "95e2bd5d-094a-4dff-9efa-63b6e4806e9e",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "88afd52d-7cd9-4e6f-ba76-63574200dc72",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dylan_Cardwell.png"
+    },
+    {
+      "id": "529cb618-8e48-4011-bd42-dd0b9d91fdcb",
+      "status": "TWO-WAY",
+      "full_name": "Isaiah Stevens",
+      "first_name": "Isaiah",
+      "last_name": "Stevens",
+      "abbr_name": "I.Stevens",
+      "height": 72,
+      "weight": 185,
+      "position": "G",
+      "primary_position": "PG",
+      "experience": "1",
+      "college": "Colorado State",
+      "high_school": "Allen (TX)",
+      "birth_place": "Allen, TX, USA",
+      "birthdate": "2000-11-01",
+      "updated": "2025-07-11T00:22:14Z",
+      "sr_id": "sr:player:1796986",
+      "reference": "1641815",
+      "draft": {
+        "year": 2024
+      },
+      "references": [
+        {
+          "source_id": "1641815",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0c784b9f-8a35-4914-901f-7f56dadd8a7e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "577218d1-1739-450a-b691-e153a82aef16",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "51507bee-c7fc-48ab-9f66-0de688643211",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Isaiah_Stevens.png"
+    },
+    {
+      "id": "5e86a9c3-b4d0-4fe1-a551-acd83e5d60eb",
+      "status": "ACT",
+      "full_name": "DeMar DeRozan",
+      "first_name": "DeMar",
+      "last_name": "DeRozan",
+      "abbr_name": "D.DeRozan",
+      "height": 78,
+      "weight": 220,
+      "position": "G-F",
+      "primary_position": "SF",
+      "jersey_number": "10",
+      "experience": "16",
+      "college": "USC",
+      "high_school": "Compton (CA)",
+      "birth_place": "Compton, CA, USA",
+      "birthdate": "1989-08-07",
+      "updated": "2025-07-16T20:40:34Z",
+      "sr_id": "sr:player:607420",
+      "rookie_year": 2009,
+      "salary": 24750000,
+      "reference": "201942",
+      "draft": {
+        "team_id": "583ecda6-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2009,
+        "round": "1",
+        "pick": "9"
+      },
+      "references": [
+        {
+          "source_id": "201942",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "584393ee-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Demar_Derozan.png"
+    },
+    {
+      "id": "66156be8-6202-40bd-bdc2-014a46bee28f",
+      "status": "ACT",
+      "full_name": "Doug McDermott",
+      "first_name": "Doug",
+      "last_name": "McDermott",
+      "abbr_name": "D.McDermott",
+      "height": 78,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "7",
+      "experience": "10",
+      "college": "Creighton",
+      "high_school": "Ames (IA)",
+      "birth_place": "Grand Forks, ND, USA",
+      "birthdate": "1992-01-03",
+      "updated": "2025-07-28T16:08:04Z",
+      "sr_id": "sr:player:607618",
+      "rookie_year": 2014,
+      "reference": "203926",
+      "draft": {
+        "team_id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2014,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "203926",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fd02a07f-422f-44b3-8177-3b793cb40d28",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "4a07f105-de33-4c90-90be-1b39949ad52f",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Doug_Mcdermott.png"
+    },
+    {
+      "id": "68a8c4ea-1d77-4a42-bea4-dbe9a162332a",
+      "status": "ACT",
+      "full_name": "Keon Ellis",
+      "first_name": "Keon",
+      "last_name": "Ellis",
+      "abbr_name": "K.Ellis",
+      "height": 76,
+      "weight": 175,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "23",
+      "experience": "3",
+      "college": "Alabama",
+      "high_school": "Leesburg (FL)",
+      "birth_place": "Eustis, FL, USA",
+      "birthdate": "2000-01-08",
+      "updated": "2025-07-16T20:47:30Z",
+      "sr_id": "sr:player:2077979",
+      "rookie_year": 2022,
+      "salary": 2301587,
+      "reference": "1631165",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1631165",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "65692827-f2bb-4efa-afd8-1072dc8e2f4f",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "85f7c093-1193-405c-8337-ebc2bdd5e493",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "a9eb7a43-b29c-4a5e-bce4-44162a707676",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Keon_Ellis.png"
+    },
+    {
+      "id": "7494fbb4-5ac7-43ee-b91a-8859532f548b",
+      "status": "ACT",
+      "full_name": "Keegan Murray",
+      "first_name": "Keegan",
+      "last_name": "Murray",
+      "abbr_name": "K.Murray",
+      "height": 80,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "13",
+      "experience": "3",
+      "college": "Iowa",
+      "high_school": "DME Academy (FL)",
+      "birth_place": "Cedar Rapids, IA, USA",
+      "birthdate": "2000-08-19",
+      "updated": "2025-07-16T20:42:24Z",
+      "sr_id": "sr:player:2087007",
+      "rookie_year": 2022,
+      "salary": 11144093,
+      "reference": "1631099",
+      "draft": {
+        "team_id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1631099",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "9bb8c9c4-8d43-4a7d-b2a5-44db82c6822d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "be83df8e-0fb6-4ee5-9c1c-4151a5223680",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Keegan_Murray.png"
+    },
+    {
+      "id": "a2c6a907-282f-4172-9d60-42d03987da0e",
+      "status": "ACT",
+      "full_name": "Dennis Schröder",
+      "first_name": "Dennis",
+      "last_name": "Schröder",
+      "abbr_name": "D.Schröder",
+      "height": 73,
+      "weight": 175,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "17",
+      "experience": "12",
+      "birth_place": "Braunschweig,, DEU",
+      "birthdate": "1993-09-15",
+      "updated": "2025-07-16T20:42:51Z",
+      "sr_id": "sr:player:607388",
+      "rookie_year": 2013,
+      "salary": 14104000,
+      "reference": "203471",
+      "draft": {
+        "team_id": "583ecb8f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2013,
+        "round": "1",
+        "pick": "17"
+      },
+      "references": [
+        {
+          "source_id": "203471",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "6e93bf78-c012-4717-bff5-b988f6198bbc",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dennis_Schröder.png"
+    },
+    {
+      "id": "badef3c4-e77e-4444-ac80-95d71332e974",
+      "status": "TWO-WAY",
+      "full_name": "Daeqwon Plowden",
+      "first_name": "Daeqwon",
+      "last_name": "Plowden",
+      "abbr_name": "D.Plowden",
+      "height": 78,
+      "weight": 216,
+      "position": "G-F",
+      "primary_position": "SG",
+      "experience": "0",
+      "college": "Bowling Green",
+      "high_school": "Mastery Charter (PA)",
+      "birth_place": "Philadelphia, PA, USA",
+      "birthdate": "1998-08-29",
+      "updated": "2025-07-30T21:28:54Z",
+      "sr_id": "sr:player:1307800",
+      "rookie_year": 2024,
+      "reference": "1631342",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1631342",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c7c77b49-f6a4-4d27-be55-0b2f29793ee6",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "484a475f-1ec5-4ce8-9c4b-79396f4b3f5c",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "47e9a911-fb81-4112-b9c6-d6a611b06a05",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Daeqwon_Plowden.png"
+    },
+    {
+      "id": "cd6c786e-3c65-4f88-9c7b-4a243295f0d6",
+      "status": "ACT",
+      "full_name": "Nique Clifford",
+      "first_name": "Nique",
+      "last_name": "Clifford",
+      "abbr_name": "N.Clifford",
+      "height": 77,
+      "weight": 202,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "5",
+      "experience": "0",
+      "college": "Colorado State",
+      "high_school": "The Vanguard School (CO)",
+      "birth_place": "Colorado Springs, CO, USA",
+      "birthdate": "2002-02-09",
+      "updated": "2025-08-22T23:11:12Z",
+      "sr_id": "sr:player:2081069",
+      "salary": 3108120,
+      "reference": "1642363",
+      "draft": {
+        "team_id": "583ecfff-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "1",
+        "pick": "24"
+      },
+      "references": [
+        {
+          "source_id": "1642363",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3e4197b8-1bde-44ad-bacc-0df0d269dac2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "4d4be799-d672-47f7-a7c6-d3864aa2cfa1",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nique_Clifford.png"
+    },
+    {
+      "id": "db72e294-1c54-454a-96b9-0b4fd2f38112",
+      "status": "ACT",
+      "full_name": "Zach LaVine",
+      "first_name": "Zach",
+      "last_name": "LaVine",
+      "abbr_name": "Z.LaVine",
+      "height": 77,
+      "weight": 200,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "8",
+      "experience": "11",
+      "college": "UCLA",
+      "high_school": "Bothell (WA)",
+      "birth_place": "Renton, WA, USA",
+      "birthdate": "1995-03-10",
+      "updated": "2025-07-16T20:39:06Z",
+      "sr_id": "sr:player:607400",
+      "rookie_year": 2014,
+      "salary": 47499660,
+      "reference": "203897",
+      "draft": {
+        "team_id": "583eca2f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2014,
+        "round": "1",
+        "pick": "13"
+      },
+      "references": [
+        {
+          "source_id": "203897",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "05f6462d-a1da-4446-913e-0507fc796553",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "362f0c57-e9f7-4b44-ba2b-12c97d2255a1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Zach_Lavine.png"
+    },
+    {
+      "id": "e783937f-31dc-41bd-9510-2572d2dc35ee",
+      "status": "ACT",
+      "full_name": "Maxime Raynaud",
+      "first_name": "Maxime",
+      "last_name": "Raynaud",
+      "abbr_name": "M.Raynaud",
+      "height": 84,
+      "weight": 237,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "42",
+      "experience": "0",
+      "college": "Stanford",
+      "birth_place": "Paris,, FRA",
+      "birthdate": "2003-04-07",
+      "updated": "2025-08-12T15:51:59Z",
+      "sr_id": "sr:player:2217714",
+      "reference": "1642875",
+      "draft": {
+        "team_id": "583ed0ac-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "2",
+        "pick": "42"
+      },
+      "references": [
+        {
+          "source_id": "1642875",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "eeababac-2c4e-449e-af1e-af097d54fe6b",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "2cde3127-fbdc-4f14-85d7-67962ea8e8db",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Maxime_Raynaud.png"
+    },
+    {
+      "id": "ff6f99de-5cd8-4bf1-a5d2-6bebcf4350ee",
+      "status": "ACT",
+      "full_name": "Isaac Jones",
+      "first_name": "Isaac",
+      "last_name": "Jones",
+      "abbr_name": "I.Jones",
+      "height": 81,
+      "weight": 245,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "3",
+      "experience": "1",
+      "college": "Washington State",
+      "high_school": "Orting (WA)",
+      "birth_place": "Spanaway, WA, USA",
+      "birthdate": "2000-07-11",
+      "updated": "2025-07-16T20:37:47Z",
+      "sr_id": "sr:player:1915814",
+      "rookie_year": 2024,
+      "salary": 1955377,
+      "reference": "1642403",
+      "draft": {
+        "year": 2024
+      },
+      "references": [
+        {
+          "source_id": "1642403",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f8691c5b-4ffa-40b5-a8f9-76d2ea984897",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "a491656b-6b4d-45ff-84e9-358f9e6502e0",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "63d7727e-3886-4598-868c-683828671e1e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Isaac_Jones.png"
+    }
+  ]
+}

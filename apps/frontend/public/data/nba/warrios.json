@@ -1,0 +1,670 @@
+{
+  "id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+  "name": "Warriors",
+  "market": "Golden State",
+  "alias": "GSW",
+  "founded": 1946,
+  "sr_id": "sr:team:3428",
+  "owner": "Joe Lacob",
+  "general_manager": "Mike Dunleavy Jr.",
+  "president": "Brandon Schneider",
+  "sponsor": "Rakuten",
+  "championships_won": 7,
+  "championship_seasons": "1947, 1956, 1975, 2015, 2017, 2018, 2022",
+  "conference_titles": 7,
+  "division_titles": 12,
+  "retired_numbers": "6, 9, 13, 14, 16, 17, 24, 42",
+  "playoff_appearances": 38,
+  "gleague_affiliate": "Santa Cruz Warriors",
+  "reference": "1610612744",
+  "venue": {
+    "id": "938016dc-9e1d-4abc-88f5-3a7d772332e6",
+    "name": "Chase Center",
+    "capacity": 18064,
+    "address": "1 Warriors Way",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94158",
+    "country": "USA",
+    "sr_id": "sr:venue:44446",
+    "location": {
+      "lat": "37.7679",
+      "lng": "-122.3873"
+    }
+  },
+  "league": {
+    "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+    "name": "NBA",
+    "alias": "NBA"
+  },
+  "conference": {
+    "id": "7fe7e212-de01-4f8f-a31d-b9f0a95731e3",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN"
+  },
+  "division": {
+    "id": "f074cb3e-90cf-42e1-8067-cdbcd99ec230",
+    "name": "Pacific",
+    "alias": "PACIFIC"
+  },
+  "coaches": [
+    {
+      "id": "04bb3fde-d798-44a1-a4c1-2c98c9bbf04b",
+      "full_name": "Steve Kerr",
+      "first_name": "Steve",
+      "last_name": "Kerr",
+      "position": "Head Coach",
+      "experience": "11",
+      "reference": "204005"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "primary",
+      "hex_color": "#006bb6",
+      "rgb_color": {
+        "red": 0,
+        "green": 107,
+        "blue": 182
+      }
+    },
+    {
+      "type": "secondary",
+      "hex_color": "#fdb927",
+      "rgb_color": {
+        "red": 253,
+        "green": 185,
+        "blue": 39
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0e163d44-67a7-4107-9421-5333600166bb",
+      "status": "ACT",
+      "full_name": "Jimmy Butler III",
+      "first_name": "Jimmy",
+      "last_name": "Butler",
+      "abbr_name": "J.Butler",
+      "height": 79,
+      "weight": 230,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "10",
+      "experience": "14",
+      "college": "Marquette",
+      "high_school": "Tomball (TX)",
+      "birth_place": "Houston, TX, USA",
+      "birthdate": "1989-09-14",
+      "updated": "2025-07-16T21:52:38Z",
+      "name_suffix": "III",
+      "sr_id": "sr:player:607444",
+      "rookie_year": 2011,
+      "salary": 54126450,
+      "reference": "202710",
+      "draft": {
+        "team_id": "583ec5fd-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2011,
+        "round": "1",
+        "pick": "30"
+      },
+      "references": [
+        {
+          "source_id": "202710",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5844b184-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jimmy_Butler_Iii.png"
+    },
+    {
+      "id": "3a3207cc-269f-47ef-9b77-f852f0bed4b0",
+      "status": "ACT",
+      "full_name": "Quinten Post",
+      "first_name": "Quinten",
+      "last_name": "Post",
+      "abbr_name": "Q.Post",
+      "height": 84,
+      "weight": 238,
+      "position": "C",
+      "primary_position": "PF",
+      "jersey_number": "21",
+      "experience": "1",
+      "college": "Boston College",
+      "birth_place": "Amsterdam,, NLD",
+      "birthdate": "2000-03-21",
+      "updated": "2025-07-16T22:40:35Z",
+      "sr_id": "sr:player:1889798",
+      "rookie_year": 2024,
+      "salary": 1955377,
+      "reference": "1642366",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "2",
+        "pick": "52"
+      },
+      "references": [
+        {
+          "source_id": "1642366",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c5dd98e2-b154-4f13-8feb-e2e334c40cc3",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3a561300-5f04-4868-806a-ad5092c773d7",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "5a2cd739-91c7-4356-a2eb-431cd6484dd9",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Quinten_Post.png"
+    },
+    {
+      "id": "49be9129-da30-4e74-aa60-b1e87582604b",
+      "status": "ACT",
+      "full_name": "Brandin Podziemski",
+      "first_name": "Brandin",
+      "last_name": "Podziemski",
+      "abbr_name": "B.Podziemski",
+      "height": 76,
+      "weight": 205,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "2",
+      "experience": "2",
+      "college": "Santa Clara",
+      "high_school": "St. John's Northwest Military Academy (WI)",
+      "birth_place": "Greenfield, WI, USA",
+      "birthdate": "2003-02-25",
+      "updated": "2025-07-16T22:39:47Z",
+      "sr_id": "sr:player:2216518",
+      "rookie_year": 2023,
+      "salary": 3687960,
+      "reference": "1641764",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "19"
+      },
+      "references": [
+        {
+          "source_id": "1641764",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "b5aa4c2f-12e4-4c05-9e86-5b3fc051ea1d",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "a3f7879a-da0a-4a9e-a484-fda147a0250d",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "1d0e1c44-c9e8-4599-9166-b5da31793b59",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Brandin_Podziemski.png"
+    },
+    {
+      "id": "5e5099d1-4a58-43f2-8d03-f2ae5dd49337",
+      "status": "ACT",
+      "full_name": "Draymond Green",
+      "first_name": "Draymond",
+      "last_name": "Green",
+      "abbr_name": "D.Green",
+      "height": 78,
+      "weight": 230,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "23",
+      "experience": "13",
+      "college": "Michigan State",
+      "high_school": "Saginaw (MI)",
+      "birth_place": "Saginaw, MI, USA",
+      "birthdate": "1990-03-04",
+      "updated": "2025-07-16T21:53:06Z",
+      "sr_id": "sr:player:608020",
+      "rookie_year": 2012,
+      "salary": 25892857,
+      "reference": "203110",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2012,
+        "round": "2",
+        "pick": "35"
+      },
+      "references": [
+        {
+          "source_id": "203110",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5846482f-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Draymond_Green.png"
+    },
+    {
+      "id": "61ee95c1-2350-4154-880c-b68c661b7c57",
+      "status": "TWO-WAY",
+      "full_name": "Jackson Rowe",
+      "first_name": "Jackson",
+      "last_name": "Rowe",
+      "abbr_name": "J.Rowe",
+      "height": 79,
+      "weight": 210,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "44",
+      "experience": "1",
+      "college": "Cal State Fullerton",
+      "high_school": "Wasatch Academy (UT)",
+      "birth_place": "Toronto, ON, CAN",
+      "birthdate": "1997-01-04",
+      "updated": "2025-07-08T20:20:37Z",
+      "sr_id": "sr:player:1158158",
+      "rookie_year": 2024,
+      "reference": "1642050",
+      "references": [
+        {
+          "source_id": "1642050",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7ce135f3-cd01-4475-9f8e-8d98719b08ee",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "4b40c79d-0d22-4fd2-af0e-8e86c2d69a7b",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "de68fe4f-84c1-481a-9064-49482ddfe645",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jackson_Rowe.png"
+    },
+    {
+      "id": "795f46f2-c78d-4f1d-9ee2-4331c1cc8184",
+      "status": "ACT",
+      "full_name": "Buddy Hield",
+      "first_name": "Buddy",
+      "last_name": "Hield",
+      "abbr_name": "B.Hield",
+      "height": 76,
+      "weight": 220,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "7",
+      "experience": "9",
+      "college": "Oklahoma",
+      "high_school": "Sunrise Christian Academy (KS)",
+      "birth_place": "Freeport,, BHS",
+      "birthdate": "1992-12-17",
+      "updated": "2025-07-16T21:53:54Z",
+      "sr_id": "sr:player:996305",
+      "rookie_year": 2016,
+      "salary": 9219512,
+      "reference": "1627741",
+      "draft": {
+        "team_id": "583ecc9a-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2016,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1627741",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8013b4d3-95e7-4cbb-8db2-64fe4d5fa0ad",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "e0eed913-dba5-4e30-a4f3-0b0bf78a3323",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Buddy_Hield.png"
+    },
+    {
+      "id": "7df31401-85c4-449f-bc87-f605145ef7ba",
+      "status": "ACT",
+      "full_name": "Trayce Jackson-Davis",
+      "first_name": "Trayce",
+      "last_name": "Jackson-Davis",
+      "abbr_name": "T.Jackson-Davis",
+      "height": 81,
+      "weight": 245,
+      "position": "F",
+      "primary_position": "C",
+      "jersey_number": "32",
+      "experience": "2",
+      "college": "Indiana",
+      "high_school": "Center Grove (IN)",
+      "birth_place": "Greenwood, IN, USA",
+      "birthdate": "2000-02-22",
+      "updated": "2025-07-16T21:54:10Z",
+      "sr_id": "sr:player:1875254",
+      "rookie_year": 2023,
+      "salary": 2221677,
+      "reference": "1631218",
+      "draft": {
+        "team_id": "583ec8d4-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "2",
+        "pick": "57"
+      },
+      "references": [
+        {
+          "source_id": "1631218",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5eccb331-1fc4-4722-a3be-8ada6949f764",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "ff54a64d-c49d-422d-8beb-ad2e64e7cef2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "c468bdc9-4778-496a-985e-7911dc6a1ff2",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Trayce_Jackson-davis.png"
+    },
+    {
+      "id": "8e2c38f7-494f-4dd1-af73-a17238f216fa",
+      "status": "ACT",
+      "full_name": "Alex Toohey",
+      "first_name": "Alex",
+      "last_name": "Toohey",
+      "abbr_name": "A.Toohey",
+      "height": 80,
+      "weight": 223,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "22",
+      "experience": "0",
+      "birth_place": "Canberra,, AUS",
+      "birthdate": "2004-05-05",
+      "updated": "2025-06-30T20:08:03Z",
+      "sr_id": "sr:player:2683369",
+      "draft": {
+        "team_id": "583ecfa8-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "2",
+        "pick": "52"
+      },
+      "references": [
+        {
+          "source_id": "14e883cf-53be-40ce-9339-bf3c63d10475",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Alex_Toohey.png"
+    },
+    {
+      "id": "8ec91366-faea-4196-bbfd-b8fab7434795",
+      "status": "ACT",
+      "full_name": "Stephen Curry",
+      "first_name": "Stephen",
+      "last_name": "Curry",
+      "abbr_name": "S.Curry",
+      "height": 74,
+      "weight": 185,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "30",
+      "experience": "16",
+      "college": "Davidson",
+      "high_school": "Charlotte Christian (NC)",
+      "birth_place": "Akron, OH, USA",
+      "birthdate": "1988-03-14",
+      "updated": "2025-07-16T21:52:31Z",
+      "sr_id": "sr:player:608110",
+      "rookie_year": 2009,
+      "salary": 59606817,
+      "reference": "201939",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2009,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "201939",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5843a268-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Stephen_Curry.png"
+    },
+    {
+      "id": "a316cf6a-693d-4c6a-b0d9-ebf80e73e832",
+      "status": "ACT",
+      "full_name": "Moses Moody",
+      "first_name": "Moses",
+      "last_name": "Moody",
+      "abbr_name": "M.Moody",
+      "height": 77,
+      "weight": 211,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "4",
+      "experience": "4",
+      "college": "Arkansas",
+      "high_school": "Montverde Academy (FL)",
+      "birth_place": "Little Rock, AR, USA",
+      "birthdate": "2002-05-31",
+      "updated": "2025-07-16T21:53:24Z",
+      "sr_id": "sr:player:2077831",
+      "rookie_year": 2021,
+      "salary": 11574075,
+      "reference": "1630541",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2021,
+        "round": "1",
+        "pick": "14"
+      },
+      "references": [
+        {
+          "source_id": "1630541",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e6aace5a-064a-48ad-b57b-496f7ab588cd",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "bc3cc373-6548-4cf0-90d8-0dc58d7af49d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "7d09f368-49af-41e5-a8ef-937d4d424c66",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Moses_Moody.png"
+    },
+    {
+      "id": "a5b978ac-7a35-4ec0-b15f-91d9a8e1ac31",
+      "status": "ACT",
+      "full_name": "Will Richard",
+      "first_name": "Will",
+      "last_name": "Richard",
+      "abbr_name": "W.Richard",
+      "height": 76,
+      "weight": 206,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "3",
+      "experience": "0",
+      "college": "Florida",
+      "high_school": "Woodward Academy (GA)",
+      "birth_place": "Fairburn, GA, USA",
+      "birthdate": "2002-12-24",
+      "updated": "2025-06-30T20:07:47Z",
+      "sr_id": "sr:player:2226026",
+      "draft": {
+        "team_id": "583eca88-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "2",
+        "pick": "56"
+      },
+      "references": [
+        {
+          "source_id": "86e77e75-c685-4c0b-b8b6-ea3eef3412fa",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "008b59d7-16db-46af-a372-5ecb8e813e99",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Will_Richard.png"
+    },
+    {
+      "id": "b27687c1-55bb-49e6-9c5b-96a099fda7b7",
+      "status": "ACT",
+      "full_name": "Jonathan Kuminga",
+      "first_name": "Jonathan",
+      "last_name": "Kuminga",
+      "abbr_name": "J.Kuminga",
+      "height": 79,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "00",
+      "experience": "4",
+      "high_school": "The Patrick School (NJ)",
+      "birth_place": "Goma,, COD",
+      "birthdate": "2002-10-06",
+      "updated": "2025-07-08T20:09:21Z",
+      "sr_id": "sr:player:2195914",
+      "rookie_year": 2021,
+      "reference": "1630228",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2021,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1630228",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "704a1157-53af-4780-b0ad-c60b6dd084b3",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "48a6194d-f3fc-4a43-bbf7-dda34857a001",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jonathan_Kuminga.png"
+    },
+    {
+      "id": "f5d6fdfd-21f6-48f0-a297-4c13e8fc40cb",
+      "status": "ACT",
+      "full_name": "Gui Santos",
+      "first_name": "Gui",
+      "last_name": "Santos",
+      "abbr_name": "G.Santos",
+      "height": 78,
+      "weight": 185,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "15",
+      "experience": "2",
+      "birth_place": "Brasilia,, BRA",
+      "birthdate": "2002-06-22",
+      "updated": "2025-07-16T22:40:18Z",
+      "sr_id": "sr:player:2380661",
+      "rookie_year": 2023,
+      "salary": 2221677,
+      "reference": "1630611",
+      "draft": {
+        "team_id": "583ec825-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "2",
+        "pick": "55"
+      },
+      "references": [
+        {
+          "source_id": "1630611",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f0b437bf-d938-494b-bb74-3a7445a0090e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f8009eaa-510d-489d-81e6-0fe5e575d809",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Gui_Santos.png"
+    }
+  ]
+}

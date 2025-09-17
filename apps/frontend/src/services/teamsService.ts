@@ -27,10 +27,20 @@ const fetchTeamById = async (league: 'nba' | 'wnba', teamId: string) => {
   return { team: teamData };
 };
 
-export const useTeam = (league: 'nba' | 'wnba', teamId: string) => {
+// const fetchTeamById = async (league: 'nba' | 'wnba', teamName: string) => {
+//  const endpoint = `/data/${league}/${teamName}.json`;
+// const res = await fetch(endpoint);
+//   if (!res.ok) {
+//   throw new Error(`Something went wrong while loading team data. Please try again later.`);
+//  }
+//  const teamData = await res.json();
+//  return { team: teamData };
+// };
+
+export const useTeam = (league: 'nba' | 'wnba', teamName: string) => {
   return useQuery({
-    queryKey: ['team', league, teamId],
-    queryFn: () => fetchTeamById(league, teamId),
-    enabled: !!teamId,
+    queryKey: ['team', league, teamName],
+    queryFn: () => fetchTeamById(league, teamName),
+    enabled: !!teamName,
   });
 };

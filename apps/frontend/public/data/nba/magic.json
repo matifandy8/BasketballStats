@@ -1,0 +1,839 @@
+{
+  "id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+  "name": "Magic",
+  "market": "Orlando",
+  "alias": "ORL",
+  "founded": 1989,
+  "sr_id": "sr:team:3437",
+  "owner": "Dan DeVos",
+  "general_manager": "Anthony Parker",
+  "president": "Jeff Weltman",
+  "mascot": "Stuff the Magic Dragon",
+  "sponsor": "Walt Disney World",
+  "championships_won": 0,
+  "conference_titles": 2,
+  "division_titles": 8,
+  "retired_numbers": "6, 32",
+  "playoff_appearances": 18,
+  "gleague_affiliate": "Osceola Magic",
+  "reference": "1610612753",
+  "venue": {
+    "id": "aecd8da6-0404-599c-a792-4b33fb084a2a",
+    "name": "Kia Center",
+    "capacity": 18846,
+    "address": "400 W. Church Street",
+    "city": "Orlando",
+    "state": "FL",
+    "zip": "32801",
+    "country": "USA",
+    "sr_id": "sr:venue:6936",
+    "location": {
+      "lat": "28.539167",
+      "lng": "-81.383611"
+    }
+  },
+  "league": {
+    "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+    "name": "NBA",
+    "alias": "NBA"
+  },
+  "conference": {
+    "id": "3960cfac-7361-4b30-bc25-8d393de6f62f",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN"
+  },
+  "division": {
+    "id": "54dc7348-c1d2-40d8-88b3-c4c0138e085d",
+    "name": "Southeast",
+    "alias": "SOUTHEAST"
+  },
+  "coaches": [
+    {
+      "id": "a3470dac-0f2e-44ab-9853-9748ddbce48f",
+      "full_name": "Jamahl Mosley",
+      "first_name": "Jamahl",
+      "last_name": "Mosley",
+      "position": "Head Coach",
+      "experience": "4",
+      "reference": "202427"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#000000",
+      "rgb_color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#0050b5",
+      "rgb_color": {
+        "red": 0,
+        "green": 80,
+        "blue": 181
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "089dc4be-faf1-4d91-9e02-fdb78ed096f3",
+      "status": "ACT",
+      "full_name": "Anthony Black",
+      "first_name": "Anthony",
+      "last_name": "Black",
+      "abbr_name": "A.Black",
+      "height": 79,
+      "weight": 200,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "0",
+      "experience": "2",
+      "college": "Arkansas",
+      "high_school": "Duncanville (TX)",
+      "birth_place": "Duncanville, TX, USA",
+      "birthdate": "2004-01-20",
+      "updated": "2025-07-16T21:32:36Z",
+      "sr_id": "sr:player:2439283",
+      "rookie_year": 2023,
+      "salary": 8232459,
+      "reference": "1641710",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1641710",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "328b775d-3774-4b95-b4bb-4cfa81423b4a",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "e8ae5842-5e9a-4cb9-9846-c0fb6714d03c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Anthony_Black.png"
+    },
+    {
+      "id": "0c977083-fdde-45f1-9406-60aef2a78846",
+      "status": "ACT",
+      "full_name": "Goga Bitadze",
+      "first_name": "Goga",
+      "last_name": "Bitadze",
+      "abbr_name": "G.Bitadze",
+      "height": 82,
+      "weight": 250,
+      "position": "C-F",
+      "primary_position": "C",
+      "jersey_number": "35",
+      "experience": "6",
+      "birth_place": "Sagarejo,, GEO",
+      "birthdate": "1999-07-20",
+      "updated": "2025-07-16T21:32:15Z",
+      "sr_id": "sr:player:1497623",
+      "rookie_year": 2019,
+      "salary": 8333333,
+      "reference": "1629048",
+      "draft": {
+        "team_id": "583ec7cd-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2019,
+        "round": "1",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1629048",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2bf962af-faa1-44f2-9d93-30ced1397366",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "4e578b32-17ac-45b7-965b-6dcc4f74c21a",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Goga_Bitadze.png"
+    },
+    {
+      "id": "3ac2181f-3bec-4ffc-809f-30f2357b36c1",
+      "status": "ACT",
+      "full_name": "Jase Richardson",
+      "first_name": "Jase",
+      "last_name": "Richardson",
+      "abbr_name": "J.Richardson",
+      "height": 73,
+      "weight": 178,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "11",
+      "experience": "0",
+      "college": "Michigan State",
+      "high_school": "Christopher Columbus (FL)",
+      "birth_place": "Denver, CO, USA",
+      "birthdate": "2005-10-15",
+      "updated": "2025-08-22T23:01:11Z",
+      "sr_id": "sr:player:2873981",
+      "salary": 3827141,
+      "reference": "1642859",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "1",
+        "pick": "25"
+      },
+      "references": [
+        {
+          "source_id": "1642859",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5fcb90e3-6c83-4ff5-a6fc-79aff14db9bb",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "24dbde89-8da6-4552-92e3-1d184d74fc29",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jase_Richardson.png"
+    },
+    {
+      "id": "49962b13-0afc-43f5-a3e2-7e37b7736260",
+      "status": "ACT",
+      "full_name": "Desmond Bane",
+      "first_name": "Desmond",
+      "last_name": "Bane",
+      "abbr_name": "D.Bane",
+      "height": 77,
+      "weight": 215,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "3",
+      "experience": "5",
+      "college": "TCU",
+      "high_school": "Seton Catholic (IN)",
+      "birth_place": "Richmond, IN, USA",
+      "birthdate": "1998-06-25",
+      "updated": "2025-07-16T21:31:48Z",
+      "sr_id": "sr:player:1168552",
+      "rookie_year": 2020,
+      "salary": 39446090,
+      "reference": "1630217",
+      "draft": {
+        "team_id": "583eccfa-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2020,
+        "round": "1",
+        "pick": "30"
+      },
+      "references": [
+        {
+          "source_id": "1630217",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c370d1cb-fdb1-4c5f-a514-d5ca1c32a0b9",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "c9c0920f-34b3-4f90-98e6-a81ddf256693",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Desmond_Bane.png"
+    },
+    {
+      "id": "49d8f5ef-2867-4597-a3ab-5ffc5e651258",
+      "status": "ACT",
+      "full_name": "Paolo Banchero",
+      "first_name": "Paolo",
+      "last_name": "Banchero",
+      "abbr_name": "P.Banchero",
+      "height": 82,
+      "weight": 250,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "5",
+      "experience": "3",
+      "college": "Duke",
+      "high_school": "O'Dea (WA)",
+      "birth_place": "Seattle, WA, USA",
+      "birthdate": "2002-11-12",
+      "updated": "2025-07-16T21:31:28Z",
+      "sr_id": "sr:player:2216960",
+      "rookie_year": 2022,
+      "salary": 47986880,
+      "reference": "1631094",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1631094",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "270ef46d-9ca0-4ade-b982-1c137c9aea9e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f7c8430e-5967-46d9-90b3-ae277e8eb0bc",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Paolo_Banchero.png"
+    },
+    {
+      "id": "5099364d-2c4b-4d38-ac66-a86d9489474c",
+      "status": "ACT",
+      "full_name": "Noah Penda",
+      "first_name": "Noah",
+      "last_name": "Penda",
+      "abbr_name": "N.Penda",
+      "height": 80,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "93",
+      "experience": "0",
+      "birth_place": "Paris,, FRA",
+      "birthdate": "2005-01-07",
+      "updated": "2025-08-22T23:01:11Z",
+      "sr_id": "sr:player:2864639",
+      "salary": 2171347,
+      "reference": "1642869",
+      "draft": {
+        "team_id": "583eccfa-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2025,
+        "round": "2",
+        "pick": "32"
+      },
+      "references": [
+        {
+          "source_id": "1642869",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e3781c15-2ecf-43cf-812c-d672af3a6a1e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Noah_Penda.png"
+    },
+    {
+      "id": "514fd4aa-5384-4bc7-a670-367a426ca235",
+      "status": "ACT",
+      "full_name": "Franz Wagner",
+      "first_name": "Franz",
+      "last_name": "Wagner",
+      "abbr_name": "F.Wagner",
+      "height": 82,
+      "weight": 220,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "22",
+      "experience": "4",
+      "college": "Michigan",
+      "birth_place": "Berlin,, DEU",
+      "birthdate": "2001-08-27",
+      "updated": "2025-07-16T21:35:53Z",
+      "sr_id": "sr:player:1604398",
+      "rookie_year": 2021,
+      "salary": 44847630,
+      "reference": "1630532",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2021,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1630532",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "213dd0ba-b049-457f-b636-facb03790018",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "ec3df621-2a9d-483c-9064-11b44d8841a9",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Franz_Wagner.png"
+    },
+    {
+      "id": "6dda6e0a-4b74-4486-80cd-5f9a8d93d1ba",
+      "status": "ACT",
+      "full_name": "Jalen Suggs",
+      "first_name": "Jalen",
+      "last_name": "Suggs",
+      "abbr_name": "J.Suggs",
+      "height": 77,
+      "weight": 205,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "4",
+      "experience": "4",
+      "college": "Gonzaga",
+      "high_school": "Minnehaha Academy (MN)",
+      "birth_place": "St. Paul, MN, USA",
+      "birthdate": "2001-06-03",
+      "updated": "2025-07-16T21:35:24Z",
+      "sr_id": "sr:player:2080521",
+      "rookie_year": 2021,
+      "salary": 30100000,
+      "reference": "1630591",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2021,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1630591",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "372b4056-49a1-4ef5-8322-89ed479286b3",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "abc01d13-ed98-42ff-a24b-b9835e0be84d",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jalen_Suggs.png"
+    },
+    {
+      "id": "744d5db7-b0be-474a-a58b-6ddf7ae35567",
+      "status": "ACT",
+      "full_name": "Wendell Carter Jr.",
+      "first_name": "Wendell",
+      "last_name": "Carter",
+      "abbr_name": "W.Carter",
+      "height": 82,
+      "weight": 270,
+      "position": "C-F",
+      "primary_position": "C",
+      "jersey_number": "34",
+      "experience": "7",
+      "college": "Duke",
+      "high_school": "Pace Academy (GA)",
+      "birth_place": "Atlanta, GA, USA",
+      "birthdate": "1999-04-16",
+      "updated": "2025-07-16T21:32:49Z",
+      "name_suffix": "Jr.",
+      "sr_id": "sr:player:1304564",
+      "rookie_year": 2018,
+      "salary": 12500000,
+      "reference": "1628976",
+      "draft": {
+        "team_id": "583ec5fd-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2018,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1628976",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "18b76ee4-d7dc-416a-8467-019fc4796d49",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "e1f7f96f-8a76-475e-a289-e0b38f21846f",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Wendell_Carter_Jr..png"
+    },
+    {
+      "id": "776679a3-c1d8-4463-99b1-61024008a3ed",
+      "status": "ACT",
+      "full_name": "Jonathan Isaac",
+      "first_name": "Jonathan",
+      "last_name": "Isaac",
+      "abbr_name": "J.Isaac",
+      "height": 82,
+      "weight": 230,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "1",
+      "experience": "6",
+      "college": "Florida State",
+      "high_school": "IMG Academy (FL)",
+      "birth_place": "Bronx, NY, USA",
+      "birthdate": "1997-10-03",
+      "updated": "2025-07-16T21:33:28Z",
+      "sr_id": "sr:player:1141192",
+      "rookie_year": 2017,
+      "salary": 14750000,
+      "reference": "1628371",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2017,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1628371",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "13f1e103-39e9-49f5-a8f9-1232135eed49",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "cb084301-5ddb-40d2-832e-d1a6a56bd260",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "bedeb6a3-e10d-49b1-a5e3-94aadeaf5f77",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jonathan_Isaac.png"
+    },
+    {
+      "id": "98fa75e7-a46f-4483-a15b-053c5ca52604",
+      "status": "ACT",
+      "full_name": "Tristan da Silva",
+      "first_name": "Tristan",
+      "last_name": "da Silva",
+      "abbr_name": "T.da Silva",
+      "height": 80,
+      "weight": 217,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "23",
+      "experience": "1",
+      "college": "Colorado",
+      "birth_place": "Munich,, DEU",
+      "birthdate": "2001-05-15",
+      "updated": "2025-07-16T21:37:03Z",
+      "sr_id": "sr:player:2081063",
+      "rookie_year": 2024,
+      "salary": 4391907,
+      "reference": "1641783",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "1",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1641783",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "70be5202-6f20-49f2-be79-cf72325a5224",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "940dcf97-d4d2-4856-b3eb-d4e2b9c41a66",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tristan_Da_Silva.png"
+    },
+    {
+      "id": "a3c4745f-461b-47d4-87db-887ac81fe5e7",
+      "status": "TWO-WAY",
+      "full_name": "Jamal Cain",
+      "first_name": "Jamal",
+      "last_name": "Cain",
+      "abbr_name": "J.Cain",
+      "height": 78,
+      "weight": 191,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "8",
+      "experience": "3",
+      "college": "Marquette",
+      "high_school": "Cornerstone Health and Technology (MI)",
+      "birth_place": "Pontiac, MI, USA",
+      "birthdate": "1999-03-20",
+      "updated": "2025-08-05T18:44:12Z",
+      "sr_id": "sr:player:1317924",
+      "rookie_year": 2022,
+      "reference": "1631288",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1631288",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2cdf63a7-0c12-4ac2-bf36-070a8c0ec7d6",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "20b89fab-8beb-427f-84b7-45186981cfe5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b4834357-58ff-45e6-86b9-e0886d058875",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jamal_Cain.png"
+    },
+    {
+      "id": "ad5c19d3-1cce-4124-aeb9-dc15b3d0a851",
+      "status": "ACT",
+      "full_name": "Jett Howard",
+      "first_name": "Jett",
+      "last_name": "Howard",
+      "abbr_name": "J.Howard",
+      "height": 78,
+      "weight": 215,
+      "position": "G",
+      "primary_position": "SF",
+      "jersey_number": "13",
+      "experience": "2",
+      "college": "Michigan",
+      "high_school": "IMG Academy (FL)",
+      "birth_place": "Chicago, IL, USA",
+      "birthdate": "2003-09-14",
+      "updated": "2025-07-17T20:58:23Z",
+      "sr_id": "sr:player:2435311",
+      "rookie_year": 2023,
+      "salary": 5793195,
+      "reference": "1641724",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1641724",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e1b305ff-bc34-4763-94b6-da8f980c2c43",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "7994d356-9a13-49b0-aab3-c9b742b35265",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "4a5df84a-be3b-4439-af11-ba87ffc8c5da",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jett_Howard.png"
+    },
+    {
+      "id": "cbc0a3b2-985e-4484-9cb6-6891337b18b7",
+      "status": "ACT",
+      "full_name": "Tyus Jones",
+      "first_name": "Tyus",
+      "last_name": "Jones",
+      "abbr_name": "T.Jones",
+      "height": 73,
+      "weight": 196,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "2",
+      "experience": "10",
+      "college": "Duke",
+      "high_school": "Apple Valley (MN)",
+      "birth_place": "Apple Valley, MN, USA",
+      "birthdate": "1996-05-10",
+      "updated": "2025-07-16T21:33:41Z",
+      "sr_id": "sr:player:852176",
+      "rookie_year": 2015,
+      "salary": 7000000,
+      "reference": "1626145",
+      "draft": {
+        "team_id": "583ec773-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2015,
+        "round": "1",
+        "pick": "24"
+      },
+      "references": [
+        {
+          "source_id": "1626145",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ed06b9be-0d73-4e37-9064-f1556a1797a0",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "5cc28c70-4928-4e1f-acb0-21fca0a55bf1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tyus_Jones.png"
+    },
+    {
+      "id": "cbceca06-325c-492c-a995-873ec07bc64e",
+      "status": "TWO-WAY",
+      "full_name": "Orlando Robinson",
+      "first_name": "Orlando",
+      "last_name": "Robinson",
+      "abbr_name": "O.Robinson",
+      "height": 82,
+      "weight": 235,
+      "position": "C",
+      "primary_position": "C",
+      "jersey_number": "7",
+      "experience": "2",
+      "college": "Fresno State",
+      "high_school": "Centennial (NV)",
+      "birth_place": "Las Vegas, NV, USA",
+      "birthdate": "2000-07-10",
+      "updated": "2025-07-21T20:18:55Z",
+      "sr_id": "sr:player:1797014",
+      "rookie_year": 2022,
+      "reference": "1631115",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1631115",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5f40378c-ffb8-4316-b1c1-3c3537c7b3a2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "1a5d3d9d-1810-4558-b7cb-29d092a4d82b",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "b92cc4a3-10f3-4ff0-a856-5f914079c3ee",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Orlando_Robinson.png"
+    },
+    {
+      "id": "f1f258c2-9bcf-4e33-ba9e-563e95084893",
+      "status": "ACT",
+      "full_name": "Moritz Wagner",
+      "first_name": "Moritz",
+      "last_name": "Wagner",
+      "abbr_name": "M.Wagner",
+      "height": 83,
+      "weight": 245,
+      "position": "F-C",
+      "primary_position": "C",
+      "jersey_number": "21",
+      "experience": "7",
+      "college": "Michigan",
+      "birth_place": "Berlin,, DEU",
+      "birthdate": "1997-04-26",
+      "updated": "2025-07-16T21:35:36Z",
+      "sr_id": "sr:player:1177150",
+      "rookie_year": 2018,
+      "salary": 5000000,
+      "reference": "1629021",
+      "draft": {
+        "team_id": "583ecae2-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2018,
+        "round": "1",
+        "pick": "25"
+      },
+      "references": [
+        {
+          "source_id": "1629021",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "36d99eae-5569-4a5b-a87e-136656e26b8c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b908ba59-07c9-4fb3-8c1b-5e00b93d7a4f",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "2b598737-698f-4ddd-954d-6e686d36a2e8",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Moritz_Wagner.png"
+    }
+  ]
+}

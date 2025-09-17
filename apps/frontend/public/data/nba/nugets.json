@@ -1,0 +1,886 @@
+{
+  "id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
+  "name": "Nuggets",
+  "market": "Denver",
+  "alias": "DEN",
+  "founded": 1967,
+  "sr_id": "sr:team:3417",
+  "owner": "Kroenke Sports & Entertainment",
+  "general_manager": "Ben Tenzer",
+  "president": "Josh Kroenke",
+  "mascot": "Rocky the Mountain Lion",
+  "sponsor": "Ibotta",
+  "championships_won": 1,
+  "championship_seasons": "2023",
+  "conference_titles": 1,
+  "division_titles": 10,
+  "retired_numbers": "2, 6, 12, 33, 40, 44, 55, 432",
+  "playoff_appearances": 31,
+  "gleague_affiliate": "Grand Rapids Gold",
+  "reference": "1610612743",
+  "venue": {
+    "id": "1a28ef88-76c9-5bcc-b4ee-51d30ca98f4f",
+    "name": "Ball Arena",
+    "capacity": 19520,
+    "address": "1000 Chopper Circle",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80204",
+    "country": "USA",
+    "sr_id": "sr:venue:5976",
+    "location": {
+      "lat": "39.749034",
+      "lng": "-105.007604"
+    }
+  },
+  "league": {
+    "id": "4353138d-4c22-4396-95d8-5f587d2df25c",
+    "name": "NBA",
+    "alias": "NBA"
+  },
+  "conference": {
+    "id": "7fe7e212-de01-4f8f-a31d-b9f0a95731e3",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN"
+  },
+  "division": {
+    "id": "12bf14ba-eb16-4c6f-8275-e801b6947c1e",
+    "name": "Northwest",
+    "alias": "NORTHWEST"
+  },
+  "coaches": [
+    {
+      "id": "20034521-9956-46e0-88e7-4d92997c9d85",
+      "full_name": "David Adelman",
+      "first_name": "David",
+      "last_name": "Adelman",
+      "position": "Head Coach",
+      "reference": "203600"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "primary",
+      "hex_color": "#0e2240",
+      "rgb_color": {
+        "red": 14,
+        "green": 34,
+        "blue": 64
+      }
+    },
+    {
+      "type": "secondary",
+      "hex_color": "#ffc627",
+      "rgb_color": {
+        "red": 255,
+        "green": 198,
+        "blue": 39
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "20f85838-0bd5-4c1f-ab85-a308bafaf5bc",
+      "status": "ACT",
+      "full_name": "Aaron Gordon",
+      "first_name": "Aaron",
+      "last_name": "Gordon",
+      "abbr_name": "A.Gordon",
+      "height": 80,
+      "weight": 235,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "32",
+      "experience": "11",
+      "college": "Arizona",
+      "high_school": "Archbishop Mitty (CA)",
+      "birth_place": "San Jose, CA, USA",
+      "birthdate": "1995-09-16",
+      "updated": "2025-07-16T22:34:36Z",
+      "sr_id": "sr:player:607864",
+      "rookie_year": 2014,
+      "salary": 21660000,
+      "reference": "203932",
+      "draft": {
+        "team_id": "583ed157-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2014,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "203932",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "1ec40baf-a1c8-43ce-ae37-7e90adf63cc4",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b373b650-f392-4da3-b753-55b631403bc7",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aaron_Gordon.png"
+    },
+    {
+      "id": "2533c7f2-31e9-4405-8b66-91e1e966d3f0",
+      "status": "ACT",
+      "full_name": "Hunter Tyson",
+      "first_name": "Hunter",
+      "last_name": "Tyson",
+      "abbr_name": "H.Tyson",
+      "height": 80,
+      "weight": 215,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "5",
+      "experience": "2",
+      "college": "Clemson",
+      "high_school": "Piedmont Community Charter (NC)",
+      "birth_place": "Monroe, NC, USA",
+      "birthdate": "2000-06-13",
+      "updated": "2025-07-16T22:38:26Z",
+      "sr_id": "sr:player:1582616",
+      "rookie_year": 2023,
+      "salary": 1909826,
+      "reference": "1641816",
+      "draft": {
+        "team_id": "583ecfff-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "2",
+        "pick": "37"
+      },
+      "references": [
+        {
+          "source_id": "1641816",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "9bd59a25-7f24-444d-8996-d5b477954517",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "39524110-0beb-4b6b-bc7d-5de613e11704",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "172d726c-fdbd-483f-bc8c-6e54558d5c87",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Hunter_Tyson.png"
+    },
+    {
+      "id": "2fe5b749-7bd4-4dbc-acfb-6d675f541e37",
+      "status": "ACT",
+      "full_name": "Cameron Johnson",
+      "first_name": "Cameron",
+      "last_name": "Johnson",
+      "abbr_name": "C.Johnson",
+      "height": 80,
+      "weight": 210,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "23",
+      "experience": "6",
+      "college": "North Carolina",
+      "high_school": "Our Lady of the Sacred Heart (PA)",
+      "birth_place": "Moon Township, PA, USA",
+      "birthdate": "1996-03-03",
+      "updated": "2025-07-16T22:36:33Z",
+      "sr_id": "sr:player:1770162",
+      "rookie_year": 2019,
+      "salary": 23625000,
+      "reference": "1629661",
+      "draft": {
+        "team_id": "583eca2f-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2019,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1629661",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f67a3278-bf83-4f38-8fc5-ad270a4af5ad",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "d4e7886b-5d8b-4cde-b8d7-15d91c6b1ddf",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Cameron_Johnson.png"
+    },
+    {
+      "id": "35cd1338-c56b-4247-b53c-264585c59883",
+      "status": "ACT",
+      "full_name": "Tim Hardaway Jr.",
+      "first_name": "Tim",
+      "last_name": "Hardaway",
+      "abbr_name": "T.Hardaway",
+      "height": 77,
+      "weight": 205,
+      "position": "G-F",
+      "primary_position": "SG",
+      "jersey_number": "10",
+      "experience": "11",
+      "college": "Michigan",
+      "high_school": "Miami Palmetto Senior (FL)",
+      "birth_place": "Alameda, CA, USA",
+      "birthdate": "1992-03-16",
+      "updated": "2025-07-11T05:06:12Z",
+      "name_suffix": "Jr.",
+      "sr_id": "sr:player:608188",
+      "rookie_year": 2013,
+      "reference": "203501",
+      "draft": {
+        "team_id": "583ec70e-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2013,
+        "round": "1",
+        "pick": "24"
+      },
+      "references": [
+        {
+          "source_id": "203501",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "58464385-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tim_Hardaway_Jr..png"
+    },
+    {
+      "id": "39111764-a140-4086-9220-fd4264d9072d",
+      "status": "ACT",
+      "full_name": "Julian Strawther",
+      "first_name": "Julian",
+      "last_name": "Strawther",
+      "abbr_name": "J.Strawther",
+      "height": 78,
+      "weight": 205,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "3",
+      "experience": "2",
+      "college": "Gonzaga",
+      "high_school": "Liberty (NV)",
+      "birth_place": "Las Vegas, NV, USA",
+      "birthdate": "2002-04-18",
+      "updated": "2025-07-16T22:38:09Z",
+      "sr_id": "sr:player:2080529",
+      "rookie_year": 2023,
+      "salary": 3121183,
+      "reference": "1631124",
+      "draft": {
+        "team_id": "583ec7cd-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "1",
+        "pick": "29"
+      },
+      "references": [
+        {
+          "source_id": "1631124",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a44f1fc7-ae53-45e0-93d0-28822712f7b7",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3c971cd9-8d03-44f5-ac10-b791a5f70a80",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "76be7e4e-d90c-493d-a081-206dc44da97e",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Julian_Strawther.png"
+    },
+    {
+      "id": "57551d80-b1c9-42a2-a882-e0c06aa6f951",
+      "status": "ACT",
+      "full_name": "Jalen Pickett",
+      "first_name": "Jalen",
+      "last_name": "Pickett",
+      "abbr_name": "J.Pickett",
+      "height": 74,
+      "weight": 202,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "24",
+      "experience": "2",
+      "college": "Penn State",
+      "high_school": "Spire Sports Academy (OH)",
+      "birth_place": "Rochester, NY, USA",
+      "birthdate": "1999-10-22",
+      "updated": "2025-07-16T22:37:47Z",
+      "sr_id": "sr:player:1600500",
+      "rookie_year": 2023,
+      "salary": 2056971,
+      "reference": "1629618",
+      "draft": {
+        "team_id": "583ec7cd-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2023,
+        "round": "2",
+        "pick": "32"
+      },
+      "references": [
+        {
+          "source_id": "1629618",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2371a65f-dbe1-4fba-a544-f7b2342df163",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f0d78d0c-1918-4b0b-a89a-09a0b933cc6e",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "222e6cb7-bdc8-438e-8438-ed65f5d0fc04",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jalen_Pickett.png"
+    },
+    {
+      "id": "5a563d9c-10c4-4005-a884-109f05264b0b",
+      "status": "ACT",
+      "full_name": "Zeke Nnaji",
+      "first_name": "Zeke",
+      "last_name": "Nnaji",
+      "abbr_name": "Z.Nnaji",
+      "height": 81,
+      "weight": 240,
+      "position": "F-C",
+      "primary_position": "PF",
+      "jersey_number": "22",
+      "experience": "5",
+      "college": "Arizona",
+      "high_school": "Hopkins (MN)",
+      "birth_place": "Hopkins, MN, USA",
+      "birthdate": "2001-01-09",
+      "updated": "2025-07-16T22:37:20Z",
+      "sr_id": "sr:player:1943512",
+      "rookie_year": 2020,
+      "salary": 8000000,
+      "reference": "1630192",
+      "draft": {
+        "team_id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2020,
+        "round": "1",
+        "pick": "22"
+      },
+      "references": [
+        {
+          "source_id": "1630192",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e934e3c9-91f1-42ac-972a-52468d3899b2",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "b0fa6686-3320-4908-b838-a6f44fec2f60",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Zeke_Nnaji.png"
+    },
+    {
+      "id": "5c010a64-12a9-423e-a466-fc49c427e058",
+      "status": "TWO-WAY",
+      "full_name": "Tamar Bates",
+      "first_name": "Tamar",
+      "last_name": "Bates",
+      "abbr_name": "T.Bates",
+      "height": 77,
+      "weight": 195,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "0",
+      "college": "Missouri",
+      "high_school": "Piper (KS)",
+      "birth_place": "Kansas City, KS, USA",
+      "birthdate": "2003-02-21",
+      "updated": "2025-08-22T22:41:12Z",
+      "sr_id": "sr:player:2216940",
+      "reference": "1642926",
+      "draft": {
+        "year": 2025
+      },
+      "references": [
+        {
+          "source_id": "1642926",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8d502278-9056-4fff-a3b4-bc55b193365e",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "cc1f35b1-f38e-432f-8399-204c53160289",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "f8378417-d7f3-4169-88e0-4af4129fb661",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tamar_Bates.png"
+    },
+    {
+      "id": "685576ef-ea6c-4ccf-affd-18916baf4e60",
+      "status": "ACT",
+      "full_name": "Jamal Murray",
+      "first_name": "Jamal",
+      "last_name": "Murray",
+      "abbr_name": "J.Murray",
+      "height": 76,
+      "weight": 215,
+      "position": "G",
+      "primary_position": "PG",
+      "jersey_number": "27",
+      "experience": "8",
+      "college": "Kentucky",
+      "high_school": "Orangeville Prep (CAN)",
+      "birth_place": "Kitchener, ON, CAN",
+      "birthdate": "1997-02-23",
+      "updated": "2025-07-16T22:37:06Z",
+      "sr_id": "sr:player:996299",
+      "rookie_year": 2016,
+      "salary": 51961392,
+      "reference": "1627750",
+      "draft": {
+        "team_id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2016,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1627750",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f4308a07-050d-4836-846c-737926b187d4",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "a6620e5b-0c8c-4815-83ae-e30b81f64d8c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jamal_Murray.png"
+    },
+    {
+      "id": "abfc35ea-baf0-4aff-b69a-30732ddf2b1b",
+      "status": "ACT",
+      "full_name": "Peyton Watson",
+      "first_name": "Peyton",
+      "last_name": "Watson",
+      "abbr_name": "P.Watson",
+      "height": 79,
+      "weight": 200,
+      "position": "G",
+      "primary_position": "SF",
+      "jersey_number": "8",
+      "experience": "3",
+      "college": "UCLA",
+      "high_school": "Long Beach Poly (CA)",
+      "birth_place": "Beverly Hills, CA, USA",
+      "birthdate": "2002-09-11",
+      "updated": "2025-07-16T22:39:08Z",
+      "sr_id": "sr:player:2217634",
+      "rookie_year": 2022,
+      "salary": 2816879,
+      "reference": "1631212",
+      "draft": {
+        "team_id": "583ecfff-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "1",
+        "pick": "30"
+      },
+      "references": [
+        {
+          "source_id": "1631212",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "b4d48f3f-0ff5-4901-b013-3da80dfd217c",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9bd8292d-9005-43c6-8417-7d2042a02deb",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "0398c7df-0e28-4962-9f4f-da39adbe2a24",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Peyton_Watson.png"
+    },
+    {
+      "id": "c8788ad2-89f7-4ec9-a22b-dcaf6190889b",
+      "status": "ACT",
+      "full_name": "Jonas Valančiūnas",
+      "first_name": "Jonas",
+      "last_name": "Valančiūnas",
+      "abbr_name": "J.Valančiūnas",
+      "height": 83,
+      "weight": 265,
+      "position": "C",
+      "primary_position": "C",
+      "jersey_number": "17",
+      "experience": "12",
+      "birth_place": "Utena,, LTU",
+      "birthdate": "1992-05-06",
+      "updated": "2025-07-16T22:38:50Z",
+      "sr_id": "sr:player:607970",
+      "rookie_year": 2012,
+      "salary": 10098333,
+      "reference": "202685",
+      "draft": {
+        "team_id": "583ecda6-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2011,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "202685",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "58442b5b-fb46-11e1-82cb-f4ce4684ea4c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jonas_Valančiūnas.png"
+    },
+    {
+      "id": "cbc1a455-6cf8-4174-ace6-b0e250936f74",
+      "status": "ACT",
+      "full_name": "Christian Braun",
+      "first_name": "Christian",
+      "last_name": "Braun",
+      "abbr_name": "C.Braun",
+      "height": 78,
+      "weight": 220,
+      "position": "G",
+      "primary_position": "SG",
+      "jersey_number": "0",
+      "experience": "3",
+      "college": "Kansas",
+      "high_school": "Blue Valley Northwest (KS)",
+      "birth_place": "Burlington, KS, USA",
+      "birthdate": "2001-04-17",
+      "updated": "2025-07-16T22:33:42Z",
+      "sr_id": "sr:player:1793966",
+      "rookie_year": 2022,
+      "salary": 3442289,
+      "reference": "1631128",
+      "draft": {
+        "team_id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2022,
+        "round": "1",
+        "pick": "21"
+      },
+      "references": [
+        {
+          "source_id": "1631128",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "b8f80fc6-2091-4c45-b445-a26780248858",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9dbd2e09-ed28-46e8-a2b6-a558a8c3ce56",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Christian_Braun.png"
+    },
+    {
+      "id": "dfce9679-dd27-4522-ab74-e197b3635d73",
+      "status": "TWO-WAY",
+      "full_name": "Spencer Jones",
+      "first_name": "Spencer",
+      "last_name": "Jones",
+      "abbr_name": "S.Jones",
+      "height": 79,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "SF",
+      "jersey_number": "21",
+      "experience": "1",
+      "college": "Stanford",
+      "high_school": "Bishop Miege High School (KS)",
+      "birth_place": "Roeland Park, KS, USA",
+      "birthdate": "2001-06-14",
+      "updated": "2025-07-08T19:50:09Z",
+      "sr_id": "sr:player:1876374",
+      "rookie_year": 2024,
+      "reference": "1642461",
+      "draft": {
+        "year": 2024
+      },
+      "references": [
+        {
+          "source_id": "1642461",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "27403427-4b94-4336-8b1a-6c6035b7be1c",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "45381dd9-a07c-476b-a9ab-b1101a6e3990",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "b7f19eaa-4bdc-4aab-af37-ade60c8032c3",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Spencer_Jones.png"
+    },
+    {
+      "id": "e434ac41-033a-496a-b1ea-89fd33e0ed5b",
+      "status": "TWO-WAY",
+      "full_name": "Curtis Jones",
+      "first_name": "Curtis",
+      "last_name": "Jones",
+      "abbr_name": "C.Jones",
+      "height": 76,
+      "weight": 195,
+      "position": "G",
+      "primary_position": "SG",
+      "experience": "0",
+      "college": "Iowa State",
+      "high_school": "Saint Paul (MN)",
+      "birth_place": "Minneapolis, MN, USA",
+      "birthdate": "2001-10-04",
+      "updated": "2025-08-22T22:41:13Z",
+      "sr_id": "sr:player:2224058",
+      "reference": "1642938",
+      "references": [
+        {
+          "source_id": "1642938",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "52fd5d0f-a975-4753-bd72-c8078e1b9f04",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "e239eb70-9a06-47d5-ac15-6889162bac8b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "2d6dc5e6-acb4-47cc-b7b1-b230f3e18dcf",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Curtis_Jones.png"
+    },
+    {
+      "id": "e6c9ddf9-088c-4e10-866b-0ff5172f6ba9",
+      "status": "ACT",
+      "full_name": "DaRon Holmes II",
+      "first_name": "DaRon",
+      "last_name": "Holmes",
+      "abbr_name": "D.Holmes",
+      "height": 82,
+      "weight": 225,
+      "position": "F",
+      "primary_position": "PF",
+      "jersey_number": "14",
+      "experience": "0",
+      "college": "Dayton",
+      "high_school": "AZ Compass Prep (AZ)",
+      "birth_place": "Goodyear, AZ, USA",
+      "birthdate": "2002-08-15",
+      "updated": "2025-07-16T22:36:03Z",
+      "name_suffix": "II",
+      "sr_id": "sr:player:2216776",
+      "rookie_year": 2024,
+      "salary": 3800915,
+      "reference": "1641747",
+      "draft": {
+        "team_id": "583ecfa8-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2024,
+        "round": "1",
+        "pick": "22"
+      },
+      "references": [
+        {
+          "source_id": "1641747",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fd96eaf8-d761-4de1-b0a0-bba68a7d9932",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "df2f9042-c9bd-4c25-84c3-722302cf6844",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Daron_Holmes_Ii.png"
+    },
+    {
+      "id": "f2625432-3903-4f90-9b0b-2e4f63856bb0",
+      "status": "ACT",
+      "full_name": "Nikola Jokić",
+      "first_name": "Nikola",
+      "last_name": "Jokić",
+      "abbr_name": "N.Jokić",
+      "height": 83,
+      "weight": 284,
+      "position": "C",
+      "primary_position": "C",
+      "jersey_number": "15",
+      "experience": "10",
+      "birth_place": "Sombor,, SRB",
+      "birthdate": "1995-02-19",
+      "updated": "2025-07-16T22:36:49Z",
+      "sr_id": "sr:player:607468",
+      "rookie_year": 2015,
+      "salary": 55224526,
+      "reference": "203999",
+      "draft": {
+        "team_id": "583ed102-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2014,
+        "round": "2",
+        "pick": "41"
+      },
+      "references": [
+        {
+          "source_id": "203999",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e4a409ac-7cb3-4fa1-9f96-55a01696476e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nikola_Jokić.png"
+    },
+    {
+      "id": "fc058e75-1015-4bbe-8fab-925d5f6d83fb",
+      "status": "ACT",
+      "full_name": "Bruce Brown",
+      "first_name": "Bruce",
+      "last_name": "Brown",
+      "abbr_name": "B.Brown",
+      "height": 76,
+      "weight": 202,
+      "position": "G-F",
+      "primary_position": "PG",
+      "jersey_number": "11",
+      "experience": "6",
+      "college": "Miami (FL)",
+      "high_school": "Vermont Academy (VT)",
+      "birth_place": "Boston, MA, USA",
+      "birthdate": "1996-08-15",
+      "updated": "2025-07-16T22:34:15Z",
+      "sr_id": "sr:player:1172650",
+      "rookie_year": 2018,
+      "salary": 3080921,
+      "reference": "1628971",
+      "draft": {
+        "team_id": "583ec928-fb46-11e1-82cb-f4ce4684ea4c",
+        "year": 2018,
+        "round": "2",
+        "pick": "42"
+      },
+      "references": [
+        {
+          "source_id": "1628971",
+          "scope": "NBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f5812f4a-3e53-4252-87f0-7ef0bdfd5a22",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "a0f84ced-85ac-43ed-9455-220fb8da3986",
+          "scope": "NBDL",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3cbf541a-e8d7-4742-9cea-5d32cf8eea8f",
+          "scope": "NCAAM",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Bruce_Brown.png"
+    }
+  ]
+}

@@ -1,0 +1,611 @@
+{
+  "id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+  "name": "Dream",
+  "market": "Atlanta",
+  "alias": "ATL",
+  "founded": 2008,
+  "sr_id": "sr:team:35545",
+  "owner": "Larry Gottesdiener, Suzanne Abair, and Renee Montgomery",
+  "general_manager": "Dan Padover",
+  "president": "Morgan Shaw Parker",
+  "mascot": "Star",
+  "sponsor": "Emory Healthcare",
+  "championships_won": 0,
+  "conference_titles": 3,
+  "playoff_appearances": 11,
+  "reference": "1611661330",
+  "venue": {
+    "id": "bd2b9175-3436-4d8a-b3c1-2c8924f4590b",
+    "name": "Gateway Center Arena",
+    "capacity": 3500,
+    "address": "2330 Convention Center Concourse",
+    "city": "College Park",
+    "state": "GA",
+    "zip": "30337",
+    "country": "USA",
+    "sr_id": "sr:venue:47490",
+    "location": {
+      "lat": "33.646171",
+      "lng": "-84.458691"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "092510cf-3285-48bb-b831-40ac3608ca36",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "2f88a142-5831-46ee-a751-52298f97b321",
+      "full_name": "Karl Smesko",
+      "first_name": "Karl",
+      "last_name": "Smesko",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#373a36",
+      "rgb_color": {
+        "red": 55,
+        "green": 58,
+        "blue": 54
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#e31837",
+      "rgb_color": {
+        "red": 227,
+        "green": 24,
+        "blue": 55
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "03e541cb-d11c-4975-b656-f6e7febcda7d",
+      "status": "ACT",
+      "full_name": "Brittney Griner",
+      "first_name": "Brittney",
+      "last_name": "Griner",
+      "abbr_name": "B.Griner",
+      "height": 81,
+      "weight": 205,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "42",
+      "experience": "11",
+      "college": "Baylor",
+      "high_school": "Nimitz (TX)",
+      "birth_place": "Houston, TX, USA",
+      "birthdate": "1990-10-18",
+      "updated": "2025-02-15T12:37:09Z",
+      "sr_id": "sr:player:1156880",
+      "rookie_year": 2013,
+      "reference": "203398",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2013,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "203398",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a61cde87-3bc3-4e90-bcc4-59ecaa06b8e7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Brittney_Griner.png"
+    },
+    {
+      "id": "17ba31ce-0f0f-40d1-bd9a-58f51668186e",
+      "status": "ACT",
+      "full_name": "Sika Koné",
+      "first_name": "Sika",
+      "last_name": "Koné",
+      "abbr_name": "S.Koné",
+      "height": 75,
+      "weight": 180,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "23",
+      "experience": "2",
+      "birth_place": "Bamako,, MLI",
+      "birthdate": "2002-07-13",
+      "updated": "2025-09-14T04:32:05Z",
+      "sr_id": "sr:player:2332015",
+      "rookie_year": 2023,
+      "reference": "1631021",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2022,
+        "round": "3",
+        "pick": "29"
+      },
+      "references": [
+        {
+          "source_id": "1631021",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4ea6aac5-9cb4-43c1-8484-57e312f68463",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sika_Koné.png"
+    },
+    {
+      "id": "293b5925-fd31-4640-8ada-bf6451a2c488",
+      "status": "ACT",
+      "full_name": "Allisha Gray",
+      "first_name": "Allisha",
+      "last_name": "Gray",
+      "abbr_name": "A.Gray",
+      "height": 72,
+      "weight": 167,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "15",
+      "experience": "8",
+      "college": "South Carolina",
+      "high_school": "Washington County (GA)",
+      "birth_place": "Greenwood, SC, USA",
+      "birthdate": "1995-01-12",
+      "updated": "2025-02-15T12:34:16Z",
+      "sr_id": "sr:player:1157078",
+      "rookie_year": 2017,
+      "reference": "1628277",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2017,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1628277",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d3261e48-3a71-413a-bb8e-83d6e829e726",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3dc8048f-a56c-4de3-9a75-17025ba32d2b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Allisha_Gray.png"
+    },
+    {
+      "id": "3762be5d-d392-4e3b-aea3-9c5e356c7486",
+      "status": "ACT",
+      "full_name": "Shatori Walker-Kimbrough",
+      "first_name": "Shatori",
+      "last_name": "Walker-Kimbrough",
+      "abbr_name": "S.Walker-Kimbrough",
+      "height": 69,
+      "weight": 140,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "32",
+      "experience": "8",
+      "college": "Maryland",
+      "high_school": "Hopewell (PA)",
+      "birth_place": "Aliquippa, PA, USA",
+      "birthdate": "1995-05-18",
+      "updated": "2025-02-15T12:35:18Z",
+      "sr_id": "sr:player:1156820",
+      "rookie_year": 2017,
+      "reference": "1628278",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2017,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1628278",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "57a7f24a-c193-4765-9d63-3205ba35e039",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "22e720ae-3823-455d-920a-99b3c2c56f6d",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Shatori_Walker-kimbrough.png"
+    },
+    {
+      "id": "3763f098-4cd1-47ca-8666-6cf9c8b6812b",
+      "status": "ACT",
+      "full_name": "Taylor Thierry",
+      "first_name": "Taylor",
+      "last_name": "Thierry",
+      "abbr_name": "T.Thierry",
+      "height": 73,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "0",
+      "college": "Ohio State",
+      "high_school": "Laurel (OH)",
+      "birth_place": "Cleveland, OH, USA",
+      "birthdate": "2003-01-08",
+      "updated": "2025-05-27T16:47:15Z",
+      "sr_id": "sr:player:2268365",
+      "rookie_year": 2025,
+      "reference": "1642814",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2025,
+        "round": "3",
+        "pick": "36"
+      },
+      "references": [
+        {
+          "source_id": "1642814",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ecb6695d-fc9d-42fb-b4e0-4bb85f60bde1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "55e56738-ff63-41b7-a799-d81780c32c73",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Taylor_Thierry.png"
+    },
+    {
+      "id": "43e2f045-e419-4b6e-bf2c-45e45f4720cc",
+      "status": "ACT",
+      "full_name": "Jordin Canada",
+      "first_name": "Jordin",
+      "last_name": "Canada",
+      "abbr_name": "J.Canada",
+      "height": 66,
+      "weight": 135,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "7",
+      "college": "UCLA",
+      "high_school": "Windward School (CA)",
+      "birth_place": "Los Angeles, CA, USA",
+      "birthdate": "1995-08-11",
+      "updated": "2025-02-15T12:30:28Z",
+      "sr_id": "sr:player:1152198",
+      "rookie_year": 2018,
+      "reference": "1628886",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2018,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1628886",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8723c1cb-2b00-49a8-92d5-eb03ca543e36",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "a3a7b7fa-9497-4ca9-bf99-93cd974d0e1e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jordin_Canada.png"
+    },
+    {
+      "id": "58c646ba-6e6f-409a-a1cf-83e253991797",
+      "status": "ACT",
+      "full_name": "Nia Coffey",
+      "first_name": "Nia",
+      "last_name": "Coffey",
+      "abbr_name": "N.Coffey",
+      "height": 73,
+      "weight": 182,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "12",
+      "experience": "8",
+      "college": "Northwestern",
+      "high_school": "Hopkins (MN)",
+      "birth_place": "Minneapolis, MN, USA",
+      "birthdate": "1995-06-11",
+      "updated": "2025-02-15T12:32:04Z",
+      "sr_id": "sr:player:1156814",
+      "rookie_year": 2017,
+      "reference": "1628269",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2017,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1628269",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ab293326-94c2-47d6-ae2f-5f16ea59feba",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "275fd429-793a-4352-94cb-b1ef15bd7017",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nia_Coffey.png"
+    },
+    {
+      "id": "ab39141d-852e-4308-8b5d-8d06441ffbbd",
+      "status": "ACT",
+      "full_name": "Rhyne Howard",
+      "first_name": "Rhyne",
+      "last_name": "Howard",
+      "abbr_name": "R.Howard",
+      "height": 74,
+      "weight": 175,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "3",
+      "college": "Kentucky",
+      "high_school": "Bradley Central (TN)",
+      "birth_place": "Chattanooga, TN, USA",
+      "birthdate": "2000-04-29",
+      "updated": "2025-02-15T12:31:14Z",
+      "sr_id": "sr:player:1618836",
+      "rookie_year": 2022,
+      "reference": "1631009",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2022,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1631009",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ed88fe4c-1d6a-4892-a93b-88cbebc2a33a",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "6630bd46-a0a6-41a2-8a75-2e3220896374",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Rhyne_Howard.png"
+    },
+    {
+      "id": "b2bb37a6-6879-4c1f-ae20-5f6492bef87a",
+      "status": "ACT",
+      "full_name": "Naz Hillmon",
+      "first_name": "Naz",
+      "last_name": "Hillmon",
+      "abbr_name": "N.Hillmon",
+      "height": 74,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "00",
+      "experience": "3",
+      "college": "Michigan",
+      "high_school": "Gilmour Academy (OH)",
+      "birth_place": "Cleveland, OH, USA",
+      "birthdate": "2000-04-05",
+      "updated": "2025-06-05T14:31:32Z",
+      "sr_id": "sr:player:2331793",
+      "rookie_year": 2022,
+      "reference": "1631044",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2022,
+        "round": "2",
+        "pick": "15"
+      },
+      "references": [
+        {
+          "source_id": "1631044",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "45082bb6-3a91-4fa5-b48a-9ddef536de2a",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "30e5fd2d-fece-4f66-ba29-749e59fa3224",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Naz_Hillmon.png"
+    },
+    {
+      "id": "de11f82d-035c-45c2-873a-eb1fad4abc1b",
+      "status": "ACT",
+      "full_name": "Brionna Jones",
+      "first_name": "Brionna",
+      "last_name": "Jones",
+      "abbr_name": "B.Jones",
+      "height": 75,
+      "weight": 215,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "8",
+      "college": "Maryland",
+      "high_school": "Aberdeen (MD)",
+      "birth_place": "Harve de Grace, MD, USA",
+      "birthdate": "1995-12-18",
+      "updated": "2025-03-20T15:04:27Z",
+      "sr_id": "sr:player:1156804",
+      "rookie_year": 2017,
+      "reference": "1628280",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2017,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1628280",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d930f7ea-e6fd-48e5-be00-25676845cb94",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "43736ebb-e21f-4ca9-be53-0f6bf9135e00",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Brionna_Jones.png"
+    },
+    {
+      "id": "e7fb06e6-823e-4f60-955c-639a49bc860d",
+      "status": "ACT",
+      "full_name": "Te-Hina Paopao",
+      "first_name": "Te-Hina",
+      "last_name": "Paopao",
+      "abbr_name": "T.Paopao",
+      "height": 69,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "0",
+      "college": "South Carolina",
+      "high_school": "La Jolia Country Day (CA)",
+      "birth_place": "Oceanside, CA, USA",
+      "birthdate": "2002-08-21",
+      "updated": "2025-05-27T16:46:56Z",
+      "sr_id": "sr:player:2105062",
+      "rookie_year": 2025,
+      "reference": "1642804",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2025,
+        "round": "2",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1642804",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "928c48d2-ee85-481f-90de-cbbc46840ae5",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9899463d-6bc1-4d59-8136-77834324b01a",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Te-hina_Paopao.png"
+    },
+    {
+      "id": "f473955f-a823-4328-92ea-6b06b68b2118",
+      "status": "ACT",
+      "full_name": "Maya Caldwell",
+      "first_name": "Maya",
+      "last_name": "Caldwell",
+      "abbr_name": "M.Caldwell",
+      "height": 71,
+      "weight": 160,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "33",
+      "experience": "3",
+      "college": "Georgia",
+      "high_school": "Davidson Day School (NC)",
+      "birth_place": "Charlotte, NC, USA",
+      "birthdate": "1998-12-15",
+      "updated": "2025-02-15T12:36:09Z",
+      "sr_id": "sr:player:1369754",
+      "rookie_year": 2022,
+      "reference": "1630471",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2021,
+        "round": "3",
+        "pick": "33"
+      },
+      "references": [
+        {
+          "source_id": "1630471",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8b20f571-2d5e-477f-affc-31adf7209141",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "96a2defe-55cc-4111-adb2-0d14a2ca2a7b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Maya_Caldwell.png"
+    }
+  ]
+}
