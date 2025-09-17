@@ -25,6 +25,8 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.35.0",
+    "@lhci/cli": "^0.15.1",
+    "@lhci/server": "^0.15.1",
     "@types/react-dom": "^19.1.9",
     "@typescript-eslint/eslint-plugin": "^8.43.0",
     "@typescript-eslint/parser": "^8.43.0",

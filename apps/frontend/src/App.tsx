@@ -30,6 +30,7 @@ function App() {
           <Route path="/wnba/standings" element={<StandingPage defaultLeague="wnba" />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="*" element={<NotFoundPage />} />
+          <Route path="/index.html" element={<HomePage />} />
           <Route path="/news" element={<NewsPage />} />
         </Routes>
       </Layout>

@@ -85,3 +85,6 @@ npm-debug.log*
 *.pem
 
 checklist.md
+todo.md
+
+.lighthouseci/

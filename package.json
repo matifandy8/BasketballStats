@@ -5,20 +5,29 @@
   "type": "module",
   "scripts": {
     "dev": "turbo run dev",
+    "dev:frontend": "cd apps/frontend && npm run dev",
+    "dev:backend": "cd apps/backend && npm run dev",
     "build": "turbo run build",
     "lint": "eslint . --max-warnings=0 --debug",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "security:check": "npm audit --audit-level=moderate",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "lhci:collect": "lhci collect --staticDistDir=./apps/frontend/dist",
+    "lhci:assert": "lhci assert",
+    "lhci:upload": "lhci upload --target=temporary-public-storage",
+    "lhci:autorun": "npm run build && lhci autorun --upload.target=temporary-public-storage --collect.staticDistDir=./apps/frontend/dist"
   },
   "workspaces": [
     "apps/*"
   ],
   "packageManager": "npm@8.5.0",
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
+    "@lhci/server": "^0.15.1",
     "@types/react-dom": "^19.1.9",
+    "concurrently": "^9.2.1",
     "husky": "^9.1.7",
     "turbo": "^2.5.6"
   },
