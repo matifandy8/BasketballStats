@@ -6,6 +6,9 @@ on:
   pull_request:
     branches: [main, master]
 
+env:
+  YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
