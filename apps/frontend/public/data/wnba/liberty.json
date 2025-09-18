@@ -1,0 +1,587 @@
+{
+  "id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+  "name": "Liberty",
+  "market": "New York",
+  "alias": "NYL",
+  "founded": 1997,
+  "sr_id": "sr:team:3446",
+  "owner": "Joseph Tsai and Clara Wu Tsai",
+  "general_manager": "Jonathan Kolb",
+  "president": "Keia Clarke",
+  "mascot": "Ellie the Elephant",
+  "sponsor": "Barclays",
+  "championships_won": 1,
+  "championship_seasons": "2024",
+  "conference_titles": 6,
+  "playoff_appearances": 20,
+  "reference": "1611661313",
+  "venue": {
+    "id": "7a330bcd-ac0f-50ca-bc29-2460e5c476b3",
+    "name": "Barclays Center",
+    "capacity": 17732,
+    "address": "620 Atlantic Avenue",
+    "city": "Brooklyn",
+    "state": "NY",
+    "zip": "11217",
+    "country": "USA",
+    "sr_id": "sr:venue:36132",
+    "location": {
+      "lat": "40.682957",
+      "lng": "-73.975165"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "092510cf-3285-48bb-b831-40ac3608ca36",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "6fb5e599-e25d-4521-bd41-fa4f7e208290",
+      "full_name": "Sandy Brondello",
+      "first_name": "Sandy",
+      "last_name": "Brondello",
+      "position": "Head Coach",
+      "experience": "8"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "primary",
+      "hex_color": "#86cebc",
+      "rgb_color": {
+        "red": 134,
+        "green": 206,
+        "blue": 188
+      }
+    },
+    {
+      "type": "secondary",
+      "hex_color": "#000000",
+      "rgb_color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "06e88c3f-715d-41b2-9aee-6a013a37565f",
+      "status": "ACT",
+      "full_name": "Kennedy Burke",
+      "first_name": "Kennedy",
+      "last_name": "Burke",
+      "abbr_name": "K.Burke",
+      "height": 73,
+      "weight": 182,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "5",
+      "college": "UCLA",
+      "high_school": "Sierra Canyon School (CA)",
+      "birth_place": "Burbank, CA, USA",
+      "birthdate": "1997-02-14",
+      "updated": "2025-02-15T13:13:01Z",
+      "sr_id": "sr:player:1153640",
+      "rookie_year": 2019,
+      "reference": "1629568",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2019,
+        "round": "2",
+        "pick": "22"
+      },
+      "references": [
+        {
+          "source_id": "1629568",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4db5a7c4-e695-47da-972b-71a92b7b051f",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "b09addea-aea7-44bc-8768-b0628bd36388",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kennedy_Burke.png"
+    },
+    {
+      "id": "1359b409-f610-4d01-9867-58aca845b2da",
+      "status": "ACT",
+      "full_name": "Nyara Sabally",
+      "first_name": "Nyara",
+      "last_name": "Sabally",
+      "abbr_name": "N.Sabally",
+      "height": 77,
+      "weight": 204,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "2",
+      "college": "Oregon",
+      "high_school": "SLZB (DEU)",
+      "birth_place": "Berlin,, DEU",
+      "birthdate": "2000-02-26",
+      "updated": "2025-02-15T13:05:45Z",
+      "sr_id": "sr:player:1617902",
+      "rookie_year": 2023,
+      "reference": "1631055",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2022,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1631055",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f9333616-9c89-4eee-b164-6fd1a837d2df",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "67644b14-b299-4270-9430-8a7dc75a9433",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nyara_Sabally.png"
+    },
+    {
+      "id": "184cc47d-af49-47fb-bcec-c0df1de4813f",
+      "status": "ACT",
+      "full_name": "Isabelle Harrison",
+      "first_name": "Isabelle",
+      "last_name": "Harrison",
+      "abbr_name": "I.Harrison",
+      "height": 75,
+      "weight": 183,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "21",
+      "experience": "7",
+      "college": "Tennessee",
+      "high_school": "Hillsboro (TN)",
+      "birth_place": "Nashville, TN, USA",
+      "birthdate": "1993-09-27",
+      "updated": "2025-04-23T23:30:23Z",
+      "sr_id": "sr:player:1156812",
+      "rookie_year": 2016,
+      "reference": "204330",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2015,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "204330",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "b7880b64-8639-41bf-af48-522530bb7991",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "5b837c5b-0a31-4845-be9d-6156f5936122",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Isabelle_Harrison.png"
+    },
+    {
+      "id": "2199ae2c-7588-4610-9deb-a1b5e8025d43",
+      "status": "ACT",
+      "full_name": "Sabrina Ionescu",
+      "first_name": "Sabrina",
+      "last_name": "Ionescu",
+      "abbr_name": "S.Ionescu",
+      "height": 71,
+      "weight": 165,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "20",
+      "experience": "5",
+      "college": "Oregon",
+      "high_school": "Miramonte",
+      "birth_place": "Walnut Creek, CA, USA",
+      "birthdate": "1997-12-06",
+      "updated": "2025-02-15T13:11:47Z",
+      "sr_id": "sr:player:1150010",
+      "rookie_year": 2020,
+      "reference": "1629477",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2020,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1629477",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f210db1b-71e3-4294-8de5-8305c28e000b",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "55c05f93-75d7-4cdb-9971-9fb862548e25",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sabrina_Ionescu.png"
+    },
+    {
+      "id": "6fa763e6-846f-4f9d-a4ce-256d8b328424",
+      "status": "ACT",
+      "full_name": "Breanna Stewart",
+      "first_name": "Breanna",
+      "last_name": "Stewart",
+      "abbr_name": "B.Stewart",
+      "height": 76,
+      "weight": 170,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "30",
+      "experience": "8",
+      "college": "UConn",
+      "high_school": "Cicero-North Syracuse (NY)",
+      "birth_place": "North Syracuse, NY, USA",
+      "birthdate": "1994-08-27",
+      "updated": "2025-02-15T13:13:45Z",
+      "sr_id": "sr:player:1156888",
+      "rookie_year": 2016,
+      "reference": "1627668",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2016,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1627668",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ea99aa03-a190-415f-ba0b-d299667a52ce",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "e3261ac7-eb3e-4cdf-b6e4-7a6338987aa3",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Breanna_Stewart.png"
+    },
+    {
+      "id": "779cd8d9-133e-4e68-8bfb-16a437a34686",
+      "status": "ACT",
+      "full_name": "Stephanie Talbot",
+      "first_name": "Stephanie",
+      "last_name": "Talbot",
+      "abbr_name": "S.Talbot",
+      "height": 74,
+      "weight": 192,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "6",
+      "experience": "6",
+      "birth_place": "Katherine,, AUS",
+      "birthdate": "1994-06-15",
+      "updated": "2025-07-26T16:57:19Z",
+      "sr_id": "sr:player:1156958",
+      "rookie_year": 2017,
+      "reference": "203855",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2014,
+        "round": "3",
+        "pick": "33"
+      },
+      "references": [
+        {
+          "source_id": "203855",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ae2f4057-c889-45e2-aff8-318d6f0543f0",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Stephanie_Talbot.png"
+    },
+    {
+      "id": "7ae3b3fc-2bf3-4600-abd6-c5511f140246",
+      "status": "ACT",
+      "full_name": "Emma Meesseman",
+      "first_name": "Emma",
+      "last_name": "Meesseman",
+      "abbr_name": "E.Meesseman",
+      "height": 76,
+      "weight": 191,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "33",
+      "experience": "7",
+      "birth_place": "Ypres,, BEL",
+      "birthdate": "1993-05-13",
+      "updated": "2025-08-01T16:22:35Z",
+      "sr_id": "sr:player:1157058",
+      "rookie_year": 2013,
+      "reference": "203416",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2013,
+        "round": "2",
+        "pick": "19"
+      },
+      "references": [
+        {
+          "source_id": "203416",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2478cdef-2982-49e1-9544-1de69784ff13",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Emma_Meesseman.png"
+    },
+    {
+      "id": "89e9800d-9af2-4b27-b6b6-835816bc2d3d",
+      "status": "ACT",
+      "full_name": "Marine Johannes",
+      "first_name": "Marine",
+      "last_name": "Johannes",
+      "abbr_name": "M.Johannes",
+      "height": 70,
+      "weight": 134,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "23",
+      "experience": "3",
+      "birth_place": "Lisieux,, FRA",
+      "birthdate": "1995-01-21",
+      "updated": "2025-04-23T23:30:48Z",
+      "sr_id": "sr:player:1730119",
+      "rookie_year": 2019,
+      "reference": "1629546",
+      "draft": {
+        "year": 2017
+      },
+      "references": [
+        {
+          "source_id": "1629546",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4e0a5721-fc7e-4b20-8595-454ee55b74bd",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Marine_Johannes.png"
+    },
+    {
+      "id": "8a438358-fbe0-4797-921f-add82eddf789",
+      "status": "ACT",
+      "full_name": "Jonquel Jones",
+      "first_name": "Jonquel",
+      "last_name": "Jones",
+      "abbr_name": "J.Jones",
+      "height": 78,
+      "weight": 215,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "35",
+      "experience": "8",
+      "college": "George Washington",
+      "high_school": "Riverdale Baptist School (MD)",
+      "birth_place": "Freeport,, BHS",
+      "birthdate": "1994-01-05",
+      "updated": "2025-02-15T13:14:35Z",
+      "sr_id": "sr:player:1156874",
+      "rookie_year": 2016,
+      "reference": "1627673",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2016,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1627673",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e50d437c-7d13-4988-a1b9-01adc210d690",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f319af29-52c8-4a74-bc29-3b311e843108",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jonquel_Jones.png"
+    },
+    {
+      "id": "c18a5bbc-64df-4171-b4fd-c4413dd10651",
+      "status": "ACT",
+      "full_name": "Rebekah Gardner",
+      "first_name": "Rebekah",
+      "last_name": "Gardner",
+      "abbr_name": "R.Gardner",
+      "height": 73,
+      "weight": 130,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "2",
+      "college": "UCLA",
+      "high_school": "Ayala (CA)",
+      "birth_place": "Palm Springs, CA, USA",
+      "birthdate": "1990-07-09",
+      "updated": "2025-05-27T17:17:22Z",
+      "sr_id": "sr:player:1174944",
+      "rookie_year": 2022,
+      "reference": "203822",
+      "draft": {
+        "year": 2012
+      },
+      "references": [
+        {
+          "source_id": "203822",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a258bf68-3b86-4c3b-ab50-678d6c2fc3d2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Rebekah_Gardner.png"
+    },
+    {
+      "id": "f2c36797-b5c5-47a4-b073-43637c9794ef",
+      "status": "ACT",
+      "full_name": "Natasha Cloud",
+      "first_name": "Natasha",
+      "last_name": "Cloud",
+      "abbr_name": "N.Cloud",
+      "height": 70,
+      "weight": 160,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "9",
+      "experience": "9",
+      "college": "Saint Joseph's",
+      "high_school": "Cardinal O'Hara (PA)",
+      "birth_place": "Broomall, PA, USA",
+      "birthdate": "1992-02-22",
+      "updated": "2025-03-21T00:09:57Z",
+      "sr_id": "sr:player:1156968",
+      "rookie_year": 2015,
+      "reference": "204333",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2015,
+        "round": "2",
+        "pick": "15"
+      },
+      "references": [
+        {
+          "source_id": "204333",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e85bd795-932a-4238-86da-57c77a02d812",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "f5cbc96f-8a5e-4aa8-bc20-c014d6d9cbe1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Natasha_Cloud.png"
+    },
+    {
+      "id": "fd9c6f75-0468-4b52-a3f7-6f70d1d658c6",
+      "status": "ACT",
+      "full_name": "Leonie Fiebich",
+      "first_name": "Leonie",
+      "last_name": "Fiebich",
+      "abbr_name": "L.Fiebich",
+      "height": 76,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "13",
+      "experience": "1",
+      "birth_place": "Landsberg am Lech,, DEU",
+      "birthdate": "2000-01-10",
+      "updated": "2025-07-01T21:34:40Z",
+      "sr_id": "sr:player:2091519",
+      "rookie_year": 2024,
+      "reference": "1630142",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2020,
+        "round": "2",
+        "pick": "22"
+      },
+      "references": [
+        {
+          "source_id": "1630142",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "9847b1c9-69db-4011-beff-c98dd68b154e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Leonie_Fiebich.png"
+    }
+  ]
+}

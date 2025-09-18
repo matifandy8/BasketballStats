@@ -1,0 +1,597 @@
+{
+  "id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+  "name": "Lynx",
+  "market": "Minnesota",
+  "alias": "MIN",
+  "founded": 1999,
+  "sr_id": "sr:team:3440",
+  "owner": "Alex Rodriguez and Marc Lore",
+  "president": "Cheryl Reeve",
+  "mascot": "Prowl",
+  "sponsor": "Mayo Clinic",
+  "championships_won": 4,
+  "championship_seasons": "2011, 2013, 2015, 2017",
+  "conference_titles": 7,
+  "retired_numbers": "13, 23, 32, 33, 34",
+  "playoff_appearances": 16,
+  "reference": "1611661324",
+  "venue": {
+    "id": "7aed802e-3562-5b73-af1b-3859529f9b95",
+    "name": "Target Center",
+    "capacity": 19356,
+    "address": "600 First Avenue North",
+    "city": "Minneapolis",
+    "state": "MN",
+    "zip": "55403",
+    "country": "USA",
+    "sr_id": "sr:venue:6930",
+    "location": {
+      "lat": "44.979444",
+      "lng": "-93.276111"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "d95b23c8-dee5-4142-ac4a-2b4ab05beebc",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "c589c101-d7ab-4c7c-b5b9-eab5405d0583",
+      "full_name": "Cheryl Reeve",
+      "first_name": "Cheryl",
+      "last_name": "Reeve",
+      "position": "Head Coach",
+      "experience": "11"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#266092",
+      "rgb_color": {
+        "red": 38,
+        "green": 96,
+        "blue": 146
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#0c233f",
+      "rgb_color": {
+        "red": 12,
+        "green": 35,
+        "blue": 63
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "04170d6a-2f3a-458b-a4c2-27ae015ce6ec",
+      "status": "ACT",
+      "full_name": "Maria Kliundikova",
+      "first_name": "Maria",
+      "last_name": "Kliundikova",
+      "abbr_name": "M.Kliundikova",
+      "height": 76,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "77",
+      "experience": "2",
+      "birth_place": "Moscow,, RUS",
+      "birthdate": "1998-07-16",
+      "updated": "2025-08-19T16:53:54Z",
+      "sr_id": "sr:player:1434213",
+      "rookie_year": 2018,
+      "reference": "1628926",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2018,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1628926",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c2d9fba8-c6e0-4b65-ab2c-2459b5e6c638",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Maria_Kliundikova.png"
+    },
+    {
+      "id": "21f994d2-1cc9-4d83-b278-abc3aaf4f63d",
+      "status": "ACT",
+      "full_name": "Napheesa Collier",
+      "first_name": "Napheesa",
+      "last_name": "Collier",
+      "abbr_name": "N.Collier",
+      "height": 73,
+      "weight": 180,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "6",
+      "college": "UConn",
+      "high_school": "Incarnate Word Academy (MO)",
+      "birth_place": "Jefferson City, MO, USA",
+      "birthdate": "1996-09-23",
+      "updated": "2025-05-06T19:15:27Z",
+      "sr_id": "sr:player:1148330",
+      "rookie_year": 2019,
+      "reference": "1629483",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2019,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1629483",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8e281d64-a268-445f-9569-bc812d2730d5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f95a0950-d7e8-44bd-bbae-b2e85844f1e4",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Napheesa_Collier.png"
+    },
+    {
+      "id": "2c990041-42c2-44de-844c-f50e9a713a4c",
+      "status": "ACT",
+      "full_name": "Camryn Taylor",
+      "first_name": "Camryn",
+      "last_name": "Taylor",
+      "abbr_name": "C.Taylor",
+      "height": 73,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "20",
+      "experience": "0",
+      "college": "Virginia",
+      "high_school": "Richwoods (IL)",
+      "birth_place": "Peoria, IL, USA",
+      "birthdate": "2000-03-15",
+      "updated": "2025-09-01T20:52:41Z",
+      "sr_id": "sr:player:2267787",
+      "reference": "1642344",
+      "references": [
+        {
+          "source_id": "1642344",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7a29e4fc-9f66-4532-9def-bf95f86114cd",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9b4a345c-2714-4542-8765-75cd1061ea00",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Camryn_Taylor.png"
+    },
+    {
+      "id": "43135c04-f4c8-490d-ad59-0eb2e9f2f6cf",
+      "status": "ACT",
+      "full_name": "Natisha Hiedeman",
+      "first_name": "Natisha",
+      "last_name": "Hiedeman",
+      "abbr_name": "N.Hiedeman",
+      "height": 68,
+      "weight": 132,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "6",
+      "college": "Marquette",
+      "high_school": "Green Bay Southwest (WI)",
+      "birth_place": "Green Bay, WI, USA",
+      "birthdate": "1997-02-10",
+      "updated": "2025-05-06T19:11:34Z",
+      "sr_id": "sr:player:1150318",
+      "rookie_year": 2019,
+      "reference": "1629567",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2019,
+        "round": "2",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1629567",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "27c87dc5-f717-48b7-bf97-9a525f0cb118",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "76a1d9f5-b2bd-424f-8a4e-fbf06fb3e3d2",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Natisha_Hiedeman.png"
+    },
+    {
+      "id": "444bce18-54b4-4e5b-80f1-96f7ba6fe296",
+      "status": "ACT",
+      "full_name": "Jessica Shepard",
+      "first_name": "Jessica",
+      "last_name": "Shepard",
+      "abbr_name": "J.Shepard",
+      "height": 76,
+      "weight": 175,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "15",
+      "experience": "4",
+      "college": "Notre Dame",
+      "high_school": "Fremont (NE)",
+      "birth_place": "Fremont, NE, USA",
+      "birthdate": "1996-09-11",
+      "updated": "2025-06-23T19:58:47Z",
+      "sr_id": "sr:player:1148202",
+      "rookie_year": 2019,
+      "reference": "1629491",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2019,
+        "round": "2",
+        "pick": "16"
+      },
+      "references": [
+        {
+          "source_id": "1629491",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3f25364a-304e-4c81-bec8-06df00acc3ba",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "5f1d9cae-fcad-45aa-9e8c-d65f24047eda",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jessica_Shepard.png"
+    },
+    {
+      "id": "45e35318-295a-4e1c-bfc6-c7b295ed5066",
+      "status": "ACT",
+      "full_name": "Courtney Williams",
+      "first_name": "Courtney",
+      "last_name": "Williams",
+      "abbr_name": "C.Williams",
+      "height": 68,
+      "weight": 148,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "9",
+      "college": "South Florida ",
+      "high_school": "Charlton County (GA)",
+      "birth_place": "Folkston, GA, USA",
+      "birthdate": "1994-05-11",
+      "updated": "2025-05-06T19:14:00Z",
+      "sr_id": "sr:player:1157024",
+      "rookie_year": 2016,
+      "reference": "1627675",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2016,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1627675",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5840966b-c201-4943-acda-47e8f6f41527",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "ccdcf205-07a9-4ba7-9f60-801660ee629b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Courtney_Williams.png"
+    },
+    {
+      "id": "96ebdfad-3ffa-4a02-9990-75977d7c94a1",
+      "status": "ACT",
+      "full_name": "Alanna Smith",
+      "first_name": "Alanna",
+      "last_name": "Smith",
+      "abbr_name": "A.Smith",
+      "height": 76,
+      "weight": 177,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "6",
+      "college": "Stanford",
+      "high_school": "Wesley College (AUS)",
+      "birth_place": "Tasmania,, AUS",
+      "birthdate": "1996-09-10",
+      "updated": "2025-05-06T19:13:25Z",
+      "sr_id": "sr:player:1147338",
+      "rookie_year": 2019,
+      "reference": "1629501",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2019,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1629501",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "346fc540-81db-45d0-a9fb-2d28be8bd6c5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "5c648df4-a543-4230-bce2-00007f17c583",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Alanna_Smith.png"
+    },
+    {
+      "id": "a3b7b84f-cfa9-42cc-8534-f11d2e90e8de",
+      "status": "ACT",
+      "full_name": "Anastasiia Olairi Kosu",
+      "first_name": "Anastasiia Olairi",
+      "last_name": "Kosu",
+      "abbr_name": "A.Kosu",
+      "height": 73,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "0",
+      "birth_place": "Kursk,, RUS",
+      "birthdate": "2005-04-21",
+      "updated": "2025-06-07T01:12:44Z",
+      "sr_id": "sr:player:2971688",
+      "rookie_year": 2025,
+      "reference": "1642797",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2025,
+        "round": "2",
+        "pick": "15"
+      },
+      "references": [
+        {
+          "source_id": "1642797",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "12373e07-84b6-4c7c-b3dd-5b97e5a3d3fe",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Anastasiia_Olairi_Kosu.png"
+    },
+    {
+      "id": "b404562d-a1fd-446f-bcd0-6b545dfde9c6",
+      "status": "ACT",
+      "full_name": "Kayla McBride",
+      "first_name": "Kayla",
+      "last_name": "McBride",
+      "abbr_name": "K.McBride",
+      "height": 71,
+      "weight": 185,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "21",
+      "experience": "11",
+      "college": "Notre Dame",
+      "high_school": "Villa Marie Academy (PA)",
+      "birth_place": "Erie, PA, USA",
+      "birthdate": "1992-06-25",
+      "updated": "2025-08-19T16:53:39Z",
+      "sr_id": "sr:player:1156934",
+      "rookie_year": 2014,
+      "reference": "203825",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2014,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "203825",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "aad604cf-e4de-4021-b710-4607ef5708b2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kayla_Mcbride.png"
+    },
+    {
+      "id": "b61d82ac-3726-4e9a-a7ed-d2c1ade14fa2",
+      "status": "ACT",
+      "full_name": "Jaylyn Sherrod",
+      "first_name": "Jaylyn",
+      "last_name": "Sherrod",
+      "abbr_name": "J.Sherrod",
+      "height": 67,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "00",
+      "experience": "1",
+      "college": "Colorado",
+      "high_school": "Ramsay (AL)",
+      "birth_place": "Birmingham, AL, USA",
+      "birthdate": "2001-10-21",
+      "updated": "2025-09-14T04:38:39Z",
+      "sr_id": "sr:player:1948378",
+      "rookie_year": 2024,
+      "reference": "1642320",
+      "draft": {
+        "year": 2024
+      },
+      "references": [
+        {
+          "source_id": "1642320",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d0dd5e8a-def1-4b2e-be8b-a75cf7c634f7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "35d5e100-627d-4545-b9dc-f0daa8f8765c",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jaylyn_Sherrod.png"
+    },
+    {
+      "id": "d4c299a9-e271-4552-9ed2-2fc285c30362",
+      "status": "ACT",
+      "full_name": "DiJonai Carrington",
+      "first_name": "DiJonai",
+      "last_name": "Carrington",
+      "abbr_name": "D.Carrington",
+      "height": 71,
+      "weight": 175,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "4",
+      "college": "Baylor",
+      "high_school": "Horizon Christian (CA)",
+      "birth_place": "San Diego, CA, USA",
+      "birthdate": "1998-01-08",
+      "updated": "2025-08-06T02:02:47Z",
+      "sr_id": "sr:player:1153316",
+      "rookie_year": 2021,
+      "reference": "1630096",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2021,
+        "round": "2",
+        "pick": "20"
+      },
+      "references": [
+        {
+          "source_id": "1630096",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c32c1226-beb4-43b4-8ab5-f747102b9233",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "923e2812-11a2-4be3-98ce-b91fbb154947",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dijonai_Carrington.png"
+    },
+    {
+      "id": "f41354b6-c59e-4f29-abf3-f3cff87ed231",
+      "status": "ACT",
+      "full_name": "Bridget Carleton",
+      "first_name": "Bridget",
+      "last_name": "Carleton",
+      "abbr_name": "B.Carleton",
+      "height": 74,
+      "weight": 177,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "6",
+      "experience": "6",
+      "college": "Iowa State",
+      "high_school": "John McGregor (CAN)",
+      "birth_place": "Chatham, ON, CAN",
+      "birthdate": "1997-05-22",
+      "updated": "2025-05-06T19:12:56Z",
+      "sr_id": "sr:player:1148872",
+      "rookie_year": 2019,
+      "reference": "1629524",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2019,
+        "round": "2",
+        "pick": "21"
+      },
+      "references": [
+        {
+          "source_id": "1629524",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "bfe6c122-ca84-40fe-a51d-75ad71bc8be2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "ec8ebc82-84dd-4f9b-b3d5-f77ef5988d6c",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Bridget_Carleton.png"
+    }
+  ]
+}

@@ -37,6 +37,10 @@ export default function TeamPage({ league }: { league: string }) {
                 <img
                   src={player.image_url}
                   alt={player.full_name}
+                  onError={e =>
+                    (e.currentTarget.src =
+                      'https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/default.png')
+                  }
                   className="w-36 h-36 mb-4 object-contain"
                 />
                 <h3 className="text-lg font-bold mb-2 text-left font-druk">{player.full_name}</h3>

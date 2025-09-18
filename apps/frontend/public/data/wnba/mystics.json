@@ -1,0 +1,623 @@
+{
+  "id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+  "name": "Mystics",
+  "market": "Washington",
+  "alias": "WAS",
+  "founded": 1998,
+  "sr_id": "sr:team:3454",
+  "owner": "Monumental Sports & Entertainment (Ted Leonsis)",
+  "general_manager": "Jamila Wideman",
+  "president": "Michael Winger",
+  "mascot": "Pax the Panda",
+  "sponsor": "GEICO",
+  "championships_won": 1,
+  "championship_seasons": "2019",
+  "conference_titles": 0,
+  "playoff_appearances": 15,
+  "reference": "1611661322",
+  "venue": {
+    "id": "84776b5f-b41b-4356-a5ed-3a2c28ab2597",
+    "name": "CareFirst Arena",
+    "capacity": 4200,
+    "address": "1100 Oak Street SE",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20032",
+    "country": "USA",
+    "sr_id": "sr:venue:35680",
+    "location": {
+      "lat": "38.846767",
+      "lng": "-76.991422"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "092510cf-3285-48bb-b831-40ac3608ca36",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "c427335b-73c7-4a73-ac1b-60d1d6f4d9c6",
+      "full_name": "Sydney Johnson",
+      "first_name": "Sydney",
+      "last_name": "Johnson",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#002b5c",
+      "rgb_color": {
+        "red": 0,
+        "green": 43,
+        "blue": 92
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#e03a3e",
+      "rgb_color": {
+        "red": 224,
+        "green": 58,
+        "blue": 62
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0c6ce2db-d4e6-49cc-8490-78a6842026f2",
+      "status": "ACT",
+      "full_name": "Jacy Sheldon",
+      "first_name": "Jacy",
+      "last_name": "Sheldon",
+      "abbr_name": "J.Sheldon",
+      "height": 70,
+      "weight": 140,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "4",
+      "experience": "1",
+      "college": "Ohio State",
+      "high_school": "Dublin Coffman (OH)",
+      "birth_place": "Dublin, OH, USA",
+      "birthdate": "2000-08-23",
+      "updated": "2025-08-08T00:26:11Z",
+      "sr_id": "sr:player:2268339",
+      "rookie_year": 2024,
+      "reference": "1642292",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2024,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1642292",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d5402c26-e8da-492b-aa47-9ca4857bb4e7",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "73ed7c6f-49ca-4119-b12c-97f9c4c54f72",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "542b846c-2cfc-4f06-b34f-f56d17446b4d",
+          "comment": "The Mystics reported that Sheldon is OUT for Tuesday's (Sept. 9) regular-season finale against the Liberty, per Tyler Byrum of Monumental Sports Network and has no timetable for a return.",
+          "desc": "Ankle",
+          "status": "Out For Season",
+          "start_date": "2025-08-28",
+          "update_date": "2025-09-08"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jacy_Sheldon.png"
+    },
+    {
+      "id": "20bc3af4-52f9-4d5e-8247-2a62d77c143b",
+      "status": "ACT",
+      "full_name": "Sug Sutton",
+      "first_name": "Sug",
+      "last_name": "Sutton",
+      "abbr_name": "S.Sutton",
+      "height": 68,
+      "weight": 140,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "1",
+      "experience": "3",
+      "college": "Texas",
+      "high_school": "Parkway North (MO)",
+      "birth_place": "St. Louis, MO, USA",
+      "birthdate": "1998-12-17",
+      "updated": "2025-02-15T15:08:47Z",
+      "sr_id": "sr:player:1155064",
+      "rookie_year": 2020,
+      "reference": "1630134",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2020,
+        "round": "3",
+        "pick": "36"
+      },
+      "references": [
+        {
+          "source_id": "1630134",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "13821ce7-ef8b-4acd-ba95-72a119a0078f",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "b08257f0-8f35-47ae-a53f-e343ce6b027f",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sug_Sutton.png"
+    },
+    {
+      "id": "3f194c01-8933-4160-928b-93c416002d6f",
+      "status": "ACT",
+      "full_name": "Jade Melbourne",
+      "first_name": "Jade",
+      "last_name": "Melbourne",
+      "abbr_name": "J.Melbourne",
+      "height": 70,
+      "weight": 145,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "2",
+      "birth_place": "Melbourne,, AUS",
+      "birthdate": "2002-08-18",
+      "updated": "2025-02-15T15:09:51Z",
+      "sr_id": "sr:player:1619470",
+      "rookie_year": 2023,
+      "reference": "1631141",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2022,
+        "round": "3",
+        "pick": "33"
+      },
+      "references": [
+        {
+          "source_id": "1631141",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "73440d55-528b-4578-a35e-d8f558962040",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jade_Melbourne.png"
+    },
+    {
+      "id": "4945c3b5-f536-470c-8f2b-76568b59fe52",
+      "status": "ACT",
+      "full_name": "Kiki Iriafen",
+      "first_name": "Kiki",
+      "last_name": "Iriafen",
+      "abbr_name": "K.Iriafen",
+      "height": 75,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "44",
+      "experience": "0",
+      "college": "USC",
+      "high_school": "Harvard-Westlake (CA)",
+      "birth_place": "Los Angeles, CA, USA",
+      "birthdate": "2003-08-26",
+      "updated": "2025-05-27T17:05:06Z",
+      "sr_id": "sr:player:2243179",
+      "rookie_year": 2025,
+      "reference": "1642792",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2025,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1642792",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f0e55d1d-36a3-4d7d-8794-3d338586f556",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "6364cc53-2dc3-4636-adf1-1891889a1451",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kiki_Iriafen.png"
+    },
+    {
+      "id": "4e5370b1-4813-4e01-914e-e7f4a00ba565",
+      "status": "ACT",
+      "full_name": "Sonia Citron",
+      "first_name": "Sonia",
+      "last_name": "Citron",
+      "abbr_name": "S.Citron",
+      "height": 73,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "0",
+      "college": "Notre Dame",
+      "high_school": "The Ursuline School (NY)",
+      "birth_place": "Eastchester, NY, USA",
+      "birthdate": "2003-10-22",
+      "updated": "2025-05-27T17:04:11Z",
+      "sr_id": "sr:player:2246603",
+      "rookie_year": 2025,
+      "reference": "1642785",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2025,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "1642785",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "befb48ec-85d6-49cb-b9bb-5116c3c2c301",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "e947c266-0588-4574-bd80-228d15493cdd",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sonia_Citron.png"
+    },
+    {
+      "id": "54e15980-ce12-4c08-893f-f19a8c57be49",
+      "status": "ACT",
+      "full_name": "Lucy Olsen",
+      "first_name": "Lucy",
+      "last_name": "Olsen",
+      "abbr_name": "L.Olsen",
+      "height": 70,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "33",
+      "experience": "0",
+      "college": "Iowa",
+      "high_school": "Spring-Ford (PA)",
+      "birth_place": "Collegeville, PA, USA",
+      "birthdate": "2003-05-26",
+      "updated": "2025-05-27T17:04:51Z",
+      "sr_id": "sr:player:2267495",
+      "rookie_year": 2025,
+      "reference": "1642802",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2025,
+        "round": "2",
+        "pick": "23"
+      },
+      "references": [
+        {
+          "source_id": "1642802",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "57a53513-c481-4c88-9433-317038cb26d1",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3e291f32-7f7f-4d66-92b9-1143d68d8ce2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Lucy_Olsen.png"
+    },
+    {
+      "id": "7709c3e4-3fcb-4483-95b5-ba433eab864a",
+      "status": "ACT",
+      "full_name": "Georgia Amoore",
+      "first_name": "Georgia",
+      "last_name": "Amoore",
+      "abbr_name": "G.Amoore",
+      "height": 67,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "0",
+      "college": "Kentucky",
+      "high_school": "Loreto College (AUS)",
+      "birth_place": "Ballarat,, AUS",
+      "birthdate": "2001-04-03",
+      "updated": "2025-08-19T16:57:14Z",
+      "sr_id": "sr:player:1619430",
+      "rookie_year": 2025,
+      "reference": "1642781",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2025,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1642781",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "90e99f47-eed0-4dd6-b40a-73cef7f21f24",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "d659cab1-7f36-4eb9-8ae1-bb2c84db8ef2",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "522b3737-6651-46e4-b9ed-7f9fe4d4623f",
+          "comment": "The Mystics reported on Friday (May 16) that Amoore underwent successful surgery to repair a right ACL injury. She will miss the 2025 WNBA season.",
+          "desc": "ACL",
+          "status": "Out For Season",
+          "start_date": "2025-04-30",
+          "update_date": "2025-05-16"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Georgia_Amoore.png"
+    },
+    {
+      "id": "776e2238-8340-4425-ab90-ba69e1bc7441",
+      "status": "ACT",
+      "full_name": "Stefanie Dolson",
+      "first_name": "Stefanie",
+      "last_name": "Dolson",
+      "abbr_name": "S.Dolson",
+      "height": 77,
+      "weight": 235,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "31",
+      "experience": "11",
+      "college": "UConn",
+      "high_school": "Minisink Valley (NY)",
+      "birth_place": "Port Jervis, NY, USA",
+      "birthdate": "1992-01-08",
+      "updated": "2025-02-15T15:10:56Z",
+      "sr_id": "sr:player:1156846",
+      "rookie_year": 2014,
+      "reference": "203828",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2014,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "203828",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "66a0e702-8d6e-4a0a-b2a8-a1b08f987465",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Stefanie_Dolson.png"
+    },
+    {
+      "id": "7c76cfae-0b68-4449-9a96-73d271fbc32e",
+      "status": "ACT",
+      "full_name": "Emily Engstler",
+      "first_name": "Emily",
+      "last_name": "Engstler",
+      "abbr_name": "E.Engstler",
+      "height": 73,
+      "weight": 180,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "21",
+      "experience": "3",
+      "college": "Louisville",
+      "high_school": "St. Francis Prep (NY)",
+      "birth_place": "Queens, NY, USA",
+      "birthdate": "2000-05-01",
+      "updated": "2025-02-15T15:10:33Z",
+      "sr_id": "sr:player:1617710",
+      "rookie_year": 2022,
+      "reference": "1631083",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2022,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1631083",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e3743f28-c894-4b15-86d7-e743c3e8743c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "5a21e7ec-0a5a-44b4-b6ff-a4d9430b4a24",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Emily_Engstler.png"
+    },
+    {
+      "id": "a8e64df8-bd27-4c28-94c9-7c1c370960dc",
+      "status": "ACT",
+      "full_name": "Shakira Austin",
+      "first_name": "Shakira",
+      "last_name": "Austin",
+      "abbr_name": "S.Austin",
+      "height": 77,
+      "weight": 190,
+      "position": "F-C",
+      "primary_position": "NA",
+      "jersey_number": "0",
+      "experience": "3",
+      "college": "Ole Miss",
+      "high_school": "Riverdale Baptist School (MD)",
+      "birth_place": "Fredericksburg, VA, USA",
+      "birthdate": "2000-07-25",
+      "updated": "2025-08-19T16:57:35Z",
+      "sr_id": "sr:player:1625402",
+      "rookie_year": 2022,
+      "reference": "1631022",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2022,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "1631022",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4558ce19-f664-4d46-83ce-189058d3a93c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9f826a76-f9c9-44be-86d3-97c246643090",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Shakira_Austin.png"
+    },
+    {
+      "id": "b478ebc6-8b1f-4d39-9707-048d24a88c26",
+      "status": "ACT",
+      "full_name": "Alysha Clark",
+      "first_name": "Alysha",
+      "last_name": "Clark",
+      "abbr_name": "A.Clark",
+      "height": 71,
+      "weight": 167,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "32",
+      "experience": "12",
+      "college": "Middle Tennessee",
+      "high_school": "Mount Juliet (TN)",
+      "birth_place": "Denver, CO, USA",
+      "birthdate": "1987-07-07",
+      "updated": "2025-08-05T23:20:32Z",
+      "sr_id": "sr:player:1157020",
+      "rookie_year": 2012,
+      "reference": "202252",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2010,
+        "round": "2",
+        "pick": "17"
+      },
+      "references": [
+        {
+          "source_id": "202252",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e06a6278-53e9-49b5-a88c-564b6865bf56",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Alysha_Clark.png"
+    },
+    {
+      "id": "edae6b7a-6cd3-431e-b0ad-721c8fc93b25",
+      "status": "ACT",
+      "full_name": "Madison Scott",
+      "first_name": "Madison",
+      "last_name": "Scott",
+      "abbr_name": "M.Scott",
+      "height": 74,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "6",
+      "experience": "0",
+      "college": "Ole Miss",
+      "high_school": "Bishop McNamara (MD)",
+      "birth_place": "Indian Head, MD, USA",
+      "birthdate": "2001-12-27",
+      "updated": "2025-08-22T06:03:01Z",
+      "sr_id": "sr:player:2104356",
+      "reference": "1642810",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2025,
+        "round": "2",
+        "pick": "14"
+      },
+      "references": [
+        {
+          "source_id": "1642810",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "57a80dca-01a6-4d9c-9c95-57cec62eb3b6",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9a408df5-b789-4256-9009-b11cb80f5d8f",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Madison_Scott.png"
+    }
+  ]
+}

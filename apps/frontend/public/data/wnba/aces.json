@@ -1,0 +1,574 @@
+{
+  "id": "171b097d-01db-4ae8-9d56-035689402ec6",
+  "name": "Aces",
+  "market": "Las Vegas",
+  "alias": "LVA",
+  "founded": 1997,
+  "sr_id": "sr:team:35550",
+  "owner": "Mark Davis",
+  "president": "Nikki Fargas",
+  "mascot": "BUCKET$",
+  "sponsor": "Ally Financial",
+  "championships_won": 2,
+  "championship_seasons": "2022, 2023",
+  "conference_titles": 4,
+  "retired_numbers": "25",
+  "playoff_appearances": 16,
+  "reference": "1611661319",
+  "venue": {
+    "id": "06c2f947-3e69-43b8-bfec-d01c2370a21f",
+    "name": "Michelob ULTRA Arena",
+    "capacity": 12000,
+    "address": "3950 Las Vegas Boulevard South",
+    "city": "Paradise",
+    "state": "NV",
+    "zip": "89119",
+    "country": "USA",
+    "sr_id": "sr:venue:17989",
+    "location": {
+      "lat": "36.09061",
+      "lng": "-115.178976"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "d95b23c8-dee5-4142-ac4a-2b4ab05beebc",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "60be9847-09f7-4427-9a61-e2566125107c",
+      "full_name": "Becky Hammon",
+      "first_name": "Becky",
+      "last_name": "Hammon",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#a7a8aa",
+      "rgb_color": {
+        "red": 167,
+        "green": 168,
+        "blue": 170
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#000000",
+      "rgb_color": {
+        "red": 0,
+        "green": 0,
+        "blue": 0
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0825c65d-b903-4dd3-8206-e5f7d31bb2b8",
+      "status": "ACT",
+      "full_name": "Jewell Loyd",
+      "first_name": "Jewell",
+      "last_name": "Loyd",
+      "abbr_name": "J.Loyd",
+      "height": 71,
+      "weight": 175,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "10",
+      "college": "Notre Dame",
+      "high_school": "Niles West (IL)",
+      "birth_place": "Lincolnwood, IL, USA",
+      "birthdate": "1993-10-05",
+      "updated": "2025-05-27T16:33:37Z",
+      "sr_id": "sr:player:1156786",
+      "rookie_year": 2015,
+      "reference": "204319",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2015,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "204319",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "12fa016c-d46c-446b-af85-9d1fd7b51354",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "bb4fbdf6-8971-4f17-b73b-e743388a2a6d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jewell_Loyd.png"
+    },
+    {
+      "id": "26211daa-54a2-4ce8-a02e-c04c9192586b",
+      "status": "ACT",
+      "full_name": "Aaliyah Nye",
+      "first_name": "Aaliyah",
+      "last_name": "Nye",
+      "abbr_name": "A.Nye",
+      "height": 72,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "13",
+      "experience": "0",
+      "college": "Alabama",
+      "high_school": "East Lansing (MI)",
+      "birth_place": "East Lansing, MI, USA",
+      "birthdate": "2002-08-14",
+      "updated": "2025-05-15T23:32:31Z",
+      "sr_id": "sr:player:2103520",
+      "rookie_year": 2025,
+      "reference": "1642801",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2025,
+        "round": "2",
+        "pick": "13"
+      },
+      "references": [
+        {
+          "source_id": "1642801",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a356cc5c-37be-4dd8-918f-4d3f741e83e8",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "82ec8600-bc8e-4f9a-a651-e72ae4c30802",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aaliyah_Nye.png"
+    },
+    {
+      "id": "3112ab66-5995-4ed1-b460-2b0e5abc2dd1",
+      "status": "ACT",
+      "full_name": "Kierstan Bell",
+      "first_name": "Kierstan",
+      "last_name": "Bell",
+      "abbr_name": "K.Bell",
+      "height": 73,
+      "weight": 176,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "1",
+      "experience": "3",
+      "college": "Florida Gulf Coast",
+      "high_school": "Canton McKinley (OH)",
+      "birth_place": "Canton, OH, USA",
+      "birthdate": "2000-03-16",
+      "updated": "2025-05-27T16:32:27Z",
+      "sr_id": "sr:player:2267357",
+      "rookie_year": 2022,
+      "reference": "1631006",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2022,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1631006",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "da57bfa4-7af0-4612-8e57-109046ba3184",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "ce78fead-a507-45aa-949f-a28710d6288b",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kierstan_Bell.png"
+    },
+    {
+      "id": "3c606b9a-c914-4e6f-ac4f-81b2600f7755",
+      "status": "ACT",
+      "full_name": "Dana Evans",
+      "first_name": "Dana",
+      "last_name": "Evans",
+      "abbr_name": "D.Evans",
+      "height": 66,
+      "weight": 145,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "11",
+      "experience": "4",
+      "college": "Louisville",
+      "high_school": "West Side (IN)",
+      "birth_place": "Gary, IN, USA",
+      "birthdate": "1998-08-01",
+      "updated": "2025-05-27T16:32:57Z",
+      "sr_id": "sr:player:1320746",
+      "rookie_year": 2021,
+      "reference": "1630389",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2021,
+        "round": "2",
+        "pick": "13"
+      },
+      "references": [
+        {
+          "source_id": "1630389",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "6c557a10-53fc-46cd-ac54-9f48f9007e79",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "d980fa09-bd87-4a9b-a319-ea105c322892",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dana_Evans.png"
+    },
+    {
+      "id": "4a97e708-71e5-4d58-b1e8-883adf027925",
+      "status": "ACT",
+      "full_name": "Cheyenne Parker-Tyus",
+      "first_name": "Cheyenne",
+      "last_name": "Parker-Tyus",
+      "abbr_name": "C.Parker",
+      "height": 76,
+      "weight": 193,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "32",
+      "experience": "10",
+      "college": "Middle Tennessee",
+      "high_school": "Southwest Guilford (NC)",
+      "birth_place": "Queens, NY, USA",
+      "birthdate": "1992-08-22",
+      "updated": "2025-09-08T21:07:04Z",
+      "sr_id": "sr:player:1156878",
+      "rookie_year": 2015,
+      "reference": "204323",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2015,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "204323",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ca0f8a40-5e67-438c-8ec4-bdacb3c605ac",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "5b108bb3-f367-46a0-9875-d78e6c3e5055",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Cheyenne_Parker-tyus.png"
+    },
+    {
+      "id": "4fa92d21-9f96-4bab-a9f8-f530a69287ee",
+      "status": "ACT",
+      "full_name": "Jackie Young",
+      "first_name": "Jackie",
+      "last_name": "Young",
+      "abbr_name": "J.Young",
+      "height": 72,
+      "weight": 165,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "0",
+      "experience": "6",
+      "college": "Notre Dame",
+      "high_school": "Princeton Community (IN)",
+      "birth_place": "Princeton, IN, USA",
+      "birthdate": "1997-09-16",
+      "updated": "2025-05-27T16:32:18Z",
+      "sr_id": "sr:player:1148506",
+      "rookie_year": 2019,
+      "reference": "1629498",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2019,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1629498",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "038e0d14-fcb1-4460-a44f-4aea30ab73f4",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "df5dd1ad-9fdc-4b53-bb29-619a2768f89a",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jackie_Young.png"
+    },
+    {
+      "id": "6340b055-3c1b-427e-88d6-6f9cdd1fc925",
+      "status": "ACT",
+      "full_name": "A'ja Wilson",
+      "first_name": "A'ja",
+      "last_name": "Wilson",
+      "abbr_name": "A.Wilson",
+      "height": 76,
+      "weight": 195,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "7",
+      "college": "South Carolina",
+      "high_school": "Heathwood Hall Episcopal (SC)",
+      "birth_place": "Columbia, SC, USA",
+      "birthdate": "1996-08-08",
+      "updated": "2025-05-27T16:33:30Z",
+      "sr_id": "sr:player:1152468",
+      "rookie_year": 2018,
+      "reference": "1628932",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2018,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1628932",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3e5877d7-396d-4829-adcd-3447517dbabf",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3d2c87dc-305a-4222-94b0-bb3f2b3ae150",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/A'ja_Wilson.png"
+    },
+    {
+      "id": "732bf79f-1bfa-450c-ad04-015f7624765a",
+      "status": "ACT",
+      "full_name": "NaLyssa Smith",
+      "first_name": "NaLyssa",
+      "last_name": "Smith",
+      "abbr_name": "N.Smith",
+      "height": 76,
+      "weight": 185,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "3",
+      "college": "Baylor",
+      "high_school": "East Central (TX)",
+      "birth_place": "San Antonio, TX, USA",
+      "birthdate": "2000-08-08",
+      "updated": "2025-07-01T15:14:31Z",
+      "sr_id": "sr:player:1618438",
+      "rookie_year": 2022,
+      "reference": "1631019",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2022,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1631019",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e812df60-5bb2-4966-8242-dd329b46bf06",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "0c5961b3-8a97-47d9-b0f0-a5f56baa3dec",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nalyssa_Smith.png"
+    },
+    {
+      "id": "8c94ae8d-4431-4e6b-98c6-dcd812ba76c8",
+      "status": "ACT",
+      "full_name": "Megan Gustafson",
+      "first_name": "Megan",
+      "last_name": "Gustafson",
+      "abbr_name": "M.Gustafson",
+      "height": 76,
+      "weight": 195,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "17",
+      "experience": "6",
+      "college": "Iowa",
+      "high_school": "South Shore (WI)",
+      "birth_place": "Port Wing, WI, USA",
+      "birthdate": "1996-12-13",
+      "updated": "2025-05-27T16:33:21Z",
+      "sr_id": "sr:player:1147506",
+      "rookie_year": 2019,
+      "reference": "1629484",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2019,
+        "round": "2",
+        "pick": "17"
+      },
+      "references": [
+        {
+          "source_id": "1629484",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c951cb19-9000-4a91-a1db-466e61800888",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "d0ee35c2-afa9-48f4-881d-bda4360eac48",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Megan_Gustafson.png"
+    },
+    {
+      "id": "ca6b54e3-612d-4523-9582-b88e675f58de",
+      "status": "ACT",
+      "full_name": "Chelsea Gray",
+      "first_name": "Chelsea",
+      "last_name": "Gray",
+      "abbr_name": "C.Gray",
+      "height": 71,
+      "weight": 170,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "12",
+      "experience": "10",
+      "college": "Duke",
+      "high_school": "St. Mary's (CA)",
+      "birth_place": "Hayward, CA, USA",
+      "birthdate": "1992-10-08",
+      "updated": "2025-05-27T16:33:06Z",
+      "sr_id": "sr:player:1157052",
+      "rookie_year": 2015,
+      "reference": "203833",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2014,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "203833",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "af2ed03b-9d25-4531-acdd-8e23cf2fc2a7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Chelsea_Gray.png"
+    },
+    {
+      "id": "d3e817a8-9e72-44c2-a422-9d44a0b214d0",
+      "status": "ACT",
+      "full_name": "Kiah Stokes",
+      "first_name": "Kiah",
+      "last_name": "Stokes",
+      "abbr_name": "K.Stokes",
+      "height": 75,
+      "weight": 191,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "41",
+      "experience": "9",
+      "college": "UConn",
+      "high_school": "Linn-Mar (IA)",
+      "birth_place": "Marion, IA, USA",
+      "birthdate": "1993-03-30",
+      "updated": "2025-05-27T16:34:13Z",
+      "sr_id": "sr:player:1156876",
+      "rookie_year": 2015,
+      "reference": "204329",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2015,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "204329",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a470c12a-423a-4a75-b73e-bec29c245a03",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "866d3ab8-8811-4514-81f2-46eae14f0c5d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kiah_Stokes.png"
+    }
+  ]
+}

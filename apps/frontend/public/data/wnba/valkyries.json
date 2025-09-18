@@ -1,0 +1,639 @@
+{
+  "id": "4f57ec40-0d35-4b59-bea0-9d040f0d2292",
+  "name": "Valkyries",
+  "market": "Golden State",
+  "alias": "GSV",
+  "founded": 2025,
+  "sr_id": "sr:team:1200059",
+  "owner": "Joe Lacob, Peter Guber",
+  "general_manager": "Ohemaa Nyanin",
+  "president": "Jess Smith",
+  "sponsor": "Kaiser Permanente",
+  "championships_won": 0,
+  "conference_titles": 0,
+  "playoff_appearances": 1,
+  "reference": "1611661331",
+  "venue": {
+    "id": "938016dc-9e1d-4abc-88f5-3a7d772332e6",
+    "name": "Chase Center",
+    "capacity": 18064,
+    "address": "1 Warriors Way",
+    "city": "San Francisco",
+    "state": "CA",
+    "zip": "94158",
+    "country": "USA",
+    "sr_id": "sr:venue:44446",
+    "location": {
+      "lat": "37.7679",
+      "lng": "-122.3873"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "d95b23c8-dee5-4142-ac4a-2b4ab05beebc",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "850fba08-59de-48c9-9afe-2cd369e90f2e",
+      "full_name": "Natalie Nakase",
+      "first_name": "Natalie",
+      "last_name": "Nakase",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "primary",
+      "hex_color": "#ad95db",
+      "rgb_color": {
+        "red": 173,
+        "green": 149,
+        "blue": 219
+      }
+    },
+    {
+      "type": "secondary",
+      "hex_color": "#2d2a26",
+      "rgb_color": {
+        "red": 45,
+        "green": 42,
+        "blue": 38
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "206872ae-560b-4199-94f4-a44106b0baff",
+      "status": "ACT",
+      "full_name": "Monique Billings",
+      "first_name": "Monique",
+      "last_name": "Billings",
+      "abbr_name": "M.Billings",
+      "height": 76,
+      "weight": 192,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "25",
+      "experience": "7",
+      "college": "UCLA",
+      "high_school": "Santiago (CA)",
+      "birth_place": "Riverside, CA, USA",
+      "birthdate": "1996-05-02",
+      "updated": "2025-02-12T15:55:37Z",
+      "sr_id": "sr:player:1153332",
+      "rookie_year": 2018,
+      "reference": "1628881",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2018,
+        "round": "2",
+        "pick": "15"
+      },
+      "references": [
+        {
+          "source_id": "1628881",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7486c88a-4bff-45f4-8fcb-0f07e1325a24",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "4be7e353-2bd1-47dc-9895-f7e330deaeee",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Monique_Billings.png"
+    },
+    {
+      "id": "4009ca08-3b81-4190-9b13-c08ddb8090a5",
+      "status": "ACT",
+      "full_name": "Veronica Burton",
+      "first_name": "Veronica",
+      "last_name": "Burton",
+      "abbr_name": "V.Burton",
+      "height": 69,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "3",
+      "college": "Northwestern",
+      "high_school": "Newton South (MA)",
+      "birth_place": "Newton, MA, USA",
+      "birthdate": "2000-07-12",
+      "updated": "2025-04-21T16:28:20Z",
+      "sr_id": "sr:player:2331795",
+      "rookie_year": 2022,
+      "reference": "1631007",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2022,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1631007",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "08ac8cdc-e8af-49bb-8adb-5faae0d420f4",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "a49fc34c-b0c9-4976-9e18-2f7489119394",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Veronica_Burton.png"
+    },
+    {
+      "id": "4d3205f8-4ffe-46d8-87f4-6c01bf670bca",
+      "status": "ACT",
+      "full_name": "Kaitlyn Chen",
+      "first_name": "Kaitlyn",
+      "last_name": "Chen",
+      "abbr_name": "K.Chen",
+      "height": 69,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "0",
+      "college": "UConn",
+      "high_school": "Flintridge Prep (CA)",
+      "birth_place": "San Marino, CA, USA",
+      "birthdate": "2002-02-22",
+      "updated": "2025-06-20T14:19:30Z",
+      "sr_id": "sr:player:2248855",
+      "reference": "1642822",
+      "draft": {
+        "team_id": "4f57ec40-0d35-4b59-bea0-9d040f0d2292",
+        "year": 2025,
+        "round": "3",
+        "pick": "30"
+      },
+      "references": [
+        {
+          "source_id": "1642822",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0e2838c9-fc9e-4ec7-bd5a-e17b576d0d87",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "3e3eebd5-b61e-40c1-afe1-2e512ae03b79",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kaitlyn_Chen.png"
+    },
+    {
+      "id": "51691b01-7acc-4673-ad60-64e8726a1b38",
+      "status": "ACT",
+      "full_name": "Carla Leite",
+      "first_name": "Carla",
+      "last_name": "Leite",
+      "abbr_name": "C.Leite",
+      "height": 69,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "0",
+      "experience": "0",
+      "birth_place": ",, FRA",
+      "birthdate": "2004-04-16",
+      "updated": "2025-05-27T17:36:37Z",
+      "sr_id": "sr:player:2789679",
+      "rookie_year": 2025,
+      "reference": "1642304",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2024,
+        "round": "1",
+        "pick": "9"
+      },
+      "references": [
+        {
+          "source_id": "1642304",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "85518dd1-1735-4b60-ae75-4ba13084817c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Carla_Leite.png"
+    },
+    {
+      "id": "6a32c622-278c-4c75-b83f-345bcd252ab4",
+      "status": "ACT",
+      "full_name": "Temi Fágbénlé",
+      "first_name": "Temi",
+      "last_name": "Fágbénlé",
+      "abbr_name": "T.Fágbénlé",
+      "height": 76,
+      "weight": 180,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "14",
+      "experience": "4",
+      "college": "USC",
+      "high_school": "Blair Academy (NJ)",
+      "birth_place": "Baltimore, MD, USA",
+      "birthdate": "1992-09-08",
+      "updated": "2025-06-25T16:26:59Z",
+      "sr_id": "sr:player:1156796",
+      "rookie_year": 2017,
+      "reference": "1627701",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2016,
+        "round": "3",
+        "pick": "35"
+      },
+      "references": [
+        {
+          "source_id": "1627701",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "65a2564c-04e2-4009-baf0-a163f947cbf8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b6646697-85d2-4d49-b36c-394c3e7b1edf",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Temi_Fágbénlé.png"
+    },
+    {
+      "id": "7a46f116-94ed-4d89-b585-fa41cf41862c",
+      "status": "ACT",
+      "full_name": "Kayla Thornton",
+      "first_name": "Kayla",
+      "last_name": "Thornton",
+      "abbr_name": "K.Thornton",
+      "height": 73,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "9",
+      "college": "UTEP",
+      "high_school": "Irvin (TX)",
+      "birth_place": "El Paso, TX, USA",
+      "birthdate": "1992-10-20",
+      "updated": "2025-01-01T03:56:26Z",
+      "sr_id": "sr:player:1157066",
+      "rookie_year": 2015,
+      "reference": "203866",
+      "draft": {
+        "year": 2015
+      },
+      "references": [
+        {
+          "source_id": "203866",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "47dbabf6-6bd3-433d-8d85-e1cd2c0529e8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "6fb142e8-4743-49d9-8361-6a08c9136475",
+          "comment": "The Valkyries announced that Thornton underwent season-ending knee surgery.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-07-25",
+          "update_date": "2025-07-25"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kayla_Thornton.png"
+    },
+    {
+      "id": "92b50919-8c76-4fcf-ab2e-9497f135f27c",
+      "status": "ACT",
+      "full_name": "Cecilia Zandalasini",
+      "first_name": "Cecilia",
+      "last_name": "Zandalasini",
+      "abbr_name": "C.Zandalasini",
+      "height": 74,
+      "weight": 175,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "3",
+      "birth_place": "Broni,, ITA",
+      "birthdate": "1996-03-16",
+      "updated": "2025-06-30T21:16:13Z",
+      "sr_id": "sr:player:1273582",
+      "rookie_year": 2017,
+      "reference": "1628508",
+      "draft": {
+        "year": 2013
+      },
+      "references": [
+        {
+          "source_id": "1628508",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "edf38785-b7c2-452d-aaad-54ac898b6107",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Cecilia_Zandalasini.png"
+    },
+    {
+      "id": "a6b11ee1-f2b5-4ef2-adc5-ce96c33a2bf2",
+      "status": "ACT",
+      "full_name": "Iliana Rupert",
+      "first_name": "Iliana",
+      "last_name": "Rupert",
+      "abbr_name": "I.Rupert",
+      "height": 76,
+      "weight": 189,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "12",
+      "experience": "2",
+      "birth_place": "Sevres,, FRA",
+      "birthdate": "2001-07-12",
+      "updated": "2025-07-18T14:42:48Z",
+      "sr_id": "sr:player:2146742",
+      "rookie_year": 2022,
+      "reference": "1630387",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2021,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "1630387",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "abf402f4-53f1-4c9b-aad9-6ce07eca6302",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Iliana_Rupert.png"
+    },
+    {
+      "id": "a8253b50-9712-4562-8f54-e36dac6299cd",
+      "status": "ACT",
+      "full_name": "Laeticia Amihere",
+      "first_name": "Laeticia",
+      "last_name": "Amihere",
+      "abbr_name": "L.Amihere",
+      "height": 75,
+      "weight": 185,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "2",
+      "college": "South Carolina",
+      "high_school": "King's Christian Collegiate (CAN)",
+      "birth_place": "Mississauga, ON, CAN",
+      "birthdate": "2001-07-10",
+      "updated": "2025-06-10T01:39:26Z",
+      "sr_id": "sr:player:2272933",
+      "rookie_year": 2023,
+      "reference": "1641656",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2023,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1641656",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "9145f88a-bec6-4b2d-9551-f64dcfef011b",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9609babd-ff57-43ae-b354-4ae19102fc1c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Laeticia_Amihere.png"
+    },
+    {
+      "id": "b07e1abd-5eea-4883-bc95-6a72e80c75c4",
+      "status": "ACT",
+      "full_name": "Kaila Charles",
+      "first_name": "Kaila",
+      "last_name": "Charles",
+      "abbr_name": "K.Charles",
+      "height": 73,
+      "weight": 168,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "6",
+      "experience": "4",
+      "college": "Maryland",
+      "high_school": "Riverdale Baptist (MD)",
+      "birth_place": "Glenn Dale, MD, USA",
+      "birthdate": "1998-03-23",
+      "updated": "2025-08-08T17:54:47Z",
+      "sr_id": "sr:player:1148650",
+      "rookie_year": 2020,
+      "reference": "1630097",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2020,
+        "round": "2",
+        "pick": "23"
+      },
+      "references": [
+        {
+          "source_id": "1630097",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "10047d5f-6e57-42af-b08f-134c2fdc3d88",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "1f5d1e15-5291-46ae-bb5a-d0238d7000db",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kaila_Charles.png"
+    },
+    {
+      "id": "d12ed996-e27a-4a93-bbd7-116c516efeab",
+      "status": "ACT",
+      "full_name": "Janelle Salaün",
+      "first_name": "Janelle",
+      "last_name": "Salaün",
+      "abbr_name": "J.Salaün",
+      "height": 74,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "13",
+      "experience": "0",
+      "birth_place": "Paris,, FRA",
+      "birthdate": "2001-09-05",
+      "updated": "2025-06-30T21:16:35Z",
+      "sr_id": "sr:player:2940705",
+      "rookie_year": 2025,
+      "reference": "1642767",
+      "draft": {
+        "year": 2019
+      },
+      "references": [
+        {
+          "source_id": "1642767",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "cb4a3e91-3864-4b37-a654-5fe24aaa0f75",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Janelle_Salaün.png"
+    },
+    {
+      "id": "ea77addf-9b42-4d57-8669-c022f61ce2d9",
+      "status": "ACT",
+      "full_name": "Kate Martin",
+      "first_name": "Kate",
+      "last_name": "Martin",
+      "abbr_name": "K.Martin",
+      "height": 72,
+      "weight": 172,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "20",
+      "experience": "1",
+      "college": "Iowa",
+      "high_school": "Edwardsville (IL)",
+      "birth_place": "Edwardsville, IL, USA",
+      "birthdate": "2000-06-05",
+      "updated": "2025-01-01T03:56:07Z",
+      "sr_id": "sr:player:1625454",
+      "rookie_year": 2024,
+      "reference": "1642324",
+      "draft": {
+        "team_id": "171b097d-01db-4ae8-9d56-035689402ec6",
+        "year": 2024,
+        "round": "2",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1642324",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "07b5b570-d76a-43b0-b40c-5f5613ca7bc5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "98be7ec0-f029-4e2f-a40b-e7d2d215e934",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kate_Martin.png"
+    },
+    {
+      "id": "f24ac568-77f4-4344-84a7-7fde145dda84",
+      "status": "ACT",
+      "full_name": "Tiffany Hayes",
+      "first_name": "Tiffany",
+      "last_name": "Hayes",
+      "abbr_name": "T.Hayes",
+      "height": 70,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "15",
+      "experience": "12",
+      "college": "UConn",
+      "high_school": "Winter Haven (FL)",
+      "birth_place": "Fort Polk, LA, USA",
+      "birthdate": "1989-09-20",
+      "updated": "2025-02-06T23:40:07Z",
+      "sr_id": "sr:player:1157036",
+      "rookie_year": 2012,
+      "reference": "203026",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2012,
+        "round": "2",
+        "pick": "14"
+      },
+      "references": [
+        {
+          "source_id": "203026",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "1333cd2d-3904-4d12-bc61-3624daba1b24",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "877df382-4e0f-4e50-9ad8-2140585bb3b3",
+          "comment": "The Valkyries said that Hayes is OUT for Wednesday's (Sept. 17) game 2 against the Lynx, per Matt Cohen of Winsidr.com. ",
+          "desc": "Knee",
+          "status": "Out",
+          "start_date": "2025-09-03",
+          "update_date": "2025-09-16"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tiffany_Hayes.png"
+    }
+  ]
+}

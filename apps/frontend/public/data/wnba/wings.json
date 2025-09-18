@@ -1,0 +1,822 @@
+{
+  "id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+  "name": "Wings",
+  "market": "Dallas",
+  "alias": "DAL",
+  "founded": 1998,
+  "sr_id": "sr:team:3450",
+  "owner": "Bill Cameron",
+  "general_manager": "Curt Miller",
+  "president": "Greg Bibb",
+  "mascot": "Lightning",
+  "sponsor": "American Fidelity",
+  "championships_won": 3,
+  "championship_seasons": "2003, 2006, 2008",
+  "conference_titles": 4,
+  "playoff_appearances": 14,
+  "reference": "1611661321",
+  "venue": {
+    "id": "69391650-8df7-49f0-8128-217a57679085",
+    "name": "College Park Center",
+    "capacity": 7000,
+    "address": "601 S Pecan Street",
+    "city": "Arlington",
+    "state": "TX",
+    "zip": "76019",
+    "country": "USA",
+    "sr_id": "sr:venue:17770",
+    "location": {
+      "lat": "32.730586",
+      "lng": "-97.107972"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "d95b23c8-dee5-4142-ac4a-2b4ab05beebc",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "b7ad955f-d2d8-4bd7-b49a-e5b5e6f353cb",
+      "full_name": "Koclanes",
+      "first_name": "Chris",
+      "last_name": "Koclanes",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#c4d600",
+      "rgb_color": {
+        "red": 196,
+        "green": 214,
+        "blue": 0
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#002b5c",
+      "rgb_color": {
+        "red": 0,
+        "green": 43,
+        "blue": 92
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0684bac6-2fe3-422c-abe4-dee434c7e3d0",
+      "status": "ACT",
+      "full_name": "Grace Berger",
+      "first_name": "Grace",
+      "last_name": "Berger",
+      "abbr_name": "G.Berger",
+      "height": 71,
+      "weight": 163,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "34",
+      "experience": "2",
+      "college": "Indiana",
+      "high_school": "Sacred Heart Academy (KY)",
+      "birth_place": "Louisville, KY, USA",
+      "birthdate": "1999-06-03",
+      "updated": "2025-08-05T18:54:27Z",
+      "sr_id": "sr:player:1617932",
+      "rookie_year": 2023,
+      "reference": "1641658",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2023,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1641658",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "72f41334-dd78-4fca-9ff6-964cd9ec0280",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f37d72f6-2f8a-421f-9780-fd1b99f5ea87",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Grace_Berger.png"
+    },
+    {
+      "id": "20b2fe63-ee47-4afb-bd2c-ec5abd646b7d",
+      "status": "ACT",
+      "full_name": "Aziaha James",
+      "first_name": "Aziaha",
+      "last_name": "James",
+      "abbr_name": "A.James",
+      "height": 70,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "0",
+      "college": "NC State",
+      "high_school": "Princess Anne (VA)",
+      "birth_place": "Virginia Beach, VA, USA",
+      "birthdate": "2002-11-19",
+      "updated": "2025-05-27T16:05:03Z",
+      "sr_id": "sr:player:2244991",
+      "rookie_year": 2025,
+      "reference": "1642793",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2025,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "1642793",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0984eff7-4496-4556-b582-42f8c0dbd580",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "248733dd-97be-4c4a-9720-ebadbe521a9d",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aziaha_James.png"
+    },
+    {
+      "id": "7c97d5bc-1718-4284-9d85-87f2f1b23eec",
+      "status": "ACT",
+      "full_name": "Haley Jones",
+      "first_name": "Haley",
+      "last_name": "Jones",
+      "abbr_name": "H.Jones",
+      "height": 73,
+      "weight": 187,
+      "position": "F-G",
+      "primary_position": "NA",
+      "jersey_number": "30",
+      "experience": "2",
+      "college": "Stanford",
+      "high_school": "Archbishop Mitty (CA)",
+      "birth_place": "Santa Cruz, CA, USA",
+      "birthdate": "2001-05-23",
+      "updated": "2025-07-09T20:33:15Z",
+      "sr_id": "sr:player:1947700",
+      "rookie_year": 2023,
+      "reference": "1641650",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2023,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1641650",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "08d47ce7-a8fe-481f-b26c-0b646ff73f13",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "462e455f-745f-4a1a-b425-ee8f0e28d6fb",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Haley_Jones.png"
+    },
+    {
+      "id": "80c92207-2597-4132-a34c-3b467a1a81e1",
+      "status": "ACT",
+      "full_name": "Paige Bueckers",
+      "first_name": "Paige",
+      "last_name": "Bueckers",
+      "abbr_name": "P.Bueckers",
+      "height": 72,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "0",
+      "college": "UConn",
+      "high_school": "Hopkins (MN)",
+      "birth_place": "Hopkins, MN, USA",
+      "birthdate": "2001-10-20",
+      "updated": "2025-05-27T16:02:38Z",
+      "sr_id": "sr:player:2106218",
+      "rookie_year": 2025,
+      "reference": "1642784",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2025,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1642784",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d376c9ea-38c1-4f40-8951-c57646cde59b",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "7e0201f9-3c6b-475f-b42b-c2f6819398f8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Paige_Bueckers.png"
+    },
+    {
+      "id": "8302ef7b-466b-42f0-bdae-d87d8d56154a",
+      "status": "ACT",
+      "full_name": "Myisha Hines-Allen",
+      "first_name": "Myisha",
+      "last_name": "Hines-Allen",
+      "abbr_name": "M.Hines-Allen",
+      "height": 73,
+      "weight": 200,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "7",
+      "college": "Louisville",
+      "high_school": "Montclair (NJ)",
+      "birth_place": "Montclair, NJ, USA",
+      "birthdate": "1995-05-30",
+      "updated": "2025-08-19T16:52:01Z",
+      "sr_id": "sr:player:1433885",
+      "rookie_year": 2018,
+      "reference": "1628899",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2018,
+        "round": "2",
+        "pick": "19"
+      },
+      "references": [
+        {
+          "source_id": "1628899",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "90f70a1b-473e-4e60-91aa-879b1a41704c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "9d9bc431-046f-4a1e-9c79-a38283e81281",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Myisha_Hines-allen.png"
+    },
+    {
+      "id": "88429de7-5dc4-471a-98cd-bc13b057db36",
+      "status": "ACT",
+      "full_name": "Maddy Siegrist",
+      "first_name": "Maddy",
+      "last_name": "Siegrist",
+      "abbr_name": "M.Siegrist",
+      "height": 74,
+      "weight": 175,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "20",
+      "experience": "2",
+      "college": "Villanova",
+      "high_school": "Our Lady of Lourdes (NY)",
+      "birth_place": "Poughkeepsie, NY, USA",
+      "birthdate": "2000-05-22",
+      "updated": "2025-02-15T18:54:21Z",
+      "sr_id": "sr:player:1617852",
+      "rookie_year": 2023,
+      "reference": "1641652",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2023,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "1641652",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "f249fdf0-ef55-46ac-8990-fcb899b1c595",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b31e0b56-5cdb-4fe1-b599-0233eb190fe4",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Maddy_Siegrist.png"
+    },
+    {
+      "id": "8f75589c-48bc-494f-9067-78fb1967107b",
+      "status": "ACT",
+      "full_name": "Amy Okonkwo",
+      "first_name": "Amy",
+      "last_name": "Okonkwo",
+      "abbr_name": "A.Okonkwo",
+      "height": 74,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "0",
+      "experience": "0",
+      "college": "TCU",
+      "high_school": "Etiwanda (CA)",
+      "birth_place": "Rancho Cucamonga, CA, USA",
+      "birthdate": "1996-08-26",
+      "updated": "2025-09-06T12:30:41Z",
+      "sr_id": "sr:player:1151450",
+      "reference": "1629539",
+      "references": [
+        {
+          "source_id": "1629539",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "05bed82c-97be-4935-9617-fef50c506c63",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "7e02246c-9374-465e-bc75-012345725ec2",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Amy_Okonkwo.png"
+    },
+    {
+      "id": "96790d35-becb-4099-b2e1-3912feb1881e",
+      "status": "ACT",
+      "full_name": "Luisa Geiselsoder",
+      "first_name": "Luisa",
+      "last_name": "Geiselsoder",
+      "abbr_name": "L.Geiselsoder",
+      "height": 76,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "18",
+      "experience": "0",
+      "birth_place": "Ansbach,, DEU",
+      "birthdate": "2000-02-10",
+      "updated": "2025-06-30T19:04:24Z",
+      "sr_id": "sr:player:2038285",
+      "rookie_year": 2025,
+      "reference": "1630143",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2020,
+        "round": "2",
+        "pick": "21"
+      },
+      "references": [
+        {
+          "source_id": "1630143",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "54feeb42-2833-4824-b6e2-8e7bc2b7f0e8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "7a7ed7d5-017b-4ad5-ae60-c5e5d100200d",
+          "comment": "The Wings reported on Tuesday (Sept. 2) that Geiselsoder will miss the remainder of the 2025 season due to a shoulder injury.",
+          "desc": "Shoulder",
+          "status": "Out For Season",
+          "start_date": "2025-09-02",
+          "update_date": "2025-09-02"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Luisa_Geiselsoder.png"
+    },
+    {
+      "id": "96f429a5-5b23-4edf-90b1-642d7f036118",
+      "status": "ACT",
+      "full_name": "Tyasha Harris",
+      "first_name": "Tyasha",
+      "last_name": "Harris",
+      "abbr_name": "T.Harris",
+      "height": 70,
+      "weight": 152,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "52",
+      "experience": "5",
+      "college": "South Carolina",
+      "high_school": "Heritage Christian (IN)",
+      "birth_place": "Noblesville, IN, USA",
+      "birthdate": "1998-05-01",
+      "updated": "2025-02-15T18:55:20Z",
+      "sr_id": "sr:player:2038331",
+      "rookie_year": 2020,
+      "reference": "1630112",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2020,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1630112",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8d355500-bf75-4122-9376-8f8491413a5d",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "5a48723f-36d0-41de-a3fe-8a8c389a5cf6",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "be1980e4-f5cb-492b-b32f-bc6489b9556e",
+          "comment": "The Wings reported on Tuesday (Jun. 10) that Harris will miss the rest of the 2025 WNBA season after undergoing a procedure on her left knee, according to Grant Afseth of The Next.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-06-07",
+          "update_date": "2025-06-10"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tyasha_Harris.png"
+    },
+    {
+      "id": "9b155e10-fbf5-4e3d-bc35-a9929bf1a494",
+      "status": "ACT",
+      "full_name": "JJ Quinerly",
+      "first_name": "JJ",
+      "last_name": "Quinerly",
+      "abbr_name": "J.Quinerly",
+      "height": 68,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "11",
+      "experience": "0",
+      "college": "West Virginia",
+      "high_school": "Lake Taylor (VA)",
+      "birth_place": "Norfolk, VA, USA",
+      "birthdate": "2002-10-24",
+      "updated": "2025-05-27T16:05:21Z",
+      "sr_id": "sr:player:2243379",
+      "rookie_year": 2025,
+      "reference": "1642808",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2025,
+        "round": "3",
+        "pick": "27"
+      },
+      "references": [
+        {
+          "source_id": "1642808",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2ef0380c-4ddc-4f8d-b76e-7a04ab20cb7d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "26ba84d5-c3d0-4f10-8924-9c581f2e86c8",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "150cd5f5-86d0-4e0b-adda-c98c036ae849",
+          "comment": "Quinerly will miss the rest of the season with a sprained ACL.",
+          "desc": "ACL",
+          "status": "Out For Season",
+          "start_date": "2025-08-24",
+          "update_date": "2025-08-24"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Jj_Quinerly.png"
+    },
+    {
+      "id": "b84a83b9-07b1-4115-b2ad-8cb69a96ef08",
+      "status": "ACT",
+      "full_name": "Arike Ogunbowale",
+      "first_name": "Arike",
+      "last_name": "Ogunbowale",
+      "abbr_name": "A.Ogunbowale",
+      "height": 68,
+      "weight": 165,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "6",
+      "college": "Notre Dame",
+      "high_school": "Divine Savior Holy Angels (WI)",
+      "birth_place": "Milwaukee, WI, USA",
+      "birthdate": "1997-03-02",
+      "updated": "2025-02-15T18:55:06Z",
+      "sr_id": "sr:player:1152310",
+      "rookie_year": 2019,
+      "reference": "1629481",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2019,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1629481",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "171cad9c-97ec-4e66-a0e2-255811a255d5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "f6de9061-d18d-4683-958d-a69b78135038",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "6f6f9f74-50be-4a95-b9d7-2450424e6419",
+          "comment": "The Wings reported that Ogunbowale is OUT for Thursday's (Sept. 11) regular-season finale against the Mercury and wasn't given a clear timeline for return, per freelance Mercury writer Jeff Metcalfe.",
+          "desc": "Knee",
+          "status": "Out",
+          "start_date": "2025-08-19",
+          "update_date": "2025-09-10"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Arike_Ogunbowale.png"
+    },
+    {
+      "id": "bfe1fd30-eac0-4881-a23a-902c706e9ad1",
+      "status": "ACT",
+      "full_name": "Li Yueru",
+      "first_name": "Li",
+      "last_name": "Yueru",
+      "abbr_name": "L.Yueru",
+      "height": 79,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "28",
+      "experience": "2",
+      "birth_place": "Changzhi,, CHN",
+      "birthdate": "1999-03-28",
+      "updated": "2025-06-14T15:22:31Z",
+      "sr_id": "sr:player:1726712",
+      "rookie_year": 2022,
+      "reference": "1629574",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2019,
+        "round": "3",
+        "pick": "35"
+      },
+      "references": [
+        {
+          "source_id": "1629574",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "88486e10-6370-45e1-ba0a-1e723d878034",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "90f7d305-e191-4a4c-a4d6-02d147258411",
+          "comment": "The Wings reported on Tuesday (Aug. 19) that Yueru will miss the rest of the season with an ACL sprain in her left knee, per Melissa Triebwasser of Winsidr.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-08-19",
+          "update_date": "2025-08-19"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Li_Yueru.png"
+    },
+    {
+      "id": "d851048b-0415-4678-9f9a-f49cc03ae802",
+      "status": "ACT",
+      "full_name": "Diamond Miller",
+      "first_name": "Diamond",
+      "last_name": "Miller",
+      "abbr_name": "D.Miller",
+      "height": 75,
+      "weight": 178,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "1",
+      "experience": "2",
+      "college": "Maryland",
+      "high_school": "Franklin (NJ)",
+      "birth_place": "Montclair, NJ, USA",
+      "birthdate": "2001-02-11",
+      "updated": "2025-08-03T17:10:12Z",
+      "sr_id": "sr:player:2268025",
+      "rookie_year": 2023,
+      "reference": "1641649",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2023,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1641649",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2c98e101-2682-420d-aa70-6948faa8e51e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "cdc3c287-52bc-420d-9b43-4c1895baa3d7",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Diamond_Miller.png"
+    },
+    {
+      "id": "eb63ae1d-a138-4bca-af07-b2b6e7d5ea6b",
+      "status": "ACT",
+      "full_name": "Ajae Petty",
+      "first_name": "Ajae",
+      "last_name": "Petty",
+      "abbr_name": "A.Petty",
+      "height": 74,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "0",
+      "college": "Ohio State",
+      "high_school": "Baltimore Polytechnic Institute (MD)",
+      "birth_place": "Baltimore, MD, USA",
+      "birthdate": "2002-09-04",
+      "updated": "2025-09-02T21:30:02Z",
+      "sr_id": "sr:player:2104102",
+      "reference": "1642828",
+      "references": [
+        {
+          "source_id": "1642828",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "12ce3e73-f668-48ea-87b4-618a8748c7d8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "8b2fd6ef-c96b-4bca-b55e-2a68673b603f",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Ajae_Petty.png"
+    },
+    {
+      "id": "f0d4c9a7-f4b0-4a68-ba34-1ae8fe063c25",
+      "status": "ACT",
+      "full_name": "Serena Sundell",
+      "first_name": "Serena",
+      "last_name": "Sundell",
+      "abbr_name": "S.Sundell",
+      "height": 73,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "college": "Kansas State",
+      "high_school": "Maryville (MO)",
+      "birth_place": "Maryville, MO, USA",
+      "birthdate": "2002-08-29",
+      "updated": "2025-08-27T02:37:22Z",
+      "sr_id": "sr:player:2242261",
+      "reference": "1642813",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2025,
+        "round": "3",
+        "pick": "26"
+      },
+      "references": [
+        {
+          "source_id": "1642813",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d652cd53-8c9c-4645-a668-50924ada13a5",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "1cf4cb0b-40bf-436e-b8de-f4dabd964559",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Serena_Sundell.png"
+    },
+    {
+      "id": "f5b641da-1776-448f-a48d-7f8ff303096c",
+      "status": "ACT",
+      "full_name": "Christyn Williams",
+      "first_name": "Christyn",
+      "last_name": "Williams",
+      "abbr_name": "C.Williams",
+      "height": 71,
+      "weight": 166,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "31",
+      "experience": "0",
+      "college": "UConn",
+      "high_school": "Central Arkansas Christian (AR)",
+      "birth_place": "Little Rock, AR, USA",
+      "birthdate": "2000-05-20",
+      "updated": "2025-09-03T20:14:35Z",
+      "sr_id": "sr:player:1618586",
+      "reference": "1631090",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2022,
+        "round": "2",
+        "pick": "14"
+      },
+      "references": [
+        {
+          "source_id": "1631090",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "451add11-51c4-4f00-a2e8-696217b59374",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "c80c2c24-63c4-46d4-b3fa-3f1a9e788d19",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Christyn_Williams.png"
+    }
+  ]
+}

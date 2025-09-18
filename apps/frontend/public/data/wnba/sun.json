@@ -1,0 +1,600 @@
+{
+  "id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+  "name": "Sun",
+  "market": "Connecticut",
+  "alias": "CON",
+  "founded": 1999,
+  "sr_id": "sr:team:35547",
+  "owner": "Mohegan Tribe",
+  "general_manager": "Morgan Tuck",
+  "president": "Jennifer Rizzotti",
+  "mascot": "Blaze",
+  "sponsor": "Yale New Haven Health System",
+  "championships_won": 0,
+  "conference_titles": 2,
+  "playoff_appearances": 17,
+  "reference": "1611661323",
+  "venue": {
+    "id": "7bdc8cea-2fc4-4320-b461-5659f6d08091",
+    "name": "Mohegan Sun Arena",
+    "capacity": 9323,
+    "address": "1 Mohegan Sun Boulevard",
+    "city": "Uncasville",
+    "state": "CT",
+    "zip": "06382",
+    "country": "USA",
+    "sr_id": "sr:venue:20505",
+    "location": {
+      "lat": "41.491066",
+      "lng": "-72.089518"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "092510cf-3285-48bb-b831-40ac3608ca36",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "8c8826c4-bc2c-417a-8577-c398f27eaf90",
+      "full_name": "Rachid Meziane",
+      "first_name": "Rachid",
+      "last_name": "Meziane",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "primary",
+      "hex_color": "#f05023",
+      "rgb_color": {
+        "red": 240,
+        "green": 80,
+        "blue": 35
+      }
+    },
+    {
+      "type": "secondary",
+      "hex_color": "#0a2240",
+      "rgb_color": {
+        "red": 10,
+        "green": 34,
+        "blue": 64
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "0003bc97-5b5c-48dd-b622-5b898b2ead4f",
+      "status": "ACT",
+      "full_name": "Saniya Rivers",
+      "first_name": "Saniya",
+      "last_name": "Rivers",
+      "abbr_name": "S.Rivers",
+      "height": 73,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "0",
+      "college": "NC State",
+      "high_school": "Ashley (NC)",
+      "birth_place": "Wilmington, NC, USA",
+      "birthdate": "2003-03-04",
+      "updated": "2025-05-27T17:09:25Z",
+      "sr_id": "sr:player:2242383",
+      "rookie_year": 2025,
+      "reference": "1642809",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2025,
+        "round": "1",
+        "pick": "8"
+      },
+      "references": [
+        {
+          "source_id": "1642809",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4b622149-1845-4c02-a922-961be9818116",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "31627225-a895-4586-bd22-93cb3c3353e8",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Saniya_Rivers.png"
+    },
+    {
+      "id": "1213c08d-c297-4cc2-8a9c-f2f16d5786db",
+      "status": "ACT",
+      "full_name": "Bria Hartley",
+      "first_name": "Bria",
+      "last_name": "Hartley",
+      "abbr_name": "B.Hartley",
+      "height": 69,
+      "weight": 163,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "14",
+      "experience": "9",
+      "college": "UConn",
+      "high_school": "North Babylon (NY)",
+      "birth_place": "North Babylon, NY, USA",
+      "birthdate": "1992-09-30",
+      "updated": "2025-05-15T20:10:33Z",
+      "sr_id": "sr:player:1156988",
+      "rookie_year": 2014,
+      "reference": "203829",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2014,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "203829",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "6562b0da-bb3f-4772-ae5b-fbe596dd0071",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "20086d5b-187f-4224-b283-a4c1e33c590e",
+          "comment": "The Team announced that Bria Hartley sustained a meniscus tear in her right knee during practice. After further evaluation from medical staff, Bria is expected to make a full recovery but will miss the remainder of the 2025 season.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-08-30",
+          "update_date": "2025-08-31"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Bria_Hartley.png"
+    },
+    {
+      "id": "2f1df065-07de-478f-9b37-76546561d8c2",
+      "status": "ACT",
+      "full_name": "Aaliyah Edwards",
+      "first_name": "Aaliyah",
+      "last_name": "Edwards",
+      "abbr_name": "A.Edwards",
+      "height": 75,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "1",
+      "college": "UConn",
+      "high_school": "Crestwood Prep (ON)",
+      "birth_place": "Kingston, ON, CAN",
+      "birthdate": "2002-07-09",
+      "updated": "2025-08-28T13:46:09Z",
+      "sr_id": "sr:player:2106790",
+      "rookie_year": 2024,
+      "reference": "1642290",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2024,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1642290",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8dacaafa-ed70-4bbe-8d28-a3e6daff854f",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "55274b13-b53f-4b5d-9276-3aed0079bc98",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aaliyah_Edwards.png"
+    },
+    {
+      "id": "36211055-b368-4e99-97f2-7080386db4d5",
+      "status": "ACT",
+      "full_name": "Marina Mabrey",
+      "first_name": "Marina",
+      "last_name": "Mabrey",
+      "abbr_name": "M.Mabrey",
+      "height": 71,
+      "weight": 170,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "6",
+      "college": "Notre Dame",
+      "high_school": "Manasquan (NJ)",
+      "birth_place": "Belmar, NJ, USA",
+      "birthdate": "1996-09-14",
+      "updated": "2025-03-20T15:05:47Z",
+      "sr_id": "sr:player:1149590",
+      "rookie_year": 2019,
+      "reference": "1629497",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2019,
+        "round": "2",
+        "pick": "19"
+      },
+      "references": [
+        {
+          "source_id": "1629497",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5b98440a-f357-49dd-8e32-ebfcab1ded68",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "7659e0e5-e6fd-40c8-a568-0d1c0303b8b1",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Marina_Mabrey.png"
+    },
+    {
+      "id": "4e06c8c0-311c-4c8f-a6ef-3ef78200c823",
+      "status": "ACT",
+      "full_name": "Aneesah Morrow",
+      "first_name": "Aneesah",
+      "last_name": "Morrow",
+      "abbr_name": "A.Morrow",
+      "height": 73,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "0",
+      "college": "LSU",
+      "high_school": "Simeon Career Academy (IL)",
+      "birth_place": "Chicago, IL, USA",
+      "birthdate": "2003-02-02",
+      "updated": "2025-05-27T17:11:02Z",
+      "sr_id": "sr:player:2242105",
+      "rookie_year": 2025,
+      "reference": "1642800",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2025,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1642800",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "bf44c7e2-0bb7-43c4-9bcd-32c40f161e7f",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "dac6f36b-c36b-4873-b28e-ad0b519f20cb",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aneesah_Morrow.png"
+    },
+    {
+      "id": "6cd13b60-2d3f-48d6-9474-3147233bf5e3",
+      "status": "ACT",
+      "full_name": "Lindsay Allen",
+      "first_name": "Lindsay",
+      "last_name": "Allen",
+      "abbr_name": "L.Allen",
+      "height": 68,
+      "weight": 145,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "15",
+      "experience": "7",
+      "college": "Notre Dame",
+      "high_school": "St. John's College (DC)",
+      "birth_place": "Mitchellville, MD, USA",
+      "birthdate": "1995-03-20",
+      "updated": "2025-02-15T18:12:12Z",
+      "sr_id": "sr:player:1156922",
+      "rookie_year": 2017,
+      "reference": "1628263",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2017,
+        "round": "2",
+        "pick": "14"
+      },
+      "references": [
+        {
+          "source_id": "1628263",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8ad4fdc1-bcfa-4f5b-81d4-bbc79d0b0098",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "42676419-a58c-48f9-a134-7629cfcefffd",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Lindsay_Allen.png"
+    },
+    {
+      "id": "7797aa88-28c4-4a34-bb63-1af7f8d80ec0",
+      "status": "ACT",
+      "full_name": "Tina Charles",
+      "first_name": "Tina",
+      "last_name": "Charles",
+      "abbr_name": "T.Charles",
+      "height": 76,
+      "weight": 192,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "31",
+      "experience": "13",
+      "college": "UConn",
+      "high_school": "Christ the King Regional (NY)",
+      "birth_place": "Jamaica, NY, USA",
+      "birthdate": "1988-12-05",
+      "updated": "2025-02-15T18:12:54Z",
+      "sr_id": "sr:player:1156966",
+      "rookie_year": 2010,
+      "reference": "202250",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2010,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "202250",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d6e27238-062f-4db5-9f68-857edef747a1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tina_Charles.png"
+    },
+    {
+      "id": "817be612-8b36-41b8-950f-1a675564323e",
+      "status": "ACT",
+      "full_name": "Leila Lacan",
+      "first_name": "Leila",
+      "last_name": "Lacan",
+      "abbr_name": "L.Lacan",
+      "height": 71,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "47",
+      "experience": "0",
+      "birth_place": "Rodez,, FRA",
+      "birthdate": "2004-06-02",
+      "updated": "2025-07-02T16:00:46Z",
+      "sr_id": "sr:player:2789681",
+      "rookie_year": 2025,
+      "reference": "1642303",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2024,
+        "round": "1",
+        "pick": "10"
+      },
+      "references": [
+        {
+          "source_id": "1642303",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c3bfd0a5-12f6-48b3-ac1e-89a22c523bc7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Leila_Lacan.png"
+    },
+    {
+      "id": "948bbd7b-a34a-442d-9e47-c6dda46ea10a",
+      "status": "ACT",
+      "full_name": "Haley Peters",
+      "first_name": "Haley",
+      "last_name": "Peters",
+      "abbr_name": "H.Peters",
+      "height": 75,
+      "weight": 178,
+      "position": "F-G",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "3",
+      "college": "Duke",
+      "high_school": "Peddie (NJ)",
+      "birth_place": "Summit, NJ, USA",
+      "birthdate": "1992-09-17",
+      "updated": "2025-08-05T19:27:58Z",
+      "sr_id": "sr:player:1174948",
+      "rookie_year": 2019,
+      "reference": "203863",
+      "draft": {
+        "year": 2014
+      },
+      "references": [
+        {
+          "source_id": "203863",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "bc7ff8b9-f502-4419-a148-5f708ddc15f7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Haley_Peters.png"
+    },
+    {
+      "id": "a4610f86-6674-4893-9a2a-bcbcf77d5650",
+      "status": "ACT",
+      "full_name": "Olivia Nelson-Ododa",
+      "first_name": "Olivia",
+      "last_name": "Nelson-Ododa",
+      "abbr_name": "O.Nelson-Ododa",
+      "height": 77,
+      "weight": 176,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "3",
+      "college": "UConn",
+      "high_school": "Winder-Barrow (GA)",
+      "birth_place": "Lansing, MI, USA",
+      "birthdate": "2000-08-17",
+      "updated": "2025-02-15T18:12:02Z",
+      "sr_id": "sr:player:2331791",
+      "rookie_year": 2022,
+      "reference": "1631135",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2022,
+        "round": "2",
+        "pick": "19"
+      },
+      "references": [
+        {
+          "source_id": "1631135",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "af3a62d1-5345-40a1-84e2-3b1810bbb91c",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "7e731854-d96e-4d4d-a403-0529f3e9a630",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "b7ded2af-f308-40c7-b877-0dced5745055",
+          "comment": "The Sun reported that Nelson-Ododa is OUT for Wednesday's (Sept. 10) game against the Dream, per Wilton C. Jackson of the Atlanta Journal-Constitution. ",
+          "desc": "Back",
+          "status": "Out",
+          "start_date": "2025-09-10",
+          "update_date": "2025-09-10"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Olivia_Nelson-ododa.png"
+    },
+    {
+      "id": "c3268fcb-fe2e-4f54-a363-ea3b27100c81",
+      "status": "ACT",
+      "full_name": "Mamignan Touré",
+      "first_name": "Mamignan",
+      "last_name": "Touré",
+      "abbr_name": "M.Touré",
+      "height": 72,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "28",
+      "experience": "0",
+      "birth_place": ",, FRA",
+      "birthdate": "1994-12-19",
+      "updated": "2025-07-29T14:27:50Z",
+      "sr_id": "sr:player:2449659",
+      "reference": "1642841",
+      "references": [
+        {
+          "source_id": "1642841",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "daaa5a9a-e093-40e7-a731-cc97bc04fd77",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Mamignan_Touré.png"
+    },
+    {
+      "id": "d9e2f549-d31a-42d3-95ef-30faa38265ac",
+      "status": "ACT",
+      "full_name": "Rayah Marshall",
+      "first_name": "Rayah",
+      "last_name": "Marshall",
+      "abbr_name": "R.Marshall",
+      "height": 76,
+      "position": "C-F",
+      "primary_position": "NA",
+      "jersey_number": "13",
+      "experience": "0",
+      "college": "USC",
+      "high_school": "Lynwood (CA)",
+      "birth_place": "Los Angeles, CA, USA",
+      "birthdate": "2003-11-15",
+      "updated": "2025-05-27T17:08:25Z",
+      "sr_id": "sr:player:2272775",
+      "rookie_year": 2025,
+      "reference": "1642796",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2025,
+        "round": "2",
+        "pick": "25"
+      },
+      "references": [
+        {
+          "source_id": "1642796",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fb74af14-5781-423b-b5b1-70b72180ca62",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "2676a665-4586-4704-b99b-9c6670ac3d00",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Rayah_Marshall.png"
+    }
+  ]
+}

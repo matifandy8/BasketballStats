@@ -1,0 +1,602 @@
+{
+  "id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+  "name": "Storm",
+  "market": "Seattle",
+  "alias": "SEA",
+  "founded": 2000,
+  "sr_id": "sr:team:3448",
+  "owner": "Force 10 Hoops LLC",
+  "general_manager": "Talisa Rhea",
+  "president": "Alisha Valavanis",
+  "mascot": "Doppler",
+  "sponsor": "Swedish Medical Center",
+  "championships_won": 4,
+  "championship_seasons": "2004, 2010, 2018, 2020",
+  "conference_titles": 2,
+  "retired_numbers": "10, 15",
+  "playoff_appearances": 20,
+  "reference": "1611661328",
+  "venue": {
+    "id": "1ed647ac-63f1-4dab-bca8-c192d96b33c6",
+    "name": "Climate Pledge Arena",
+    "capacity": 15354,
+    "address": "334 1st Avenue North",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98109",
+    "country": "USA",
+    "sr_id": "sr:venue:7082",
+    "location": {
+      "lat": "47.622342",
+      "lng": "-122.353788"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "d95b23c8-dee5-4142-ac4a-2b4ab05beebc",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "821da353-27d3-412f-8ca6-99bafbafe4a1",
+      "full_name": "Noelle Quinn",
+      "first_name": "Noelle",
+      "last_name": "Quinn",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "primary",
+      "hex_color": "#2c5235",
+      "rgb_color": {
+        "red": 44,
+        "green": 82,
+        "blue": 53
+      }
+    },
+    {
+      "type": "secondary",
+      "hex_color": "#fee11a",
+      "rgb_color": {
+        "red": 254,
+        "green": 225,
+        "blue": 26
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "06e3bb10-73ab-4d8e-8ad4-6850ea710b30",
+      "status": "ACT",
+      "full_name": "Brittney Sykes",
+      "first_name": "Brittney",
+      "last_name": "Sykes",
+      "abbr_name": "B.Sykes",
+      "height": 69,
+      "weight": 154,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "20",
+      "experience": "8",
+      "college": "Syracuse",
+      "high_school": "University (NJ)",
+      "birth_place": "Newark, NJ, USA",
+      "birthdate": "1994-02-07",
+      "updated": "2025-08-05T23:21:21Z",
+      "sr_id": "sr:player:1156860",
+      "rookie_year": 2017,
+      "reference": "1628279",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2017,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1628279",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "81cf79c8-0dea-4474-a379-0deeb0cd7874",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9bbd64d6-f264-4323-84dd-304e1be75668",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Brittney_Sykes.png"
+    },
+    {
+      "id": "0add970b-86eb-4149-aac2-5a03664938bc",
+      "status": "ACT",
+      "full_name": "Zia Cooke",
+      "first_name": "Zia",
+      "last_name": "Cooke",
+      "abbr_name": "Z.Cooke",
+      "height": 69,
+      "weight": 163,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "2",
+      "college": "South Carolina",
+      "high_school": "Rogers (OH)",
+      "birth_place": "Toledo, OH, USA",
+      "birthdate": "2001-01-09",
+      "updated": "2025-08-19T05:05:01Z",
+      "sr_id": "sr:player:1975193",
+      "rookie_year": 2023,
+      "reference": "1641660",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2023,
+        "round": "1",
+        "pick": "10"
+      },
+      "references": [
+        {
+          "source_id": "1641660",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "908af5b8-997d-49ea-840b-e105ee88928d",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "9cbce337-ee36-4ee5-95ba-cc2e7c01e35f",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Zia_Cooke.png"
+    },
+    {
+      "id": "100f94c5-3a62-4300-98bb-fe587522c2a6",
+      "status": "ACT",
+      "full_name": "Tiffany Mitchell",
+      "first_name": "Tiffany",
+      "last_name": "Mitchell",
+      "abbr_name": "T.Mitchell",
+      "height": 69,
+      "weight": 169,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "25",
+      "experience": "9",
+      "college": "South Carolina",
+      "high_school": "Providence Day (NC)",
+      "birth_place": "Charlotte, NC, USA",
+      "birthdate": "1994-09-23",
+      "updated": "2025-07-10T17:06:22Z",
+      "sr_id": "sr:player:1157054",
+      "rookie_year": 2016,
+      "reference": "1627676",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2016,
+        "round": "1",
+        "pick": "9"
+      },
+      "references": [
+        {
+          "source_id": "1627676",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "cc17da94-e528-475f-a289-513439846903",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "17f2c6c9-2e9f-4b37-afdb-abe66a5974d3",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Tiffany_Mitchell.png"
+    },
+    {
+      "id": "155215e8-3e76-49cd-b00a-e0d9a124ec7f",
+      "status": "ACT",
+      "full_name": "Lexie Brown",
+      "first_name": "Lexie",
+      "last_name": "Brown",
+      "abbr_name": "L.Brown",
+      "height": 69,
+      "weight": 162,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "7",
+      "college": "Duke",
+      "high_school": "North Gwinnett (GA)",
+      "birth_place": "Boston, MA, USA",
+      "birthdate": "1994-10-27",
+      "updated": "2025-02-15T17:08:32Z",
+      "sr_id": "sr:player:1151590",
+      "rookie_year": 2018,
+      "reference": "1628882",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2018,
+        "round": "1",
+        "pick": "9"
+      },
+      "references": [
+        {
+          "source_id": "1628882",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3730935a-ede0-4355-9abd-e34d3aa4c23e",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "daded4e7-3363-4e4c-90bd-135476934fb2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Lexie_Brown.png"
+    },
+    {
+      "id": "28361fd5-c935-4025-a709-2c488f53ed8c",
+      "status": "ACT",
+      "full_name": "Erica Wheeler",
+      "first_name": "Erica",
+      "last_name": "Wheeler",
+      "abbr_name": "E.Wheeler",
+      "height": 67,
+      "weight": 143,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "17",
+      "experience": "9",
+      "college": "Rutgers",
+      "high_school": "Parkway Academy (FL)",
+      "birth_place": "Miami, FL, USA",
+      "birthdate": "1991-05-02",
+      "updated": "2025-05-27T16:57:49Z",
+      "sr_id": "sr:player:1156902",
+      "rookie_year": 2015,
+      "reference": "204365",
+      "draft": {
+        "year": 2013
+      },
+      "references": [
+        {
+          "source_id": "204365",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "765f7566-c32c-447b-a3db-4a7b754b0b30",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Erica_Wheeler.png"
+    },
+    {
+      "id": "29a8b1d2-db3b-4035-a635-9d559bc51a8a",
+      "status": "ACT",
+      "full_name": "Katie Lou Samuelson",
+      "first_name": "Katie Lou",
+      "last_name": "Samuelson",
+      "abbr_name": "K.Samuelson",
+      "height": 75,
+      "weight": 163,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "33",
+      "experience": "5",
+      "college": "UConn",
+      "high_school": "Mater Dei (CA)",
+      "birth_place": "Fullerton, CA, USA",
+      "birthdate": "1997-06-13",
+      "updated": "2025-05-09T03:00:34Z",
+      "sr_id": "sr:player:1152414",
+      "rookie_year": 2019,
+      "reference": "1629478",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2019,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1629478",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "bca7379e-7edc-419f-9d0d-856c4b827ad7",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "39f874ed-0bfa-41f5-abfd-8c984acf9aa3",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "cf4084de-cc9d-43ff-91af-9380e2659e22",
+          "comment": "The Storm reported that Samuelson suffered a torn ACL in her right knee in Thursday's (May 1) practice, which will likely result in being ruled out for the season, per Meghan L. Hall of USA Today.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-05-03",
+          "update_date": "2025-05-03"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Katie_Lou_Samuelson.png"
+    },
+    {
+      "id": "55cd7443-47da-4835-a946-d4a2338750ba",
+      "status": "ACT",
+      "full_name": "Gabby Williams",
+      "first_name": "Gabby",
+      "last_name": "Williams",
+      "abbr_name": "G.Williams",
+      "height": 71,
+      "weight": 172,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "6",
+      "college": "UConn",
+      "high_school": "Reed (NV)",
+      "birth_place": "Sparks, NV, USA",
+      "birthdate": "1996-09-09",
+      "updated": "2025-02-15T17:32:17Z",
+      "sr_id": "sr:player:1153254",
+      "rookie_year": 2018,
+      "reference": "1628931",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2018,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1628931",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "cc9cf34e-8981-4a15-bf00-feef4ea1ae73",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "3be033de-2490-49e3-a7c8-cf5356b61eea",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Gabby_Williams.png"
+    },
+    {
+      "id": "5a356464-d9e8-454a-9d3b-7c8825266243",
+      "status": "ACT",
+      "full_name": "MacKenzie Holmes",
+      "first_name": "MacKenzie",
+      "last_name": "Holmes",
+      "abbr_name": "M.Holmes",
+      "height": 75,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "54",
+      "experience": "0",
+      "college": "Indiana",
+      "high_school": "Gorham (ME)",
+      "birth_place": "Gorham, ME, USA",
+      "birthdate": "2000-11-01",
+      "updated": "2025-06-16T22:33:43Z",
+      "sr_id": "sr:player:2268015",
+      "reference": "1642307",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2024,
+        "round": "3",
+        "pick": "26"
+      },
+      "references": [
+        {
+          "source_id": "1642307",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7e7385e5-8461-486d-8a1f-9a77a96d0b57",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "6274bc2a-ab2a-492f-900a-de2b8d2e3a30",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Mackenzie_Holmes.png"
+    },
+    {
+      "id": "7c9b7ef1-edd2-4f69-a627-f321d662365d",
+      "status": "ACT",
+      "full_name": "Skylar Diggins",
+      "first_name": "Skylar",
+      "last_name": "Diggins",
+      "abbr_name": "S.Diggins",
+      "height": 69,
+      "weight": 140,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "4",
+      "experience": "10",
+      "college": "Notre Dame",
+      "high_school": "Washington (IN)",
+      "birth_place": "South Bend, IN, USA",
+      "birthdate": "1990-08-02",
+      "updated": "2025-04-25T23:32:40Z",
+      "sr_id": "sr:player:1156838",
+      "rookie_year": 2013,
+      "reference": "203400",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2013,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "203400",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "80c28e04-691e-459d-a1f6-a481f0bcabbb",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Skylar_Diggins.png"
+    },
+    {
+      "id": "7ff950fc-3872-4d7c-84ce-db06ebe42123",
+      "status": "ACT",
+      "full_name": "Ezi Magbegor",
+      "first_name": "Ezi",
+      "last_name": "Magbegor",
+      "abbr_name": "E.Magbegor",
+      "height": 76,
+      "weight": 181,
+      "position": "F-C",
+      "primary_position": "NA",
+      "jersey_number": "13",
+      "experience": "5",
+      "birth_place": "Wellington,, NZL",
+      "birthdate": "1999-08-13",
+      "updated": "2025-02-15T17:32:41Z",
+      "sr_id": "sr:player:1619462",
+      "rookie_year": 2020,
+      "reference": "1629496",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2019,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "1629496",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "2eddcac9-b507-4049-a9b1-6a1a9cfcb145",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Ezi_Magbegor.png"
+    },
+    {
+      "id": "a27cebb1-287d-49b0-b023-179e2c37843f",
+      "status": "ACT",
+      "full_name": "Dominique Malonga",
+      "first_name": "Dominique",
+      "last_name": "Malonga",
+      "abbr_name": "D.Malonga",
+      "height": 78,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "14",
+      "experience": "0",
+      "birth_place": ",, FRA",
+      "birthdate": "2005-11-16",
+      "updated": "2025-05-27T16:56:55Z",
+      "sr_id": "sr:player:2971710",
+      "rookie_year": 2025,
+      "reference": "1642798",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2025,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1642798",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "72f9c3a1-f209-4ca7-9920-91523dc72831",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dominique_Malonga.png"
+    },
+    {
+      "id": "e49da6d1-dd65-44f9-9a5f-d60010d8c384",
+      "status": "ACT",
+      "full_name": "Nneka Ogwumike",
+      "first_name": "Nneka",
+      "last_name": "Ogwumike",
+      "abbr_name": "N.Ogwumike",
+      "height": 74,
+      "weight": 190,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "13",
+      "college": "Stanford",
+      "high_school": "Cy-Fair (TX)",
+      "birth_place": "Tomball, TX, USA",
+      "birthdate": "1990-07-02",
+      "updated": "2025-02-15T17:31:54Z",
+      "sr_id": "sr:player:1156928",
+      "rookie_year": 2012,
+      "reference": "203014",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2012,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "203014",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a09f1083-e278-439f-8471-51c3c063c6d5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Nneka_Ogwumike.png"
+    }
+  ]
+}

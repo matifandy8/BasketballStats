@@ -1,0 +1,830 @@
+{
+  "id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+  "name": "Fever",
+  "market": "Indiana",
+  "alias": "IND",
+  "founded": 2000,
+  "sr_id": "sr:team:3452",
+  "owner": "Herb Simon",
+  "general_manager": "Amber Cox",
+  "president": "Kelly Krauskopf",
+  "mascot": "Freddy Fever",
+  "sponsor": "Salesforce",
+  "championships_won": 1,
+  "championship_seasons": "2012",
+  "conference_titles": 3,
+  "retired_numbers": "24",
+  "playoff_appearances": 15,
+  "reference": "1611661325",
+  "venue": {
+    "id": "24bb478e-eb31-5f8a-8c8d-07f513169ec1",
+    "name": "Gainbridge Fieldhouse",
+    "capacity": 20000,
+    "address": "125 S. Pennsylvania Street",
+    "city": "Indianapolis",
+    "state": "IN",
+    "zip": "46204",
+    "country": "USA",
+    "sr_id": "sr:venue:6924",
+    "location": {
+      "lat": "39.763975",
+      "lng": "-86.15542"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "092510cf-3285-48bb-b831-40ac3608ca36",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "6fe2b3cc-2aeb-4929-a3b3-b68e84f9b9bf",
+      "full_name": "Stephanie White",
+      "first_name": "Stephanie",
+      "last_name": "White",
+      "position": "Head Coach",
+      "experience": "2"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#e03a3e",
+      "rgb_color": {
+        "red": 224,
+        "green": 58,
+        "blue": 62
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#002d62",
+      "rgb_color": {
+        "red": 0,
+        "green": 45,
+        "blue": 98
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "2d21f497-2795-432d-b254-5ae9fbbd0096",
+      "status": "ACT",
+      "full_name": "Caitlin Clark",
+      "first_name": "Caitlin",
+      "last_name": "Clark",
+      "abbr_name": "C.Clark",
+      "height": 72,
+      "weight": 157,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "1",
+      "college": "Iowa",
+      "high_school": "Dowling Catholic (IA)",
+      "birth_place": "West Des Moines, IA, USA",
+      "birthdate": "2002-01-22",
+      "updated": "2025-05-06T19:31:57Z",
+      "sr_id": "sr:player:2104684",
+      "rookie_year": 2024,
+      "reference": "1642286",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2024,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1642286",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ea798cfb-8765-4246-a428-3d451c9a935d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "d8f2f455-ee4e-4061-8d1d-bd04131bd9a4",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "3e3e83bc-d097-4e15-8f37-f90d883f5dec",
+          "comment": "Caitlin Clark announced Thursday (Sept. 4) via her personal X account that she will not return to play this season after going down with a groin injury.",
+          "desc": "Groin",
+          "status": "Out For Season",
+          "start_date": "2025-07-17",
+          "update_date": "2025-09-04"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Caitlin_Clark.png"
+    },
+    {
+      "id": "3bca6f7c-3910-4f27-9372-db6ccbc64157",
+      "status": "ACT",
+      "full_name": "Sydney Colson",
+      "first_name": "Sydney",
+      "last_name": "Colson",
+      "abbr_name": "S.Colson",
+      "height": 68,
+      "weight": 137,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "51",
+      "experience": "10",
+      "college": "Texas A&M",
+      "high_school": "Westside (TX)",
+      "birth_place": "Houston, TX, USA",
+      "birthdate": "1989-08-06",
+      "updated": "2025-05-06T19:32:16Z",
+      "sr_id": "sr:player:1157080",
+      "rookie_year": 2011,
+      "reference": "202641",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2011,
+        "round": "2",
+        "pick": "16"
+      },
+      "references": [
+        {
+          "source_id": "202641",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "358a3bdb-19e4-4bbd-96ab-a4f142ac4f52",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "0fe2b26b-dff7-4af1-be75-3b48b0c64600",
+          "comment": "The Fever announced that Colson tore her left ACL and will miss the remainder of the season.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-08-08",
+          "update_date": "2025-08-08"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sydney_Colson.png"
+    },
+    {
+      "id": "433a5b0e-6b9c-448c-a8f7-33c5849bb6f1",
+      "status": "ACT",
+      "full_name": "Brianna Turner",
+      "first_name": "Brianna",
+      "last_name": "Turner",
+      "abbr_name": "B.Turner",
+      "height": 75,
+      "weight": 175,
+      "position": "F-C",
+      "primary_position": "NA",
+      "jersey_number": "11",
+      "experience": "6",
+      "college": "Notre Dame",
+      "high_school": "Manvel (TX)",
+      "birth_place": "Pearland, TX, USA",
+      "birthdate": "1996-07-05",
+      "updated": "2025-05-06T19:30:50Z",
+      "sr_id": "sr:player:1155300",
+      "rookie_year": 2019,
+      "reference": "1629488",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2019,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1629488",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "8be0c4b8-f6ae-4b6a-baa3-85169ad4232e",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "db48334f-a562-4ac8-95e3-89e4dbda611c",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Brianna_Turner.png"
+    },
+    {
+      "id": "46479ac7-5745-40d2-abc8-7c660ea759e4",
+      "status": "ACT",
+      "full_name": "Natasha Howard",
+      "first_name": "Natasha",
+      "last_name": "Howard",
+      "abbr_name": "N.Howard",
+      "height": 75,
+      "weight": 172,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "6",
+      "experience": "11",
+      "college": "Florida State",
+      "high_school": "Waite (OH)",
+      "birth_place": "Toledo, OH, USA",
+      "birthdate": "1991-09-02",
+      "updated": "2025-05-06T19:30:00Z",
+      "sr_id": "sr:player:1157018",
+      "rookie_year": 2014,
+      "reference": "203827",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2014,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "203827",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "e316a802-5101-4987-9c9a-11c92cd05626",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Natasha_Howard.png"
+    },
+    {
+      "id": "50eab91c-a616-4b89-832e-e17ac12708a8",
+      "status": "ACT",
+      "full_name": "Odyssey Sims",
+      "first_name": "Odyssey",
+      "last_name": "Sims",
+      "abbr_name": "O.Sims",
+      "height": 68,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "1",
+      "experience": "11",
+      "college": "Baylor",
+      "high_school": "MacArthur (TX)",
+      "birth_place": "Irving, TX, USA",
+      "birthdate": "1992-07-13",
+      "updated": "2025-08-24T16:09:30Z",
+      "sr_id": "sr:player:1156916",
+      "rookie_year": 2014,
+      "reference": "203824",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2014,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "203824",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "db2e2ddb-a271-42ae-8f05-3ecb90443696",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Odyssey_Sims.png"
+    },
+    {
+      "id": "5219e39b-9341-4dfb-a43c-793723729162",
+      "status": "ACT",
+      "full_name": "Kelsey Mitchell",
+      "first_name": "Kelsey",
+      "last_name": "Mitchell",
+      "abbr_name": "K.Mitchell",
+      "height": 68,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "0",
+      "experience": "7",
+      "college": "Ohio State",
+      "high_school": "Princeton (OH)",
+      "birth_place": "Cincinnati, OH, USA",
+      "birthdate": "1995-11-12",
+      "updated": "2025-05-27T17:00:43Z",
+      "sr_id": "sr:player:1155614",
+      "rookie_year": 2018,
+      "reference": "1628909",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2018,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1628909",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0c9169ee-3c3e-499f-be38-202d54f75de2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "4da7a901-51a8-41c1-9e53-29ea2c73dc86",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kelsey_Mitchell.png"
+    },
+    {
+      "id": "612e128c-c5b3-4ce0-a131-ce4d10f4f7ff",
+      "status": "ACT",
+      "full_name": "Aari McDonald",
+      "first_name": "Aari",
+      "last_name": "McDonald",
+      "abbr_name": "A.McDonald",
+      "height": 66,
+      "weight": 141,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "4",
+      "college": "Arizona",
+      "high_school": "Brookside Christian (CA)",
+      "birth_place": "Fresno, CA, USA",
+      "birthdate": "1998-08-20",
+      "updated": "2025-06-25T22:51:26Z",
+      "sr_id": "sr:player:1148502",
+      "rookie_year": 2021,
+      "reference": "1630462",
+      "draft": {
+        "team_id": "5d70a9af-8c2b-4aec-9e68-9acc6ddb93e4",
+        "year": 2021,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "1630462",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "aeb911e4-a438-47c9-bd5e-06398bf82d2d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "b538f984-df39-48b7-ae28-d12750073b7a",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "702602e5-3eef-4ae3-bac6-23e1d41fc99b",
+          "comment": "The Fever announced that McDonald broke a bone in her right foot and will miss the remainder of the season.",
+          "desc": "Foot",
+          "status": "Out For Season",
+          "start_date": "2025-08-08",
+          "update_date": "2025-08-08"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aari_Mcdonald.png"
+    },
+    {
+      "id": "63dde7d8-0af8-4adb-a556-01e0d2395420",
+      "status": "ACT",
+      "full_name": "Aliyah Boston",
+      "first_name": "Aliyah",
+      "last_name": "Boston",
+      "abbr_name": "A.Boston",
+      "height": 77,
+      "weight": 220,
+      "position": "C-F",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "2",
+      "college": "South Carolina",
+      "high_school": "Worcester Academy (MA)",
+      "birth_place": "St. Thomas,, VIR",
+      "birthdate": "2001-12-11",
+      "updated": "2025-08-19T16:52:55Z",
+      "sr_id": "sr:player:2272927",
+      "rookie_year": 2023,
+      "reference": "1641648",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2023,
+        "round": "1",
+        "pick": "1"
+      },
+      "references": [
+        {
+          "source_id": "1641648",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3c86f769-443a-4399-8200-ac9b2d706786",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "e6b58ae4-55a0-4178-8ea2-2033d5d564c3",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aliyah_Boston.png"
+    },
+    {
+      "id": "68030481-1c6c-48fa-b24a-f68e0fc2bc87",
+      "status": "ACT",
+      "full_name": "Bree Hall",
+      "first_name": "Bree",
+      "last_name": "Hall",
+      "abbr_name": "B.Hall",
+      "height": 73,
+      "weight": 161,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "3",
+      "experience": "0",
+      "college": "South Carolina",
+      "high_school": "Wayne (OH)",
+      "birth_place": "Dayton, OH, USA",
+      "birthdate": "2003-06-28",
+      "updated": "2025-09-04T19:02:16Z",
+      "sr_id": "sr:player:2272935",
+      "reference": "1642788",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2025,
+        "round": "2",
+        "pick": "20"
+      },
+      "references": [
+        {
+          "source_id": "1642788",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c5510fe8-cd7e-49b3-b325-8ca2459c8302",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "5ba11248-07a5-4f3a-85e6-dbdba325b313",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Bree_Hall.png"
+    },
+    {
+      "id": "6f20a6c1-04f6-4be2-b7a2-511ebe314525",
+      "status": "ACT",
+      "full_name": "Sophie Cunningham",
+      "first_name": "Sophie",
+      "last_name": "Cunningham",
+      "abbr_name": "S.Cunningham",
+      "height": 73,
+      "weight": 165,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "6",
+      "college": "Missouri",
+      "high_school": "Rock Bridge (MO)",
+      "birth_place": "Columbia, MO, USA",
+      "birthdate": "1996-08-16",
+      "updated": "2025-05-06T19:30:17Z",
+      "sr_id": "sr:player:1152420",
+      "rookie_year": 2019,
+      "reference": "1629482",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2019,
+        "round": "2",
+        "pick": "13"
+      },
+      "references": [
+        {
+          "source_id": "1629482",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4a51f978-5678-4f34-b8c3-af6192a7b488",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "a825bbbb-21ce-4aca-ad44-25ed7a98ee65",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "5067dc1d-366c-42dc-a3e7-18faff323ac3",
+          "comment": "The Fever reported on Tuesday (Aug. 19) that Cunningham will miss the rest of the season due to a torn MCL in her right knee, per Chloe Peterson of The Indianapolis Star.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-08-19",
+          "update_date": "2025-08-19"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sophie_Cunningham.png"
+    },
+    {
+      "id": "782a5034-334b-48e8-a7a8-931296f40c06",
+      "status": "ACT",
+      "full_name": "Shey Peddy",
+      "first_name": "Shey",
+      "last_name": "Peddy",
+      "abbr_name": "S.Peddy",
+      "height": 67,
+      "weight": 145,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "5",
+      "college": "Temple",
+      "high_school": "Melrose (MA)",
+      "birth_place": "Roxbury, MA, USA",
+      "birthdate": "1988-10-28",
+      "updated": "2025-08-26T19:56:51Z",
+      "sr_id": "sr:player:1721710",
+      "rookie_year": 2019,
+      "reference": "203035",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2012,
+        "round": "2",
+        "pick": "23"
+      },
+      "references": [
+        {
+          "source_id": "203035",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "29865085-f750-4724-bc6e-6fccec24ff64",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Shey_Peddy.png"
+    },
+    {
+      "id": "849170da-3a64-47f6-a912-818a3feceb4c",
+      "status": "ACT",
+      "full_name": "Aerial Powers",
+      "first_name": "Aerial",
+      "last_name": "Powers",
+      "abbr_name": "A.Powers",
+      "height": 71,
+      "weight": 170,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "23",
+      "experience": "9",
+      "college": "Michigan State",
+      "high_school": "Detroit Country Day (MI)",
+      "birth_place": "Detroit, MI, USA",
+      "birthdate": "1994-01-17",
+      "updated": "2025-08-23T14:28:30Z",
+      "sr_id": "sr:player:1156862",
+      "rookie_year": 2016,
+      "reference": "1627672",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2016,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "1627672",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a437eeec-0719-4945-8b79-d03d8b515c15",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "614d28f8-a1ac-4aa5-8910-2a144f559b57",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Aerial_Powers.png"
+    },
+    {
+      "id": "a590b4bd-b844-4f0e-9062-9792b8086df2",
+      "status": "ACT",
+      "full_name": "Chloe Bibby",
+      "first_name": "Chloe",
+      "last_name": "Bibby",
+      "abbr_name": "C.Bibby",
+      "height": 74,
+      "weight": 194,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "55",
+      "experience": "0",
+      "college": "Maryland",
+      "high_school": "Rowville (AUS)",
+      "birth_place": "Horsham,, AUS",
+      "birthdate": "1998-06-15",
+      "updated": "2025-08-01T16:30:36Z",
+      "sr_id": "sr:player:1369814",
+      "reference": "1631064",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1631064",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7ad31c78-4066-4e0e-85ce-56d3195a1cef",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "33edfb93-8380-4ac1-8fb1-572bd78b6ab1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "231aba63-0ecc-4bc5-8f84-7030e2ec53dc",
+          "comment": "The Fever said on Thursday (Sep. 4) that Bibby will miss the remainder of the 2025 season due to a left knee injury.",
+          "desc": "Knee",
+          "status": "Out For Season",
+          "start_date": "2025-09-04",
+          "update_date": "2025-09-04"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Chloe_Bibby.png"
+    },
+    {
+      "id": "dc34b957-189f-4eb4-b7fc-0da87e271275",
+      "status": "ACT",
+      "full_name": "Lexie Hull",
+      "first_name": "Lexie",
+      "last_name": "Hull",
+      "abbr_name": "L.Hull",
+      "height": 73,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "3",
+      "college": "Stanford",
+      "high_school": "Central Valley (CA)",
+      "birth_place": "Spokane, WA, USA",
+      "birthdate": "1999-09-13",
+      "updated": "2025-02-15T12:44:02Z",
+      "sr_id": "sr:player:1617882",
+      "rookie_year": 2022,
+      "reference": "1631086",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2022,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1631086",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "d8c48a96-7a26-45bc-b068-a5198d5cbc3e",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "13f130bc-8147-4384-91bb-00856457727f",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Lexie_Hull.png"
+    },
+    {
+      "id": "e040354c-4d44-405c-a7ac-d4d2cf9062e8",
+      "status": "ACT",
+      "full_name": "Damiris Dantas",
+      "first_name": "Damiris",
+      "last_name": "Dantas",
+      "abbr_name": "D.Dantas",
+      "height": 76,
+      "weight": 214,
+      "position": "C-F",
+      "primary_position": "NA",
+      "jersey_number": "12",
+      "experience": "9",
+      "birth_place": "Ferraz de Vasconcelos,, BRA",
+      "birthdate": "1992-11-17",
+      "updated": "2025-07-09T20:29:30Z",
+      "sr_id": "sr:player:1157060",
+      "rookie_year": 2014,
+      "reference": "203024",
+      "draft": {
+        "team_id": "6f017f37-be96-4bdc-b6d3-0a0429c72e89",
+        "year": 2012,
+        "round": "1",
+        "pick": "12"
+      },
+      "references": [
+        {
+          "source_id": "203024",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0f0a3aa2-bffb-49a8-84d4-1fad46ce147b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Damiris_Dantas.png"
+    },
+    {
+      "id": "ee3aab89-0042-4d41-b870-06a924e38c3e",
+      "status": "ACT",
+      "full_name": "Makayla Timpson",
+      "first_name": "Makayla",
+      "last_name": "Timpson",
+      "abbr_name": "M.Timpson",
+      "height": 74,
+      "weight": 173,
+      "position": "F-C",
+      "primary_position": "NA",
+      "jersey_number": "21",
+      "experience": "0",
+      "college": "Florida State",
+      "high_school": "Early County (GA)",
+      "birth_place": "Edison, GA, USA",
+      "birthdate": "2002-09-20",
+      "updated": "2025-05-27T17:01:33Z",
+      "sr_id": "sr:player:2244019",
+      "rookie_year": 2025,
+      "reference": "1642815",
+      "draft": {
+        "team_id": "f073a15f-0486-4179-b0a3-dfd0294eb595",
+        "year": 2025,
+        "round": "2",
+        "pick": "19"
+      },
+      "references": [
+        {
+          "source_id": "1642815",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3281ffd1-4c13-4b39-9a08-f03434d37527",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "83c93410-19f0-4350-b4b1-346e85b1024b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Makayla_Timpson.png"
+    }
+  ]
+}

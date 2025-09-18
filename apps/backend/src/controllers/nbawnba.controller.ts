@@ -109,7 +109,12 @@ export async function teamIdCtrl(req: Request, res: Response, next: NextFunction
     const playersWithImages = data.players.map((player: Player) => {
       if (!player?.full_name) return player;
 
-      const nameParts = player.full_name.split(' ');
+      const nameParts = player.full_name.trim().split(/\s+/);
+
+      const lastPart = nameParts[nameParts.length - 1];
+      if (lastPart.endsWith('.')) {
+        nameParts[nameParts.length - 1] = lastPart.slice(0, -1);
+      }
       const formattedName = nameParts
         .map((part: string) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
         .join('_');

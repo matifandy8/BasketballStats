@@ -1,0 +1,632 @@
+{
+  "id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+  "name": "Sky",
+  "market": "Chicago",
+  "alias": "CHI",
+  "founded": 2005,
+  "sr_id": "sr:team:35546",
+  "owner": "Michael J. Alter, Nadia Rawlinson, Harvey Alter, and John Rogers",
+  "general_manager": "Jeff Pagliocca",
+  "president": "Adam Fox",
+  "mascot": "Skye The Lioness",
+  "sponsor": "UChicago Medicine",
+  "championships_won": 1,
+  "championship_seasons": "2021",
+  "conference_titles": 1,
+  "retired_numbers": "3, 14",
+  "playoff_appearances": 9,
+  "reference": "1611661329",
+  "venue": {
+    "id": "fa4fcd34-792a-4cdc-a7df-a41e9d54a2b0",
+    "name": "Wintrust Arena",
+    "capacity": 10387,
+    "address": "200 East Cermak Road",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60616",
+    "country": "USA",
+    "sr_id": "sr:venue:22190",
+    "location": {
+      "lat": "41.853611",
+      "lng": "-87.621389"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "092510cf-3285-48bb-b831-40ac3608ca36",
+    "name": "EASTERN CONFERENCE",
+    "alias": "EASTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "1180f8be-b847-4a0f-bb89-f71463fc2816",
+      "full_name": "Tyler Marsh",
+      "first_name": "Tyler",
+      "last_name": "Marsh",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#ffd520",
+      "rgb_color": {
+        "red": 255,
+        "green": 213,
+        "blue": 32
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#5091cd",
+      "rgb_color": {
+        "red": 80,
+        "green": 145,
+        "blue": 205
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "2861dedc-439b-4fbb-bc50-1873b498dc52",
+      "status": "ACT",
+      "full_name": "Ariel Atkins",
+      "first_name": "Ariel",
+      "last_name": "Atkins",
+      "abbr_name": "A.Atkins",
+      "height": 70,
+      "weight": 167,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "7",
+      "experience": "7",
+      "college": "Texas",
+      "high_school": "Duncanville (TX)",
+      "birth_place": "Dallas, TX, USA",
+      "birthdate": "1996-07-30",
+      "updated": "2025-02-26T02:08:51Z",
+      "sr_id": "sr:player:1151490",
+      "rookie_year": 2018,
+      "reference": "1628878",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2018,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1628878",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "beb695ee-8d0d-405e-9aec-c8d1254df22b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "df67a669-df84-4085-b462-603ba248b7f8",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "0c3a83cf-39de-4d7e-8a7c-3c58f64422cb",
+          "comment": "The Sky reported that Atkins is OUT for Thursday's (Sept. 11) game against the Liberty, per Christian Conway of Winsidr.",
+          "desc": "Back",
+          "status": "Out",
+          "start_date": "2025-09-10",
+          "update_date": "2025-09-10"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Ariel_Atkins.png"
+    },
+    {
+      "id": "30d46238-d1eb-476d-a526-4e2203474106",
+      "status": "ACT",
+      "full_name": "Rachel Banham",
+      "first_name": "Rachel",
+      "last_name": "Banham",
+      "abbr_name": "R.Banham",
+      "height": 70,
+      "weight": 181,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "9",
+      "college": "Minnesota",
+      "high_school": "Lakeville North (MN)",
+      "birth_place": "Lakeville, MN, USA",
+      "birthdate": "1993-07-15",
+      "updated": "2025-02-15T16:46:45Z",
+      "sr_id": "sr:player:1157048",
+      "rookie_year": 2016,
+      "reference": "1627671",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2016,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "1627671",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "4748edf4-013f-4712-9165-01114ad87773",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "80fed9dc-8eec-4987-9b81-b3931c24bd78",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Rachel_Banham.png"
+    },
+    {
+      "id": "426e2359-cd19-458b-8591-874c47a7f6ec",
+      "status": "ACT",
+      "full_name": "Hailey Van Lith",
+      "first_name": "Hailey",
+      "last_name": "Van Lith",
+      "abbr_name": "H.Van Lith",
+      "height": 69,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "0",
+      "college": "TCU",
+      "high_school": "Cashmere (WA)",
+      "birth_place": "Wenatchee, WA, USA",
+      "birthdate": "2001-09-09",
+      "updated": "2025-05-27T17:26:10Z",
+      "sr_id": "sr:player:2102120",
+      "rookie_year": 2025,
+      "reference": "1642817",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2025,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1642817",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "ba70d9b9-e1e5-4a41-b435-16250a8488b2",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "baaeef37-2e29-4862-8129-7d246d32b063",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "974e0d37-719f-41a2-b46d-fc1ba3aacefc",
+          "comment": "The Sky reported that Van Lith is OUT for Thursday's (Sept. 11) game against the Liberty, per Christian Conway of Winsidr.",
+          "desc": "Ankle",
+          "status": "Out",
+          "start_date": "2025-09-10",
+          "update_date": "2025-09-10"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Hailey_Van_Lith.png"
+    },
+    {
+      "id": "4d70f9da-972d-4903-b9e5-d4d4aaa0a91d",
+      "status": "ACT",
+      "full_name": "Michaela Onyenwere",
+      "first_name": "Michaela",
+      "last_name": "Onyenwere",
+      "abbr_name": "M.Onyenwere",
+      "height": 72,
+      "weight": 178,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "12",
+      "experience": "4",
+      "college": "UCLA",
+      "high_school": "Grandview (CO)",
+      "birth_place": "Aurora, CO, USA",
+      "birthdate": "1999-08-10",
+      "updated": "2025-02-15T16:46:21Z",
+      "sr_id": "sr:player:2147060",
+      "rookie_year": 2021,
+      "reference": "1630446",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2021,
+        "round": "1",
+        "pick": "6"
+      },
+      "references": [
+        {
+          "source_id": "1630446",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "168c799c-361c-41aa-9080-6ffc02d469c4",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "27a54fa8-fadd-439f-bf82-9c5f8df067f8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Michaela_Onyenwere.png"
+    },
+    {
+      "id": "4fcc19db-1149-4081-9313-e3c2b24ae170",
+      "status": "ACT",
+      "full_name": "Angel Reese",
+      "first_name": "Angel",
+      "last_name": "Reese",
+      "abbr_name": "A.Reese",
+      "height": 75,
+      "weight": 165,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "5",
+      "experience": "1",
+      "college": "LSU",
+      "high_school": "Saint Frances Academy (MD)",
+      "birth_place": "Baltimore, MD, USA",
+      "birthdate": "2002-05-06",
+      "updated": "2025-09-07T01:08:31Z",
+      "sr_id": "sr:player:2102350",
+      "rookie_year": 2024,
+      "reference": "1642291",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2024,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1642291",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "378d2875-ab49-497c-bc3b-a5ad39fe55da",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "56b22e9e-1b80-4127-ae41-22422d06c51f",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Angel_Reese.png"
+    },
+    {
+      "id": "5370ad82-3e6c-41f8-8d43-e6a41e317b91",
+      "status": "ACT",
+      "full_name": "Maddy Westbeld",
+      "first_name": "Maddy",
+      "last_name": "Westbeld",
+      "abbr_name": "M.Westbeld",
+      "height": 75,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "21",
+      "experience": "0",
+      "college": "Notre Dame",
+      "high_school": "Fairmont (OH)",
+      "birth_place": "Kettering, OH, USA",
+      "birthdate": "2002-02-10",
+      "updated": "2025-08-19T16:51:17Z",
+      "sr_id": "sr:player:2105460",
+      "rookie_year": 2025,
+      "reference": "1642818",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2025,
+        "round": "2",
+        "pick": "16"
+      },
+      "references": [
+        {
+          "source_id": "1642818",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "674900c0-1e10-4d05-a662-ef0e9d056353",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "8cdaf0da-92f9-4409-b951-886008a7671b",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Maddy_Westbeld.png"
+    },
+    {
+      "id": "9848c81d-efc7-4927-bc18-98fd0e50c761",
+      "status": "ACT",
+      "full_name": "Rebecca Allen",
+      "first_name": "Rebecca",
+      "last_name": "Allen",
+      "abbr_name": "R.Allen",
+      "height": 74,
+      "weight": 162,
+      "position": "F-G",
+      "primary_position": "NA",
+      "jersey_number": "9",
+      "experience": "9",
+      "high_school": "Carey Grammar (AUS)",
+      "birth_place": "Wangretta,, AUS",
+      "birthdate": "1992-11-06",
+      "updated": "2025-05-27T17:31:55Z",
+      "sr_id": "sr:player:1156896",
+      "rookie_year": 2015,
+      "reference": "204296",
+      "draft": {
+        "year": 2009
+      },
+      "references": [
+        {
+          "source_id": "204296",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "02b8dc69-31e9-4af5-bb71-e430a6a682b1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Rebecca_Allen.png"
+    },
+    {
+      "id": "a1372723-dc8c-45c9-a160-890f80b985ab",
+      "status": "ACT",
+      "full_name": "Kamilla Cardoso",
+      "first_name": "Kamilla",
+      "last_name": "Cardoso",
+      "abbr_name": "K.Cardoso",
+      "height": 79,
+      "weight": 215,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "1",
+      "college": "South Carolina",
+      "high_school": "Hamilton Heights Christian Academy (TN)",
+      "birth_place": "Montes Claros,, BRA",
+      "birthdate": "2001-04-30",
+      "updated": "2025-07-09T18:49:39Z",
+      "sr_id": "sr:player:2106396",
+      "rookie_year": 2024,
+      "reference": "1642289",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2024,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "1642289",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3c98a555-6291-4070-a1c4-3f9b38090bc7",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "98290713-1840-4fb3-b6ee-5659ef62e587",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kamilla_Cardoso.png"
+    },
+    {
+      "id": "b61f397f-0cb5-49db-9e88-f91991757203",
+      "status": "ACT",
+      "full_name": "Courtney Vandersloot",
+      "first_name": "Courtney",
+      "last_name": "Vandersloot",
+      "abbr_name": "C.Vandersloot",
+      "height": 68,
+      "weight": 137,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "22",
+      "experience": "14",
+      "college": "Gonzaga",
+      "high_school": "Kentwood (WA)",
+      "birth_place": "Kent, WA, USA",
+      "birthdate": "1989-02-08",
+      "updated": "2025-02-15T16:46:29Z",
+      "sr_id": "sr:player:1156798",
+      "rookie_year": 2011,
+      "reference": "202664",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2011,
+        "round": "1",
+        "pick": "3"
+      },
+      "references": [
+        {
+          "source_id": "202664",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "1b6526f8-a159-46c4-a4eb-4ffef1e556b5",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "injuries": [
+        {
+          "id": "ba3b46ff-d588-4f36-bbce-f0ab39af029d",
+          "comment": "The Sky reported on Tuesday (Jun. 24) that Vandersloot underwent successful surgery on a torn right anterior cruciate ligament. She remains out for the rest of the 2025 season.",
+          "desc": "ACL",
+          "status": "Out For Season",
+          "start_date": "2025-06-07",
+          "update_date": "2025-06-24"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Courtney_Vandersloot.png"
+    },
+    {
+      "id": "b6d346c5-f9dc-4217-96a3-5e0f2a732b04",
+      "status": "ACT",
+      "full_name": "Sevgi Uzun",
+      "first_name": "Sevgi",
+      "last_name": "Uzun",
+      "abbr_name": "S.Uzun",
+      "height": 70,
+      "weight": 141,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "10",
+      "experience": "1",
+      "birth_place": "Fatih,, TUR",
+      "birthdate": "1997-11-25",
+      "updated": "2025-08-04T19:11:45Z",
+      "sr_id": "sr:player:2325513",
+      "rookie_year": 2024,
+      "reference": "1642244",
+      "draft": {
+        "year": 2013
+      },
+      "references": [
+        {
+          "source_id": "1642244",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "35cf419c-9d92-4678-8022-51fb8722bd7f",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sevgi_Uzun.png"
+    },
+    {
+      "id": "c0d2573a-fc13-405d-bb9e-cc37552806ed",
+      "status": "ACT",
+      "full_name": "Kia Nurse",
+      "first_name": "Kia",
+      "last_name": "Nurse",
+      "abbr_name": "K.Nurse",
+      "height": 72,
+      "weight": 181,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "11",
+      "experience": "6",
+      "college": "UConn",
+      "high_school": "St. Thomas More (CAN)",
+      "birth_place": "Hamilton, ON, CAN",
+      "birthdate": "1996-02-22",
+      "updated": "2025-03-21T01:51:42Z",
+      "sr_id": "sr:player:1155250",
+      "rookie_year": 2018,
+      "reference": "1628915",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2018,
+        "round": "1",
+        "pick": "10"
+      },
+      "references": [
+        {
+          "source_id": "1628915",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c6473561-e136-463b-9190-1fb9161063e2",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "c27a5a72-0bb2-4004-b470-ea72f59df1b8",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kia_Nurse.png"
+    },
+    {
+      "id": "c8672dba-0deb-4cf1-8304-82365865edaa",
+      "status": "ACT",
+      "full_name": "Elizabeth Williams",
+      "first_name": "Elizabeth",
+      "last_name": "Williams",
+      "abbr_name": "E.Williams",
+      "height": 75,
+      "weight": 200,
+      "position": "C-F",
+      "primary_position": "NA",
+      "jersey_number": "1",
+      "experience": "10",
+      "college": "Duke",
+      "high_school": "Princess Anne (VA)",
+      "birth_place": "Virginia Beach, VA, USA",
+      "birthdate": "1993-06-23",
+      "updated": "2025-02-15T16:45:17Z",
+      "sr_id": "sr:player:1156840",
+      "rookie_year": 2015,
+      "reference": "204322",
+      "draft": {
+        "team_id": "a015b02d-845c-40c1-8ef4-844984f47e4d",
+        "year": 2015,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "204322",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3cfbffb5-7517-445e-be89-a3ccc51a7029",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "d7381a51-489e-404e-aced-9d1ffc7fed85",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Elizabeth_Williams.png"
+    }
+  ]
+}

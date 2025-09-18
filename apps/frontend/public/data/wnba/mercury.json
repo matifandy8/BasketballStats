@@ -1,0 +1,591 @@
+{
+  "id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+  "name": "Mercury",
+  "market": "Phoenix",
+  "alias": "PHX",
+  "founded": 1997,
+  "sr_id": "sr:team:3444",
+  "owner": "Mat Ishbia",
+  "general_manager": "Nick U'Ren",
+  "president": "Vince Kozar",
+  "mascot": "Scorch",
+  "sponsor": "Fry's Food and Drug",
+  "championships_won": 3,
+  "championship_seasons": "2007, 2009, 2014",
+  "conference_titles": 4,
+  "retired_numbers": "7, 13, 22, 32",
+  "playoff_appearances": 19,
+  "reference": "1611661317",
+  "venue": {
+    "id": "1d2e59b2-2479-5f84-a6a7-e82f65dd8442",
+    "name": "PHX Arena",
+    "capacity": 18422,
+    "address": "201 E. Jefferson Street",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "85004",
+    "country": "USA",
+    "sr_id": "sr:venue:6938",
+    "location": {
+      "lat": "33.445833",
+      "lng": "-112.071389"
+    }
+  },
+  "league": {
+    "id": "59c24590-0adb-4b3d-80a8-10450f83f4a1",
+    "name": "WNBA",
+    "alias": "WNBA"
+  },
+  "conference": {
+    "id": "d95b23c8-dee5-4142-ac4a-2b4ab05beebc",
+    "name": "WESTERN CONFERENCE",
+    "alias": "WESTERN-W"
+  },
+  "coaches": [
+    {
+      "id": "cc48044c-8f00-498e-b33a-d07801c0f8b0",
+      "full_name": "Nate Tibbetts",
+      "first_name": "Nate",
+      "last_name": "Tibbetts",
+      "position": "Head Coach"
+    }
+  ],
+  "team_colors": [
+    {
+      "type": "secondary",
+      "hex_color": "#e56020",
+      "rgb_color": {
+        "red": 229,
+        "green": 96,
+        "blue": 32
+      }
+    },
+    {
+      "type": "primary",
+      "hex_color": "#1d1160",
+      "rgb_color": {
+        "red": 29,
+        "green": 17,
+        "blue": 96
+      }
+    }
+  ],
+  "players": [
+    {
+      "id": "357ea521-789b-4d23-a7ad-f4f539c0d824",
+      "status": "ACT",
+      "full_name": "Satou Sabally",
+      "first_name": "Satou",
+      "last_name": "Sabally",
+      "abbr_name": "S.Sabally",
+      "height": 76,
+      "weight": 175,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "0",
+      "experience": "5",
+      "college": "Oregon",
+      "high_school": "Rotteck (DEU)",
+      "birth_place": "Berlin,, DEU",
+      "birthdate": "1998-04-25",
+      "updated": "2025-02-15T13:35:34Z",
+      "sr_id": "sr:player:2038329",
+      "rookie_year": 2020,
+      "reference": "1630149",
+      "draft": {
+        "team_id": "5f0b5caf-708b-4300-92f2-53b51d83ec06",
+        "year": 2020,
+        "round": "1",
+        "pick": "2"
+      },
+      "references": [
+        {
+          "source_id": "1630149",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "665e1706-72c4-47bf-bfd8-167f43d9f513",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "57f2c33a-84f7-4ef1-b80b-109fddab76af",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Satou_Sabally.png"
+    },
+    {
+      "id": "4e1ddd46-60f7-4307-a548-508c1ed6c136",
+      "status": "ACT",
+      "full_name": "Natasha Mack",
+      "first_name": "Natasha",
+      "last_name": "Mack",
+      "abbr_name": "N.Mack",
+      "height": 76,
+      "weight": 182,
+      "position": "F-C",
+      "primary_position": "NA",
+      "jersey_number": "4",
+      "experience": "2",
+      "college": "Oklahoma State",
+      "high_school": "Lufkin (TX)",
+      "birth_place": "Lufkin, TX, USA",
+      "birthdate": "1997-11-03",
+      "updated": "2025-08-19T16:55:17Z",
+      "sr_id": "sr:player:1149530",
+      "rookie_year": 2021,
+      "reference": "1630442",
+      "draft": {
+        "team_id": "3c409388-ab73-4c7f-953d-3a71062240f6",
+        "year": 2021,
+        "round": "2",
+        "pick": "16"
+      },
+      "references": [
+        {
+          "source_id": "1630442",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "41a92513-7153-4e0c-bc4e-089cc5dba6aa",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "01a31dcf-31a8-421c-ad49-cf58e392da40",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Natasha_Mack.png"
+    },
+    {
+      "id": "6109be30-a0ce-4c7a-8eef-20fc8ceac1f2",
+      "status": "ACT",
+      "full_name": "Kalani Brown",
+      "first_name": "Kalani",
+      "last_name": "Brown",
+      "abbr_name": "K.Brown",
+      "height": 79,
+      "weight": 245,
+      "position": "C",
+      "primary_position": "NA",
+      "jersey_number": "21",
+      "experience": "5",
+      "college": "Baylor",
+      "high_school": "Salmen (LA)",
+      "birth_place": "Slidell, LA, USA",
+      "birthdate": "1997-03-21",
+      "updated": "2025-02-15T13:42:40Z",
+      "sr_id": "sr:player:1155734",
+      "rookie_year": 2019,
+      "reference": "1629480",
+      "draft": {
+        "team_id": "0a5ad38d-2fe3-43ba-894b-1ba3d5042ea9",
+        "year": 2019,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1629480",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "447515b0-a37a-450b-a737-bc1811d631f0",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "a91151d0-4c4b-43ee-b2cd-c969880e79f1",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kalani_Brown.png"
+    },
+    {
+      "id": "6434f048-1c61-4a79-a990-73f51f46245e",
+      "status": "ACT",
+      "full_name": "Kahleah Copper",
+      "first_name": "Kahleah",
+      "last_name": "Copper",
+      "abbr_name": "K.Copper",
+      "height": 73,
+      "weight": 165,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "2",
+      "experience": "9",
+      "college": "Rutgers",
+      "high_school": "Prep Charter (PA)",
+      "birth_place": "Philadelphia, PA, USA",
+      "birthdate": "1994-08-28",
+      "updated": "2025-02-15T13:39:40Z",
+      "sr_id": "sr:player:1156986",
+      "rookie_year": 2016,
+      "reference": "1627674",
+      "draft": {
+        "team_id": "5c0d47fe-8539-47b0-9f36-d0b3609ca89b",
+        "year": 2016,
+        "round": "1",
+        "pick": "7"
+      },
+      "references": [
+        {
+          "source_id": "1627674",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "3734430b-e53a-45f6-b715-a1bf11828a4a",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "999513be-37d7-4024-8d10-87b338cba0d4",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kahleah_Copper.png"
+    },
+    {
+      "id": "750b9212-d2d0-414d-929e-1c658dc13999",
+      "status": "ACT",
+      "full_name": "Kiana Williams",
+      "first_name": "Kiana",
+      "last_name": "Williams",
+      "abbr_name": "K.Williams",
+      "height": 67,
+      "weight": 140,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "23",
+      "experience": "2",
+      "college": "Stanford",
+      "high_school": "Karen Wagner (TX)",
+      "birth_place": "San Antonio, TX, USA",
+      "birthdate": "1999-04-09",
+      "updated": "2025-08-14T00:23:38Z",
+      "sr_id": "sr:player:2147092",
+      "rookie_year": 2021,
+      "reference": "1630461",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2021,
+        "round": "2",
+        "pick": "18"
+      },
+      "references": [
+        {
+          "source_id": "1630461",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "fadaa353-e674-4eef-abe5-2927fdb0a68a",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "669b161c-05b0-4095-909a-aa2ee79f1340",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kiana_Williams.png"
+    },
+    {
+      "id": "82661dca-4121-4f2c-9918-7960ae068b83",
+      "status": "ACT",
+      "full_name": "Sami Whitcomb",
+      "first_name": "Sami",
+      "last_name": "Whitcomb",
+      "abbr_name": "S.Whitcomb",
+      "height": 70,
+      "weight": 149,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "33",
+      "experience": "8",
+      "college": "Washington",
+      "high_school": "Buena (CA)",
+      "birth_place": "Ventura, CA, USA",
+      "birthdate": "1988-07-20",
+      "updated": "2025-02-15T13:44:56Z",
+      "sr_id": "sr:player:1156900",
+      "rookie_year": 2017,
+      "reference": "1628244",
+      "draft": {
+        "year": 2010
+      },
+      "references": [
+        {
+          "source_id": "1628244",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "c6bf303b-b3bc-4bc1-ba52-a066c76fade8",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Sami_Whitcomb.png"
+    },
+    {
+      "id": "87a32879-a19b-4603-86ce-1c8b0e4484ad",
+      "status": "ACT",
+      "full_name": "Alyssa Thomas",
+      "first_name": "Alyssa",
+      "last_name": "Thomas",
+      "abbr_name": "A.Thomas",
+      "height": 74,
+      "weight": 203,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "25",
+      "experience": "11",
+      "college": "Maryland",
+      "high_school": "Central Daupin (PA)",
+      "birth_place": "Harrisburg, PA, USA",
+      "birthdate": "1992-04-12",
+      "updated": "2025-02-15T13:43:18Z",
+      "sr_id": "sr:player:1156854",
+      "rookie_year": 2014,
+      "reference": "203826",
+      "draft": {
+        "team_id": "08ed8274-e29f-4248-bc2e-83cc8ed18d75",
+        "year": 2014,
+        "round": "1",
+        "pick": "4"
+      },
+      "references": [
+        {
+          "source_id": "203826",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "7948937c-31ad-45c4-8d0d-c57b8699b258",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Alyssa_Thomas.png"
+    },
+    {
+      "id": "9158b902-df40-43d9-8692-327b6f6721dd",
+      "status": "ACT",
+      "full_name": "Monique Akoa Makani",
+      "first_name": "Monique",
+      "last_name": "Akoa Makani",
+      "abbr_name": "M.Akoa Makani",
+      "height": 71,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "8",
+      "experience": "0",
+      "birth_place": ",, CMR",
+      "birthdate": "2001-02-04",
+      "updated": "2025-05-27T16:50:14Z",
+      "sr_id": "sr:player:2957979",
+      "rookie_year": 2025,
+      "reference": "1642777",
+      "draft": {
+        "year": 2018
+      },
+      "references": [
+        {
+          "source_id": "1642777",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "dba94c99-7ed3-4436-923d-f0c766499bbe",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Monique_Akoa_Makani.png"
+    },
+    {
+      "id": "a49cab4d-22e2-43d3-939a-722f54eeb27f",
+      "status": "ACT",
+      "full_name": "Kathryn Westbeld",
+      "first_name": "Kathryn",
+      "last_name": "Westbeld",
+      "abbr_name": "K.Westbeld",
+      "height": 75,
+      "position": "F",
+      "primary_position": "NA",
+      "jersey_number": "24",
+      "experience": "0",
+      "college": "Notre Dame",
+      "high_school": "Fairmont (OH)",
+      "birth_place": "Kettering, OH, USA",
+      "birthdate": "1996-01-29",
+      "updated": "2025-05-27T16:53:31Z",
+      "sr_id": "sr:player:1152270",
+      "rookie_year": 2025,
+      "reference": "1628957",
+      "draft": {
+        "year": 2018
+      },
+      "references": [
+        {
+          "source_id": "1628957",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "26796e8b-9f71-4303-9c48-a1ca27fd6a3c",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "8471abce-d092-4bf7-9fbc-f5a84f0adedb",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kathryn_Westbeld.png"
+    },
+    {
+      "id": "b262f7f1-1c78-406c-86aa-7ad15122931f",
+      "status": "ACT",
+      "full_name": "DeWanna Bonner",
+      "first_name": "DeWanna",
+      "last_name": "Bonner",
+      "abbr_name": "D.Bonner",
+      "height": 76,
+      "weight": 140,
+      "position": "G-F",
+      "primary_position": "NA",
+      "jersey_number": "14",
+      "experience": "15",
+      "college": "Auburn",
+      "high_school": "Fairfield (AL)",
+      "birth_place": "Fairfield, AL, USA",
+      "birthdate": "1987-08-21",
+      "updated": "2025-07-12T01:49:17Z",
+      "sr_id": "sr:player:1411931",
+      "rookie_year": 2009,
+      "reference": "201886",
+      "draft": {
+        "team_id": "0699edf3-5993-4182-b9b4-ec935cbd4fcc",
+        "year": 2009,
+        "round": "1",
+        "pick": "5"
+      },
+      "references": [
+        {
+          "source_id": "201886",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "0ced556f-7519-4b9b-8fd8-07e5dcea8bbc",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Dewanna_Bonner.png"
+    },
+    {
+      "id": "bd29dd23-a76b-4392-8208-5eaac25861e0",
+      "status": "ACT",
+      "full_name": "Kitija Laksa",
+      "first_name": "Kitija",
+      "last_name": "Laksa",
+      "abbr_name": "K.Laksa",
+      "height": 73,
+      "weight": 155,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "9",
+      "experience": "0",
+      "college": "South Florida",
+      "high_school": "Rigas Francu Licejs (LVA)",
+      "birth_place": "Riga,, LVA",
+      "birthdate": "1996-05-21",
+      "updated": "2025-08-19T16:54:43Z",
+      "sr_id": "sr:player:1156282",
+      "rookie_year": 2025,
+      "reference": "1629490",
+      "draft": {
+        "team_id": "d6a012ed-84aa-48d3-8265-2d3f3ff2199a",
+        "year": 2020,
+        "round": "1",
+        "pick": "11"
+      },
+      "references": [
+        {
+          "source_id": "1629490",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "a3742731-aa1a-4c57-9258-f262b9b8210d",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        },
+        {
+          "source_id": "3b779e24-d7bf-4e76-b414-97dd75dd27e1",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Kitija_Laksa.png"
+    },
+    {
+      "id": "c474334a-58d4-4b80-85b7-f1947fa79bac",
+      "status": "ACT",
+      "full_name": "Alexa Held",
+      "first_name": "Alexa",
+      "last_name": "Held",
+      "abbr_name": "A.Held",
+      "height": 70,
+      "weight": 150,
+      "position": "G",
+      "primary_position": "NA",
+      "jersey_number": "1",
+      "experience": "0",
+      "college": "DePaul",
+      "high_school": "Cooper (KY)",
+      "birth_place": "Burlington, KY, USA",
+      "birthdate": "1999-12-28",
+      "updated": "2025-05-27T16:49:02Z",
+      "sr_id": "sr:player:1618074",
+      "rookie_year": 2025,
+      "reference": "1631118",
+      "draft": {
+        "year": 2022
+      },
+      "references": [
+        {
+          "source_id": "1631118",
+          "scope": "WNBA",
+          "id_type": "external"
+        },
+        {
+          "source_id": "5ebf9070-aef5-4960-8c61-67288fbe429a",
+          "scope": "NCAAW",
+          "id_type": "league_profile"
+        },
+        {
+          "source_id": "99ccee92-19c9-492b-ae6b-73e28c0318f7",
+          "scope": "basketball",
+          "id_type": "sport_profile"
+        }
+      ],
+      "image_url": "https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot/Alexa_Held.png"
+    }
+  ]
+}
