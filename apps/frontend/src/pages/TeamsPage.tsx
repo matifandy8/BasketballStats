@@ -54,7 +54,7 @@ const TeamsPage: React.FC<TeamsPageProps> = ({ leagueName }) => {
             return (
               <Link
                 key={team.id}
-                to={`/${leagueName}/teams/${team.name.toLowerCase()}`}
+                to={`/${leagueName}/teams/${team.name.toLowerCase().split(' ').join('-')}`}
                 className="flex flex-col items-center bg-black rounded-2xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-4"
               >
                 <img
