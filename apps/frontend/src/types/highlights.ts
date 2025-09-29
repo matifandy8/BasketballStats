@@ -40,5 +40,5 @@ export interface HighlightsCarouselProps {
   title: string;
   isLoading?: boolean;
   error?: Error | null;
-  onRetry?: (options?: { [key: string]: unknown }) => Promise<void>;
+  onRetry?: () => void;
 }

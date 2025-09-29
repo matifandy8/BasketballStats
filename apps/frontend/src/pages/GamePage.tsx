@@ -33,10 +33,14 @@ interface EventDescription {
   };
 }
 
-const GamePlayByPlay: React.FC<GamePlayByPlayProps> = () => {
-  const { league, gameId } = useParams<{ gameId: string; league: string }>();
-  console.log(gameId, league);
-  const { data: playByPlay, isLoading, isError } = usePlayByPlay(gameId, league as 'nba' | 'wnba');
+const GamePlayByPlay: React.FC<GamePlayByPlayProps> = ({ leagueName }) => {
+  const { gameId } = useParams<{ gameId: string; league: string }>();
+  console.log(gameId, leagueName);
+  const {
+    data: playByPlay,
+    isLoading,
+    isError,
+  } = usePlayByPlay(gameId, leagueName as 'nba' | 'wnba');
 
   if (isLoading) {
     return (
