@@ -10,7 +10,13 @@ const fetchGamesByLeague = async (league: 'nba' | 'wnba') => {
     throw new Error(`Something went wrong while loading team data. Please try again later.`);
   }
 
-  return response.json();
+  const data = await response.json();
+  if (data.length === 0) {
+    console.log('No games found');
+    return [];
+  }
+
+  return data;
 };
 
 export const useTodaysGames = () => {
@@ -21,10 +27,11 @@ export const useTodaysGames = () => {
     data: nbaGames = [],
     isLoading: isLoadingNba,
     error: errorNba,
+    refetch: refetchNba,
   } = useQuery({
     queryKey: ['games', 'nba'],
     queryFn: () => fetchGamesByLeague('nba'),
-    staleTime: 5 * 60 * 1000,
+    staleTime: 5 * 60 * 1000, // 5 minutes
     refetchOnWindowFocus: false,
   });
 
@@ -33,10 +40,11 @@ export const useTodaysGames = () => {
     isLoading: isLoadingWnba,
     error: errorWnba,
     isFetching: isFetchingWnba,
+    refetch: refetchWnba,
   } = useQuery({
     queryKey: ['games', 'wnba'],
     queryFn: () => fetchGamesByLeague('wnba'),
-    staleTime: 5 * 60 * 1000,
+    staleTime: 5 * 60 * 1000, // 5 minutes
     refetchOnWindowFocus: false,
     enabled: activeLeague === 'wnba' || !!queryClient.getQueryData(['games', 'wnba']),
   });
@@ -46,13 +54,15 @@ export const useTodaysGames = () => {
       queryClient.prefetchQuery({
         queryKey: ['games', 'wnba'],
         queryFn: () => fetchGamesByLeague('wnba'),
-        staleTime: 5 * 60 * 1000,
+        staleTime: 5 * 60 * 1000, // 5 minutes
       });
     }
   };
 
   const isLoading = activeLeague === 'nba' ? isLoadingNba : isLoadingWnba || isFetchingWnba;
   const error = errorNba || errorWnba;
+
+  const refetch = activeLeague === 'nba' ? refetchNba : refetchWnba;
 
   return {
     nbaGames,
@@ -62,5 +72,6 @@ export const useTodaysGames = () => {
     activeLeague,
     setActiveLeague,
     prefetchWnbaGames,
+    refetch,
   };
 };

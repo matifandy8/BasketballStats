@@ -11,6 +11,7 @@ import TeamsPage from './pages/TeamsPage';
 import TeamPage from './pages/TeamPage';
 import StandingPage from './pages/StandingPage';
 import NewsPage from './pages/NewsPage';
+import GamePage from './pages/GamePage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/wnba" element={<WnbaPage />} />
           <Route path="/nba/teams" element={<TeamsPage leagueName="nba" />} />
           <Route path="/wnba/teams" element={<TeamsPage leagueName="wnba" />} />
+          <Route path=":league/games/:gameId" element={<GamePage />} />
           <Route path="/nba/teams/:teamId" element={<TeamPage league="nba" />} />
           <Route path="/wnba/teams/:teamId" element={<TeamPage league="wnba" />} />
           <Route path="/standings" element={<StandingPage />} />

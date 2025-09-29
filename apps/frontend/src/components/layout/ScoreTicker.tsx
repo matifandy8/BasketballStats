@@ -1,6 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useTodaysGames } from '../../services/gameService';
 import type { Game } from '../../types/games';
+import { Link } from 'react-router-dom';
 
 const formatGameTime = (dateString: string) => {
   const date = new Date(dateString);
@@ -27,6 +28,7 @@ const ScoreTicker: React.FC = () => {
     activeLeague,
     setActiveLeague,
     prefetchWnbaGames,
+    refetch,
   } = useTodaysGames();
 
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -65,9 +67,16 @@ const ScoreTicker: React.FC = () => {
 
   if (error) {
     return (
-      <div className="bg-black text-white py-4 text-center min-h-[120px] flex items-center justify-center">
-        <div>
-          Error loading {activeLeague.toUpperCase()} games: {error.message}
+      <div className="bg-black text-white py-4 min-h-[180px] flex items-center justify-center">
+        <div className="text-center">
+          <p className="text-red-400 mb-2">Failed to load {activeLeague.toUpperCase()} games</p>
+          <p className="text-stone-400 text-sm mb-4">Please check your connection and try again</p>
+          <button
+            onClick={() => refetch()}
+            className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors"
+          >
+            {isLoading ? 'Loading...' : 'Retry'}
+          </button>
         </div>
       </div>
     );
@@ -127,37 +136,39 @@ const ScoreTicker: React.FC = () => {
           ) : currentGames.length > 0 ? (
             <div className="flex space-x-2 px-2">
               {currentGames.map((game: Game) => (
-                <div
-                  key={game.id}
-                  className="flex-shrink-0 bg-stone-800 p-3 rounded-lg w-[180px] hover:bg-stone-700 transition-colors"
-                >
-                  <div className="text-xs bg-stone-700 px-2 py-1 rounded-full text-center mb-2 truncate">
-                    {getGameStatus(game)}
-                  </div>
-                  <div className="text-xs text-stone-200 text-center mb-1 truncate">
-                    {game.venue.city}
-                  </div>
-                  <div className="flex justify-between items-center">
-                    <div className="text-center flex-1 min-w-0">
-                      <div className="font-druk font-medium truncate">{game.away.alias}</div>
-                      <div className="text-lg font-bold">{game.away_points ?? '-'}</div>
+                <Link to={`/${activeLeague}/games/${game.id}`}>
+                  <div
+                    key={game.id}
+                    className="flex-shrink-0 bg-stone-800 p-3 rounded-lg w-[180px] hover:bg-stone-700 transition-colors"
+                  >
+                    <div className="text-xs bg-stone-700 px-2 py-1 rounded-full text-center mb-2 truncate">
+                      {getGameStatus(game)}
                     </div>
-                    <div className="text-stone-400 mx-1">@</div>
-                    <div className="text-center flex-1 min-w-0">
-                      <div className="font-druk font-medium truncate">{game.home.alias}</div>
-                      <div className="text-lg font-bold">{game.home_points ?? '-'}</div>
+                    <div className="text-xs text-stone-200 text-center mb-1 truncate">
+                      {game.venue.city}
                     </div>
+                    <div className="flex justify-between items-center">
+                      <div className="text-center flex-1 min-w-0">
+                        <div className="font-druk font-medium truncate">{game.away.alias}</div>
+                        <div className="text-lg font-bold">{game.away_points ?? '-'}</div>
+                      </div>
+                      <div className="text-stone-400 mx-1">@</div>
+                      <div className="text-center flex-1 min-w-0">
+                        <div className="font-druk font-medium truncate">{game.home.alias}</div>
+                        <div className="text-lg font-bold">{game.home_points ?? '-'}</div>
+                      </div>
+                    </div>
+                    {game.broadcasts && game.broadcasts.length > 0 && (
+                      <div
+                        className="text-xs text-stone-300 text-center mt-1 truncate"
+                        title={game.broadcasts.map(b => b.network).join(', ')}
+                      >
+                        {game.broadcasts[0].network}
+                        {game.broadcasts.length > 1 ? ' +' + (game.broadcasts.length - 1) : ''}
+                      </div>
+                    )}
                   </div>
-                  {game.broadcasts && game.broadcasts.length > 0 && (
-                    <div
-                      className="text-xs text-stone-300 text-center mt-1 truncate"
-                      title={game.broadcasts.map(b => b.network).join(', ')}
-                    >
-                      {game.broadcasts[0].network}
-                      {game.broadcasts.length > 1 ? ' +' + (game.broadcasts.length - 1) : ''}
-                    </div>
-                  )}
-                </div>
+                </Link>
               ))}
             </div>
           ) : (

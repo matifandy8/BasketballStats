@@ -8,6 +8,7 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({
   title,
   isLoading,
   error,
+  onRetry,
 }) => {
   const [showVideo, setShowVideo] = useState<boolean>(false);
   const [currentVideo, setCurrentVideo] = useState<string>('');
@@ -103,7 +104,19 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({
       <section className="highlights-section">
         <div className="highlights-container">
           <h2 className="highlights-title">{title}</h2>
-          <p className="error-message">Error fetching highlights</p>
+          <div className="text-center py-8">
+            <p className="text-red-400 mb-2">Failed to load highlights</p>
+            <p className="text-stone-400 text-sm mb-4">
+              Please check your connection and try again
+            </p>
+            <button
+              onClick={onRetry}
+              className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors text-white"
+              disabled={isLoading}
+            >
+              {isLoading ? 'Loading...' : 'Retry'}
+            </button>
+          </div>
         </div>
       </section>
     );
