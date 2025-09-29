@@ -52,28 +52,44 @@ export async function scheduleByDateCtrl(req: Request, res: Response, next: Next
   }
 }
 
+function getTodayDate() {
+  const now = new Date();
+  return new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().split('T')[0];
+}
+
 export async function scheduleTodayCtrl(req: Request, res: Response, next: NextFunction) {
   try {
     const league = req.params.league as League;
-    const today = new Date().toISOString().slice(0, 10);
+    const today = getTodayDate();
+
     const games = await getDailySchedule(league, today);
 
-    const etag = crypto.createHash('md5').update(JSON.stringify(games)).digest('hex');
-
-    if (req.headers['if-none-match'] === etag) {
-      return res.status(304).end();
-    }
-
     res.set({
-      'Cache-Control': 'public, max-age=300, s-maxage=600, stale-while-revalidate=300',
-      ETag: etag,
-      Vary: 'Accept-Encoding',
-      'CDN-Cache-Control': 'public, max-age=600, s-maxage=900, stale-while-revalidate=300',
-      'Last-Modified': new Date().toUTCString(),
+      'Cache-Control': 'public, max-age=3600', // Cache for 1 hour
+      'Surrogate-Control': 'max-age=3600',
+      'X-League': league,
     });
 
-    res.json(games);
+    res.json({
+      success: true,
+      date: today,
+      league: league,
+      games: games || [],
+      timestamp: new Date().toISOString(),
+    });
   } catch (err) {
+    console.error('Error in scheduleTodayCtrl:', err);
+
+    res.status(500).json({
+      success: false,
+      error: {
+        message: 'Internal server error',
+        ...(process.env.NODE_ENV === 'development' && {
+          debug: err instanceof Error ? err.message : 'Unknown error',
+        }),
+      },
+    });
+
     next(err);
   }
 }
@@ -142,7 +158,7 @@ export const apiInfoCtrl = (req: Request, res: Response) => {
       nba: {
         schedule: '/api/nba/schedule/:year/:type',
         gamePBP: '/api/nba/game/:gameId/pbp',
-        scheduleByDate: '/api/nba/schedule/date/:date',
+        scheduleByDate: '/api/nba/schedule/:date',
         today: '/api/nba/schedule/today',
         teams: '/api/nba/teams',
         standings: '/api/nba/standings/:year/:type',
@@ -150,7 +166,7 @@ export const apiInfoCtrl = (req: Request, res: Response) => {
       wnba: {
         schedule: '/api/wnba/schedule/:year/:type',
         gamePBP: '/api/wnba/game/:gameId/pbp',
-        scheduleByDate: '/api/wnba/schedule/date/:date',
+        scheduleByDate: '/api/wnba/schedule/:date',
         today: '/api/wnba/schedule/today',
         teams: '/api/wnba/teams',
         standings: '/api/wnba/standings/:year/:type',

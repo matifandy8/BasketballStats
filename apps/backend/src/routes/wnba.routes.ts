@@ -4,7 +4,6 @@ import {
   pbpCtrl,
   scheduleByDateCtrl,
   scheduleTodayCtrl,
-  teamsCtrl,
   teamIdCtrl,
   standingsCtrl,
   newsCtrl,
@@ -46,37 +45,28 @@ router.get(
 );
 
 router.get(
-  '/schedule/date/:date',
-  apiLimiter(60),
-  validate(DateSchema, 'params'),
-  cache(req => `schedule:date:wnba:${req.params.date}`, 300),
-  (req, res, next) => {
-    req.params.league = 'wnba';
-    next();
-  },
-  scheduleByDateCtrl
-);
-
-router.get(
   '/schedule/today',
   apiLimiter(60),
-  cache('schedule:today:wnba', 300),
   (req, res, next) => {
+    const today = new Date().toISOString().split('T')[0];
     req.params.league = 'wnba';
+    req.params.date = today;
     next();
   },
+  cache(req => `schedule:wnba:${req.params.date}`, 3600),
   scheduleTodayCtrl
 );
 
 router.get(
-  '/teams',
+  '/schedule/:date',
   apiLimiter(60),
-  cache('teams:wnba', 86400),
+  validate(DateSchema, 'params'),
   (req, res, next) => {
     req.params.league = 'wnba';
     next();
   },
-  teamsCtrl
+  cache(req => `schedule:wnba:${req.params.date}`, 1600),
+  scheduleByDateCtrl
 );
 
 router.get(

@@ -46,26 +46,28 @@ router.get(
 );
 
 router.get(
-  '/schedule/date/:date',
+  '/schedule/today',
+  apiLimiter(60),
+  (req, res, next) => {
+    const today = new Date().toISOString().split('T')[0];
+    req.params.league = 'nba';
+    req.params.date = today;
+    next();
+  },
+  cache(req => `schedule:nba:${req.params.date}`, 3600),
+  scheduleTodayCtrl
+);
+
+router.get(
+  '/schedule/:date',
   apiLimiter(60),
   validate(DateSchema, 'params'),
-  cache(req => `schedule:date:nba:${req.params.date}`, 300),
+  cache(req => `schedule:nba:${req.params.date}`, 300),
   (req, res, next) => {
     req.params.league = 'nba';
     next();
   },
   scheduleByDateCtrl
-);
-
-router.get(
-  '/schedule/today',
-  apiLimiter(60),
-  cache('schedule:today:nba', 300),
-  (req, res, next) => {
-    req.params.league = 'nba';
-    next();
-  },
-  scheduleTodayCtrl
 );
 
 router.get(

@@ -99,13 +99,7 @@ export const defaultPrecacheConfigs: CacheConfig[] = [
   {
     key: 'schedule:today:nba',
     url: 'https://basketballstats-1.onrender.com/api/nba/schedule/today',
-    ttl: 86400, // 24 hours
-    refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
-  },
-  {
-    key: 'schedule:today:wnba',
-    url: 'https://basketballstats-1.onrender.com/api/wnba/schedule/today',
-    ttl: 86400, // 24 hours
-    refreshInterval: 12 * 60 * 60 * 1000, // 12 hours
+    ttl: 3600, // 1 hora
+    refreshInterval: 30 * 60 * 1000, // Actualizar cada 30 minutos
   },
 ];
