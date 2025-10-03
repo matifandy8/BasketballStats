@@ -12,7 +12,6 @@ const fetchGamesByLeague = async (league: 'nba' | 'wnba') => {
 
   const data = await response.json();
   if (data.length === 0) {
-    console.log('No games found');
     return [];
   }
 

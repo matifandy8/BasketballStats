@@ -15,6 +15,7 @@ import {
 } from '../types/sportradar.types';
 import { Standing } from '../types/standing';
 import { YouTubeVideo } from '../types/highlights';
+import logger from '../utils/logger';
 
 export async function getSchedule(
   league: League,
@@ -77,7 +78,7 @@ export async function getStandings(
     const data = await httpFetch<Standing>(league, endpoint);
     return data;
   } catch (error) {
-    console.error('Error in getStandings:', error);
+    logger.error('Error in getStandings:', error);
     throw error;
   }
 }

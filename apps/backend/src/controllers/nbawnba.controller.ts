@@ -8,15 +8,18 @@ import {
   getStandings,
   getNews,
 } from '../services/sportradar.service';
-import { Player, SeasonType } from '../types/sportradar.types';
+import { SeasonType } from '../types/sportradar.types';
 import { League } from '../utils/http';
 import crypto from 'crypto';
-import sharp from 'sharp';
 import { NewsArticle, NewsResponse } from '../types/news';
 import {
   getOptimizedHighlights,
   scheduleHighlightRefresh,
 } from '../services/imageOptimizer.service';
+import { optimizeImage } from '../utils/image';
+import { attachImagesToPlayers } from '../utils/player';
+import { getTodayDate } from '../utils/date';
+import logger from '../utils/logger';
 
 export async function scheduleCtrl(req: Request, res: Response, next: NextFunction) {
   try {
@@ -52,11 +55,6 @@ export async function scheduleByDateCtrl(req: Request, res: Response, next: Next
   }
 }
 
-function getTodayDate() {
-  const now = new Date();
-  return new Date(now.getTime() - now.getTimezoneOffset() * 60000).toISOString().split('T')[0];
-}
-
 export async function scheduleTodayCtrl(req: Request, res: Response, next: NextFunction) {
   try {
     const league = req.params.league as League;
@@ -65,7 +63,7 @@ export async function scheduleTodayCtrl(req: Request, res: Response, next: NextF
     const games = await getDailySchedule(league, today);
 
     res.set({
-      'Cache-Control': 'public, max-age=3600', // Cache for 1 hour
+      'Cache-Control': 'public, max-age=3600',
       'Surrogate-Control': 'max-age=3600',
       'X-League': league,
     });
@@ -78,7 +76,15 @@ export async function scheduleTodayCtrl(req: Request, res: Response, next: NextF
       timestamp: new Date().toISOString(),
     });
   } catch (err) {
-    console.error('Error in scheduleTodayCtrl:', err);
+    logger.error(
+      {
+        error: err instanceof Error ? err.message : 'Unknown error',
+        stack: err instanceof Error ? err.stack : undefined,
+        context: 'scheduleTodayCtrl',
+        league: req.params.league,
+      },
+      "Error fetching today's schedule"
+    );
 
     res.status(500).json({
       success: false,
@@ -115,37 +121,22 @@ export async function teamIdCtrl(req: Request, res: Response, next: NextFunction
 
     const data = await getTeamById(league, teamId);
 
-    if (!data.players || !Array.isArray(data.players)) {
-      return res.json(data);
+    if (Array.isArray(data.players)) {
+      data.players = attachImagesToPlayers(data.players);
     }
 
-    const BASE_URL =
-      'https://cdn.jsdelivr.net/gh/matifandy8/BasketballStats@main/apps/backend/images/players-headshot';
-
-    const playersWithImages = data.players.map((player: Player) => {
-      if (!player?.full_name) return player;
-
-      const nameParts = player.full_name.trim().split(/\s+/);
-
-      const lastPart = nameParts[nameParts.length - 1];
-      if (lastPart.endsWith('.')) {
-        nameParts[nameParts.length - 1] = lastPart.slice(0, -1);
-      }
-      const formattedName = nameParts
-        .map((part: string) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
-        .join('_');
-
-      const filename = `${formattedName}.png`;
-      return {
-        ...player,
-        image_url: `${BASE_URL}/${filename}`,
-      };
-    });
-
-    data.players = playersWithImages;
     res.json(data);
   } catch (error) {
-    console.error(`Error fetching team ${req.params.teamId}:`, error);
+    logger.error(
+      {
+        error: error instanceof Error ? error.message : 'Unknown error',
+        stack: error instanceof Error ? error.stack : undefined,
+        context: 'teamIdCtrl',
+        teamId: req.params.teamId,
+        league: req.params.league,
+      },
+      'Error fetching team'
+    );
     next(error);
   }
 }
@@ -199,40 +190,15 @@ export const newsCtrl = async (req: Request, res: Response, next: NextFunction) 
       data.articles.map(async article => {
         if (!article.urlToImage) return article;
 
-        try {
-          const response = await fetch(article.urlToImage);
-
-          if (!response.ok) {
-            console.warn(`Error fetching image: ${article.urlToImage}`);
-            return article;
-          }
-
-          const buffer = Buffer.from(await response.arrayBuffer());
-
-          const optimizedBuffer = await sharp(buffer)
-            .resize({ width: 800 })
-            .webp({ quality: 80 })
-            .toBuffer();
-
-          const optimizedBase64 = `data:image/webp;base64,${optimizedBuffer.toString('base64')}`;
-
-          return {
-            ...article,
-            urlToImage: optimizedBase64,
-          };
-        } catch (error) {
-          console.error('Error optimizing image:', error);
-          return article;
-        }
+        const optimized = await optimizeImage(article.urlToImage);
+        return {
+          ...article,
+          urlToImage: optimized || article.urlToImage,
+        };
       })
     );
 
-    const responsePayload: NewsResponse = {
-      ...data,
-      articles: optimizedArticles,
-    };
-
-    res.json(responsePayload);
+    res.json({ ...data, articles: optimizedArticles });
   } catch (e) {
     next(e);
   }

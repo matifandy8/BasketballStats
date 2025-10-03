@@ -1,8 +1,8 @@
 import cron from 'node-cron';
 import sharp from 'sharp';
-import { logger } from '../utils/logger';
 import { httpFetchHighlights, League } from '../utils/http';
 import { YouTubeVideo } from '../types/highlights';
+import logger from '../utils/logger';
 
 const imageCache = new Map<string, string>();
 const rawHighlightsCache = new Map<League, YouTubeVideo[]>();

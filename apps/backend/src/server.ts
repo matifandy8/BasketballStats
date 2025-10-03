@@ -5,10 +5,10 @@ import pinoHttp from 'pino-http';
 import path from 'path';
 import { errorMiddleware } from './middlewares/error.middleware';
 import routes from './routes/nbawnba.routes';
-import { logger } from './utils/logger';
 import compression from 'compression';
 import { PrecacheManager, defaultPrecacheConfigs } from './utils/precache';
 import { setPrecacheManager } from './middlewares/cacheRateLimiter.middleware';
+import logger from './utils/logger';
 
 const app = express();
 

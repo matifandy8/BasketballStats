@@ -218,3 +218,33 @@ export interface Qualifier {
 export interface DeletedEvent {
   id: string;
 }
+
+export interface GamePlayByPlayProps {
+  leagueName: string;
+}
+
+export interface EventDescription {
+  id: string;
+  event_type: string;
+  clock?: string;
+  description?: string;
+  points?: number;
+  sequence?: number;
+  period_type?: string;
+  period_number?: number;
+  home_points?: number;
+  away_points?: number;
+  player?: {
+    full_name: string;
+  };
+  incoming_player?: {
+    full_name: string;
+  };
+  outgoing_player?: {
+    full_name: string;
+  };
+  team?: {
+    market: string;
+    name: string;
+  };
+}

@@ -73,7 +73,7 @@ router.get(
 router.get(
   '/teams',
   apiLimiter(60),
-  cache('teams:nba', 86400),
+  cache(req => `teams:nba:${req.params.date}`, 86400),
   (req, res, next) => {
     req.params.league = 'nba';
     next();
@@ -120,7 +120,7 @@ router.get(
 router.get(
   '/news',
   apiLimiter(60),
-  cache('news:nba', 43200),
+  cache(req => `news:nba:${req.params.date}`, 43200),
   (req, res, next) => {
     req.params.league = 'nba';
     next();
@@ -131,7 +131,7 @@ router.get(
 router.get(
   '/highlights',
   apiLimiter(60),
-  cache('highlights:nba', 43200),
+  cache(req => `highlights:nba:${req.params.date}`, 43200),
   (req, res, next) => {
     req.params.league = 'nba';
     next();

@@ -2,40 +2,10 @@ import { useParams } from 'react-router-dom';
 import { PageLoading } from '../components/LoadingSpinner';
 import { usePlayByPlay } from '../services/playByPlayService';
 import React from 'react';
-
-interface GamePlayByPlayProps {
-  leagueName: string;
-}
-
-interface EventDescription {
-  id: string;
-  event_type: string;
-  clock?: string;
-  description?: string;
-  points?: number;
-  sequence?: number;
-  period_type?: string;
-  period_number?: number;
-  home_points?: number;
-  away_points?: number;
-  player?: {
-    full_name: string;
-  };
-  incoming_player?: {
-    full_name: string;
-  };
-  outgoing_player?: {
-    full_name: string;
-  };
-  team?: {
-    market: string;
-    name: string;
-  };
-}
+import type { EventDescription, GamePlayByPlayProps } from '../types/playbyplay';
 
 const GamePlayByPlay: React.FC<GamePlayByPlayProps> = ({ leagueName }) => {
   const { gameId } = useParams<{ gameId: string; league: string }>();
-  console.log(gameId, leagueName);
   const {
     data: playByPlay,
     isLoading,
@@ -73,6 +43,35 @@ const GamePlayByPlay: React.FC<GamePlayByPlayProps> = ({ leagueName }) => {
 
   const { home, away, periods, clock, quarter } = playByPlay;
 
+  if (!periods) {
+    const scheduledDate = playByPlay.scheduled ? new Date(playByPlay.scheduled) : null;
+
+    return (
+      <div className="min-h-screen bg-gradient-to-t from-black to-transparent p-6 text-white container mx-auto my-8">
+        <h1 className="text-4xl font-extrabold mb-8 text-center font-druk">Game Not Started</h1>
+        <div className="text-center space-y-4">
+          <p>The game has not started yet.</p>
+          {scheduledDate && (
+            <div className="bg-gray-900 bg-opacity-50 rounded-lg p-4 max-w-md mx-auto">
+              <div className="text-xl font-semibold mb-2">Scheduled Start Time:</div>
+              <div className="text-lg">
+                {scheduledDate.toLocaleString(undefined, {
+                  weekday: 'long',
+                  month: 'long',
+                  day: 'numeric',
+                  year: 'numeric',
+                  hour: '2-digit',
+                  minute: '2-digit',
+                  timeZoneName: 'short',
+                })}
+              </div>
+              <div className="text-sm text-gray-400 mt-2">(Your local time)</div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
   const allEvents = periods.flatMap(period =>
     period.events.map(event => ({
       ...event,

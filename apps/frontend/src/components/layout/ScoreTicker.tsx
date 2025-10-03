@@ -2,6 +2,7 @@ import React, { useState, useRef } from 'react';
 import { useTodaysGames } from '../../services/gameService';
 import type { Game } from '../../types/games';
 import { Link } from 'react-router-dom';
+import { RotateCcw } from 'lucide-react';
 
 const formatGameTime = (dateString: string) => {
   const date = new Date(dateString);
@@ -51,7 +52,8 @@ const ScoreTicker: React.FC = () => {
     prefetchWnbaGames();
   };
 
-  const currentGames = activeLeague === 'nba' ? nbaGames : wnbaGames;
+  const currentGames = (activeLeague === 'nba' ? nbaGames : wnbaGames)?.games || [];
+  console.log(currentGames);
   const tabColor = activeLeague === 'nba' ? 'blue-400' : 'pink-400';
 
   const renderSkeleton = () => (
@@ -68,13 +70,14 @@ const ScoreTicker: React.FC = () => {
   if (error) {
     return (
       <div className="bg-black text-white py-4 min-h-[180px] flex items-center justify-center">
-        <div className="text-center">
+        <div className="text-center flex flex-col items-center">
           <p className="text-red-400 mb-2">Failed to load {activeLeague.toUpperCase()} games</p>
           <p className="text-stone-400 text-sm mb-4">Please check your connection and try again</p>
           <button
             onClick={() => refetch()}
-            className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors"
+            className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors flex items-center"
           >
+            <RotateCcw className="w-5 h-5 mr-2" />
             {isLoading ? 'Loading...' : 'Retry'}
           </button>
         </div>
@@ -136,7 +139,7 @@ const ScoreTicker: React.FC = () => {
           ) : currentGames.length > 0 ? (
             <div className="flex space-x-2 px-2">
               {currentGames.map((game: Game) => (
-                <Link to={`/${activeLeague}/games/${game.id}`}>
+                <Link to={`/${activeLeague}/games/${game.id}`} key={game.id}>
                   <div
                     key={game.id}
                     className="flex-shrink-0 bg-stone-800 p-3 rounded-lg w-[180px] hover:bg-stone-700 transition-colors"

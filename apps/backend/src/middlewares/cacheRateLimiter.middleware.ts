@@ -2,8 +2,8 @@ import { Request, Response, NextFunction } from 'express';
 import rateLimit, { MemoryStore, RateLimitRequestHandler } from 'express-rate-limit';
 import RedisStore, { RedisReply } from 'rate-limit-redis';
 import Redis, { Redis as RedisClient } from 'ioredis';
-import { logger } from '../utils/logger';
 import { PrecacheManager } from '../utils/precache';
+import logger from '../utils/logger';
 
 const redisClient = new Redis(process.env.REDIS_URL as string);
 
@@ -29,7 +29,7 @@ export const apiLimiter = (maxRequests = 60, useRedis = true): RateLimitRequestH
     standardHeaders: true,
     legacyHeaders: false,
     handler: (req, res) => {
-      console.warn(`[RATE LIMIT] IP ${req.ip} exceeded limit on ${req.originalUrl}`);
+      logger.warn(`[RATE LIMIT] IP ${req.ip} exceeded limit on ${req.originalUrl}`);
       res.status(429).json({ error: 'Too many requests' });
     },
   });

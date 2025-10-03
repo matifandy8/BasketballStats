@@ -1,5 +1,6 @@
 import type { NewsArticle } from '../types/news';
 import { useNews } from '../services/newsService';
+import { RotateCcw } from 'lucide-react';
 
 const NewsSkeleton = () => (
   <div className="animate-pulse">
@@ -24,15 +25,31 @@ const NewsSkeleton = () => (
   </div>
 );
 
-const NewsError = ({ message }: { message: string }) => (
-  <div className="text-center py-8">
+const NewsError = ({
+  message,
+  onRetry,
+  isLoading,
+}: {
+  message: string;
+  onRetry: () => void;
+  isLoading: boolean;
+}) => (
+  <div className="text-center py-8 flex flex-col items-center">
     <div className="text-red-400 font-medium mb-2">Error loading news</div>
     <div className="text-stone-400 text-sm">{message}</div>
+    <button
+      onClick={onRetry}
+      className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors text-white flex items-center"
+      disabled={isLoading}
+    >
+      <RotateCcw className="w-5 h-5 mr-2" />
+      {isLoading ? 'Loading...' : 'Retry'}
+    </button>
   </div>
 );
 
 function NewsSection() {
-  const { data, isLoading, error } = useNews('nba');
+  const { data, isLoading, error, refetch } = useNews('nba');
 
   if (isLoading) {
     return (
@@ -54,7 +71,7 @@ function NewsSection() {
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 sm:mb-8 px-2">
             Latest News
           </h2>
-          <NewsError message={error.message} />
+          <NewsError message={error.message} onRetry={refetch} isLoading={isLoading} />
         </div>
       </section>
     );

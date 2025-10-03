@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import type { HighlightsCarouselProps } from '../types/highlights';
 import './HighlightsCarousel.css';
 import HighlightsSkeleton from './HighlightsSkeleton';
+import { RotateCcw } from 'lucide-react';
 
 const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({
   items,
@@ -104,16 +105,17 @@ const HighlightsCarousel: React.FC<HighlightsCarouselProps> = ({
       <section className="highlights-section">
         <div className="highlights-container">
           <h2 className="highlights-title">{title}</h2>
-          <div className="text-center py-8">
+          <div className="text-center py-8 flex flex-col items-center">
             <p className="text-red-400 mb-2">Failed to load highlights</p>
             <p className="text-stone-400 text-sm mb-4">
               Please check your connection and try again
             </p>
             <button
               onClick={onRetry}
-              className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors text-white"
+              className="px-4 py-2 bg-stone-800 hover:bg-stone-700 rounded-md text-sm transition-colors text-white flex items-center"
               disabled={isLoading}
             >
+              <RotateCcw className="w-5 h-5 mr-2" />
               {isLoading ? 'Loading...' : 'Retry'}
             </button>
           </div>
