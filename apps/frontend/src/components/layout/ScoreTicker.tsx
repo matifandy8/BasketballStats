@@ -1,24 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { useTodaysGames } from '../../services/gameService';
 import type { Game } from '../../types/games';
-import { Link } from 'react-router-dom';
 import { RotateCcw } from 'lucide-react';
-
-const formatGameTime = (dateString: string) => {
-  const date = new Date(dateString);
-  return date.toLocaleTimeString('en-US', {
-    hour: 'numeric',
-    minute: '2-digit',
-    hour12: true,
-    timeZoneName: 'short',
-  });
-};
-
-const getGameStatus = (game: Game) => {
-  if (game.status === 'closed' || game.status === 'complete') return 'FINAL';
-  if (game.status === 'scheduled') return formatGameTime(game.scheduled);
-  return 'LIVE';
-};
+import GameCard from './GameCard';
 
 const ScoreTicker: React.FC = () => {
   const {
@@ -139,39 +123,7 @@ const ScoreTicker: React.FC = () => {
           ) : currentGames.length > 0 ? (
             <div className="flex space-x-2 px-2">
               {currentGames.map((game: Game) => (
-                <Link to={`/${activeLeague}/games/${game.id}`} key={game.id}>
-                  <div
-                    key={game.id}
-                    className="flex-shrink-0 bg-stone-800 p-3 rounded-lg w-[180px] hover:bg-stone-700 transition-colors"
-                  >
-                    <div className="text-xs bg-stone-700 px-2 py-1 rounded-full text-center mb-2 truncate">
-                      {getGameStatus(game)}
-                    </div>
-                    <div className="text-xs text-stone-200 text-center mb-1 truncate">
-                      {game.venue.city}
-                    </div>
-                    <div className="flex justify-between items-center">
-                      <div className="text-center flex-1 min-w-0">
-                        <div className="font-druk font-medium truncate">{game.away.alias}</div>
-                        <div className="text-lg font-bold">{game.away_points ?? '-'}</div>
-                      </div>
-                      <div className="text-stone-400 mx-1">@</div>
-                      <div className="text-center flex-1 min-w-0">
-                        <div className="font-druk font-medium truncate">{game.home.alias}</div>
-                        <div className="text-lg font-bold">{game.home_points ?? '-'}</div>
-                      </div>
-                    </div>
-                    {game.broadcasts && game.broadcasts.length > 0 && (
-                      <div
-                        className="text-xs text-stone-300 text-center mt-1 truncate"
-                        title={game.broadcasts.map(b => b.network).join(', ')}
-                      >
-                        {game.broadcasts[0].network}
-                        {game.broadcasts.length > 1 ? ' +' + (game.broadcasts.length - 1) : ''}
-                      </div>
-                    )}
-                  </div>
-                </Link>
+                <GameCard key={game.id} game={game} league={activeLeague} />
               ))}
             </div>
           ) : (

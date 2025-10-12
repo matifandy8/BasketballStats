@@ -122,6 +122,13 @@ const GamePlayByPlay: React.FC<GamePlayByPlayProps> = ({ leagueName }) => {
         <h1 className="text-4xl font-extrabold mb-2 font-druk">
           {away.market} {away.name} @ {home.market} {home.name}
         </h1>
+        <div>
+          {playByPlay.status === 'closed'
+            ? 'Final'
+            : playByPlay.status === 'in_progress'
+              ? 'In Progress'
+              : 'Scheduled'}
+        </div>
         <div className="text-xl">
           <span className="font-bold">Q{quarter}</span> • {clock}
         </div>
