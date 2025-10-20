@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm ci && npm run build --workspace=frontend",
+  "installCommand": "npm ci",
+  "outputDirectory": "apps/frontend/dist",
+  "rootDir": "apps/frontend"
+}
