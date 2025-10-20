@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "ROLLUP_USE_NATIVE=false tsc -b && vite build",
+    "build": "tsc -b && vite build",
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "preview": "vite preview",
