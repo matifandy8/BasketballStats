@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "engines": {
+    "node": "20.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "ROLLUP_USE_NATIVE=false tsc -b && vite build",
@@ -40,6 +43,7 @@
     "husky": "9.1.7",
     "lint-staged": "16.1.6",
     "prettier": "3.6.2",
+    "rollup": "^4.21.0",
     "typescript": "5.9.2",
     "vite": "7.1.5"
   }
