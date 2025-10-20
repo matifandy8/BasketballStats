@@ -1,13 +1,5 @@
 {
   "buildCommand": "npm ci && npm run build --workspace=frontend",
   "installCommand": "npm ci",
-  "outputDirectory": "apps/frontend/dist",
-  "env": {
-    "VERCEL_FORCE_NO_BUILD_CACHE": "1"
-  },
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "nodejs20.x"
-    }
-  }
+  "outputDirectory": "apps/frontend/dist"
 }
