@@ -1,6 +1,6 @@
 import { Redis } from 'ioredis';
-import { logger } from './logger';
 import axios from 'axios';
+import logger from './logger';
 
 type CacheConfig = {
   key: string;

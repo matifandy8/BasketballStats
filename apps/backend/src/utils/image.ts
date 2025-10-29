@@ -39,7 +39,9 @@ export async function optimizeImage(url: string): Promise<string | null> {
 
     return `data:image/webp;base64,${optimizedBuffer.toString('base64')}`;
   } catch (error) {
-    logger.error('Error optimizing image:', error);
+    logger.error(
+      `Error optimizing image: ${error instanceof Error ? error.message : String(error)}`
+    );
     return null;
   }
 }

@@ -78,7 +78,17 @@ export async function getStandings(
     const data = await httpFetch<Standing>(league, endpoint);
     return data;
   } catch (error) {
-    logger.error('Error in getStandings:', error);
+    logger.error(
+      {
+        error: error instanceof Error ? error.message : String(error),
+        stack: error instanceof Error ? error.stack : undefined,
+        context: 'getStandings',
+        league,
+        year,
+        type,
+      },
+      'Error in getStandings'
+    );
     throw error;
   }
 }
